@@ -1,0 +1,4 @@
+nav2_lifecycle_manager
+navigation2
+setuptools
+slam_toolbox
