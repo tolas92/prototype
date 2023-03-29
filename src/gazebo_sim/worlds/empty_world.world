@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+
+<sdf version="1.6">
+  <world name="default">
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+     <!-- Testing the automatic population of objects -->
+     <!--
+     <population name="barriers_population">
+      <model name="jersey_barrier">
+        <include>
+          <static>false</static>
+          <uri>model://jersey_barrier</uri>
+        </include>
+      </model>
+      <pose>0 0 0.3 0 0 0</pose>
+      <box>
+        <size>12 12 0.01</size>
+      </box>
+      <model_count>3</model_count>
+      <distribution>
+        <type>linear-x</type>
+      </distribution>
+    </population>-->
+  </world>
+</sdf>

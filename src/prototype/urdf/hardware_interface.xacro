@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<!--=========================starting xacros================================-->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="prototype">
+<xacro:include filename="$(find prototype)/urdf/joint_macros.xacro"/>
+<xacro:include filename="$(find prototype)/urdf/link_macros.xacro"/>
+
+
+   <!-- ======================ROS2_CONTROL=======================-->
+
+
+    <!--<ros2_control name="PrototypeMotor" type="system">
+        <hardware>
+          <plugin>motor_control/MotorControl</plugin>
+          <param name="left_wheel_name">front_left_wheel_joint</param>
+          <param name="right_wheel_name">front_right_wheel_joint</param>
+          <param name="loop_rate">30</param>
+          <param name="device">/dev/ttyACM0</param> 
+          <param name="baud_rate">115200</param>
+          <param name="timeout">5000</param>
+          <param name="enc_counts_per_rev">3436</param>
+        </hardware>
+    
+        <joint name="front_right_wheel_joint">
+          <command_interface name="velocity">
+            <param name="min">0.0</param>
+            <param name="max">2.0</param>
+          </command_interface>
+          <state_interface name="position" />
+          <state_interface name="velocity" />
+        </joint>
+    
+        <joint name="front_right_wheel_joint">
+          <command_interface name="velocity">
+            <param name="min">0.0</param>
+            <param name="max">2.0</param>
+          </command_interface>
+          <state_interface name="position" />
+          <state_interface name="velocity" />
+        </joint>
+    
+      </ros2_control>-->
+</robot>
