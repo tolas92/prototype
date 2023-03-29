@@ -1,0 +1,4 @@
+Invoking command in '/home/tolasing/ros2_ws/build/absl': /usr/bin/cmake /home/tolasing/ros2_ws/abseil-cpp -DCMAKE_INSTALL_PREFIX=/home/tolasing/ros2_ws/install/absl
+Invoked command in '/home/tolasing/ros2_ws/build/absl' returned '0': /usr/bin/cmake /home/tolasing/ros2_ws/abseil-cpp -DCMAKE_INSTALL_PREFIX=/home/tolasing/ros2_ws/install/absl
+Invoking command in '/home/tolasing/ros2_ws/build/absl': /usr/bin/cmake --build /home/tolasing/ros2_ws/build/absl -- -j8 -l8
+Invoked command in '/home/tolasing/ros2_ws/build/absl' returned '2': /usr/bin/cmake --build /home/tolasing/ros2_ws/build/absl -- -j8 -l8

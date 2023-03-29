@@ -1,0 +1,93 @@
+[0.028s] Invoking command in '/home/tolasing/ros2_ws/build/prototype': CMAKE_PREFIX_PATH=/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/service_pkg:/home/tolasing/ros2_ws/install/nav2_project:/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/install/nav2_course:/home/tolasing/ros2_ws/install/asio_cmake_module:/usr/lib/x86_64-linux-gnu/libserial.so:/usr/lib/x86_64-linux-gnu/libserial.so: /usr/bin/cmake /home/tolasing/ros2_ws/src/prototype -DCMAKE_INSTALL_PREFIX=/home/tolasing/ros2_ws/install/prototype
+[0.045s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.234s] -- Found rclpy: 3.3.7 (/opt/ros/humble/share/rclpy/cmake)
+[0.235s] -- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[0.276s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.279s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.287s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.303s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.331s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.412s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.414s] -- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.575s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.823s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[0.859s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[0.861s] -- Looking for ignition-math6 -- found version 6.13.0
+[0.866s] -- Searching for dependencies of ignition-math6
+[0.868s] -- Looking for OGRE...
+[0.875s] -- Found Ogre Ghadamon (1.9.0)
+[0.876s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[0.887s] -- Looking for OGRE_Paging...
+[0.887s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[0.887s] -- Looking for OGRE_Terrain...
+[0.887s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[0.888s] -- Looking for OGRE_Property...
+[0.888s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[0.888s] -- Looking for OGRE_RTShaderSystem...
+[0.888s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[0.888s] -- Looking for OGRE_Volume...
+[0.889s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[0.889s] -- Looking for OGRE_Overlay...
+[0.889s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[1.062s] -- Looking for ignition-math6 -- found version 6.13.0
+[1.062s] -- Looking for ignition-transport8 -- found version 8.2.1
+[1.063s] -- Searching for dependencies of ignition-transport8
+[1.086s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[1.100s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[1.107s] -- Checking for module 'libzmq >= 4'
+[1.132s] --   Found libzmq , version 4.3.4
+[1.203s] -- Checking for module 'uuid'
+[1.224s] --   Found uuid, version 2.37.2
+[1.277s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.278s] -- Searching for dependencies of ignition-msgs5
+[1.302s] -- Looking for ignition-math6 -- found version 6.13.0
+[1.309s] -- Checking for module 'tinyxml2'
+[1.330s] --   Found tinyxml2, version 9.0.0
+[1.383s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.383s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.383s] -- Searching for dependencies of ignition-common3
+[1.384s] -- Looking for dlfcn.h - found
+[1.384s] -- Looking for libdl - found
+[1.398s] -- Searching for <ignition-common3> component [graphics]
+[1.399s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[1.400s] -- Searching for dependencies of ignition-common3-graphics
+[1.402s] -- Looking for ignition-math6 -- found version 6.13.0
+[1.403s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[1.408s] -- Searching for dependencies of ignition-fuel_tools4
+[1.454s] -- Checking for module 'jsoncpp'
+[1.473s] --   Found jsoncpp, version 1.9.5
+[1.527s] -- Checking for module 'libzip'
+[1.545s] --   Found libzip, version 1.7.3
+[1.592s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.593s] -- Looking for ignition-math6 -- found version 6.13.0
+[1.593s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.595s] -- Gazebo version: 11.10
+[1.605s] -- Found urdf: 2.6.0 (/opt/ros/humble/share/urdf/cmake)
+[1.636s] -- Found xacro: 2.0.8 (/opt/ros/humble/share/xacro/cmake)
+[1.636s] -- Found ros2_control: 2.20.0 (/opt/ros/humble/share/ros2_control/cmake)
+[1.636s] -- Found gazebo_ros2_control: 0.4.0 (/opt/ros/humble/share/gazebo_ros2_control/cmake)
+[1.641s] -- Found joint_state_broadcaster: 2.15.0 (/opt/ros/humble/share/joint_state_broadcaster/cmake)
+[2.537s] -- Found parameter_traits: 0.3.0 (/opt/ros/humble/share/parameter_traits/cmake)
+[2.576s] -- Found joint_trajectory_controller: 2.15.0 (/opt/ros/humble/share/joint_trajectory_controller/cmake)
+[3.097s] -- Found velocity_controllers: 2.15.0 (/opt/ros/humble/share/velocity_controllers/cmake)
+[3.428s] -- Found std_srvs: 4.2.3 (/opt/ros/humble/share/std_srvs/cmake)
+[3.463s] [31mCMake Error at CMakeLists.txt:21 (find_package):
+[3.463s]   By not providing "Findmotor_control.cmake" in CMAKE_MODULE_PATH this
+[3.463s]   project has asked CMake to find a package configuration file provided by
+[3.463s]   "motor_control", but CMake did not find one.
+[3.463s] 
+[3.464s]   Could not find a package configuration file provided by "motor_control"
+[3.464s]   with any of the following names:
+[3.464s] 
+[3.464s]     motor_controlConfig.cmake
+[3.464s]     motor_control-config.cmake
+[3.465s] 
+[3.465s]   Add the installation prefix of "motor_control" to CMAKE_PREFIX_PATH or set
+[3.465s]   "motor_control_DIR" to a directory containing one of the above files.  If
+[3.465s]   "motor_control" provides a separate development package or SDK, be sure it
+[3.465s]   has been installed.
+[3.465s] 
+[3.466s] -- Configuring incomplete, errors occurred!
+[3.466s] See also "/home/tolasing/ros2_ws/build/prototype/CMakeFiles/CMakeOutput.log".
+[3.466s] [0m
+[3.478s] Invoked command in '/home/tolasing/ros2_ws/build/prototype' returned '1': CMAKE_PREFIX_PATH=/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/service_pkg:/home/tolasing/ros2_ws/install/nav2_project:/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/install/nav2_course:/home/tolasing/ros2_ws/install/asio_cmake_module:/usr/lib/x86_64-linux-gnu/libserial.so:/usr/lib/x86_64-linux-gnu/libserial.so: /usr/bin/cmake /home/tolasing/ros2_ws/src/prototype -DCMAKE_INSTALL_PREFIX=/home/tolasing/ros2_ws/install/prototype

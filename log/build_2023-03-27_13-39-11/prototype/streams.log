@@ -1,0 +1,87 @@
+[0.092s] Invoking command in '/home/tolasing/ros2_ws/build/prototype': CMAKE_PREFIX_PATH=/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/install/ros2_mapping:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/asio_cmake_module /usr/bin/cmake --build /home/tolasing/ros2_ws/build/prototype -- -j8 -l8
+[0.285s] Invoked command in '/home/tolasing/ros2_ws/build/prototype' returned '0': CMAKE_PREFIX_PATH=/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/install/ros2_mapping:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/asio_cmake_module /usr/bin/cmake --build /home/tolasing/ros2_ws/build/prototype -- -j8 -l8
+[0.404s] Invoking command in '/home/tolasing/ros2_ws/build/prototype': CMAKE_PREFIX_PATH=/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/install/ros2_mapping:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/asio_cmake_module /usr/bin/cmake --install /home/tolasing/ros2_ws/build/prototype
+[0.421s] -- Install configuration: ""
+[0.422s] -- Execute custom install script
+[0.424s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//launch/control_velocity.launch.py
+[0.425s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//launch/launch_arduino.launch.py
+[0.425s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//launch/online_async.launch.py
+[0.426s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//launch/prototype_publisher.launch.py
+[0.426s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//launch/spawn.launch.xml
+[0.426s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//launch/spawn_pos.launch.py
+[0.426s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//worlds/empty_world.world
+[0.427s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//models/box_room/meshes/box_room.dae
+[0.427s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//models/box_room/meshes/chambre.png
+[0.428s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//models/model.config
+[0.434s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//models/model.sdf
+[0.435s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//urdf/Battery_Control.xacro
+[0.435s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//urdf/crane.xacro
+[0.435s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//urdf/hardware_interface.xacro
+[0.435s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//urdf/joint_macros.xacro
+[0.436s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//urdf/lidar.xacro
+[0.436s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//urdf/link_macros.xacro
+[0.436s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//urdf/prototype.xacro
+[0.436s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//urdf/wheel.xacro
+[0.436s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/Dazzling.stl
+[0.437s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/Dbrakes2K.png
+[0.437s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/Dreaotherothertex2K.png
+[0.438s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/Dtire_rim_detail2Ktex.png
+[0.438s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/Material Base Color.png
+[0.438s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/Material.005 Base Color.png
+[0.438s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/Prototype_mesh(1).stl
+[0.438s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/Prototype_mesh(3).stl
+[0.438s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/Prototype_mesh.stl
+[0.439s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/Wheels.dae
+[0.439s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/blender_mesh.stl
+[0.445s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/crane base.png
+[0.445s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/crane stand.001.png
+[0.446s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/crane.blend
+[0.446s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/crane.blend1
+[0.447s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/crane.dae
+[0.447s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/crane_base.png
+[0.447s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/crane_stand.png
+[0.448s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/cute_cube.blend
+[0.448s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/cute_cube.dae
+[0.448s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/first wheel.blend
+[0.449s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/gear color.png
+[0.449s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/lambert3_baseColor.png
+[0.449s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/motor .png
+[0.449s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/prototype.blend
+[0.449s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/prototype.dae
+[0.450s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/sensors/realsense.dae
+[0.450s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/sensors/rplidar.dae
+[0.450s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/sensors/rplidartexture.png
+[0.450s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/textures/lambert3_baseColor.png
+[0.450s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/tinker.stl
+[0.451s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/tire_rubber_2K_NRM.png
+[0.451s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/tires/obj.mtl
+[0.451s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/tires/tinker.obj
+[0.468s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//config/controller_config.yaml
+[0.469s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//config/controller_shaft.yaml
+[0.469s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//config/controller_velocity.yaml
+[0.470s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//config/velocity.yaml
+[0.476s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//scripts/move_laser.py
+[0.477s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//scripts/move_shaft.py
+[0.478s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//scripts/publisher.py
+[0.478s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//scripts/service_sample.py
+[0.479s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//scripts/service_velocity.py
+[0.479s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//scripts/test.py
+[0.479s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype//scripts/velocity.py
+[0.480s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/lib/prototype/move_laser.py
+[0.480s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/lib/prototype/move_shaft.py
+[0.481s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/ament_index/resource_index/package_run_dependencies/prototype
+[0.481s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/ament_index/resource_index/parent_prefix_path/prototype
+[0.481s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype/environment/ament_prefix_path.sh
+[0.482s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype/environment/ament_prefix_path.dsv
+[0.482s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype/environment/path.sh
+[0.482s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype/environment/path.dsv
+[0.483s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype/local_setup.bash
+[0.483s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype/local_setup.sh
+[0.483s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype/local_setup.zsh
+[0.484s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype/local_setup.dsv
+[0.485s] -- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype/package.dsv
+[0.492s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/ament_index/resource_index/packages/prototype
+[0.492s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype/cmake/prototypeConfig.cmake
+[0.492s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype/cmake/prototypeConfig-version.cmake
+[0.492s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/prototype/share/prototype/package.xml
+[0.723s] Invoked command in '/home/tolasing/ros2_ws/build/prototype' returned '0': CMAKE_PREFIX_PATH=/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/install/ros2_mapping:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/asio_cmake_module /usr/bin/cmake --install /home/tolasing/ros2_ws/build/prototype

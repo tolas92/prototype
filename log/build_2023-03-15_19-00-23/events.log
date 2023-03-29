@@ -1,0 +1,475 @@
+[0.000000] (-) TimerEvent: {}
+[0.000606] (-) JobUnselected: {'identifier': 'asio_cmake_module'}
+[0.000830] (-) JobUnselected: {'identifier': 'cartographer_ros'}
+[0.001665] (-) JobUnselected: {'identifier': 'cartographer_ros_msgs'}
+[0.001765] (-) JobUnselected: {'identifier': 'cartographer_rviz'}
+[0.001905] (-) JobUnselected: {'identifier': 'gazebo_sim'}
+[0.001973] (-) JobUnselected: {'identifier': 'io_context'}
+[0.002025] (-) JobUnselected: {'identifier': 'motor_control'}
+[0.002537] (-) JobUnselected: {'identifier': 'nav2_course'}
+[0.002978] (-) JobUnselected: {'identifier': 'nav2_project'}
+[0.003052] (-) JobUnselected: {'identifier': 'prototype'}
+[0.003290] (-) JobUnselected: {'identifier': 'serial'}
+[0.003348] (-) JobUnselected: {'identifier': 'serial_driver'}
+[0.003398] (-) JobUnselected: {'identifier': 'service_pkg'}
+[0.004528] (-) JobUnselected: {'identifier': 'udp_driver'}
+[0.004707] (cartographer) JobQueued: {'identifier': 'cartographer', 'dependencies': OrderedDict()}
+[0.004768] (cartographer) JobStarted: {'identifier': 'cartographer'}
+[0.019463] (cartographer) JobProgress: {'identifier': 'cartographer', 'progress': 'cmake'}
+[0.021244] (cartographer) JobProgress: {'identifier': 'cartographer', 'progress': 'build'}
+[0.023024] (cartographer) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/tolasing/ros2_ws/build/cartographer', '--', '-j8', '-l8'], 'cwd': '/home/tolasing/ros2_ws/build/cartographer', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'tolasing'), ('ROS_PACKAGE_PATH', '/home/tolasing/ros2_ws/install/serial/share'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/home/tolasing/ros2_ws/install/serial_driver/lib:/home/tolasing/ros2_ws/install/motor_control/lib:/home/tolasing/ros2_ws/install/io_context/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tolasing'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/tolasing/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '1.75.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1107'), ('SYSTEMD_EXEC_PID', '1265'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '68375'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/tolasing/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'tolasing'), ('JOURNAL_STREAM', '8:34195'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/tolasing/ros2_ws/install/serial/lib/x86_64-linux-gnu/pkgconfig:/home/tolasing/ros2_ws/install/serial/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tolasing'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/tolasing/.local/bin:/opt/ros/humble/bin:/home/tolasing/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/tolasing-zen:@/tmp/.ICE-unix/1224,unix/tolasing-zen:/tmp/.ICE-unix/1224'), ('INVOCATION_ID', '9fda2d819b9345e297a20f7a8a1a4ffa'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.OALV11'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9a34650364.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/service_pkg:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/nav2_project:/home/tolasing/ros2_ws/install/nav2_course:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/asio_cmake_module:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tolasing/ros2_ws/build/cartographer'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tolasing/ros2_ws/install/service_pkg/lib/python3.10/site-packages:/home/tolasing/ros2_ws/install/nav2_project/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/install/prototype:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/service_pkg:/home/tolasing/ros2_ws/install/nav2_project:/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/install/nav2_course:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/asio_cmake_module')]), 'shell': False}
+[0.099705] (-) TimerEvent: {}
+[0.116586] (cartographer) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding CXX object googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[0.122762] (cartographer) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mBuilding documentation.\x1b[0m\n'}
+[0.132387] (cartographer) StdoutLine: {'line': b'[  1%] Built target cartographer_detect_changes\n'}
+[0.142160] (cartographer) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/common/histogram.cc.o\x1b[0m\n'}
+[0.142512] (cartographer) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/common/internal/ceres_solver_options.cc.o\x1b[0m\n'}
+[0.142692] (cartographer) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/common/fixed_ratio_sampler.cc.o\x1b[0m\n'}
+[0.142942] (cartographer) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/common/internal/testing/thread_pool_for_testing.cc.o\x1b[0m\n'}
+[0.143103] (cartographer) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/common/configuration_file_resolver.cc.o\x1b[0m\n'}
+[0.148388] (cartographer) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/common/lua_parameter_dictionary.cc.o\x1b[0m\n'}
+[0.199830] (-) TimerEvent: {}
+[0.300437] (-) TimerEvent: {}
+[0.401036] (-) TimerEvent: {}
+[0.501413] (-) TimerEvent: {}
+[0.602540] (-) TimerEvent: {}
+[0.703109] (-) TimerEvent: {}
+[0.803487] (-) TimerEvent: {}
+[0.902741] (cartographer) StdoutLine: {'line': b'\x1b[01mRunning Sphinx v4.3.2\x1b[39;49;00m\n'}
+[0.903577] (-) TimerEvent: {}
+[1.004798] (-) TimerEvent: {}
+[1.105178] (-) TimerEvent: {}
+[1.205936] (-) TimerEvent: {}
+[1.234677] (cartographer) StdoutLine: {'line': b'\x1b[01mloading pickled environment... \x1b[39;49;00mdone\n'}
+[1.245098] (cartographer) StdoutLine: {'line': b'\x1b[01mbuilding [mo]: \x1b[39;49;00mtargets for 0 po files that are out of date\n'}
+[1.247341] (cartographer) StdoutLine: {'line': b'\x1b[01mbuilding [html]: \x1b[39;49;00mtargets for 0 source files that are out of date\n'}
+[1.250976] (cartographer) StdoutLine: {'line': b'\x1b[01mupdating environment: \x1b[39;49;00m0 added, 0 changed, 0 removed\n'}
+[1.253227] (cartographer) StdoutLine: {'line': b'\x1b[01mlooking for now-outdated files... \x1b[39;49;00mnone found\n'}
+[1.255009] (cartographer) StdoutLine: {'line': b'\x1b[01mno targets are out of date.\x1b[39;49;00m\n'}
+[1.256496] (cartographer) StdoutLine: {'line': b'\x1b[01mbuild succeeded.\x1b[39;49;00m\n'}
+[1.256809] (cartographer) StdoutLine: {'line': b'\n'}
+[1.258594] (cartographer) StdoutLine: {'line': b'The HTML pages are in html.\n'}
+[1.306088] (-) TimerEvent: {}
+[1.406742] (-) TimerEvent: {}
+[1.508480] (-) TimerEvent: {}
+[1.608973] (-) TimerEvent: {}
+[1.617910] (cartographer) StdoutLine: {'line': b'[  3%] Built target build_doc\n'}
+[1.637169] (cartographer) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/common/task.cc.o\x1b[0m\n'}
+[1.709166] (-) TimerEvent: {}
+[1.809932] (-) TimerEvent: {}
+[1.910345] (-) TimerEvent: {}
+[2.010860] (-) TimerEvent: {}
+[2.111322] (-) TimerEvent: {}
+[2.212646] (-) TimerEvent: {}
+[2.313144] (-) TimerEvent: {}
+[2.413914] (-) TimerEvent: {}
+[2.514367] (-) TimerEvent: {}
+[2.616555] (-) TimerEvent: {}
+[2.719217] (-) TimerEvent: {}
+[2.821338] (-) TimerEvent: {}
+[2.924075] (-) TimerEvent: {}
+[3.024775] (-) TimerEvent: {}
+[3.125285] (-) TimerEvent: {}
+[3.227714] (-) TimerEvent: {}
+[3.328154] (-) TimerEvent: {}
+[3.428601] (-) TimerEvent: {}
+[3.529116] (-) TimerEvent: {}
+[3.629664] (-) TimerEvent: {}
+[3.706066] (cartographer) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/common/thread_pool.cc.o\x1b[0m\n'}
+[3.729799] (-) TimerEvent: {}
+[3.820418] (cartographer) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/common/time.cc.o\x1b[0m\n'}
+[3.829944] (-) TimerEvent: {}
+[3.932788] (-) TimerEvent: {}
+[4.039792] (-) TimerEvent: {}
+[4.141978] (-) TimerEvent: {}
+[4.182211] (cartographer) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/ground_truth/autogenerate_ground_truth.cc.o\x1b[0m\n'}
+[4.242131] (-) TimerEvent: {}
+[4.342993] (-) TimerEvent: {}
+[4.443943] (-) TimerEvent: {}
+[4.544647] (-) TimerEvent: {}
+[4.645310] (-) TimerEvent: {}
+[4.730774] (cartographer) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/ground_truth/relations_text_file.cc.o\x1b[0m\n'}
+[4.745440] (-) TimerEvent: {}
+[4.847836] (-) TimerEvent: {}
+[4.953925] (-) TimerEvent: {}
+[5.054405] (-) TimerEvent: {}
+[5.154854] (-) TimerEvent: {}
+[5.255274] (-) TimerEvent: {}
+[5.289286] (cartographer) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/io/color.cc.o\x1b[0m\n'}
+[5.355410] (-) TimerEvent: {}
+[5.456476] (-) TimerEvent: {}
+[5.556889] (-) TimerEvent: {}
+[5.657316] (-) TimerEvent: {}
+[5.709592] (cartographer) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/io/coloring_points_processor.cc.o\x1b[0m\n'}
+[5.757447] (-) TimerEvent: {}
+[5.858283] (-) TimerEvent: {}
+[5.959007] (-) TimerEvent: {}
+[6.059679] (-) TimerEvent: {}
+[6.160212] (-) TimerEvent: {}
+[6.260720] (-) TimerEvent: {}
+[6.361329] (-) TimerEvent: {}
+[6.462557] (-) TimerEvent: {}
+[6.563397] (-) TimerEvent: {}
+[6.663859] (-) TimerEvent: {}
+[6.764293] (-) TimerEvent: {}
+[6.864723] (-) TimerEvent: {}
+[6.912134] (cartographer) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/io/counting_points_processor.cc.o\x1b[0m\n'}
+[6.965058] (-) TimerEvent: {}
+[7.067029] (-) TimerEvent: {}
+[7.167473] (-) TimerEvent: {}
+[7.267926] (-) TimerEvent: {}
+[7.368388] (-) TimerEvent: {}
+[7.468851] (-) TimerEvent: {}
+[7.530781] (cartographer) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/io/draw_trajectories.cc.o\x1b[0m\n'}
+[7.569030] (-) TimerEvent: {}
+[7.669842] (-) TimerEvent: {}
+[7.772018] (-) TimerEvent: {}
+[7.874521] (-) TimerEvent: {}
+[7.913162] (cartographer) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/io/file_writer.cc.o\x1b[0m\n'}
+[7.974660] (-) TimerEvent: {}
+[8.076550] (-) TimerEvent: {}
+[8.179444] (-) TimerEvent: {}
+[8.281689] (-) TimerEvent: {}
+[8.382160] (-) TimerEvent: {}
+[8.484991] (-) TimerEvent: {}
+[8.585743] (-) TimerEvent: {}
+[8.686188] (-) TimerEvent: {}
+[8.786671] (-) TimerEvent: {}
+[8.887345] (-) TimerEvent: {}
+[8.989577] (-) TimerEvent: {}
+[9.091784] (-) TimerEvent: {}
+[9.192562] (-) TimerEvent: {}
+[9.293238] (-) TimerEvent: {}
+[9.398049] (-) TimerEvent: {}
+[9.498482] (-) TimerEvent: {}
+[9.599151] (-) TimerEvent: {}
+[9.699580] (-) TimerEvent: {}
+[9.801172] (-) TimerEvent: {}
+[9.901858] (-) TimerEvent: {}
+[10.002300] (-) TimerEvent: {}
+[10.103107] (-) TimerEvent: {}
+[10.203656] (-) TimerEvent: {}
+[10.305900] (-) TimerEvent: {}
+[10.406314] (-) TimerEvent: {}
+[10.507773] (-) TimerEvent: {}
+[10.609156] (-) TimerEvent: {}
+[10.711088] (-) TimerEvent: {}
+[10.811204] (cartographer) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/io/fixed_ratio_sampling_points_processor.cc.o\x1b[0m\n'}
+[10.812116] (-) TimerEvent: {}
+[10.912486] (-) TimerEvent: {}
+[11.012925] (-) TimerEvent: {}
+[11.113381] (-) TimerEvent: {}
+[11.214381] (-) TimerEvent: {}
+[11.260063] (cartographer) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/io/frame_id_filtering_points_processor.cc.o\x1b[0m\n'}
+[11.314586] (-) TimerEvent: {}
+[11.415321] (-) TimerEvent: {}
+[11.516043] (-) TimerEvent: {}
+[11.604128] (cartographer) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/io/hybrid_grid_points_processor.cc.o\x1b[0m\n'}
+[11.616177] (-) TimerEvent: {}
+[11.716951] (-) TimerEvent: {}
+[11.817393] (-) TimerEvent: {}
+[11.919069] (-) TimerEvent: {}
+[12.019527] (-) TimerEvent: {}
+[12.121501] (-) TimerEvent: {}
+[12.222303] (-) TimerEvent: {}
+[12.323467] (-) TimerEvent: {}
+[12.347184] (cartographer) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/io/image.cc.o\x1b[0m\n'}
+[12.423592] (-) TimerEvent: {}
+[12.524392] (-) TimerEvent: {}
+[12.625084] (-) TimerEvent: {}
+[12.725516] (-) TimerEvent: {}
+[12.825946] (-) TimerEvent: {}
+[12.926601] (-) TimerEvent: {}
+[13.027095] (-) TimerEvent: {}
+[13.127714] (-) TimerEvent: {}
+[13.228272] (-) TimerEvent: {}
+[13.328747] (-) TimerEvent: {}
+[13.429349] (-) TimerEvent: {}
+[13.434907] (cartographer) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/io/intensity_to_color_points_processor.cc.o\x1b[0m\n'}
+[13.529526] (-) TimerEvent: {}
+[13.630359] (-) TimerEvent: {}
+[13.731424] (-) TimerEvent: {}
+[13.832325] (-) TimerEvent: {}
+[13.934428] (-) TimerEvent: {}
+[14.035074] (-) TimerEvent: {}
+[14.135945] (-) TimerEvent: {}
+[14.238513] (-) TimerEvent: {}
+[14.339019] (-) TimerEvent: {}
+[14.439448] (-) TimerEvent: {}
+[14.520095] (cartographer) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/io/internal/in_memory_proto_stream.cc.o\x1b[0m\n'}
+[14.539593] (-) TimerEvent: {}
+[14.640292] (-) TimerEvent: {}
+[14.741604] (-) TimerEvent: {}
+[14.842683] (-) TimerEvent: {}
+[14.943398] (-) TimerEvent: {}
+[15.044094] (-) TimerEvent: {}
+[15.144742] (-) TimerEvent: {}
+[15.245765] (-) TimerEvent: {}
+[15.346319] (-) TimerEvent: {}
+[15.446785] (-) TimerEvent: {}
+[15.516856] (cartographer) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/io/internal/mapping_state_serialization.cc.o\x1b[0m\n'}
+[15.546942] (-) TimerEvent: {}
+[15.647626] (-) TimerEvent: {}
+[15.748374] (-) TimerEvent: {}
+[15.849173] (-) TimerEvent: {}
+[15.949876] (-) TimerEvent: {}
+[16.053774] (-) TimerEvent: {}
+[16.154214] (-) TimerEvent: {}
+[16.254628] (-) TimerEvent: {}
+[16.355081] (-) TimerEvent: {}
+[16.455608] (-) TimerEvent: {}
+[16.556372] (-) TimerEvent: {}
+[16.657112] (-) TimerEvent: {}
+[16.757572] (-) TimerEvent: {}
+[16.858019] (-) TimerEvent: {}
+[16.958506] (-) TimerEvent: {}
+[17.059033] (-) TimerEvent: {}
+[17.159599] (-) TimerEvent: {}
+[17.260067] (-) TimerEvent: {}
+[17.360492] (-) TimerEvent: {}
+[17.460953] (-) TimerEvent: {}
+[17.561794] (-) TimerEvent: {}
+[17.662282] (-) TimerEvent: {}
+[17.762700] (-) TimerEvent: {}
+[17.863264] (-) TimerEvent: {}
+[17.963895] (-) TimerEvent: {}
+[18.064485] (-) TimerEvent: {}
+[18.165010] (-) TimerEvent: {}
+[18.265560] (-) TimerEvent: {}
+[18.369244] (-) TimerEvent: {}
+[18.469830] (-) TimerEvent: {}
+[18.570651] (-) TimerEvent: {}
+[18.671350] (-) TimerEvent: {}
+[18.771799] (-) TimerEvent: {}
+[18.872561] (-) TimerEvent: {}
+[18.973045] (-) TimerEvent: {}
+[19.074994] (-) TimerEvent: {}
+[19.175990] (-) TimerEvent: {}
+[19.281287] (-) TimerEvent: {}
+[19.387184] (-) TimerEvent: {}
+[19.504860] (-) TimerEvent: {}
+[19.614883] (-) TimerEvent: {}
+[19.715569] (-) TimerEvent: {}
+[19.816090] (-) TimerEvent: {}
+[19.916625] (-) TimerEvent: {}
+[19.931792] (cartographer) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/io/internal/pbstream_info.cc.o\x1b[0m\n'}
+[19.998666] (cartographer) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/io/internal/pbstream_migrate.cc.o\x1b[0m\n'}
+[20.016782] (-) TimerEvent: {}
+[20.121644] (-) TimerEvent: {}
+[20.222109] (-) TimerEvent: {}
+[20.323771] (-) TimerEvent: {}
+[20.426101] (-) TimerEvent: {}
+[20.530536] (-) TimerEvent: {}
+[20.631034] (-) TimerEvent: {}
+[20.736257] (-) TimerEvent: {}
+[20.839704] (-) TimerEvent: {}
+[20.941675] (-) TimerEvent: {}
+[21.042114] (-) TimerEvent: {}
+[21.142664] (-) TimerEvent: {}
+[21.243429] (-) TimerEvent: {}
+[21.343515] (cartographer) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/io/min_max_range_filtering_points_processor.cc.o\x1b[0m\n'}
+[21.343938] (-) TimerEvent: {}
+[21.410348] (cartographer) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/io/outlier_removing_points_processor.cc.o\x1b[0m\n'}
+[21.444104] (-) TimerEvent: {}
+[21.545556] (-) TimerEvent: {}
+[21.645955] (-) TimerEvent: {}
+[21.747057] (-) TimerEvent: {}
+[21.847548] (-) TimerEvent: {}
+[21.948064] (-) TimerEvent: {}
+[22.048521] (-) TimerEvent: {}
+[22.105969] (cartographer) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/io/pcd_writing_points_processor.cc.o\x1b[0m\n'}
+[22.148648] (-) TimerEvent: {}
+[22.250312] (-) TimerEvent: {}
+[22.351602] (-) TimerEvent: {}
+[22.466396] (-) TimerEvent: {}
+[22.543409] (cartographer) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/io/ply_writing_points_processor.cc.o\x1b[0m\n'}
+[22.566532] (-) TimerEvent: {}
+[22.669271] (-) TimerEvent: {}
+[22.772496] (-) TimerEvent: {}
+[22.874535] (-) TimerEvent: {}
+[22.974973] (-) TimerEvent: {}
+[23.075464] (-) TimerEvent: {}
+[23.175900] (-) TimerEvent: {}
+[23.276308] (-) TimerEvent: {}
+[23.376727] (-) TimerEvent: {}
+[23.477232] (-) TimerEvent: {}
+[23.577702] (-) TimerEvent: {}
+[23.678101] (-) TimerEvent: {}
+[23.778519] (-) TimerEvent: {}
+[23.879001] (-) TimerEvent: {}
+[23.979597] (-) TimerEvent: {}
+[24.080032] (-) TimerEvent: {}
+[24.180466] (-) TimerEvent: {}
+[24.280898] (-) TimerEvent: {}
+[24.381329] (-) TimerEvent: {}
+[24.481760] (-) TimerEvent: {}
+[24.582194] (-) TimerEvent: {}
+[24.683537] (-) TimerEvent: {}
+[24.784034] (-) TimerEvent: {}
+[24.884459] (-) TimerEvent: {}
+[24.984882] (-) TimerEvent: {}
+[25.085884] (-) TimerEvent: {}
+[25.186307] (-) TimerEvent: {}
+[25.286768] (-) TimerEvent: {}
+[25.387193] (-) TimerEvent: {}
+[25.487612] (-) TimerEvent: {}
+[25.588035] (-) TimerEvent: {}
+[25.688510] (-) TimerEvent: {}
+[25.788974] (-) TimerEvent: {}
+[25.890015] (-) TimerEvent: {}
+[25.913753] (cartographer) StdoutLine: {'line': b'[  9%] \x1b[32m\x1b[1mLinking CXX static library ../lib/libgtest.a\x1b[0m\n'}
+[25.990161] (-) TimerEvent: {}
+[26.090870] (-) TimerEvent: {}
+[26.191352] (-) TimerEvent: {}
+[26.291844] (-) TimerEvent: {}
+[26.337962] (cartographer) StdoutLine: {'line': b'[  9%] Built target gtest\n'}
+[26.355115] (cartographer) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/io/points_batch.cc.o\x1b[0m\n'}
+[26.380082] (cartographer) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o\x1b[0m\n'}
+[26.391983] (-) TimerEvent: {}
+[26.493130] (-) TimerEvent: {}
+[26.593555] (-) TimerEvent: {}
+[26.694370] (-) TimerEvent: {}
+[26.795094] (-) TimerEvent: {}
+[26.895839] (-) TimerEvent: {}
+[26.996551] (-) TimerEvent: {}
+[27.098833] (-) TimerEvent: {}
+[27.201629] (-) TimerEvent: {}
+[27.302098] (-) TimerEvent: {}
+[27.402611] (-) TimerEvent: {}
+[27.503140] (-) TimerEvent: {}
+[27.574899] (cartographer) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/io/points_processor_pipeline_builder.cc.o\x1b[0m\n'}
+[27.603272] (-) TimerEvent: {}
+[27.705358] (-) TimerEvent: {}
+[27.807700] (-) TimerEvent: {}
+[27.909573] (-) TimerEvent: {}
+[28.010006] (-) TimerEvent: {}
+[28.058337] (cartographer) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/io/probability_grid_points_processor.cc.o\x1b[0m\n'}
+[28.110159] (-) TimerEvent: {}
+[28.212618] (-) TimerEvent: {}
+[28.315342] (-) TimerEvent: {}
+[28.421569] (-) TimerEvent: {}
+[28.525604] (-) TimerEvent: {}
+[28.626064] (-) TimerEvent: {}
+[28.726574] (-) TimerEvent: {}
+[28.827068] (-) TimerEvent: {}
+[28.927582] (-) TimerEvent: {}
+[29.028015] (-) TimerEvent: {}
+[29.128729] (-) TimerEvent: {}
+[29.229446] (-) TimerEvent: {}
+[29.330251] (-) TimerEvent: {}
+[29.430672] (-) TimerEvent: {}
+[29.531129] (-) TimerEvent: {}
+[29.633582] (-) TimerEvent: {}
+[29.736607] (-) TimerEvent: {}
+[29.837309] (-) TimerEvent: {}
+[29.937896] (-) TimerEvent: {}
+[30.067676] (-) TimerEvent: {}
+[30.172132] (-) TimerEvent: {}
+[30.216424] (cartographer) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/io/proto_stream.cc.o\x1b[0m\n'}
+[30.272273] (-) TimerEvent: {}
+[30.301856] (cartographer) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/io/proto_stream_deserializer.cc.o\x1b[0m\n'}
+[30.372445] (-) TimerEvent: {}
+[30.473134] (-) TimerEvent: {}
+[30.573952] (-) TimerEvent: {}
+[30.674415] (-) TimerEvent: {}
+[30.774922] (-) TimerEvent: {}
+[30.875748] (-) TimerEvent: {}
+[30.977160] (-) TimerEvent: {}
+[31.078089] (-) TimerEvent: {}
+[31.180127] (-) TimerEvent: {}
+[31.281508] (-) TimerEvent: {}
+[31.382587] (-) TimerEvent: {}
+[31.483785] (-) TimerEvent: {}
+[31.557660] (cartographer) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/io/serialization_format_migration.cc.o\x1b[0m\n'}
+[31.583937] (-) TimerEvent: {}
+[31.686375] (-) TimerEvent: {}
+[31.787236] (-) TimerEvent: {}
+[31.888617] (-) TimerEvent: {}
+[31.989040] (-) TimerEvent: {}
+[32.089500] (-) TimerEvent: {}
+[32.190204] (-) TimerEvent: {}
+[32.250361] (cartographer) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/io/submap_painter.cc.o\x1b[0m\n'}
+[32.290364] (-) TimerEvent: {}
+[32.391521] (-) TimerEvent: {}
+[32.492196] (-) TimerEvent: {}
+[32.592920] (-) TimerEvent: {}
+[32.693612] (-) TimerEvent: {}
+[32.794290] (-) TimerEvent: {}
+[32.894963] (-) TimerEvent: {}
+[32.995690] (-) TimerEvent: {}
+[33.096482] (-) TimerEvent: {}
+[33.197213] (-) TimerEvent: {}
+[33.297967] (-) TimerEvent: {}
+[33.398698] (-) TimerEvent: {}
+[33.499897] (-) TimerEvent: {}
+[33.600653] (-) TimerEvent: {}
+[33.701476] (-) TimerEvent: {}
+[33.802153] (-) TimerEvent: {}
+[33.902956] (-) TimerEvent: {}
+[34.003634] (-) TimerEvent: {}
+[34.104323] (-) TimerEvent: {}
+[34.205031] (-) TimerEvent: {}
+[34.305858] (-) TimerEvent: {}
+[34.406569] (-) TimerEvent: {}
+[34.507289] (-) TimerEvent: {}
+[34.608027] (-) TimerEvent: {}
+[34.665880] (cartographer) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/io/vertical_range_filtering_points_processor.cc.o\x1b[0m\n'}
+[34.708158] (-) TimerEvent: {}
+[34.772519] (cartographer) StdoutLine: {'line': b'[ 12%] \x1b[32m\x1b[1mLinking CXX static library ../lib/libgmock.a\x1b[0m\n'}
+[34.808331] (-) TimerEvent: {}
+[34.908874] (-) TimerEvent: {}
+[35.009436] (-) TimerEvent: {}
+[35.102623] (cartographer) StdoutLine: {'line': b'[ 12%] Built target gmock\n'}
+[35.109566] (-) TimerEvent: {}
+[35.122602] (cartographer) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/io/xray_points_processor.cc.o\x1b[0m\n'}
+[35.209690] (-) TimerEvent: {}
+[35.310148] (-) TimerEvent: {}
+[35.410620] (-) TimerEvent: {}
+[35.511095] (-) TimerEvent: {}
+[35.611570] (-) TimerEvent: {}
+[35.711973] (-) TimerEvent: {}
+[35.812491] (-) TimerEvent: {}
+[35.913092] (-) TimerEvent: {}
+[36.013603] (-) TimerEvent: {}
+[36.114115] (-) TimerEvent: {}
+[36.214635] (-) TimerEvent: {}
+[36.315127] (-) TimerEvent: {}
+[36.415741] (-) TimerEvent: {}
+[36.516380] (-) TimerEvent: {}
+[36.616970] (-) TimerEvent: {}
+[36.717979] (-) TimerEvent: {}
+[36.822749] (-) TimerEvent: {}
+[36.923457] (-) TimerEvent: {}
+[37.023938] (-) TimerEvent: {}
+[37.124390] (-) TimerEvent: {}
+[37.225503] (-) TimerEvent: {}
+[37.326978] (-) TimerEvent: {}
+[37.429549] (-) TimerEvent: {}
+[37.530904] (-) TimerEvent: {}
+[37.633503] (-) TimerEvent: {}
+[37.734076] (-) TimerEvent: {}
+[37.834797] (-) TimerEvent: {}
+[37.935648] (-) TimerEvent: {}
+[38.036358] (-) TimerEvent: {}
+[38.137307] (-) TimerEvent: {}
+[38.249124] (-) TimerEvent: {}
+[38.404859] (-) TimerEvent: {}
+[38.899155] (-) TimerEvent: {}
+[41.260331] (-) TimerEvent: {}
+[43.771588] (-) TimerEvent: {}
+[50.781988] (-) TimerEvent: {}
+[57.839109] (-) TimerEvent: {}
+[69.561055] (-) TimerEvent: {}
+[75.082183] (-) TimerEvent: {}
+[75.260072] (-) TimerEvent: {}
+[75.452661] (-) TimerEvent: {}
+[77.836476] (-) TimerEvent: {}
+[80.621545] (-) TimerEvent: {}
+[85.579894] (-) TimerEvent: {}
+[91.430913] (-) TimerEvent: {}
+[94.991042] (-) TimerEvent: {}
+[98.525501] (-) TimerEvent: {}
+[104.446130] (-) TimerEvent: {}
+[117.195463] (-) TimerEvent: {}
+[122.769640] (-) TimerEvent: {}
+[128.985118] (-) TimerEvent: {}

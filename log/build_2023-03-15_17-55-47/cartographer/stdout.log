@@ -1,0 +1,121 @@
+-- The C compiler identification is GNU 11.3.0
+-- The CXX compiler identification is GNU 11.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Build type: Release
+Files /home/tolasing/ros2_ws/build/cartographer/AllFiles.cmake and - differ
+-- Found Python: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found GMock: gmock_main  
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: iostreams 
+-- Found required Ceres dependency: Eigen version 3.4.0 in /usr/include/eigen3
+-- Found required Ceres dependency: glog
+-- Found required Ceres dependency: gflags
+-- Found Ceres version: 2.0.0 installed in: /usr with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SuiteSparse, CXSparse, SchurSpecializations, Multithreading]
+-- Found Lua: /usr/lib/x86_64-linux-gnu/liblua5.2.so;/usr/lib/x86_64-linux-gnu/libm.so (found version "5.2.4") 
+-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3.0.0") 
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+-- Checking for one of the modules 'cairo>=1.12.16'
+-- Found Sphinx: /usr/bin/sphinx-build  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/tolasing/ros2_ws/build/cartographer
+[  0%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/transform/proto/transform.proto[0m
+[  0%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/ground_truth/proto/relations.proto[0m
+[  0%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/common/proto/ceres_solver_options.proto[0m
+[  0%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/mapping/proto/connected_components.proto[0m
+[  1%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/mapping/proto/cell_limits_2d.proto[0m
+[  1%] Built target cartographer_detect_changes
+[  1%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/mapping/proto/grid_2d.proto[0m
+[  2%] [32mBuilding CXX object googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[  2%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/mapping/proto/grid_2d_options.proto[0m
+[  2%] [34m[1mBuilding documentation.[0m
+[  3%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/mapping/proto/hybrid_grid.proto[0m
+[  3%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/mapping/proto/map_builder_options.proto[0m
+[  3%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/mapping/proto/local_trajectory_builder_options_2d.proto[0m
+[  3%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/mapping/proto/motion_filter_options.proto[0m
+[  4%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/mapping/proto/map_limits.proto[0m
+[  4%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/mapping/proto/local_trajectory_builder_options_3d.proto[0m
+[  4%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/mapping/proto/normal_estimation_options_2d.proto[0m
+[  4%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/mapping/proto/pose_extrapolator_options.proto[0m
+[  5%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/mapping/proto/pose_graph.proto[0m
+[  5%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/mapping/proto/pose_graph/constraint_builder_options.proto[0m
+[  6%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/mapping/proto/probability_grid.proto[0m
+[  6%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/mapping/proto/pose_graph_options.proto[0m
+[  6%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/mapping/proto/pose_graph/optimization_problem_options.proto[0m
+[  6%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/mapping/proto/probability_grid_range_data_inserter_options_2d.proto[0m
+[  6%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/mapping/proto/range_data_inserter_options.proto[0m
+[  6%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/mapping/proto/range_data_inserter_options_3d.proto[0m
+[  6%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/mapping/proto/scan_matching/ceres_scan_matcher_options_3d.proto[0m
+[  6%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/mapping/proto/scan_matching/fast_correlative_scan_matcher_options_2d.proto[0m
+[  7%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/mapping/proto/scan_matching/ceres_scan_matcher_options_2d.proto[0m
+[  7%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/mapping/proto/scan_matching/fast_correlative_scan_matcher_options_3d.proto[0m
+[  7%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/mapping/proto/serialization.proto[0m
+[  8%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/mapping/proto/scan_matching/real_time_correlative_scan_matcher_options.proto[0m
+[  8%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/mapping/proto/submap.proto[0m
+[  8%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/mapping/proto/submap_visualization.proto[0m
+[  8%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/mapping/proto/trajectory.proto[0m
+[  9%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/mapping/proto/trajectory_builder_options.proto[0m
+[ 10%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/mapping/proto/submaps_options_2d.proto[0m
+[ 10%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/mapping/proto/submaps_options_3d.proto[0m
+[ 10%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/mapping/proto/trajectory_node_data.proto[0m
+[ 10%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/mapping/proto/tsdf_2d.proto[0m
+[ 11%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/sensor/proto/adaptive_voxel_filter_options.proto[0m
+[ 11%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/mapping/proto/tsdf_range_data_inserter_options_2d.proto[0m
+[ 11%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/sensor/proto/sensor.proto[0m
+[ 11%] [34m[1mRunning C++ protocol buffer compiler on /home/tolasing/ros2_ws/src/cartographer/cartographer/transform/proto/timestamped_transform.proto[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/common/configuration_file_resolver.cc.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/common/fixed_ratio_sampler.cc.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/common/histogram.cc.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/common/internal/ceres_solver_options.cc.o[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/common/internal/testing/thread_pool_for_testing.cc.o[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/common/lua_parameter_dictionary.cc.o[0m
+[01mRunning Sphinx v4.3.2[39;49;00m
+[01mmaking output directory... [39;49;00mdone
+[01mbuilding [mo]: [39;49;00mtargets for 0 po files that are out of date
+[01mbuilding [html]: [39;49;00mtargets for 6 source files that are out of date
+[01mupdating environment: [39;49;00m[new config] 6 added, 0 changed, 0 removed
+[01mreading sources... [39;49;00m[ 16%] [35mconfiguration[39;49;00m                                         
+[01mreading sources... [39;49;00m[ 33%] [35mcost_functions[39;49;00m                                        
+[01mreading sources... [39;49;00m[ 50%] [35mevaluation[39;49;00m                                            
+[01mreading sources... [39;49;00m[ 66%] [35mindex[39;49;00m                                                 
+[01mreading sources... [39;49;00m[ 83%] [35mpbstream_migration[39;49;00m                                    
+[01mreading sources... [39;49;00m[100%] [35mterminology[39;49;00m                                           
+
+[01mlooking for now-outdated files... [39;49;00mnone found
+[01mpickling environment... [39;49;00mdone
+[01mchecking consistency... [39;49;00mdone
+[01mpreparing documents... [39;49;00mdone
+[01mwriting output... [39;49;00m[ 16%] [32mconfiguration[39;49;00m                                          
+[01mwriting output... [39;49;00m[ 33%] [32mcost_functions[39;49;00m                                         
+[01mwriting output... [39;49;00m[ 50%] [32mevaluation[39;49;00m                                             
+[01mwriting output... [39;49;00m[ 66%] [32mindex[39;49;00m                                                  
+[01mwriting output... [39;49;00m[ 83%] [32mpbstream_migration[39;49;00m                                     
+[01mwriting output... [39;49;00m[100%] [32mterminology[39;49;00m                                            
+
+[01mgenerating indices... [39;49;00mgenindex done
+[01mwriting additional pages... [39;49;00msearch done
+[01mcopying images... [39;49;00m[ 50%] [33mautogenerate_groundtruth.png[39;49;00m                           
+[01mcopying images... [39;49;00m[100%] [33mhigh_level_system_overview.png[39;49;00m                         
+
+[01mcopying static files... [39;49;00mdone
+[01mcopying extra files... [39;49;00mdone
+[01mdumping search index in English (code: en)... [39;49;00mdone
+[01mdumping object inventory... [39;49;00mdone
+[01mbuild succeeded.[39;49;00m
+
+The HTML pages are in html.
+[ 13%] Built target build_doc
+[ 13%] [32mBuilding CXX object CMakeFiles/cartographer.dir/cartographer/common/task.cc.o[0m

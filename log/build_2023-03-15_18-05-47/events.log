@@ -1,0 +1,204 @@
+[0.000000] (-) TimerEvent: {}
+[0.000656] (-) JobUnselected: {'identifier': 'arduino_test'}
+[0.001749] (-) JobUnselected: {'identifier': 'asio_cmake_module'}
+[0.001838] (-) JobUnselected: {'identifier': 'cartographer'}
+[0.002488] (-) JobUnselected: {'identifier': 'gazebo_sim'}
+[0.002572] (-) JobUnselected: {'identifier': 'io_context'}
+[0.002628] (-) JobUnselected: {'identifier': 'motor_control'}
+[0.003180] (-) JobUnselected: {'identifier': 'nav2_course'}
+[0.003241] (-) JobUnselected: {'identifier': 'nav2_project'}
+[0.003293] (-) JobUnselected: {'identifier': 'serial'}
+[0.003339] (-) JobUnselected: {'identifier': 'serial_driver'}
+[0.003691] (-) JobUnselected: {'identifier': 'service_pkg'}
+[0.003756] (-) JobUnselected: {'identifier': 'udp_driver'}
+[0.003822] (prototype) JobQueued: {'identifier': 'prototype', 'dependencies': OrderedDict()}
+[0.003881] (prototype) JobStarted: {'identifier': 'prototype'}
+[0.021069] (prototype) JobProgress: {'identifier': 'prototype', 'progress': 'cmake'}
+[0.021801] (prototype) Command: {'cmd': ['/usr/bin/cmake', '/home/tolasing/ros2_ws/src/prototype', '-DCMAKE_INSTALL_PREFIX=/home/tolasing/ros2_ws/install/prototype'], 'cwd': '/home/tolasing/ros2_ws/build/prototype', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'tolasing'), ('ROS_PACKAGE_PATH', '/home/tolasing/ros2_ws/install/serial/share'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tolasing/ros2_ws/install/serial_driver/lib:/home/tolasing/ros2_ws/install/io_context/lib:/usr/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tolasing'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.75.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1107'), ('SYSTEMD_EXEC_PID', '1265'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '64782'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/tolasing/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'tolasing'), ('JOURNAL_STREAM', '8:34195'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/tolasing/ros2_ws/install/serial/lib/x86_64-linux-gnu/pkgconfig:/home/tolasing/ros2_ws/install/serial/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tolasing'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/tolasing/.local/bin:/opt/ros/humble/bin:/home/tolasing/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/tolasing-zen:@/tmp/.ICE-unix/1224,unix/tolasing-zen:/tmp/.ICE-unix/1224'), ('INVOCATION_ID', '9fda2d819b9345e297a20f7a8a1a4ffa'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.OALV11'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9a34650364.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/service_pkg:/home/tolasing/ros2_ws/install/nav2_project:/home/tolasing/ros2_ws/install/nav2_course:/home/tolasing/ros2_ws/install/asio_cmake_module:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tolasing/ros2_ws/build/prototype'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tolasing/ros2_ws/install/service_pkg/lib/python3.10/site-packages:/home/tolasing/ros2_ws/install/nav2_project/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/service_pkg:/home/tolasing/ros2_ws/install/nav2_project:/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/install/nav2_course:/home/tolasing/ros2_ws/install/asio_cmake_module:/usr/lib/x86_64-linux-gnu/libserial.so:/usr/lib/x86_64-linux-gnu/libserial.so:')]), 'shell': False}
+[0.099652] (-) TimerEvent: {}
+[0.102767] (prototype) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[0.178335] (prototype) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[0.187662] (prototype) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199770] (-) TimerEvent: {}
+[0.273310] (prototype) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.285774] (prototype) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.286150] (prototype) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.286589] (prototype) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.290558] (prototype) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.299905] (-) TimerEvent: {}
+[0.400310] (-) TimerEvent: {}
+[0.404428] (prototype) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.446145] (prototype) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.446461] (prototype) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.446922] (prototype) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.450097] (prototype) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.500593] (-) TimerEvent: {}
+[0.600930] (-) TimerEvent: {}
+[0.699494] (prototype) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter \n'}
+[0.701010] (-) TimerEvent: {}
+[0.801347] (-) TimerEvent: {}
+[0.868306] (prototype) StdoutLine: {'line': b'-- Found rclpy: 3.3.7 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[0.871265] (prototype) StdoutLine: {'line': b'-- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[0.901461] (-) TimerEvent: {}
+[0.937989] (prototype) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.944726] (prototype) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.955988] (prototype) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.974068] (prototype) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.998909] (prototype) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.001544] (-) TimerEvent: {}
+[1.091813] (prototype) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.095185] (prototype) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.101644] (-) TimerEvent: {}
+[1.202010] (-) TimerEvent: {}
+[1.241581] (prototype) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.293535] (prototype) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.302105] (-) TimerEvent: {}
+[1.355577] (prototype) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.368631] (prototype) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.402238] (-) TimerEvent: {}
+[1.456491] (prototype) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.456939] (prototype) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.502381] (-) TimerEvent: {}
+[1.554807] (prototype) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.556876] (prototype) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.602499] (-) TimerEvent: {}
+[1.702922] (-) TimerEvent: {}
+[1.792426] (prototype) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[1.794729] (prototype) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[1.803057] (-) TimerEvent: {}
+[1.819278] (prototype) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[1.903177] (-) TimerEvent: {}
+[1.971406] (prototype) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[2.003301] (-) TimerEvent: {}
+[2.041277] (prototype) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[2.076189] (prototype) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[2.103412] (-) TimerEvent: {}
+[2.126731] (prototype) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[2.160354] (prototype) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[2.170964] (prototype) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.13.0\n'}
+[2.183152] (prototype) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[2.186410] (prototype) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[2.187083] (prototype) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[2.194349] (prototype) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[2.203549] (-) TimerEvent: {}
+[2.213220] (prototype) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[2.259278] (prototype) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[2.270772] (prototype) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[2.283092] (prototype) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[2.293702] (prototype) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[2.294059] (prototype) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[2.303657] (-) TimerEvent: {}
+[2.312898] (prototype) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[2.313300] (prototype) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[2.326718] (prototype) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[2.327016] (prototype) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[2.337449] (prototype) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[2.337814] (prototype) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[2.346933] (prototype) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[2.347275] (prototype) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[2.355609] (prototype) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[2.403789] (-) TimerEvent: {}
+[2.504232] (-) TimerEvent: {}
+[2.573511] (prototype) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.13.0\n'}
+[2.577301] (prototype) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[2.578132] (prototype) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[2.601802] (prototype) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[2.604306] (-) TimerEvent: {}
+[2.617375] (prototype) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[2.623534] (prototype) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[2.646314] (prototype) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[2.703171] (prototype) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[2.704408] (-) TimerEvent: {}
+[2.712728] (prototype) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[2.733014] (prototype) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[2.778428] (prototype) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[2.782389] (prototype) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[2.783013] (prototype) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[2.804645] (-) TimerEvent: {}
+[2.808426] (prototype) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.13.0\n'}
+[2.815334] (prototype) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[2.837787] (prototype) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[2.884549] (prototype) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[2.889436] (prototype) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[2.890724] (prototype) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[2.891710] (prototype) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[2.893406] (prototype) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[2.895888] (prototype) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[2.904596] (-) TimerEvent: {}
+[2.914958] (prototype) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[2.915902] (prototype) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[2.920153] (prototype) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[2.921076] (prototype) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[2.921872] (prototype) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.13.0\n'}
+[2.927740] (prototype) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[2.928541] (prototype) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[3.004722] (-) TimerEvent: {}
+[3.041098] (prototype) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[3.055619] (prototype) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[3.075787] (prototype) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[3.104838] (-) TimerEvent: {}
+[3.119206] (prototype) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[3.127625] (prototype) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[3.146957] (prototype) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[3.193731] (prototype) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[3.194297] (prototype) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[3.194956] (prototype) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.13.0\n'}
+[3.195569] (prototype) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[3.202834] (prototype) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[3.203568] (prototype) StdoutLine: {'line': b"-- Checking for module 'tbb'\n"}
+[3.204907] (-) TimerEvent: {}
+[3.227138] (prototype) StdoutLine: {'line': b'--   Found tbb, version 2021.5.0\n'}
+[3.283721] (prototype) StdoutLine: {'line': b'-- Found urdf: 2.6.0 (/opt/ros/humble/share/urdf/cmake)\n'}
+[3.305038] (-) TimerEvent: {}
+[3.351383] (prototype) StdoutLine: {'line': b'-- Found xacro: 2.0.8 (/opt/ros/humble/share/xacro/cmake)\n'}
+[3.355019] (prototype) StdoutLine: {'line': b'-- Found ros2_control: 2.20.0 (/opt/ros/humble/share/ros2_control/cmake)\n'}
+[3.358335] (prototype) StdoutLine: {'line': b'-- Found gazebo_ros2_control: 0.4.0 (/opt/ros/humble/share/gazebo_ros2_control/cmake)\n'}
+[3.367801] (prototype) StdoutLine: {'line': b'-- Found joint_state_broadcaster: 2.15.0 (/opt/ros/humble/share/joint_state_broadcaster/cmake)\n'}
+[3.405166] (-) TimerEvent: {}
+[3.505595] (-) TimerEvent: {}
+[3.605976] (-) TimerEvent: {}
+[3.706342] (-) TimerEvent: {}
+[3.806726] (-) TimerEvent: {}
+[3.907089] (-) TimerEvent: {}
+[4.007459] (-) TimerEvent: {}
+[4.107851] (-) TimerEvent: {}
+[4.208281] (-) TimerEvent: {}
+[4.308654] (-) TimerEvent: {}
+[4.409007] (-) TimerEvent: {}
+[4.460211] (prototype) StdoutLine: {'line': b'-- Found parameter_traits: 0.3.0 (/opt/ros/humble/share/parameter_traits/cmake)\n'}
+[4.509127] (-) TimerEvent: {}
+[4.513059] (prototype) StdoutLine: {'line': b'-- Found joint_trajectory_controller: 2.15.0 (/opt/ros/humble/share/joint_trajectory_controller/cmake)\n'}
+[4.609241] (-) TimerEvent: {}
+[4.709614] (-) TimerEvent: {}
+[4.810111] (-) TimerEvent: {}
+[4.910590] (-) TimerEvent: {}
+[5.011069] (-) TimerEvent: {}
+[5.080146] (prototype) StdoutLine: {'line': b'-- Found velocity_controllers: 2.15.0 (/opt/ros/humble/share/velocity_controllers/cmake)\n'}
+[5.111192] (-) TimerEvent: {}
+[5.211713] (-) TimerEvent: {}
+[5.312245] (-) TimerEvent: {}
+[5.412706] (-) TimerEvent: {}
+[5.461879] (prototype) StdoutLine: {'line': b'-- Found std_srvs: 4.2.3 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[5.499597] (prototype) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:21 (find_package):\n'}
+[5.500133] (prototype) StderrLine: {'line': b'  By not providing "Findmotor_control.cmake" in CMAKE_MODULE_PATH this\n'}
+[5.500335] (prototype) StderrLine: {'line': b'  project has asked CMake to find a package configuration file provided by\n'}
+[5.500547] (prototype) StderrLine: {'line': b'  "motor_control", but CMake did not find one.\n'}
+[5.500756] (prototype) StderrLine: {'line': b'\n'}
+[5.500945] (prototype) StderrLine: {'line': b'  Could not find a package configuration file provided by "motor_control"\n'}
+[5.501209] (prototype) StderrLine: {'line': b'  with any of the following names:\n'}
+[5.501458] (prototype) StderrLine: {'line': b'\n'}
+[5.501714] (prototype) StderrLine: {'line': b'    motor_controlConfig.cmake\n'}
+[5.501963] (prototype) StderrLine: {'line': b'    motor_control-config.cmake\n'}
+[5.502218] (prototype) StderrLine: {'line': b'\n'}
+[5.502465] (prototype) StderrLine: {'line': b'  Add the installation prefix of "motor_control" to CMAKE_PREFIX_PATH or set\n'}
+[5.502729] (prototype) StderrLine: {'line': b'  "motor_control_DIR" to a directory containing one of the above files.  If\n'}
+[5.502999] (prototype) StderrLine: {'line': b'  "motor_control" provides a separate development package or SDK, be sure it\n'}
+[5.503265] (prototype) StderrLine: {'line': b'  has been installed.\n'}
+[5.503518] (prototype) StderrLine: {'line': b'\n'}
+[5.503776] (prototype) StderrLine: {'line': b'\x1b[0m\n'}
+[5.504038] (prototype) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[5.504315] (prototype) StdoutLine: {'line': b'See also "/home/tolasing/ros2_ws/build/prototype/CMakeFiles/CMakeOutput.log".\n'}
+[5.512877] (-) TimerEvent: {}
+[5.523405] (prototype) CommandEnded: {'returncode': 1}
+[5.561045] (prototype) JobEnded: {'identifier': 'prototype', 'rc': 1}
+[5.571879] (-) EventReactorShutdown: {}

@@ -1,0 +1,68 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//launch/auto_run.py
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//launch/control_velocity.launch.py
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//launch/launch_arduino.launch.py
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//launch/launch_mo.launch.py
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//launch/prototype_publisher.launch.py
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//launch/spawn.launch.xml
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//launch/spawn_pos.launch.py
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//worlds/empty_world.world
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//models/box_room/meshes/box_room.dae
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//models/box_room/meshes/chambre.png
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//models/model.config
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//models/model.sdf
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//urdf/prototype.control.xacro
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//urdf/prototype.xacro
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/Material Base Color.png
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/Material.005 Base Color.png
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/crane base.png
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/crane stand.001.png
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/crane.blend
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/crane.blend1
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/crane.dae
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/crane_base.png
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/crane_stand.png
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/cute_cube.blend
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/cute_cube.dae
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/first wheel.blend
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/gear color.png
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/lambert3_baseColor.png
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/motor .png
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/prototype.blend
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/prototype.dae
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/sensors/realsense.dae
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/sensors/rplidar.dae
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/sensors/rplidartexture.png
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/textures/lambert3_baseColor.png
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//config/controller_config.yaml
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//config/controller_position.yaml
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//config/controller_shaft.yaml
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//config/controller_velocity.yaml
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//config/mapper_params_online_async.yaml
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//config/rr_control.yaml
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//config/velocity.yaml
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//scripts/move_laser.py
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//scripts/move_shaft.py
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//scripts/publisher.py
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//scripts/service_sample.py
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//scripts/service_velocity.py
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//scripts/test.py
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype//scripts/velocity.py
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/lib/prototype/move_laser.py
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/lib/prototype/move_shaft.py
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/ament_index/resource_index/package_run_dependencies/prototype
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/ament_index/resource_index/parent_prefix_path/prototype
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype/environment/ament_prefix_path.sh
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype/environment/ament_prefix_path.dsv
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype/environment/path.sh
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype/environment/path.dsv
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype/local_setup.bash
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype/local_setup.sh
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype/local_setup.zsh
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype/local_setup.dsv
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype/package.dsv
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/ament_index/resource_index/packages/prototype
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype/cmake/prototypeConfig.cmake
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype/cmake/prototypeConfig-version.cmake
+-- Symlinking: /home/tolasing/ros2_ws/install/prototype/share/prototype/package.xml

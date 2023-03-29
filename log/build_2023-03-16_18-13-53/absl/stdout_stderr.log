@@ -1,0 +1,83 @@
+[35m[1mConsolidate compiler generated dependencies of target spinlock_wait[0m
+[35m[1mConsolidate compiler generated dependencies of target dynamic_annotations[0m
+[35m[1mConsolidate compiler generated dependencies of target strings_internal[0m
+[35m[1mConsolidate compiler generated dependencies of target int128[0m
+[35m[1mConsolidate compiler generated dependencies of target time_zone[0m
+[  2%] Built target dynamic_annotations
+[  4%] Built target spinlock_wait
+[  7%] Built target strings_internal
+[ 17%] Built target time_zone
+[35m[1mConsolidate compiler generated dependencies of target leak_check[0m
+[35m[1mConsolidate compiler generated dependencies of target base[0m
+[35m[1mConsolidate compiler generated dependencies of target leak_check_disable[0m
+[35m[1mConsolidate compiler generated dependencies of target civil_time[0m
+[35m[1mConsolidate compiler generated dependencies of target city[0m
+[ 19%] Built target int128
+[ 21%] Built target leak_check
+[ 22%] Built target leak_check_disable
+[ 30%] Built target base
+[ 32%] Built target civil_time
+[ 34%] Built target city
+[35m[1mConsolidate compiler generated dependencies of target throw_delegate[0m
+[35m[1mConsolidate compiler generated dependencies of target malloc_internal[0m
+[ 36%] Built target throw_delegate
+[35m[1mConsolidate compiler generated dependencies of target debugging_internal[0m
+[35m[1mConsolidate compiler generated dependencies of target demangle_internal[0m
+[35m[1mConsolidate compiler generated dependencies of target scoped_set_env[0m
+[ 38%] Built target malloc_internal
+[35m[1mConsolidate compiler generated dependencies of target bad_optional_access[0m
+[35m[1mConsolidate compiler generated dependencies of target bad_variant_access[0m
+[ 41%] Built target debugging_internal
+[ 43%] Built target demangle_internal
+[ 45%] Built target bad_optional_access
+[ 47%] Built target scoped_set_env
+[35m[1mConsolidate compiler generated dependencies of target bad_any_cast_impl[0m
+[ 49%] Built target bad_variant_access
+[35m[1mConsolidate compiler generated dependencies of target stacktrace[0m
+[35m[1mConsolidate compiler generated dependencies of target strings[0m
+[35m[1mConsolidate compiler generated dependencies of target graphcycles_internal[0m
+[ 50%] Built target bad_any_cast_impl
+[ 51%] [32mBuilding CXX object absl/debugging/CMakeFiles/symbolize.dir/symbolize.cc.o[0m
+[ 52%] [32mBuilding CXX object absl/synchronization/CMakeFiles/graphcycles_internal.dir/internal/graphcycles.cc.o[0m
+[ 54%] Built target stacktrace
+[ 67%] Built target strings
+[ 68%] [32mBuilding CXX object absl/time/CMakeFiles/time.dir/clock.cc.o[0m
+[ 69%] [32mBuilding CXX object absl/time/CMakeFiles/time.dir/duration.cc.o[0m
+[ 70%] [32mBuilding CXX object absl/time/CMakeFiles/time.dir/civil_time.cc.o[0m
+[ 71%] [32mBuilding CXX object absl/time/CMakeFiles/time.dir/format.cc.o[0m
+[ 72%] [32mBuilding CXX object absl/hash/CMakeFiles/hash.dir/internal/hash.cc.o[0m
+[ 73%] [32mBuilding CXX object absl/strings/CMakeFiles/str_format_internal.dir/internal/str_format/arg.cc.o[0m
+[01m[K/home/tolasing/ros2_ws/abseil-cpp/absl/synchronization/internal/graphcycles.cc:[m[K In member function ‘[01m[Kvoid absl::synchronization_internal::GraphCycles::RemoveNode(void*)[m[K’:
+[01m[K/home/tolasing/ros2_ws/abseil-cpp/absl/synchronization/internal/graphcycles.cc:450:26:[m[K [01;31m[Kerror: [m[K‘[01m[Knumeric_limits[m[K’ is not a member of ‘[01m[Kstd[m[K’
+  450 |   if (x->version == std::[01;31m[Knumeric_limits[m[K<uint32_t>::max()) {
+      |                          [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/tolasing/ros2_ws/abseil-cpp/absl/synchronization/internal/graphcycles.cc:450:49:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+  450 |   if (x->version == std::numeric_limits<uint32_t[01;31m[K>[m[K::max()) {
+      |                                                 [01;31m[K^[m[K
+[01m[K/home/tolasing/ros2_ws/abseil-cpp/absl/synchronization/internal/graphcycles.cc:450:52:[m[K [01;31m[Kerror: [m[K‘[01m[K::max[m[K’ has not been declared; did you mean ‘[01m[Kstd::max[m[K’?
+  450 |   if (x->version == std::numeric_limits<uint32_t>::[01;31m[Kmax[m[K()) {
+      |                                                    [01;31m[K^~~[m[K
+      |                                                    [32m[Kstd::max[m[K
+In file included from [01m[K/usr/include/c++/11/algorithm:62[m[K,
+                 from [01m[K/home/tolasing/ros2_ws/abseil-cpp/absl/synchronization/internal/graphcycles.cc:38[m[K:
+[01m[K/usr/include/c++/11/bits/stl_algo.h:3467:5:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::max[m[K’ declared here
+ 3467 |     [01;36m[Kmax[m[K(initializer_list<_Tp> __l, _Compare __comp)
+      |     [01;36m[K^~~[m[K
+[ 74%] [32m[1mLinking CXX static library libabsl_symbolize.a[0m
+[ 75%] [32mBuilding CXX object absl/time/CMakeFiles/time.dir/time.cc.o[0m
+[ 76%] [32mBuilding CXX object absl/strings/CMakeFiles/str_format_internal.dir/internal/str_format/bind.cc.o[0m
+gmake[2]: *** [absl/synchronization/CMakeFiles/graphcycles_internal.dir/build.make:76: absl/synchronization/CMakeFiles/graphcycles_internal.dir/internal/graphcycles.cc.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:1034: absl/synchronization/CMakeFiles/graphcycles_internal.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 76%] Built target symbolize
+[ 77%] [32mBuilding CXX object absl/strings/CMakeFiles/str_format_internal.dir/internal/str_format/extension.cc.o[0m
+[ 78%] [32mBuilding CXX object absl/strings/CMakeFiles/str_format_internal.dir/internal/str_format/float_conversion.cc.o[0m
+[ 79%] [32mBuilding CXX object absl/strings/CMakeFiles/str_format_internal.dir/internal/str_format/output.cc.o[0m
+[ 80%] [32m[1mLinking CXX static library libabsl_hash.a[0m
+[ 81%] [32mBuilding CXX object absl/strings/CMakeFiles/str_format_internal.dir/internal/str_format/parser.cc.o[0m
+[ 81%] Built target hash
+[ 82%] [32m[1mLinking CXX static library libabsl_time.a[0m
+[ 82%] Built target time
+[ 83%] [32m[1mLinking CXX static library libabsl_str_format_internal.a[0m
+[ 83%] Built target str_format_internal
+gmake: *** [Makefile:136: all] Error 2

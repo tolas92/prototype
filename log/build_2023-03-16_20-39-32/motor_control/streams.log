@@ -1,0 +1,36 @@
+[0.018s] Invoking command in '/home/tolasing/ros2_ws/build/motor_control': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/ros2_mapping:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/asio_cmake_module /usr/bin/cmake --build /home/tolasing/ros2_ws/build/motor_control -- -j8 -l8
+[0.105s] [100%] Built target motor_control
+[0.127s] Invoked command in '/home/tolasing/ros2_ws/build/motor_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/ros2_mapping:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/asio_cmake_module /usr/bin/cmake --build /home/tolasing/ros2_ws/build/motor_control -- -j8 -l8
+[0.160s] Invoking command in '/home/tolasing/ros2_ws/build/motor_control': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/ros2_mapping:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/asio_cmake_module /usr/bin/cmake --install /home/tolasing/ros2_ws/build/motor_control
+[0.169s] -- Install configuration: ""
+[0.170s] -- Execute custom install script
+[0.171s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/motor_control/share/motor_control//motor_interface.xml
+[0.174s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/motor_control/lib/libmotor_control.so
+[0.174s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/motor_control/include/motor_control/comms.h
+[0.175s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/motor_control/include/motor_control/config.h
+[0.176s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/motor_control/include/motor_control/motor_interface.hpp
+[0.176s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/motor_control/include/motor_control/wheel.h
+[0.176s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/motor_control/share/motor_control//launch/launch_arduino.launch.py
+[0.177s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/motor_control/share/motor_control//config/controller_config.yaml
+[0.178s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/motor_control/share/motor_control/environment/library_path.sh
+[0.178s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/motor_control/share/motor_control/environment/library_path.dsv
+[0.181s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/motor_control/share/ament_index/resource_index/package_run_dependencies/motor_control
+[0.181s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/motor_control/share/ament_index/resource_index/parent_prefix_path/motor_control
+[0.181s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/motor_control/share/motor_control/environment/ament_prefix_path.sh
+[0.182s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/motor_control/share/motor_control/environment/ament_prefix_path.dsv
+[0.182s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/motor_control/share/motor_control/environment/path.sh
+[0.182s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/motor_control/share/motor_control/environment/path.dsv
+[0.182s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/motor_control/share/motor_control/local_setup.bash
+[0.183s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/motor_control/share/motor_control/local_setup.sh
+[0.183s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/motor_control/share/motor_control/local_setup.zsh
+[0.183s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/motor_control/share/motor_control/local_setup.dsv
+[0.183s] -- Symlinking: /home/tolasing/ros2_ws/install/motor_control/share/motor_control/package.dsv
+[0.189s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/motor_control/share/ament_index/resource_index/packages/motor_control
+[0.190s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/motor_control/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/motor_control
+[0.191s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/motor_control/share/motor_control/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.191s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/motor_control/share/motor_control/cmake/ament_cmake_export_libraries-extras.cmake
+[0.191s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/motor_control/share/motor_control/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.191s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/motor_control/share/motor_control/cmake/motor_controlConfig.cmake
+[0.192s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/motor_control/share/motor_control/cmake/motor_controlConfig-version.cmake
+[0.192s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/motor_control/share/motor_control/package.xml
+[0.211s] Invoked command in '/home/tolasing/ros2_ws/build/motor_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/ros2_mapping:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/asio_cmake_module /usr/bin/cmake --install /home/tolasing/ros2_ws/build/motor_control

@@ -1,0 +1,31 @@
+[0.954s] Invoking command in '/home/tolasing/ros2_ws/build/path_planner': PYTHONPATH=/home/tolasing/ros2_ws/build/path_planner/prefix_override:/home/tolasing/ros2_ws/install/path_planner/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/tolasing/ros2_ws/build/path_planner/build --no-deps install_data
+[1.252s] running develop
+[1.253s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.253s]   warnings.warn(
+[1.255s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.255s]   warnings.warn(
+[1.326s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.16.0-unknown is an invalid version and will not be supported in a future release
+[1.326s]   warnings.warn(
+[1.326s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 0.1.43ubuntu1 is an invalid version and will not be supported in a future release
+[1.326s]   warnings.warn(
+[1.327s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+[1.327s]   warnings.warn(
+[1.453s] running egg_info
+[1.453s] writing path_planner.egg-info/PKG-INFO
+[1.453s] writing dependency_links to path_planner.egg-info/dependency_links.txt
+[1.454s] writing entry points to path_planner.egg-info/entry_points.txt
+[1.454s] writing requirements to path_planner.egg-info/requires.txt
+[1.454s] writing top-level names to path_planner.egg-info/top_level.txt
+[1.456s] reading manifest file 'path_planner.egg-info/SOURCES.txt'
+[1.457s] writing manifest file 'path_planner.egg-info/SOURCES.txt'
+[1.458s] running build_ext
+[1.458s] Creating /home/tolasing/ros2_ws/install/path_planner/lib/python3.10/site-packages/path-planner.egg-link (link to .)
+[1.459s] Installing navigation_node script to /home/tolasing/ros2_ws/install/path_planner/lib/path_planner
+[1.459s] 
+[1.460s] Installed /home/tolasing/ros2_ws/build/path_planner
+[1.460s] running install_data
+[1.460s] copying config/nav_controller_server.yaml -> /home/tolasing/ros2_ws/install/path_planner/share/path_planner
+[1.460s] copying config/planner_server.yaml -> /home/tolasing/ros2_ws/install/path_planner/share/path_planner
+[1.460s] copying config/bt_navigator.yaml -> /home/tolasing/ros2_ws/install/path_planner/share/path_planner
+[1.460s] copying config/recovery_server.yaml -> /home/tolasing/ros2_ws/install/path_planner/share/path_planner
+[1.502s] Invoked command in '/home/tolasing/ros2_ws/build/path_planner' returned '0': PYTHONPATH=/home/tolasing/ros2_ws/build/path_planner/prefix_override:/home/tolasing/ros2_ws/install/path_planner/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/tolasing/ros2_ws/build/path_planner/build --no-deps install_data

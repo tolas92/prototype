@@ -1,0 +1,47 @@
+[0.101s] Invoking command in '/home/tolasing/ros2_ws/build/asio_cmake_module': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tolasing/ros2_ws/install/udp_driver:/home/tolasing/ros2_ws/install/service_pkg:/home/tolasing/ros2_ws/install/nav2_project:/home/tolasing/ros2_ws/install/joint_trajectory_publisher:/opt/ros/humble /usr/bin/cmake /home/tolasing/ros2_ws/src/transport_drivers/asio_cmake_module -DCMAKE_INSTALL_PREFIX=/home/tolasing/ros2_ws/install/asio_cmake_module
+[0.643s] -- The C compiler identification is GNU 11.3.0
+[0.643s] -- The CXX compiler identification is GNU 11.3.0
+[0.643s] -- Detecting C compiler ABI info
+[0.643s] -- Detecting C compiler ABI info - done
+[0.648s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.650s] -- Detecting C compile features
+[0.660s] -- Detecting C compile features - done
+[0.681s] -- Detecting CXX compiler ABI info
+[0.890s] -- Detecting CXX compiler ABI info - done
+[0.945s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.948s] -- Detecting CXX compile features
+[0.950s] -- Detecting CXX compile features - done
+[0.963s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.455s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[1.653s] -- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.833s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.837s] -- Added test 'lint_cmake' to check CMake code style
+[1.839s] -- Added test 'xmllint' to check XML markup files
+[1.843s] -- Configuring done
+[1.849s] -- Generating done
+[1.851s] -- Build files have been written to: /home/tolasing/ros2_ws/build/asio_cmake_module
+[1.865s] Invoked command in '/home/tolasing/ros2_ws/build/asio_cmake_module' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tolasing/ros2_ws/install/udp_driver:/home/tolasing/ros2_ws/install/service_pkg:/home/tolasing/ros2_ws/install/nav2_project:/home/tolasing/ros2_ws/install/joint_trajectory_publisher:/opt/ros/humble /usr/bin/cmake /home/tolasing/ros2_ws/src/transport_drivers/asio_cmake_module -DCMAKE_INSTALL_PREFIX=/home/tolasing/ros2_ws/install/asio_cmake_module
+[1.866s] Invoking command in '/home/tolasing/ros2_ws/build/asio_cmake_module': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tolasing/ros2_ws/install/udp_driver:/home/tolasing/ros2_ws/install/service_pkg:/home/tolasing/ros2_ws/install/nav2_project:/home/tolasing/ros2_ws/install/joint_trajectory_publisher:/opt/ros/humble /usr/bin/cmake --build /home/tolasing/ros2_ws/build/asio_cmake_module -- -j8 -l8
+[1.937s] Invoked command in '/home/tolasing/ros2_ws/build/asio_cmake_module' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tolasing/ros2_ws/install/udp_driver:/home/tolasing/ros2_ws/install/service_pkg:/home/tolasing/ros2_ws/install/nav2_project:/home/tolasing/ros2_ws/install/joint_trajectory_publisher:/opt/ros/humble /usr/bin/cmake --build /home/tolasing/ros2_ws/build/asio_cmake_module -- -j8 -l8
+[1.972s] Invoking command in '/home/tolasing/ros2_ws/build/asio_cmake_module': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tolasing/ros2_ws/install/udp_driver:/home/tolasing/ros2_ws/install/service_pkg:/home/tolasing/ros2_ws/install/nav2_project:/home/tolasing/ros2_ws/install/joint_trajectory_publisher:/opt/ros/humble /usr/bin/cmake --install /home/tolasing/ros2_ws/build/asio_cmake_module
+[1.984s] -- Install configuration: ""
+[1.984s] -- Installing: /home/tolasing/ros2_ws/install/asio_cmake_module/share/ament_index/resource_index/package_run_dependencies/asio_cmake_module
+[1.984s] -- Installing: /home/tolasing/ros2_ws/install/asio_cmake_module/share/ament_index/resource_index/parent_prefix_path/asio_cmake_module
+[1.984s] -- Installing: /home/tolasing/ros2_ws/install/asio_cmake_module/share/asio_cmake_module/environment/ament_prefix_path.sh
+[1.984s] -- Installing: /home/tolasing/ros2_ws/install/asio_cmake_module/share/asio_cmake_module/environment/ament_prefix_path.dsv
+[1.984s] -- Installing: /home/tolasing/ros2_ws/install/asio_cmake_module/share/asio_cmake_module/environment/path.sh
+[1.985s] -- Installing: /home/tolasing/ros2_ws/install/asio_cmake_module/share/asio_cmake_module/environment/path.dsv
+[1.985s] -- Installing: /home/tolasing/ros2_ws/install/asio_cmake_module/share/asio_cmake_module/local_setup.bash
+[1.985s] -- Installing: /home/tolasing/ros2_ws/install/asio_cmake_module/share/asio_cmake_module/local_setup.sh
+[1.985s] -- Installing: /home/tolasing/ros2_ws/install/asio_cmake_module/share/asio_cmake_module/local_setup.zsh
+[1.986s] -- Installing: /home/tolasing/ros2_ws/install/asio_cmake_module/share/asio_cmake_module/local_setup.dsv
+[1.986s] -- Installing: /home/tolasing/ros2_ws/install/asio_cmake_module/share/asio_cmake_module/package.dsv
+[1.986s] -- Installing: /home/tolasing/ros2_ws/install/asio_cmake_module/share/ament_index/resource_index/packages/asio_cmake_module
+[1.986s] -- Installing: /home/tolasing/ros2_ws/install/asio_cmake_module/share/asio_cmake_module/cmake/asio_cmake_module-extras.cmake
+[1.986s] -- Installing: /home/tolasing/ros2_ws/install/asio_cmake_module/share/asio_cmake_module/cmake/asio_cmake_moduleConfig.cmake
+[1.987s] -- Installing: /home/tolasing/ros2_ws/install/asio_cmake_module/share/asio_cmake_module/cmake/asio_cmake_moduleConfig-version.cmake
+[1.987s] -- Installing: /home/tolasing/ros2_ws/install/asio_cmake_module/share/asio_cmake_module/package.xml
+[1.987s] -- Up-to-date: /home/tolasing/ros2_ws/install/asio_cmake_module/share/asio_cmake_module/cmake
+[1.987s] -- Installing: /home/tolasing/ros2_ws/install/asio_cmake_module/share/asio_cmake_module/cmake/Modules
+[1.987s] -- Installing: /home/tolasing/ros2_ws/install/asio_cmake_module/share/asio_cmake_module/cmake/Modules/FindASIO.cmake
+[1.998s] Invoked command in '/home/tolasing/ros2_ws/build/asio_cmake_module' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tolasing/ros2_ws/install/udp_driver:/home/tolasing/ros2_ws/install/service_pkg:/home/tolasing/ros2_ws/install/nav2_project:/home/tolasing/ros2_ws/install/joint_trajectory_publisher:/opt/ros/humble /usr/bin/cmake --install /home/tolasing/ros2_ws/build/asio_cmake_module

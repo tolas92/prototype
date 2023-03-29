@@ -1,0 +1,213 @@
+[0.000000] (-) TimerEvent: {}
+[0.000495] (-) JobUnselected: {'identifier': 'absl'}
+[0.001024] (-) JobUnselected: {'identifier': 'asio_cmake_module'}
+[0.001377] (-) JobUnselected: {'identifier': 'cartographer'}
+[0.002516] (-) JobUnselected: {'identifier': 'gazebo_sim'}
+[0.002602] (-) JobUnselected: {'identifier': 'io_context'}
+[0.002646] (-) JobUnselected: {'identifier': 'motor_control'}
+[0.002849] (-) JobUnselected: {'identifier': 'nav2_course'}
+[0.002936] (-) JobUnselected: {'identifier': 'nav2_project'}
+[0.002983] (-) JobUnselected: {'identifier': 'prototype'}
+[0.003040] (-) JobUnselected: {'identifier': 'serial'}
+[0.003083] (-) JobUnselected: {'identifier': 'serial_driver'}
+[0.003119] (-) JobUnselected: {'identifier': 'service_pkg'}
+[0.003154] (-) JobUnselected: {'identifier': 'udp_driver'}
+[0.003196] (cartographer_slam) JobQueued: {'identifier': 'cartographer_slam', 'dependencies': OrderedDict()}
+[0.003241] (cartographer_slam) JobStarted: {'identifier': 'cartographer_slam'}
+[0.043293] (cartographer_slam) JobProgress: {'identifier': 'cartographer_slam', 'progress': 'cmake'}
+[0.043665] (cartographer_slam) Command: {'cmd': ['/usr/bin/cmake', '/home/tolasing/ros2_ws/src/cartographer_slam', '-DCMAKE_INSTALL_PREFIX=/home/tolasing/ros2_ws/install/cartographer_slam'], 'cwd': '/home/tolasing/ros2_ws/build/cartographer_slam', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'tolasing'), ('ROS_PACKAGE_PATH', '/home/tolasing/ros2_ws/install/serial/share'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/home/tolasing/ros2_ws/install/udp_driver/lib:/home/tolasing/ros2_ws/install/serial_driver/lib:/home/tolasing/ros2_ws/install/motor_control/lib:/home/tolasing/ros2_ws/install/io_context/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tolasing'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/tolasing/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '1.75.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1112'), ('SYSTEMD_EXEC_PID', '1276'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5992'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/tolasing/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'tolasing'), ('JOURNAL_STREAM', '8:30683'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/tolasing/ros2_ws/install/serial/lib/x86_64-linux-gnu/pkgconfig:/home/tolasing/ros2_ws/install/serial/lib/pkgconfig:/home/tolasing/ros2_ws/install/cartographer/lib/x86_64-linux-gnu/pkgconfig:/home/tolasing/ros2_ws/install/cartographer/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tolasing'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/tolasing/.local/bin:/home/tolasing/ros2_ws/install/cartographer/bin:/opt/ros/humble/bin:/home/tolasing/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/tolasing-zen:@/tmp/.ICE-unix/1257,unix/tolasing-zen:/tmp/.ICE-unix/1257'), ('INVOCATION_ID', '9c6eabc7b4a3418eba1d997731e40dbc'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.6C1711'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9a34650364.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tolasing/ros2_ws/install/udp_driver:/home/tolasing/ros2_ws/install/service_pkg:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/nav2_project:/home/tolasing/ros2_ws/install/nav2_course:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/asio_cmake_module:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tolasing/ros2_ws/build/cartographer_slam'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tolasing/ros2_ws/install/service_pkg/lib/python3.10/site-packages:/home/tolasing/ros2_ws/install/nav2_project/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/install/udp_driver:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/service_pkg:/home/tolasing/ros2_ws/install/nav2_project:/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/nav2_course:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/cartographer:/home/tolasing/ros2_ws/install/asio_cmake_module')]), 'shell': False}
+[0.099522] (-) TimerEvent: {}
+[0.200055] (-) TimerEvent: {}
+[0.300594] (-) TimerEvent: {}
+[0.305202] (cartographer_slam) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[0.400764] (-) TimerEvent: {}
+[0.474489] (cartographer_slam) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[0.494455] (cartographer_slam) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.500853] (-) TimerEvent: {}
+[0.601767] (-) TimerEvent: {}
+[0.632895] (cartographer_slam) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.652944] (cartographer_slam) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.653679] (cartographer_slam) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.654927] (cartographer_slam) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.662123] (cartographer_slam) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.701942] (-) TimerEvent: {}
+[0.802555] (-) TimerEvent: {}
+[0.848590] (cartographer_slam) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.877877] (cartographer_slam) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.878671] (cartographer_slam) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.880016] (cartographer_slam) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.898232] (cartographer_slam) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.902661] (-) TimerEvent: {}
+[1.003159] (-) TimerEvent: {}
+[1.103901] (-) TimerEvent: {}
+[1.204410] (-) TimerEvent: {}
+[1.304795] (-) TimerEvent: {}
+[1.394674] (cartographer_slam) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter \n'}
+[1.404938] (-) TimerEvent: {}
+[1.505374] (-) TimerEvent: {}
+[1.605878] (-) TimerEvent: {}
+[1.631129] (cartographer_slam) StdoutLine: {'line': b'-- Found cartographer_ros: 2.0.9000 (/opt/ros/humble/share/cartographer_ros/cmake)\n'}
+[1.706012] (-) TimerEvent: {}
+[1.733824] (cartographer_slam) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.749438] (cartographer_slam) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.772621] (cartographer_slam) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.806143] (-) TimerEvent: {}
+[1.812028] (cartographer_slam) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.875786] (cartographer_slam) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.906253] (-) TimerEvent: {}
+[2.006602] (-) TimerEvent: {}
+[2.106987] (-) TimerEvent: {}
+[2.207427] (-) TimerEvent: {}
+[2.307922] (-) TimerEvent: {}
+[2.408380] (-) TimerEvent: {}
+[2.508893] (-) TimerEvent: {}
+[2.609376] (-) TimerEvent: {}
+[2.709816] (-) TimerEvent: {}
+[2.810198] (-) TimerEvent: {}
+[2.910948] (-) TimerEvent: {}
+[3.011475] (-) TimerEvent: {}
+[3.112277] (-) TimerEvent: {}
+[3.212768] (-) TimerEvent: {}
+[3.313249] (-) TimerEvent: {}
+[3.365263] (cartographer_slam) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[3.374611] (cartographer_slam) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.413395] (-) TimerEvent: {}
+[3.513893] (-) TimerEvent: {}
+[3.614367] (-) TimerEvent: {}
+[3.663253] (cartographer_slam) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[3.714535] (-) TimerEvent: {}
+[3.743651] (cartographer_slam) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[3.814700] (-) TimerEvent: {}
+[3.873687] (cartographer_slam) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.906807] (cartographer_slam) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[3.914816] (-) TimerEvent: {}
+[4.015261] (-) TimerEvent: {}
+[4.115789] (-) TimerEvent: {}
+[4.216256] (-) TimerEvent: {}
+[4.316679] (-) TimerEvent: {}
+[4.417148] (-) TimerEvent: {}
+[4.517597] (-) TimerEvent: {}
+[4.618132] (-) TimerEvent: {}
+[4.718698] (-) TimerEvent: {}
+[4.819216] (-) TimerEvent: {}
+[4.919814] (-) TimerEvent: {}
+[5.020304] (-) TimerEvent: {}
+[5.120893] (-) TimerEvent: {}
+[5.221377] (-) TimerEvent: {}
+[5.322014] (-) TimerEvent: {}
+[5.422464] (-) TimerEvent: {}
+[5.522900] (-) TimerEvent: {}
+[5.623381] (-) TimerEvent: {}
+[5.723799] (-) TimerEvent: {}
+[5.824252] (-) TimerEvent: {}
+[5.924706] (-) TimerEvent: {}
+[6.025088] (-) TimerEvent: {}
+[6.125479] (-) TimerEvent: {}
+[6.225849] (-) TimerEvent: {}
+[6.326235] (-) TimerEvent: {}
+[6.426656] (-) TimerEvent: {}
+[6.472963] (cartographer_slam) StdoutLine: {'line': b'-- Found cartographer_rviz: 2.0.9000 (/opt/ros/humble/share/cartographer_rviz/cmake)\n'}
+[6.526787] (-) TimerEvent: {}
+[6.627216] (-) TimerEvent: {}
+[6.727621] (-) TimerEvent: {}
+[6.828076] (-) TimerEvent: {}
+[6.928553] (-) TimerEvent: {}
+[7.029097] (-) TimerEvent: {}
+[7.129499] (-) TimerEvent: {}
+[7.230033] (-) TimerEvent: {}
+[7.330443] (-) TimerEvent: {}
+[7.430815] (-) TimerEvent: {}
+[7.490365] (cartographer_slam) StdoutLine: {'line': b"-- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'\n"}
+[7.493907] (cartographer_slam) StdoutLine: {'line': b'-- Found OGRE\n'}
+[7.494206] (cartographer_slam) StdoutLine: {'line': b'--   static     : OFF\n'}
+[7.494346] (cartographer_slam) StdoutLine: {'line': b'--   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume\n'}
+[7.494481] (cartographer_slam) StdoutLine: {'line': b'--   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI\n'}
+[7.494652] (cartographer_slam) StdoutLine: {'line': b'--   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media\n'}
+[7.494779] (cartographer_slam) StdoutLine: {'line': b'-- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain\n'}
+[7.494948] (cartographer_slam) StdoutLine: {'line': b'-- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib\n'}
+[7.495140] (cartographer_slam) StdoutLine: {'line': b'-- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI\n'}
+[7.495269] (cartographer_slam) StdoutLine: {'line': b'-- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE\n'}
+[7.495394] (cartographer_slam) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so\n'}
+[7.495520] (cartographer_slam) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so\n'}
+[7.495668] (cartographer_slam) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so\n'}
+[7.495796] (cartographer_slam) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so\n'}
+[7.530955] (-) TimerEvent: {}
+[7.546135] (cartographer_slam) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") \n'}
+[7.562235] (cartographer_slam) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   \n'}
+[7.631127] (-) TimerEvent: {}
+[7.731704] (-) TimerEvent: {}
+[7.784840] (cartographer_slam) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[7.785612] (cartographer_slam) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so\n'}
+[7.831811] (-) TimerEvent: {}
+[7.932170] (-) TimerEvent: {}
+[8.031904] (cartographer_slam) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found\n'}
+[8.032236] (-) TimerEvent: {}
+[8.032536] (cartographer_slam) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[8.132408] (-) TimerEvent: {}
+[8.170784] (cartographer_slam) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[8.171404] (cartographer_slam) StdoutLine: {'line': b'-- Looking for connect\n'}
+[8.232697] (-) TimerEvent: {}
+[8.332084] (cartographer_slam) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[8.332462] (cartographer_slam) StdoutLine: {'line': b'-- Looking for remove\n'}
+[8.332665] (-) TimerEvent: {}
+[8.433019] (-) TimerEvent: {}
+[8.481982] (cartographer_slam) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[8.482326] (cartographer_slam) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[8.533130] (-) TimerEvent: {}
+[8.602774] (cartographer_slam) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[8.603090] (cartographer_slam) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[8.633292] (-) TimerEvent: {}
+[8.733781] (-) TimerEvent: {}
+[8.735263] (cartographer_slam) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[8.742918] (cartographer_slam) StdoutLine: {'line': b'-- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_RELEASE: _render_system_gl_static_library_abs-NOTFOUND\n'}
+[8.743311] (cartographer_slam) StdoutLine: {'line': b'-- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_DEBUG: _render_system_gl_static_library_abs-NOTFOUND\n'}
+[8.833976] (-) TimerEvent: {}
+[8.924447] (cartographer_slam) StdoutLine: {'line': b'-- library: /usr/lib/x86_64-linux-gnu/libcurl.so\n'}
+[8.934071] (-) TimerEvent: {}
+[9.034444] (-) TimerEvent: {}
+[9.046722] (cartographer_slam) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[9.047097] (cartographer_slam) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[9.129302] (cartographer_slam) StdoutLine: {'line': b'-- Found rclpy: 3.3.7 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[9.133088] (cartographer_slam) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[9.134516] (-) TimerEvent: {}
+[9.234850] (-) TimerEvent: {}
+[9.335331] (-) TimerEvent: {}
+[9.350508] (cartographer_slam) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[9.352054] (cartographer_slam) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[9.353930] (cartographer_slam) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[9.357099] (cartographer_slam) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[9.360460] (cartographer_slam) StdoutLine: {'line': b'-- Configuring done\n'}
+[9.384819] (cartographer_slam) StdoutLine: {'line': b'-- Generating done\n'}
+[9.389310] (cartographer_slam) StdoutLine: {'line': b'-- Build files have been written to: /home/tolasing/ros2_ws/build/cartographer_slam\n'}
+[9.420363] (cartographer_slam) CommandEnded: {'returncode': 0}
+[9.424238] (cartographer_slam) JobProgress: {'identifier': 'cartographer_slam', 'progress': 'build'}
+[9.424939] (cartographer_slam) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/tolasing/ros2_ws/build/cartographer_slam', '--', '-j8', '-l8'], 'cwd': '/home/tolasing/ros2_ws/build/cartographer_slam', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'tolasing'), ('ROS_PACKAGE_PATH', '/home/tolasing/ros2_ws/install/serial/share'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/home/tolasing/ros2_ws/install/udp_driver/lib:/home/tolasing/ros2_ws/install/serial_driver/lib:/home/tolasing/ros2_ws/install/motor_control/lib:/home/tolasing/ros2_ws/install/io_context/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tolasing'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/tolasing/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '1.75.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1112'), ('SYSTEMD_EXEC_PID', '1276'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5992'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/tolasing/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'tolasing'), ('JOURNAL_STREAM', '8:30683'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/tolasing/ros2_ws/install/serial/lib/x86_64-linux-gnu/pkgconfig:/home/tolasing/ros2_ws/install/serial/lib/pkgconfig:/home/tolasing/ros2_ws/install/cartographer/lib/x86_64-linux-gnu/pkgconfig:/home/tolasing/ros2_ws/install/cartographer/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tolasing'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/tolasing/.local/bin:/home/tolasing/ros2_ws/install/cartographer/bin:/opt/ros/humble/bin:/home/tolasing/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/tolasing-zen:@/tmp/.ICE-unix/1257,unix/tolasing-zen:/tmp/.ICE-unix/1257'), ('INVOCATION_ID', '9c6eabc7b4a3418eba1d997731e40dbc'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.6C1711'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9a34650364.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tolasing/ros2_ws/install/udp_driver:/home/tolasing/ros2_ws/install/service_pkg:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/nav2_project:/home/tolasing/ros2_ws/install/nav2_course:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/asio_cmake_module:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tolasing/ros2_ws/build/cartographer_slam'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tolasing/ros2_ws/install/service_pkg/lib/python3.10/site-packages:/home/tolasing/ros2_ws/install/nav2_project/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/install/udp_driver:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/service_pkg:/home/tolasing/ros2_ws/install/nav2_project:/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/nav2_course:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/cartographer:/home/tolasing/ros2_ws/install/asio_cmake_module')]), 'shell': False}
+[9.435497] (-) TimerEvent: {}
+[9.494943] (cartographer_slam) CommandEnded: {'returncode': 0}
+[9.526674] (cartographer_slam) JobProgress: {'identifier': 'cartographer_slam', 'progress': 'install'}
+[9.535686] (-) TimerEvent: {}
+[9.542102] (cartographer_slam) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/tolasing/ros2_ws/build/cartographer_slam'], 'cwd': '/home/tolasing/ros2_ws/build/cartographer_slam', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'tolasing'), ('ROS_PACKAGE_PATH', '/home/tolasing/ros2_ws/install/serial/share'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/home/tolasing/ros2_ws/install/udp_driver/lib:/home/tolasing/ros2_ws/install/serial_driver/lib:/home/tolasing/ros2_ws/install/motor_control/lib:/home/tolasing/ros2_ws/install/io_context/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tolasing'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/tolasing/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '1.75.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1112'), ('SYSTEMD_EXEC_PID', '1276'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5992'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/tolasing/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'tolasing'), ('JOURNAL_STREAM', '8:30683'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/tolasing/ros2_ws/install/serial/lib/x86_64-linux-gnu/pkgconfig:/home/tolasing/ros2_ws/install/serial/lib/pkgconfig:/home/tolasing/ros2_ws/install/cartographer/lib/x86_64-linux-gnu/pkgconfig:/home/tolasing/ros2_ws/install/cartographer/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tolasing'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/tolasing/.local/bin:/home/tolasing/ros2_ws/install/cartographer/bin:/opt/ros/humble/bin:/home/tolasing/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/tolasing-zen:@/tmp/.ICE-unix/1257,unix/tolasing-zen:/tmp/.ICE-unix/1257'), ('INVOCATION_ID', '9c6eabc7b4a3418eba1d997731e40dbc'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.6C1711'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9a34650364.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tolasing/ros2_ws/install/udp_driver:/home/tolasing/ros2_ws/install/service_pkg:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/nav2_project:/home/tolasing/ros2_ws/install/nav2_course:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/asio_cmake_module:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tolasing/ros2_ws/build/cartographer_slam'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tolasing/ros2_ws/install/service_pkg/lib/python3.10/site-packages:/home/tolasing/ros2_ws/install/nav2_project/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/install/udp_driver:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/service_pkg:/home/tolasing/ros2_ws/install/nav2_project:/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/nav2_course:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/cartographer:/home/tolasing/ros2_ws/install/asio_cmake_module')]), 'shell': False}
+[9.554211] (cartographer_slam) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.554646] (cartographer_slam) StdoutLine: {'line': b'-- Installing: /home/tolasing/ros2_ws/install/cartographer_slam/share/cartographer_slam//config\n'}
+[9.555293] (cartographer_slam) StdoutLine: {'line': b'-- Installing: /home/tolasing/ros2_ws/install/cartographer_slam/share/cartographer_slam//config/cartographer.lua\n'}
+[9.555670] (cartographer_slam) StdoutLine: {'line': b'-- Installing: /home/tolasing/ros2_ws/install/cartographer_slam/share/cartographer_slam//launch\n'}
+[9.555929] (cartographer_slam) StdoutLine: {'line': b'-- Installing: /home/tolasing/ros2_ws/install/cartographer_slam/share/cartographer_slam//launch/cartographer.launch.py\n'}
+[9.556339] (cartographer_slam) StdoutLine: {'line': b'-- Installing: /home/tolasing/ros2_ws/install/cartographer_slam/share/ament_index/resource_index/package_run_dependencies/cartographer_slam\n'}
+[9.556662] (cartographer_slam) StdoutLine: {'line': b'-- Installing: /home/tolasing/ros2_ws/install/cartographer_slam/share/ament_index/resource_index/parent_prefix_path/cartographer_slam\n'}
+[9.556948] (cartographer_slam) StdoutLine: {'line': b'-- Installing: /home/tolasing/ros2_ws/install/cartographer_slam/share/cartographer_slam/environment/ament_prefix_path.sh\n'}
+[9.557143] (cartographer_slam) StdoutLine: {'line': b'-- Installing: /home/tolasing/ros2_ws/install/cartographer_slam/share/cartographer_slam/environment/ament_prefix_path.dsv\n'}
+[9.557353] (cartographer_slam) StdoutLine: {'line': b'-- Installing: /home/tolasing/ros2_ws/install/cartographer_slam/share/cartographer_slam/environment/path.sh\n'}
+[9.557557] (cartographer_slam) StdoutLine: {'line': b'-- Installing: /home/tolasing/ros2_ws/install/cartographer_slam/share/cartographer_slam/environment/path.dsv\n'}
+[9.557767] (cartographer_slam) StdoutLine: {'line': b'-- Installing: /home/tolasing/ros2_ws/install/cartographer_slam/share/cartographer_slam/local_setup.bash\n'}
+[9.557981] (cartographer_slam) StdoutLine: {'line': b'-- Installing: /home/tolasing/ros2_ws/install/cartographer_slam/share/cartographer_slam/local_setup.sh\n'}
+[9.558219] (cartographer_slam) StdoutLine: {'line': b'-- Installing: /home/tolasing/ros2_ws/install/cartographer_slam/share/cartographer_slam/local_setup.zsh\n'}
+[9.558420] (cartographer_slam) StdoutLine: {'line': b'-- Installing: /home/tolasing/ros2_ws/install/cartographer_slam/share/cartographer_slam/local_setup.dsv\n'}
+[9.558648] (cartographer_slam) StdoutLine: {'line': b'-- Installing: /home/tolasing/ros2_ws/install/cartographer_slam/share/cartographer_slam/package.dsv\n'}
+[9.559007] (cartographer_slam) StdoutLine: {'line': b'-- Installing: /home/tolasing/ros2_ws/install/cartographer_slam/share/ament_index/resource_index/packages/cartographer_slam\n'}
+[9.559239] (cartographer_slam) StdoutLine: {'line': b'-- Installing: /home/tolasing/ros2_ws/install/cartographer_slam/share/cartographer_slam/cmake/cartographer_slamConfig.cmake\n'}
+[9.559404] (cartographer_slam) StdoutLine: {'line': b'-- Installing: /home/tolasing/ros2_ws/install/cartographer_slam/share/cartographer_slam/cmake/cartographer_slamConfig-version.cmake\n'}
+[9.559623] (cartographer_slam) StdoutLine: {'line': b'-- Installing: /home/tolasing/ros2_ws/install/cartographer_slam/share/cartographer_slam/package.xml\n'}
+[9.562783] (cartographer_slam) CommandEnded: {'returncode': 0}
+[9.637332] (-) TimerEvent: {}
+[9.655564] (cartographer_slam) JobEnded: {'identifier': 'cartographer_slam', 'rc': 0}
+[9.656962] (-) EventReactorShutdown: {}

@@ -1,0 +1,49 @@
+[0.075s] Invoking command in '/home/tolasing/ros2_ws/build/grass_plane': /usr/bin/cmake /home/tolasing/ros2_ws/src/gazebo_models_worlds_collection/models/grass_plane -DCMAKE_INSTALL_PREFIX=/home/tolasing/ros2_ws/install/grass_plane
+[0.100s] [33mCMake Warning (dev) in CMakeLists.txt:
+[0.100s]   No project() command is present.  The top-level CMakeLists.txt file must
+[0.100s]   contain a literal, direct call to the project() command.  Add a line of
+[0.100s]   code such as
+[0.101s] 
+[0.101s]     project(ProjectName)
+[0.101s] 
+[0.101s]   near the top of the file, but after cmake_minimum_required().
+[0.101s] 
+[0.101s]   CMake is pretending there is a "project(Project)" command on the first
+[0.102s]   line.
+[0.102s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.102s] [0m
+[0.353s] -- The C compiler identification is GNU 11.3.0
+[0.555s] -- The CXX compiler identification is GNU 11.3.0
+[0.580s] -- Detecting C compiler ABI info
+[0.742s] -- Detecting C compiler ABI info - done
+[0.777s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.777s] -- Detecting C compile features
+[0.777s] -- Detecting C compile features - done
+[0.790s] -- Detecting CXX compiler ABI info
+[1.005s] -- Detecting CXX compiler ABI info - done
+[1.019s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.036s] -- Detecting CXX compile features
+[1.037s] -- Detecting CXX compile features - done
+[1.043s] [33mCMake Warning (dev) in CMakeLists.txt:
+[1.043s]   No cmake_minimum_required command is present.  A line of code such as
+[1.043s] 
+[1.044s]     cmake_minimum_required(VERSION 3.22)
+[1.044s] 
+[1.044s]   should be added at the top of the file.  The version specified may be lower
+[1.044s]   if you wish to support older CMake versions for this project.  For more
+[1.044s]   information run "cmake --help-policy CMP0000".
+[1.044s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.045s] [0m
+[1.045s] -- Configuring done
+[1.053s] -- Generating done
+[1.054s] -- Build files have been written to: /home/tolasing/ros2_ws/build/grass_plane
+[1.056s] Invoked command in '/home/tolasing/ros2_ws/build/grass_plane' returned '0': /usr/bin/cmake /home/tolasing/ros2_ws/src/gazebo_models_worlds_collection/models/grass_plane -DCMAKE_INSTALL_PREFIX=/home/tolasing/ros2_ws/install/grass_plane
+[1.061s] Invoking command in '/home/tolasing/ros2_ws/build/grass_plane': /usr/bin/cmake --build /home/tolasing/ros2_ws/build/grass_plane -- -j8 -l8
+[1.120s] Invoked command in '/home/tolasing/ros2_ws/build/grass_plane' returned '0': /usr/bin/cmake --build /home/tolasing/ros2_ws/build/grass_plane -- -j8 -l8
+[1.260s] Invoking command in '/home/tolasing/ros2_ws/build/grass_plane': /usr/bin/cmake --install /home/tolasing/ros2_ws/build/grass_plane
+[1.293s] -- Install configuration: ""
+[1.296s] -- Installing: /home/tolasing/ros2_ws/install/grass_plane/share/Project/gazebo_models/environments/grass_plane/model.config
+[1.296s] -- Installing: /home/tolasing/ros2_ws/install/grass_plane/share/Project/gazebo_models/environments/grass_plane/model.sdf
+[1.304s] -- Installing: /home/tolasing/ros2_ws/install/grass_plane/share/Project/gazebo_models/environments/grass_plane/materials/scripts/grass.material
+[1.307s] -- Installing: /home/tolasing/ros2_ws/install/grass_plane/share/Project/gazebo_models/environments/grass_plane/materials/textures/grass_dry.png
+[1.410s] Invoked command in '/home/tolasing/ros2_ws/build/grass_plane' returned '0': /usr/bin/cmake --install /home/tolasing/ros2_ws/build/grass_plane

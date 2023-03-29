@@ -1,0 +1,2 @@
+Invoking command in '/home/tolasing/ros2_ws/build/absl': /usr/bin/cmake --build /home/tolasing/ros2_ws/build/absl -- -j8 -l8
+Invoked command in '/home/tolasing/ros2_ws/build/absl' returned '2': /usr/bin/cmake --build /home/tolasing/ros2_ws/build/absl -- -j8 -l8

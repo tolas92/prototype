@@ -1,0 +1,38 @@
+[0.267s] Invoking command in '/home/tolasing/ros2_ws/build/io_context': CMAKE_PREFIX_PATH=/home/tolasing/ros2_ws/install/asio_cmake_module:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/install/udp_driver:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/service_pkg:/home/tolasing/ros2_ws/install/nav2_project:/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/nav2_course:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/cartographer_slam:/home/tolasing/ros2_ws/install/cartographer /usr/bin/cmake --build /home/tolasing/ros2_ws/build/io_context -- -j8 -l8
+[0.554s] [ 22%] Built target gtest
+[0.570s] [ 44%] Built target gtest_main
+[0.587s] [ 77%] Built target io_context
+[0.687s] [100%] Built target test_io_context
+[1.297s] Invoked command in '/home/tolasing/ros2_ws/build/io_context' returned '0': CMAKE_PREFIX_PATH=/home/tolasing/ros2_ws/install/asio_cmake_module:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/install/udp_driver:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/service_pkg:/home/tolasing/ros2_ws/install/nav2_project:/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/nav2_course:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/cartographer_slam:/home/tolasing/ros2_ws/install/cartographer /usr/bin/cmake --build /home/tolasing/ros2_ws/build/io_context -- -j8 -l8
+[1.496s] Invoking command in '/home/tolasing/ros2_ws/build/io_context': CMAKE_PREFIX_PATH=/home/tolasing/ros2_ws/install/asio_cmake_module:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/install/udp_driver:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/service_pkg:/home/tolasing/ros2_ws/install/nav2_project:/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/nav2_course:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/cartographer_slam:/home/tolasing/ros2_ws/install/cartographer /usr/bin/cmake --install /home/tolasing/ros2_ws/build/io_context
+[1.515s] -- Install configuration: ""
+[1.516s] -- Up-to-date: /home/tolasing/ros2_ws/install/io_context/include
+[1.518s] -- Up-to-date: /home/tolasing/ros2_ws/install/io_context/include/io_context
+[1.520s] -- Up-to-date: /home/tolasing/ros2_ws/install/io_context/include/io_context/common.hpp
+[1.521s] -- Up-to-date: /home/tolasing/ros2_ws/install/io_context/include/io_context/io_context.hpp
+[1.522s] -- Up-to-date: /home/tolasing/ros2_ws/install/io_context/include/msg_converters
+[1.522s] -- Up-to-date: /home/tolasing/ros2_ws/install/io_context/include/msg_converters/converters.hpp
+[1.523s] -- Up-to-date: /home/tolasing/ros2_ws/install/io_context/include/msg_converters/udp_msgs.hpp
+[1.523s] -- Up-to-date: /home/tolasing/ros2_ws/install/io_context/include/msg_converters/std_msgs.hpp
+[1.523s] -- Up-to-date: /home/tolasing/ros2_ws/install/io_context/share/io_context/environment/library_path.sh
+[1.523s] -- Up-to-date: /home/tolasing/ros2_ws/install/io_context/share/io_context/environment/library_path.dsv
+[1.535s] -- Up-to-date: /home/tolasing/ros2_ws/install/io_context/lib/libio_context.so
+[1.535s] -- Up-to-date: /home/tolasing/ros2_ws/install/io_context/share/ament_index/resource_index/package_run_dependencies/io_context
+[1.535s] -- Up-to-date: /home/tolasing/ros2_ws/install/io_context/share/ament_index/resource_index/parent_prefix_path/io_context
+[1.535s] -- Up-to-date: /home/tolasing/ros2_ws/install/io_context/share/io_context/environment/ament_prefix_path.sh
+[1.536s] -- Up-to-date: /home/tolasing/ros2_ws/install/io_context/share/io_context/environment/ament_prefix_path.dsv
+[1.536s] -- Up-to-date: /home/tolasing/ros2_ws/install/io_context/share/io_context/environment/path.sh
+[1.536s] -- Up-to-date: /home/tolasing/ros2_ws/install/io_context/share/io_context/environment/path.dsv
+[1.536s] -- Up-to-date: /home/tolasing/ros2_ws/install/io_context/share/io_context/local_setup.bash
+[1.536s] -- Up-to-date: /home/tolasing/ros2_ws/install/io_context/share/io_context/local_setup.sh
+[1.536s] -- Up-to-date: /home/tolasing/ros2_ws/install/io_context/share/io_context/local_setup.zsh
+[1.536s] -- Up-to-date: /home/tolasing/ros2_ws/install/io_context/share/io_context/local_setup.dsv
+[1.547s] -- Installing: /home/tolasing/ros2_ws/install/io_context/share/io_context/package.dsv
+[1.547s] -- Up-to-date: /home/tolasing/ros2_ws/install/io_context/share/ament_index/resource_index/packages/io_context
+[1.547s] -- Up-to-date: /home/tolasing/ros2_ws/install/io_context/share/io_context/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.547s] -- Up-to-date: /home/tolasing/ros2_ws/install/io_context/share/io_context/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.547s] -- Up-to-date: /home/tolasing/ros2_ws/install/io_context/share/io_context/cmake/ament_cmake_export_libraries-extras.cmake
+[1.548s] -- Up-to-date: /home/tolasing/ros2_ws/install/io_context/share/io_context/cmake/io_contextConfig.cmake
+[1.548s] -- Up-to-date: /home/tolasing/ros2_ws/install/io_context/share/io_context/cmake/io_contextConfig-version.cmake
+[1.548s] -- Up-to-date: /home/tolasing/ros2_ws/install/io_context/share/io_context/package.xml
+[1.565s] Invoked command in '/home/tolasing/ros2_ws/build/io_context' returned '0': CMAKE_PREFIX_PATH=/home/tolasing/ros2_ws/install/asio_cmake_module:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/install/udp_driver:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/service_pkg:/home/tolasing/ros2_ws/install/nav2_project:/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/nav2_course:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/cartographer_slam:/home/tolasing/ros2_ws/install/cartographer /usr/bin/cmake --install /home/tolasing/ros2_ws/build/io_context

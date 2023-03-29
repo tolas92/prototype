@@ -1,0 +1,136 @@
+[0.109s] Invoking command in '/home/tolasing/ros2_ws/build/absl': /usr/bin/cmake /home/tolasing/ros2_ws/abseil-cpp -DCMAKE_INSTALL_PREFIX=/home/tolasing/ros2_ws/install/absl
+[0.761s] -- The C compiler identification is GNU 11.3.0
+[0.763s] -- The CXX compiler identification is GNU 11.3.0
+[0.763s] -- Detecting C compiler ABI info
+[0.763s] -- Detecting C compiler ABI info - done
+[0.763s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.764s] -- Detecting C compile features
+[0.764s] -- Detecting C compile features - done
+[0.764s] -- Detecting CXX compiler ABI info
+[0.983s] -- Detecting CXX compiler ABI info - done
+[1.027s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.027s] -- Detecting CXX compile features
+[1.027s] -- Detecting CXX compile features - done
+[1.028s] -- No CMAKE_CXX_STANDARD set, assuming 11
+[1.045s] -- Looking for pthread.h
+[1.416s] -- Looking for pthread.h - found
+[1.416s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.781s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.813s] -- Found Threads: TRUE  
+[1.920s] -- Configuring done
+[2.094s] -- Generating done
+[2.106s] -- Build files have been written to: /home/tolasing/ros2_ws/build/absl
+[2.534s] Invoked command in '/home/tolasing/ros2_ws/build/absl' returned '0': /usr/bin/cmake /home/tolasing/ros2_ws/abseil-cpp -DCMAKE_INSTALL_PREFIX=/home/tolasing/ros2_ws/install/absl
+[2.535s] Invoking command in '/home/tolasing/ros2_ws/build/absl': /usr/bin/cmake --build /home/tolasing/ros2_ws/build/absl -- -j8 -l8
+[2.675s] [  1%] [32mBuilding CXX object absl/base/CMakeFiles/dynamic_annotations.dir/dynamic_annotations.cc.o[0m
+[2.685s] [  2%] [32mBuilding CXX object absl/base/CMakeFiles/spinlock_wait.dir/internal/spinlock_wait.cc.o[0m
+[2.685s] [  3%] [32mBuilding CXX object absl/time/CMakeFiles/time_zone.dir/internal/cctz/src/time_zone_fixed.cc.o[0m
+[2.685s] [  4%] [32mBuilding CXX object absl/strings/CMakeFiles/strings_internal.dir/internal/ostringstream.cc.o[0m
+[2.700s] [  5%] [32mBuilding CXX object absl/numeric/CMakeFiles/int128.dir/int128.cc.o[0m
+[2.734s] [  6%] [32mBuilding CXX object absl/debugging/CMakeFiles/leak_check.dir/leak_check.cc.o[0m
+[2.734s] [  7%] [32mBuilding CXX object absl/time/CMakeFiles/civil_time.dir/internal/cctz/src/civil_time_detail.cc.o[0m
+[2.735s] [  8%] [32mBuilding CXX object absl/debugging/CMakeFiles/leak_check_disable.dir/leak_check_disable.cc.o[0m
+[2.801s] [  9%] [32m[1mLinking CXX static library libabsl_leak_check.a[0m
+[2.851s] [  9%] [32m[1mLinking CXX static library libabsl_leak_check_disable.a[0m
+[2.951s] [ 10%] [32m[1mLinking CXX static library libabsl_dynamic_annotations.a[0m
+[3.064s] [ 11%] [32m[1mLinking CXX static library libabsl_spinlock_wait.a[0m
+[3.314s] [ 11%] Built target leak_check
+[3.356s] [ 11%] Built target dynamic_annotations
+[3.356s] [ 11%] Built target leak_check_disable
+[3.362s] [ 12%] [32mBuilding CXX object absl/time/CMakeFiles/time_zone.dir/internal/cctz/src/time_zone_format.cc.o[0m
+[3.403s] [ 13%] [32mBuilding CXX object absl/hash/CMakeFiles/city.dir/internal/city.cc.o[0m
+[3.418s] [ 13%] Built target spinlock_wait
+[3.435s] [ 14%] [32mBuilding CXX object absl/strings/CMakeFiles/strings_internal.dir/internal/utf8.cc.o[0m
+[3.548s] [ 16%] [32mBuilding CXX object absl/time/CMakeFiles/time_zone.dir/internal/cctz/src/time_zone_if.cc.o[0m
+[3.548s] [ 16%] [32mBuilding CXX object absl/base/CMakeFiles/base.dir/internal/cycleclock.cc.o[0m
+[3.596s] [ 17%] [32m[1mLinking CXX static library libabsl_strings_internal.a[0m
+[3.935s] [ 17%] Built target strings_internal
+[3.966s] [ 18%] [32mBuilding CXX object absl/base/CMakeFiles/base.dir/internal/raw_logging.cc.o[0m
+[3.990s] [ 19%] [32m[1mLinking CXX static library libabsl_city.a[0m
+[3.990s] [ 20%] [32mBuilding CXX object absl/time/CMakeFiles/time_zone.dir/internal/cctz/src/time_zone_info.cc.o[0m
+[4.006s] [ 21%] [32mBuilding CXX object absl/time/CMakeFiles/time_zone.dir/internal/cctz/src/time_zone_impl.cc.o[0m
+[4.253s] [ 21%] Built target city
+[4.311s] [ 22%] [32mBuilding CXX object absl/time/CMakeFiles/time_zone.dir/internal/cctz/src/time_zone_libc.cc.o[0m
+[4.342s] [ 23%] [32m[1mLinking CXX static library libabsl_civil_time.a[0m
+[4.385s] [ 24%] [32m[1mLinking CXX static library libabsl_int128.a[0m
+[4.611s] [ 24%] Built target civil_time
+[4.663s] [ 25%] [32mBuilding CXX object absl/time/CMakeFiles/time_zone.dir/internal/cctz/src/time_zone_lookup.cc.o[0m
+[4.685s] [ 25%] Built target int128
+[4.737s] [ 26%] [32mBuilding CXX object absl/time/CMakeFiles/time_zone.dir/internal/cctz/src/time_zone_posix.cc.o[0m
+[4.778s] [ 27%] [32mBuilding CXX object absl/base/CMakeFiles/base.dir/internal/spinlock.cc.o[0m
+[4.915s] [ 28%] [32mBuilding CXX object absl/time/CMakeFiles/time_zone.dir/internal/cctz/src/zone_info_source.cc.o[0m
+[5.030s] [ 29%] [32mBuilding CXX object absl/base/CMakeFiles/base.dir/internal/sysinfo.cc.o[0m
+[5.469s] [ 30%] [32mBuilding CXX object absl/base/CMakeFiles/base.dir/internal/thread_identity.cc.o[0m
+[5.484s] [ 31%] [32mBuilding CXX object absl/base/CMakeFiles/base.dir/internal/unscaledcycleclock.cc.o[0m
+[5.550s] [ 32%] [32mBuilding CXX object absl/base/CMakeFiles/base.dir/log_severity.cc.o[0m
+[6.184s] [ 33%] [32m[1mLinking CXX static library libabsl_base.a[0m
+[6.275s] [ 33%] Built target base
+[6.307s] [ 34%] [32mBuilding CXX object absl/base/CMakeFiles/throw_delegate.dir/internal/throw_delegate.cc.o[0m
+[6.309s] [ 37%] [32mBuilding CXX object absl/debugging/CMakeFiles/demangle_internal.dir/internal/demangle.cc.o[0m
+[6.311s] [ 37%] [32mBuilding CXX object absl/base/CMakeFiles/scoped_set_env.dir/internal/scoped_set_env.cc.o[0m
+[6.312s] [ 37%] [32mBuilding CXX object absl/base/CMakeFiles/malloc_internal.dir/internal/low_level_alloc.cc.o[0m
+[6.314s] [ 38%] [32mBuilding CXX object absl/debugging/CMakeFiles/debugging_internal.dir/internal/address_is_readable.cc.o[0m
+[6.316s] [ 39%] [32mBuilding CXX object absl/types/CMakeFiles/bad_optional_access.dir/bad_optional_access.cc.o[0m
+[6.317s] [ 40%] [32mBuilding CXX object absl/types/CMakeFiles/bad_variant_access.dir/bad_variant_access.cc.o[0m
+[6.413s] [ 41%] [32m[1mLinking CXX static library libabsl_time_zone.a[0m
+[6.632s] [ 41%] Built target time_zone
+[6.744s] [ 42%] [32m[1mLinking CXX static library libabsl_demangle_internal.a[0m
+[6.757s] [ 42%] [32mBuilding CXX object absl/types/CMakeFiles/bad_any_cast_impl.dir/bad_any_cast.cc.o[0m
+[6.840s] [ 43%] [32m[1mLinking CXX static library libabsl_bad_variant_access.a[0m
+[6.856s] [ 44%] [32m[1mLinking CXX static library libabsl_bad_optional_access.a[0m
+[6.871s] [ 45%] [32mBuilding CXX object absl/debugging/CMakeFiles/debugging_internal.dir/internal/elf_mem_image.cc.o[0m
+[6.880s] [ 46%] [32m[1mLinking CXX static library libabsl_scoped_set_env.a[0m
+[6.914s] [ 46%] Built target demangle_internal
+[6.930s] [ 47%] [32mBuilding CXX object absl/debugging/CMakeFiles/debugging_internal.dir/internal/vdso_support.cc.o[0m
+[7.018s] [ 48%] [32m[1mLinking CXX static library libabsl_throw_delegate.a[0m
+[7.027s] [ 48%] Built target bad_optional_access
+[7.071s] [ 48%] Built target bad_variant_access
+[7.099s] [ 49%] [32m[1mLinking CXX static library libabsl_malloc_internal.a[0m
+[7.103s] [ 49%] Built target scoped_set_env
+[7.183s] [ 49%] Built target throw_delegate
+[7.233s] [ 51%] [32mBuilding CXX object absl/strings/CMakeFiles/strings.dir/charconv.cc.o[0m
+[7.236s] [ 51%] Built target malloc_internal
+[7.240s] [ 51%] [32mBuilding CXX object absl/strings/CMakeFiles/strings.dir/ascii.cc.o[0m
+[7.241s] [ 52%] [32mBuilding CXX object absl/strings/CMakeFiles/strings.dir/escaping.cc.o[0m
+[7.246s] [ 52%] [32mBuilding CXX object absl/strings/CMakeFiles/strings.dir/internal/charconv_bigint.cc.o[0m
+[7.280s] [ 53%] [32mBuilding CXX object absl/synchronization/CMakeFiles/graphcycles_internal.dir/internal/graphcycles.cc.o[0m
+[7.302s] [ 54%] [32m[1mLinking CXX static library libabsl_bad_any_cast_impl.a[0m
+[7.462s] [ 54%] Built target bad_any_cast_impl
+[7.499s] [ 55%] [32mBuilding CXX object absl/strings/CMakeFiles/strings.dir/internal/charconv_parse.cc.o[0m
+[7.661s] [ 55%] [32m[1mLinking CXX static library libabsl_debugging_internal.a[0m
+[7.669s] [ 56%] [32mBuilding CXX object absl/strings/CMakeFiles/strings.dir/internal/memutil.cc.o[0m
+[7.808s] [01m[K/home/tolasing/ros2_ws/abseil-cpp/absl/synchronization/internal/graphcycles.cc:[m[K In member function ‘[01m[Kvoid absl::synchronization_internal::GraphCycles::RemoveNode(void*)[m[K’:
+[7.808s] [01m[K/home/tolasing/ros2_ws/abseil-cpp/absl/synchronization/internal/graphcycles.cc:450:26:[m[K [01;31m[Kerror: [m[K‘[01m[Knumeric_limits[m[K’ is not a member of ‘[01m[Kstd[m[K’
+[7.808s]   450 |   if (x->version == std::[01;31m[Knumeric_limits[m[K<uint32_t>::max()) {
+[7.808s]       |                          [01;31m[K^~~~~~~~~~~~~~[m[K
+[7.809s] [01m[K/home/tolasing/ros2_ws/abseil-cpp/absl/synchronization/internal/graphcycles.cc:450:49:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[7.810s]   450 | = std::numeric_limits<uint32_t[01;31m[K>[m[K::max()) {
+[7.811s]       |                               [01;31m[K^[m[K
+[7.811s] 
+[7.813s] [01m[K/home/tolasing/ros2_ws/abseil-cpp/absl/synchronization/internal/graphcycles.cc:450:52:[m[K [01;31m[Kerror: [m[K‘[01m[K::max[m[K’ has not been declared; did you mean ‘[01m[Kstd::max[m[K’?
+[7.814s]   450 | = std::numeric_limits<uint32_t>::[01;31m[Kmax[m[K()) {
+[7.814s]       |                                  [01;31m[K^~~[m[K
+[7.814s]       |                                  [32m[Kstd::max[m[K
+[7.815s] In file included from [01m[K/usr/include/c++/11/algorithm:62[m[K,
+[7.816s]                  from [01m[K/home/tolasing/ros2_ws/abseil-cpp/absl/synchronization/internal/graphcycles.cc:38[m[K:
+[7.816s] [01m[K/usr/include/c++/11/bits/stl_algo.h:3467:5:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::max[m[K’ declared here
+[7.816s]  3467 |     [01;36m[Kmax[m[K(initializer_list<_Tp> __l, _Compare __comp)
+[7.817s]       |     [01;36m[K^~~[m[K
+[7.886s] [ 56%] Built target debugging_internal
+[7.950s] gmake[2]: *** [absl/synchronization/CMakeFiles/graphcycles_internal.dir/build.make:76: absl/synchronization/CMakeFiles/graphcycles_internal.dir/internal/graphcycles.cc.o] Error 1
+[7.950s] gmake[1]: *** [CMakeFiles/Makefile2:1034: absl/synchronization/CMakeFiles/graphcycles_internal.dir/all] Error 2
+[7.951s] gmake[1]: *** Waiting for unfinished jobs....
+[7.967s] [ 57%] [32mBuilding CXX object absl/strings/CMakeFiles/strings.dir/numbers.cc.o[0m
+[7.970s] [ 58%] [32mBuilding CXX object absl/strings/CMakeFiles/strings.dir/match.cc.o[0m
+[7.988s] [ 59%] [32mBuilding CXX object absl/debugging/CMakeFiles/stacktrace.dir/stacktrace.cc.o[0m
+[8.112s] [ 60%] [32mBuilding CXX object absl/strings/CMakeFiles/strings.dir/str_cat.cc.o[0m
+[8.294s] [ 61%] [32mBuilding CXX object absl/strings/CMakeFiles/strings.dir/str_replace.cc.o[0m
+[8.332s] [ 62%] [32mBuilding CXX object absl/strings/CMakeFiles/strings.dir/str_split.cc.o[0m
+[8.536s] [ 63%] [32mBuilding CXX object absl/strings/CMakeFiles/strings.dir/string_view.cc.o[0m
+[8.537s] [ 64%] [32m[1mLinking CXX static library libabsl_stacktrace.a[0m
+[8.565s] [ 65%] [32mBuilding CXX object absl/strings/CMakeFiles/strings.dir/substitute.cc.o[0m
+[8.687s] [ 65%] Built target stacktrace
+[9.524s] [ 66%] [32m[1mLinking CXX static library libabsl_strings.a[0m
+[9.627s] [ 66%] Built target strings
+[9.628s] gmake: *** [Makefile:136: all] Error 2
+[9.632s] Invoked command in '/home/tolasing/ros2_ws/build/absl' returned '2': /usr/bin/cmake --build /home/tolasing/ros2_ws/build/absl -- -j8 -l8
