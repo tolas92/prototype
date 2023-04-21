@@ -8,13 +8,17 @@ from launch.actions import DeclareLaunchArgument
 from launch.actions import IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from ament_index_python.packages import get_package_prefix
+from launch.conditions import IfCondition
+from launch.substitutions import LaunchConfiguration
 
 def generate_launch_description():
+   # use_sim_time=LaunchConfiguration('use_sim_time',default='true')
 
     pkg_gazebo_ros = get_package_share_directory('gazebo_ros')
 
     pkg_box_bot_gazebo = get_package_share_directory('gazebo_sim')
 
+    use_sim_time_arg = DeclareLaunchArgument('use_sim_time', default_value='true', description='Use simulation (Gazebo) clock if true')
 
     # We get the whole install dir
     # We do this to avoid having to copy or softlink manually the packages so that gazebo can find them
@@ -49,18 +53,15 @@ def generate_launch_description():
 
     print("GAZEBO MODELS PATH=="+str(os.environ["GAZEBO_MODEL_PATH"]))
     print("GAZEBO PLUGINS PATH=="+str(os.environ["GAZEBO_PLUGIN_PATH"]))
-
     # Gazebo launch
     gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
-            os.path.join(pkg_gazebo_ros, 'launch', 'gazebo.launch.py'),
-        )
-    )    
+            os.path.join(pkg_gazebo_ros,'launch', 'gazebo.launch.py')))    
 
     return LaunchDescription([
         DeclareLaunchArgument(
           'world',
-          default_value=[os.path.join(pkg_box_bot_gazebo, 'worlds', 'test_zone.world'), ''],
+          default_value=[os.path.join(pkg_box_bot_gazebo, 'worlds', 'walled.world'), ''],
           description='SDF world file'),
-        gazebo
+        gazebo,
     ])

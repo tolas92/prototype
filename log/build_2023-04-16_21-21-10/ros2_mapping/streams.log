@@ -1,0 +1,79 @@
+[0.058s] Invoking command in '/home/tolasing/ros2_ws/build/ros2_mapping': CMAKE_PREFIX_PATH=/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/path_planner:/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/install/ros2_mapping:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/navigator_planner:/home/tolasing/ros2_ws/install/josh_path:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/asio_cmake_module /usr/bin/cmake /home/tolasing/ros2_ws/src/ros2_mapping -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/tolasing/ros2_ws/install/ros2_mapping
+[0.092s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.394s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.408s] -- Found navigation2: 1.1.6 (/opt/ros/humble/share/navigation2/cmake)
+[0.409s] -- Found slam_toolbox: 2.6.4 (/opt/ros/humble/share/slam_toolbox/cmake)
+[0.462s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.467s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.490s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.513s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.547s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.923s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.927s] -- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.186s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.300s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[3.303s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[3.525s] -- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[3.527s] -- Found OGRE
+[3.527s] --   static     : OFF
+[3.527s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[3.528s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[3.528s] --   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media
+[3.528s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[3.528s] -- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib
+[3.528s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[3.528s] -- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE
+[3.528s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[3.529s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[3.529s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[3.529s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[3.620s] -- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_RELEASE: _render_system_gl_static_library_abs-NOTFOUND
+[3.620s] -- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_DEBUG: _render_system_gl_static_library_abs-NOTFOUND
+[3.665s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[4.610s] -- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.718s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.719s] -- Added test 'lint_cmake' to check CMake code style
+[4.719s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[4.721s] -- Added test 'xmllint' to check XML markup files
+[4.723s] -- Configuring done
+[4.733s] -- Generating done
+[4.737s] -- Build files have been written to: /home/tolasing/ros2_ws/build/ros2_mapping
+[4.755s] Invoked command in '/home/tolasing/ros2_ws/build/ros2_mapping' returned '0': CMAKE_PREFIX_PATH=/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/path_planner:/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/install/ros2_mapping:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/navigator_planner:/home/tolasing/ros2_ws/install/josh_path:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/asio_cmake_module /usr/bin/cmake /home/tolasing/ros2_ws/src/ros2_mapping -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/tolasing/ros2_ws/install/ros2_mapping
+[4.757s] Invoking command in '/home/tolasing/ros2_ws/build/ros2_mapping': CMAKE_PREFIX_PATH=/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/path_planner:/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/install/ros2_mapping:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/navigator_planner:/home/tolasing/ros2_ws/install/josh_path:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/asio_cmake_module /usr/bin/cmake --build /home/tolasing/ros2_ws/build/ros2_mapping -- -j8 -l8
+[4.805s] Invoked command in '/home/tolasing/ros2_ws/build/ros2_mapping' returned '0': CMAKE_PREFIX_PATH=/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/path_planner:/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/install/ros2_mapping:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/navigator_planner:/home/tolasing/ros2_ws/install/josh_path:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/asio_cmake_module /usr/bin/cmake --build /home/tolasing/ros2_ws/build/ros2_mapping -- -j8 -l8
+[4.831s] Invoking command in '/home/tolasing/ros2_ws/build/ros2_mapping': CMAKE_PREFIX_PATH=/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/path_planner:/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/install/ros2_mapping:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/navigator_planner:/home/tolasing/ros2_ws/install/josh_path:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/asio_cmake_module /usr/bin/cmake --install /home/tolasing/ros2_ws/build/ros2_mapping
+[4.838s] -- Install configuration: ""
+[4.839s] -- Execute custom install script
+[4.839s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/ros2_mapping/share/ros2_mapping/launch/nav2_map_server.launch.py
+[4.839s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/ros2_mapping/share/ros2_mapping/launch/online_async_launch.py
+[4.840s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/ros2_mapping/share/ros2_mapping/config/amcl_config.yaml
+[4.840s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/ros2_mapping/share/ros2_mapping/config/amcl_config_initialized.yaml
+[4.840s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/ros2_mapping/share/ros2_mapping/config/amcl_default.yaml
+[4.840s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/ros2_mapping/share/ros2_mapping/config/amcl_test.yaml
+[4.840s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/ros2_mapping/share/ros2_mapping/config/barrel_area.pgm
+[4.840s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/ros2_mapping/share/ros2_mapping/config/barrel_area.yaml
+[4.840s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/ros2_mapping/share/ros2_mapping/config/mapper_params_online_async.yaml
+[4.841s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/ros2_mapping/share/ros2_mapping/config/plain_area.pgm
+[4.841s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/ros2_mapping/share/ros2_mapping/config/plain_area.yaml
+[4.841s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/ros2_mapping/share/ros2_mapping/config/protobot_area.pgm
+[4.841s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/ros2_mapping/share/ros2_mapping/config/protobot_area.yaml
+[4.841s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/ros2_mapping/share/ros2_mapping/config/test_area.pgm
+[4.841s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/ros2_mapping/share/ros2_mapping/config/test_area.yaml
+[4.841s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/ros2_mapping/share/ros2_mapping/config/walled_area.pgm
+[4.841s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/ros2_mapping/share/ros2_mapping/config/walled_area.yaml
+[4.842s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/ros2_mapping/share/ament_index/resource_index/package_run_dependencies/ros2_mapping
+[4.842s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/ros2_mapping/share/ament_index/resource_index/parent_prefix_path/ros2_mapping
+[4.842s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/ros2_mapping/share/ros2_mapping/environment/ament_prefix_path.sh
+[4.842s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/ros2_mapping/share/ros2_mapping/environment/ament_prefix_path.dsv
+[4.842s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/ros2_mapping/share/ros2_mapping/environment/path.sh
+[4.843s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/ros2_mapping/share/ros2_mapping/environment/path.dsv
+[4.843s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/ros2_mapping/share/ros2_mapping/local_setup.bash
+[4.843s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/ros2_mapping/share/ros2_mapping/local_setup.sh
+[4.843s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/ros2_mapping/share/ros2_mapping/local_setup.zsh
+[4.843s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/ros2_mapping/share/ros2_mapping/local_setup.dsv
+[4.844s] -- Symlinking: /home/tolasing/ros2_ws/install/ros2_mapping/share/ros2_mapping/package.dsv
+[4.853s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/ros2_mapping/share/ament_index/resource_index/packages/ros2_mapping
+[4.853s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/ros2_mapping/share/ros2_mapping/cmake/ros2_mappingConfig.cmake
+[4.853s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/ros2_mapping/share/ros2_mapping/cmake/ros2_mappingConfig-version.cmake
+[4.854s] -- Up-to-date symlink: /home/tolasing/ros2_ws/install/ros2_mapping/share/ros2_mapping/package.xml
+[4.859s] Invoked command in '/home/tolasing/ros2_ws/build/ros2_mapping' returned '0': CMAKE_PREFIX_PATH=/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/path_planner:/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/install/ros2_mapping:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/navigator_planner:/home/tolasing/ros2_ws/install/josh_path:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/asio_cmake_module /usr/bin/cmake --install /home/tolasing/ros2_ws/build/ros2_mapping

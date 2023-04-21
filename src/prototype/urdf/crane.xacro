@@ -9,14 +9,14 @@
 izz="0.4166667" box="0.06 0.2 0.06" FilePath="package://prototype/meshes/crane.dae"
 collision="0.0 -0.1 0.0"/>
 
-<xacro:fixed_joint name="crane_joint" origin="0.0 -0.12 0.032" parent="base_link"
+<xacro:fixed_joint name="crane_joint" origin="0.0 -0.12 0.032" parent="chassis"
 child="crane"/>
 
 <!-- ======================shaft_link & shaft_joint=======================-->
 <!--
 <joint name="shaft_joint" type="continuous">
     <origin rpy="0.0 0.0 0.0" xyz="0 -0.44 0.0425" />
-    <parent link="base_link"/>
+    <parent link="chassis"/>
     <child link="shaft"/>
     <axis xyz="0.0 0.0 1.0"/>
     <limit effort="10.0" velocity="2.0"/>

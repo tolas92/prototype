@@ -27,8 +27,8 @@ install(
     models
     urdf
     meshes
-    config
     scripts
+    rviz
   DESTINATION
     share/${PROJECT_NAME}/
 )

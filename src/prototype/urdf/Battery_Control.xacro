@@ -9,12 +9,12 @@
 <xacro:box_link name="Battery" mass="2.255" ixx="0.37583333" iyy="0.8333333" 
 izz="0.8333333" box="0.15 0.060 0.095"/>
 
-<xacro:fixed_joint name="Battery_joint" origin="0.0 0.0 0.052" parent="base_link" child="Battery"/> 
+<xacro:fixed_joint name="Battery_joint" origin="0.0 0.0 0.052" parent="chassis" child="Battery"/> 
 
 <xacro:box_link name="control_board" mass="0.500" ixx="0.8333333" iyy="0.8333333" 
 izz="0.37583333" box="0.15 0.060 0.095"/>
 
 <xacro:fixed_joint name="control_board_joint" origin="0.0 0.081 0.052"
-parent="base_link" child="control_board" />
+parent="chassis" child="control_board" />
 
 </robot>

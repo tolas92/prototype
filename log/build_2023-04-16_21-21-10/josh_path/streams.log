@@ -1,0 +1,42 @@
+[0.076s] Invoking command in '/home/tolasing/ros2_ws/build/josh_path': CMAKE_PREFIX_PATH=/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/path_planner:/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/install/ros2_mapping:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/navigator_planner:/home/tolasing/ros2_ws/install/josh_path:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/asio_cmake_module /usr/bin/cmake /home/tolasing/ros2_ws/src/josh_path -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/tolasing/ros2_ws/install/josh_path
+[0.632s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.632s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.632s] -- Found navigation2: 1.1.6 (/opt/ros/humble/share/navigation2/cmake)
+[0.633s] -- Found rclpy: 3.3.7 (/opt/ros/humble/share/rclpy/cmake)
+[0.633s] -- Found rclcpp: 16.0.3 (/opt/ros/humble/share/rclcpp/cmake)
+[0.633s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.633s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.633s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.633s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.633s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.647s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.647s] -- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.908s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.328s] -- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.517s] -- Added test 'lint_cmake' to check CMake code style
+[1.520s] -- Added test 'xmllint' to check XML markup files
+[1.526s] -- Configuring done
+[1.549s] -- Generating done
+[1.554s] -- Build files have been written to: /home/tolasing/ros2_ws/build/josh_path
+[1.570s] Invoked command in '/home/tolasing/ros2_ws/build/josh_path' returned '0': CMAKE_PREFIX_PATH=/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/path_planner:/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/install/ros2_mapping:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/navigator_planner:/home/tolasing/ros2_ws/install/josh_path:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/asio_cmake_module /usr/bin/cmake /home/tolasing/ros2_ws/src/josh_path -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/tolasing/ros2_ws/install/josh_path
+[1.573s] Invoking command in '/home/tolasing/ros2_ws/build/josh_path': CMAKE_PREFIX_PATH=/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/path_planner:/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/install/ros2_mapping:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/navigator_planner:/home/tolasing/ros2_ws/install/josh_path:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/asio_cmake_module /usr/bin/cmake --build /home/tolasing/ros2_ws/build/josh_path -- -j8 -l8
+[1.631s] Invoked command in '/home/tolasing/ros2_ws/build/josh_path' returned '0': CMAKE_PREFIX_PATH=/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/path_planner:/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/install/ros2_mapping:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/navigator_planner:/home/tolasing/ros2_ws/install/josh_path:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/asio_cmake_module /usr/bin/cmake --build /home/tolasing/ros2_ws/build/josh_path -- -j8 -l8
+[1.671s] Invoking command in '/home/tolasing/ros2_ws/build/josh_path': CMAKE_PREFIX_PATH=/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/path_planner:/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/install/ros2_mapping:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/navigator_planner:/home/tolasing/ros2_ws/install/josh_path:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/asio_cmake_module /usr/bin/cmake --install /home/tolasing/ros2_ws/build/josh_path
+[1.690s] -- Install configuration: ""
+[1.691s] -- Execute custom install script
+[1.691s] -- Symlinking: /home/tolasing/ros2_ws/install/josh_path/share/ament_index/resource_index/package_run_dependencies/josh_path
+[1.707s] -- Symlinking: /home/tolasing/ros2_ws/install/josh_path/share/ament_index/resource_index/parent_prefix_path/josh_path
+[1.727s] -- Symlinking: /home/tolasing/ros2_ws/install/josh_path/share/josh_path/environment/ament_prefix_path.sh
+[1.739s] -- Symlinking: /home/tolasing/ros2_ws/install/josh_path/share/josh_path/environment/ament_prefix_path.dsv
+[1.752s] -- Symlinking: /home/tolasing/ros2_ws/install/josh_path/share/josh_path/environment/path.sh
+[1.768s] -- Symlinking: /home/tolasing/ros2_ws/install/josh_path/share/josh_path/environment/path.dsv
+[1.777s] -- Symlinking: /home/tolasing/ros2_ws/install/josh_path/share/josh_path/local_setup.bash
+[1.789s] -- Symlinking: /home/tolasing/ros2_ws/install/josh_path/share/josh_path/local_setup.sh
+[1.803s] -- Symlinking: /home/tolasing/ros2_ws/install/josh_path/share/josh_path/local_setup.zsh
+[1.816s] -- Symlinking: /home/tolasing/ros2_ws/install/josh_path/share/josh_path/local_setup.dsv
+[1.829s] -- Symlinking: /home/tolasing/ros2_ws/install/josh_path/share/josh_path/package.dsv
+[1.845s] -- Symlinking: /home/tolasing/ros2_ws/install/josh_path/share/ament_index/resource_index/packages/josh_path
+[1.856s] -- Symlinking: /home/tolasing/ros2_ws/install/josh_path/share/josh_path/cmake/josh_pathConfig.cmake
+[1.872s] -- Symlinking: /home/tolasing/ros2_ws/install/josh_path/share/josh_path/cmake/josh_pathConfig-version.cmake
+[1.885s] -- Symlinking: /home/tolasing/ros2_ws/install/josh_path/share/josh_path/package.xml
+[1.901s] Invoked command in '/home/tolasing/ros2_ws/build/josh_path' returned '0': CMAKE_PREFIX_PATH=/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/path_planner:/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/install/ros2_mapping:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/navigator_planner:/home/tolasing/ros2_ws/install/josh_path:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/asio_cmake_module /usr/bin/cmake --install /home/tolasing/ros2_ws/build/josh_path

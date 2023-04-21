@@ -1,0 +1,82 @@
+[0.030s] Invoking command in '/home/tolasing/ros2_ws/build/articubot_one': CMAKE_PREFIX_PATH=/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/path_planner:/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/install/ros2_mapping:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/navigator_planner:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/asio_cmake_module /usr/bin/cmake /home/tolasing/ros2_ws/src/articubot_one -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/tolasing/ros2_ws/install/articubot_one
+[0.216s] -- The C compiler identification is GNU 11.3.0
+[0.407s] -- The CXX compiler identification is GNU 11.3.0
+[0.424s] -- Detecting C compiler ABI info
+[0.561s] -- Detecting C compiler ABI info - done
+[0.575s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.575s] -- Detecting C compile features
+[0.576s] -- Detecting C compile features - done
+[0.582s] -- Detecting CXX compiler ABI info
+[0.701s] -- Detecting CXX compiler ABI info - done
+[0.718s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.718s] -- Detecting CXX compile features
+[0.719s] -- Detecting CXX compile features - done
+[0.729s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.074s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[1.193s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.276s] -- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.453s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.465s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.468s] -- Added test 'lint_cmake' to check CMake code style
+[1.469s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.475s] -- Added test 'xmllint' to check XML markup files
+[1.479s] -- Configuring done
+[1.484s] -- Generating done
+[1.485s] -- Build files have been written to: /home/tolasing/ros2_ws/build/articubot_one
+[1.492s] Invoked command in '/home/tolasing/ros2_ws/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/path_planner:/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/install/ros2_mapping:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/navigator_planner:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/asio_cmake_module /usr/bin/cmake /home/tolasing/ros2_ws/src/articubot_one -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/tolasing/ros2_ws/install/articubot_one
+[1.498s] Invoking command in '/home/tolasing/ros2_ws/build/articubot_one': CMAKE_PREFIX_PATH=/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/path_planner:/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/install/ros2_mapping:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/navigator_planner:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/asio_cmake_module /usr/bin/cmake --build /home/tolasing/ros2_ws/build/articubot_one -- -j8 -l8
+[1.573s] Invoked command in '/home/tolasing/ros2_ws/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/path_planner:/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/install/ros2_mapping:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/navigator_planner:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/asio_cmake_module /usr/bin/cmake --build /home/tolasing/ros2_ws/build/articubot_one -- -j8 -l8
+[1.629s] Invoking command in '/home/tolasing/ros2_ws/build/articubot_one': CMAKE_PREFIX_PATH=/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/path_planner:/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/install/ros2_mapping:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/navigator_planner:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/asio_cmake_module /usr/bin/cmake --install /home/tolasing/ros2_ws/build/articubot_one
+[1.642s] -- Install configuration: ""
+[1.643s] -- Execute custom install script
+[1.644s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/config/ball_tracker_params_robot.yaml
+[1.659s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/config/ball_tracker_params_sim.yaml
+[1.673s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/config/drive_bot.rviz
+[1.687s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/config/empty.yaml
+[1.700s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/config/gaz_ros2_ctl_use_sim.yaml
+[1.722s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/config/gazebo_params.yaml
+[1.741s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/config/joystick.yaml
+[1.754s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/config/main.rviz
+[1.770s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/config/map.rviz
+[1.788s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/config/mapper_params_online_async.yaml
+[1.805s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/config/my_controllers.yaml
+[1.822s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/config/nav2_params.yaml
+[1.835s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/config/twist_mux.yaml
+[1.848s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/config/view_bot.rviz
+[1.867s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/description/camera.xacro
+[1.884s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/description/depth_camera.xacro
+[1.901s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/description/face.xacro
+[1.921s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/description/gazebo_control.xacro
+[1.938s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/description/inertial_macros.xacro
+[1.956s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/description/lidar.xacro
+[1.972s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/description/robot.urdf.xacro
+[1.988s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/description/robot_core.xacro
+[2.005s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/description/ros2_control.xacro
+[2.027s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/launch/ball_tracker.launch.py
+[2.044s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/launch/camera.launch.py
+[2.063s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/launch/joystick.launch.py
+[2.078s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/launch/launch_robot.launch.py
+[2.094s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/launch/launch_sim.launch.py
+[2.113s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/launch/localization_launch.py
+[2.134s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/launch/navigation_launch.py
+[2.149s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/launch/online_async_launch.py
+[2.167s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/launch/rplidar.launch.py
+[2.183s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/launch/rsp.launch.py
+[2.200s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/worlds/empty.world
+[2.220s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/worlds/obstacles.world
+[2.239s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/ament_index/resource_index/package_run_dependencies/articubot_one
+[2.257s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/ament_index/resource_index/parent_prefix_path/articubot_one
+[2.274s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/environment/ament_prefix_path.sh
+[2.291s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/environment/ament_prefix_path.dsv
+[2.309s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/environment/path.sh
+[2.329s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/environment/path.dsv
+[2.347s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/local_setup.bash
+[2.360s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/local_setup.sh
+[2.372s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/local_setup.zsh
+[2.385s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/local_setup.dsv
+[2.398s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/package.dsv
+[2.414s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/ament_index/resource_index/packages/articubot_one
+[2.436s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/cmake/articubot_oneConfig.cmake
+[2.451s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/cmake/articubot_oneConfig-version.cmake
+[2.464s] -- Symlinking: /home/tolasing/ros2_ws/install/articubot_one/share/articubot_one/package.xml
+[2.482s] Invoked command in '/home/tolasing/ros2_ws/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/path_planner:/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/install/ros2_mapping:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/navigator_planner:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/asio_cmake_module /usr/bin/cmake --install /home/tolasing/ros2_ws/build/articubot_one

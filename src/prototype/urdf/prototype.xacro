@@ -9,7 +9,7 @@
 <xacro:include filename="$(find prototype)/urdf/link_macros.xacro"/>
 <!--<xacro:include filename="$(find prototype)/urdf/Battery_Control.xacro"/>-->
 <!--<xacro:include filename="$(find prototype)/urdf/crane.xacro"/>-->
-<xacro:include filename="$(find prototype)/urdf/hardware_interface.xacro"/>
+<!--<xacro:include filename="$(find prototype)/urdf/hardware_interface.xacro"/>-->
 
 
 <!--=========================xacro:properties=============================-->
@@ -21,28 +21,29 @@
 <!--***********************************************************************-->
 
   <!--=====================Base-Footprint and base_link link=================-->
-  
-  <link name="base_footprint"/>
+  <!-- BASE LINK-->
+  <link name="base_link">
+  </link>
 
-  <!--<joint name="base_link_1_joint" type="fixed">
-    <parent link="base_footprint"/>
-    <child link="base_link_1"/>
-    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
-  </joint>
+  <joint name="base_footprint_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="base_footprint"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+</joint>
 
-  <xacro:box_link name="base_link_1" mass="1.21" ixx="0.0010803" iyy="0.00010259"
-  izz="0.00129793" box="0.1 0.1 0.2"/>-->
-   
+<link name="base_footprint">
+</link>
 
- <joint name="base_link_joint" type="fixed">
-  <origin rpy="0 0 0" xyz="0 0 0"/>
-  <parent link="base_footprint"/>
-  <child link="base_link"/>
+
+ <joint name="chassis_joint" type="fixed">
+  <origin rpy="0 0 1.57" xyz="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="chassis"/>
   <axis xyz="0 0 0"/>
   <joint_proprties damping ="0.0" friction="0.1"/>
  </joint>
 
- <xacro:box_link_meshes name="base_link" mass="1.21" ixx="0.0010803" iyy="0.00010259"
+ <xacro:box_link_meshes name="chassis" mass="1.21" ixx="0.0010803" iyy="0.00010259"
  izz="0.00129793" box="0.155 0.3 0.01" FilePath="package://prototype/meshes/blender_mesh.stl"
  collision="0.0 -0.1 0.0"/>
 

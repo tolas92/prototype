@@ -1,8 +1,13 @@
 /home/tolasing/ros2_ws/install/gazebo_sim/share/gazebo_sim//launch/start_gazebo.launch.py
 /home/tolasing/ros2_ws/install/gazebo_sim/share/gazebo_sim//worlds/agriculture.world
 /home/tolasing/ros2_ws/install/gazebo_sim/share/gazebo_sim//worlds/barrels.world
+/home/tolasing/ros2_ws/install/gazebo_sim/share/gazebo_sim//worlds/canyonview_field.world
 /home/tolasing/ros2_ws/install/gazebo_sim/share/gazebo_sim//worlds/empty_world.world
+/home/tolasing/ros2_ws/install/gazebo_sim/share/gazebo_sim//worlds/simple_env_1.world
 /home/tolasing/ros2_ws/install/gazebo_sim/share/gazebo_sim//worlds/test_zone.world
+/home/tolasing/ros2_ws/install/gazebo_sim/share/gazebo_sim//worlds/wall/model.config
+/home/tolasing/ros2_ws/install/gazebo_sim/share/gazebo_sim//worlds/wall/model.sdf
+/home/tolasing/ros2_ws/install/gazebo_sim/share/gazebo_sim//worlds/walled.world
 /home/tolasing/ros2_ws/install/gazebo_sim/share/gazebo_sim//models/100mmbin/meshes/100mm.dae
 /home/tolasing/ros2_ws/install/gazebo_sim/share/gazebo_sim//models/100mmbin/meshes/100mm.stl
 /home/tolasing/ros2_ws/install/gazebo_sim/share/gazebo_sim//models/100mmbin/model.config
@@ -2452,6 +2457,7 @@
 /home/tolasing/ros2_ws/install/gazebo_sim/share/gazebo_sim//models/yosemite/materials/textures/yosemite.png
 /home/tolasing/ros2_ws/install/gazebo_sim/share/gazebo_sim//models/yosemite/model.config
 /home/tolasing/ros2_ws/install/gazebo_sim/share/gazebo_sim//models/yosemite/yosemite.sdf
+/home/tolasing/ros2_ws/install/gazebo_sim/share/gazebo_sim//urdf/nav_test.gazebo.xacro
 /home/tolasing/ros2_ws/install/gazebo_sim/share/gazebo_sim//urdf/prototype.gazebo.xacro
 /home/tolasing/ros2_ws/install/gazebo_sim/share/gazebo_sim//urdf/prototype.gazebo.xsd
 /home/tolasing/ros2_ws/install/gazebo_sim/share/ament_index/resource_index/package_run_dependencies/gazebo_sim

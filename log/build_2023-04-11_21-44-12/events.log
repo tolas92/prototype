@@ -1,0 +1,203 @@
+[0.000000] (-) TimerEvent: {}
+[0.001774] (-) JobUnselected: {'identifier': 'asio_cmake_module'}
+[0.001878] (-) JobUnselected: {'identifier': 'gazebo_sim'}
+[0.001938] (-) JobUnselected: {'identifier': 'grass_plane'}
+[0.001994] (-) JobUnselected: {'identifier': 'io_context'}
+[0.002050] (-) JobUnselected: {'identifier': 'motor_control'}
+[0.002133] (-) JobUnselected: {'identifier': 'path_planner'}
+[0.003072] (-) JobUnselected: {'identifier': 'prototype'}
+[0.003332] (-) JobUnselected: {'identifier': 'ros2_mapping'}
+[0.003419] (-) JobUnselected: {'identifier': 'serial'}
+[0.003481] (-) JobUnselected: {'identifier': 'serial_driver'}
+[0.004194] (-) JobUnselected: {'identifier': 'vrc_heightmap_1'}
+[0.004590] (navigator_planner) JobQueued: {'identifier': 'navigator_planner', 'dependencies': OrderedDict()}
+[0.006738] (navigator_planner) JobStarted: {'identifier': 'navigator_planner'}
+[0.029578] (navigator_planner) JobProgress: {'identifier': 'navigator_planner', 'progress': 'cmake'}
+[0.030280] (navigator_planner) Command: {'cmd': ['/usr/bin/cmake', '/home/tolasing/ros2_ws/src/navigator_planner', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/tolasing/ros2_ws/install/navigator_planner'], 'cwd': '/home/tolasing/ros2_ws/build/navigator_planner', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'tolasing'), ('ROS_PACKAGE_PATH', '/home/tolasing/ros2_ws/install/serial/share'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/home/tolasing/ros2_ws/install/serial_driver/lib:/home/tolasing/ros2_ws/install/motor_control/lib:/home/tolasing/ros2_ws/install/io_context/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tolasing'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/tolasing/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '1.76.2'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_LOG_LEVEL', 'DEBUG'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1060'), ('SYSTEMD_EXEC_PID', '1199'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5443'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/tolasing/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'tolasing'), ('JOURNAL_STREAM', '8:34160'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/tolasing/ros2_ws/install/serial/lib/x86_64-linux-gnu/pkgconfig:/home/tolasing/ros2_ws/install/serial/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tolasing'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':home/tolasing/ros2_ws/src/gazebo_sim/models:home/tolasing/ros2_ws/src/gazebo_sim/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/tolasing/.local/bin:/opt/ros/humble/bin:/home/tolasing/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/tolasing-zen:@/tmp/.ICE-unix/1179,unix/tolasing-zen:/tmp/.ICE-unix/1179'), ('INVOCATION_ID', '4afea4adf9a84c3fb13dbb9cf5ceced7'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QBW821'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9a34650364.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/ros2_mapping:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/path_planner:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/asio_cmake_module:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tolasing/ros2_ws/build/navigator_planner'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tolasing/ros2_ws/build/path_planner:/home/tolasing/ros2_ws/install/path_planner/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/path_planner:/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/install/ros2_mapping:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/asio_cmake_module')]), 'shell': False}
+[0.098809] (-) TimerEvent: {}
+[0.199350] (-) TimerEvent: {}
+[0.206070] (navigator_planner) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[0.299533] (-) TimerEvent: {}
+[0.400199] (-) TimerEvent: {}
+[0.408759] (navigator_planner) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[0.427357] (navigator_planner) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.500378] (-) TimerEvent: {}
+[0.570771] (navigator_planner) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.584951] (navigator_planner) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.585778] (navigator_planner) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.586752] (navigator_planner) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.593585] (navigator_planner) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.600536] (-) TimerEvent: {}
+[0.701106] (-) TimerEvent: {}
+[0.741823] (navigator_planner) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.755613] (navigator_planner) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.756126] (navigator_planner) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.756712] (navigator_planner) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.766613] (navigator_planner) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.801298] (-) TimerEvent: {}
+[0.901854] (-) TimerEvent: {}
+[1.002385] (-) TimerEvent: {}
+[1.092583] (navigator_planner) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter \n'}
+[1.102566] (-) TimerEvent: {}
+[1.203239] (-) TimerEvent: {}
+[1.208089] (navigator_planner) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.272264] (navigator_planner) StdoutLine: {'line': b'-- Found navigation2: 1.1.6 (/opt/ros/humble/share/navigation2/cmake)\n'}
+[1.275670] (navigator_planner) StdoutLine: {'line': b'-- Found slam_toolbox: 2.6.4 (/opt/ros/humble/share/slam_toolbox/cmake)\n'}
+[1.303398] (-) TimerEvent: {}
+[1.359589] (navigator_planner) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.370643] (navigator_planner) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.389224] (navigator_planner) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.403528] (-) TimerEvent: {}
+[1.422932] (navigator_planner) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.470531] (navigator_planner) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.503700] (-) TimerEvent: {}
+[1.604270] (-) TimerEvent: {}
+[1.704844] (-) TimerEvent: {}
+[1.805450] (-) TimerEvent: {}
+[1.906101] (-) TimerEvent: {}
+[2.006725] (-) TimerEvent: {}
+[2.107372] (-) TimerEvent: {}
+[2.208016] (-) TimerEvent: {}
+[2.308903] (-) TimerEvent: {}
+[2.409588] (-) TimerEvent: {}
+[2.510240] (-) TimerEvent: {}
+[2.610894] (-) TimerEvent: {}
+[2.682904] (navigator_planner) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.689897] (navigator_planner) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.711063] (-) TimerEvent: {}
+[2.812084] (-) TimerEvent: {}
+[2.893703] (navigator_planner) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.912275] (-) TimerEvent: {}
+[2.949754] (navigator_planner) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[3.012487] (-) TimerEvent: {}
+[3.035452] (navigator_planner) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.059293] (navigator_planner) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[3.112695] (-) TimerEvent: {}
+[3.180726] (navigator_planner) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[3.181394] (navigator_planner) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[3.212916] (-) TimerEvent: {}
+[3.313759] (-) TimerEvent: {}
+[3.341102] (navigator_planner) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[3.344315] (navigator_planner) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[3.413911] (-) TimerEvent: {}
+[3.514491] (-) TimerEvent: {}
+[3.615109] (-) TimerEvent: {}
+[3.715738] (-) TimerEvent: {}
+[3.816376] (-) TimerEvent: {}
+[3.917020] (-) TimerEvent: {}
+[4.017679] (-) TimerEvent: {}
+[4.118325] (-) TimerEvent: {}
+[4.218991] (-) TimerEvent: {}
+[4.319621] (-) TimerEvent: {}
+[4.420296] (-) TimerEvent: {}
+[4.429389] (navigator_planner) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[4.432746] (navigator_planner) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[4.433361] (navigator_planner) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[4.520496] (-) TimerEvent: {}
+[4.621143] (-) TimerEvent: {}
+[4.673565] (navigator_planner) StdoutLine: {'line': b"-- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'\n"}
+[4.676484] (navigator_planner) StdoutLine: {'line': b'-- Found OGRE\n'}
+[4.676829] (navigator_planner) StdoutLine: {'line': b'--   static     : OFF\n'}
+[4.676965] (navigator_planner) StdoutLine: {'line': b'--   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume\n'}
+[4.677134] (navigator_planner) StdoutLine: {'line': b'--   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI\n'}
+[4.677285] (navigator_planner) StdoutLine: {'line': b'--   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media\n'}
+[4.677386] (navigator_planner) StdoutLine: {'line': b'-- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain\n'}
+[4.677486] (navigator_planner) StdoutLine: {'line': b'-- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib\n'}
+[4.677584] (navigator_planner) StdoutLine: {'line': b'-- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI\n'}
+[4.677722] (navigator_planner) StdoutLine: {'line': b'-- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE\n'}
+[4.677885] (navigator_planner) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so\n'}
+[4.677986] (navigator_planner) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so\n'}
+[4.678083] (navigator_planner) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so\n'}
+[4.678181] (navigator_planner) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so\n'}
+[4.718386] (navigator_planner) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") \n'}
+[4.721209] (-) TimerEvent: {}
+[4.733262] (navigator_planner) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   \n'}
+[4.821672] (-) TimerEvent: {}
+[4.918445] (navigator_planner) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[4.919383] (navigator_planner) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so\n'}
+[4.921715] (-) TimerEvent: {}
+[5.022177] (-) TimerEvent: {}
+[5.046589] (navigator_planner) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found\n'}
+[5.047038] (navigator_planner) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[5.122331] (-) TimerEvent: {}
+[5.166286] (navigator_planner) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[5.166701] (navigator_planner) StdoutLine: {'line': b'-- Looking for connect\n'}
+[5.222508] (-) TimerEvent: {}
+[5.277966] (navigator_planner) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[5.278555] (navigator_planner) StdoutLine: {'line': b'-- Looking for remove\n'}
+[5.322710] (-) TimerEvent: {}
+[5.390471] (navigator_planner) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[5.390972] (navigator_planner) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[5.422869] (-) TimerEvent: {}
+[5.494545] (navigator_planner) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[5.494937] (navigator_planner) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[5.523131] (-) TimerEvent: {}
+[5.614599] (navigator_planner) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[5.619704] (navigator_planner) StdoutLine: {'line': b'-- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_RELEASE: _render_system_gl_static_library_abs-NOTFOUND\n'}
+[5.620140] (navigator_planner) StdoutLine: {'line': b'-- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_DEBUG: _render_system_gl_static_library_abs-NOTFOUND\n'}
+[5.623270] (-) TimerEvent: {}
+[5.723874] (-) TimerEvent: {}
+[5.776310] (navigator_planner) StdoutLine: {'line': b'-- library: /usr/lib/x86_64-linux-gnu/libcurl.so\n'}
+[5.824030] (-) TimerEvent: {}
+[5.924613] (-) TimerEvent: {}
+[6.025194] (-) TimerEvent: {}
+[6.125761] (-) TimerEvent: {}
+[6.226345] (-) TimerEvent: {}
+[6.326920] (-) TimerEvent: {}
+[6.427504] (-) TimerEvent: {}
+[6.528077] (-) TimerEvent: {}
+[6.628660] (-) TimerEvent: {}
+[6.670465] (navigator_planner) StdoutLine: {'line': b'-- Found rclpy: 3.3.7 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[6.674089] (navigator_planner) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[6.728812] (-) TimerEvent: {}
+[6.829419] (-) TimerEvent: {}
+[6.848395] (navigator_planner) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[6.850198] (navigator_planner) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[6.851509] (navigator_planner) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[6.854094] (navigator_planner) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[6.857863] (navigator_planner) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.870979] (navigator_planner) StdoutLine: {'line': b'-- Generating done\n'}
+[6.875770] (navigator_planner) StdoutLine: {'line': b'-- Build files have been written to: /home/tolasing/ros2_ws/build/navigator_planner\n'}
+[6.900931] (navigator_planner) CommandEnded: {'returncode': 0}
+[6.902503] (navigator_planner) JobProgress: {'identifier': 'navigator_planner', 'progress': 'build'}
+[6.904629] (navigator_planner) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/tolasing/ros2_ws/build/navigator_planner', '--', '-j8', '-l8'], 'cwd': '/home/tolasing/ros2_ws/build/navigator_planner', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'tolasing'), ('ROS_PACKAGE_PATH', '/home/tolasing/ros2_ws/install/serial/share'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/home/tolasing/ros2_ws/install/serial_driver/lib:/home/tolasing/ros2_ws/install/motor_control/lib:/home/tolasing/ros2_ws/install/io_context/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tolasing'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/tolasing/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '1.76.2'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_LOG_LEVEL', 'DEBUG'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1060'), ('SYSTEMD_EXEC_PID', '1199'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5443'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/tolasing/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'tolasing'), ('JOURNAL_STREAM', '8:34160'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/tolasing/ros2_ws/install/serial/lib/x86_64-linux-gnu/pkgconfig:/home/tolasing/ros2_ws/install/serial/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tolasing'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':home/tolasing/ros2_ws/src/gazebo_sim/models:home/tolasing/ros2_ws/src/gazebo_sim/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/tolasing/.local/bin:/opt/ros/humble/bin:/home/tolasing/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/tolasing-zen:@/tmp/.ICE-unix/1179,unix/tolasing-zen:/tmp/.ICE-unix/1179'), ('INVOCATION_ID', '4afea4adf9a84c3fb13dbb9cf5ceced7'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QBW821'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9a34650364.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/ros2_mapping:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/path_planner:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/asio_cmake_module:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tolasing/ros2_ws/build/navigator_planner'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tolasing/ros2_ws/build/path_planner:/home/tolasing/ros2_ws/install/path_planner/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/path_planner:/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/install/ros2_mapping:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/asio_cmake_module')]), 'shell': False}
+[6.929570] (-) TimerEvent: {}
+[6.988073] (navigator_planner) CommandEnded: {'returncode': 0}
+[7.028573] (navigator_planner) JobProgress: {'identifier': 'navigator_planner', 'progress': 'install'}
+[7.029701] (-) TimerEvent: {}
+[7.045424] (navigator_planner) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/tolasing/ros2_ws/build/navigator_planner'], 'cwd': '/home/tolasing/ros2_ws/build/navigator_planner', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'tolasing'), ('ROS_PACKAGE_PATH', '/home/tolasing/ros2_ws/install/serial/share'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/home/tolasing/ros2_ws/install/serial_driver/lib:/home/tolasing/ros2_ws/install/motor_control/lib:/home/tolasing/ros2_ws/install/io_context/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tolasing'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/tolasing/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '1.76.2'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_LOG_LEVEL', 'DEBUG'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1060'), ('SYSTEMD_EXEC_PID', '1199'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5443'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/tolasing/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'tolasing'), ('JOURNAL_STREAM', '8:34160'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/tolasing/ros2_ws/install/serial/lib/x86_64-linux-gnu/pkgconfig:/home/tolasing/ros2_ws/install/serial/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tolasing'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':home/tolasing/ros2_ws/src/gazebo_sim/models:home/tolasing/ros2_ws/src/gazebo_sim/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/tolasing/.local/bin:/opt/ros/humble/bin:/home/tolasing/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/tolasing-zen:@/tmp/.ICE-unix/1179,unix/tolasing-zen:/tmp/.ICE-unix/1179'), ('INVOCATION_ID', '4afea4adf9a84c3fb13dbb9cf5ceced7'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QBW821'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9a34650364.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/ros2_mapping:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/path_planner:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/asio_cmake_module:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tolasing/ros2_ws/build/navigator_planner'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tolasing/ros2_ws/build/path_planner:/home/tolasing/ros2_ws/install/path_planner/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/src/cartographer:/usr/lib/x86_64-linux-gnu/libserial.so:/home/tolasing/ros2_ws/install/serial_driver:/home/tolasing/ros2_ws/install/motor_control:/home/tolasing/ros2_ws/install/path_planner:/opt/ros/humble:/home/tolasing/ros2_ws/install/serial:/home/tolasing/ros2_ws/install/ros2_mapping:/home/tolasing/ros2_ws/install/prototype:/home/tolasing/ros2_ws/install/io_context:/home/tolasing/ros2_ws/install/gazebo_sim:/home/tolasing/ros2_ws/install/asio_cmake_module')]), 'shell': False}
+[7.067834] (navigator_planner) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.069322] (navigator_planner) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[7.071002] (navigator_planner) StdoutLine: {'line': b'-- Symlinking: /home/tolasing/ros2_ws/install/navigator_planner/share/navigator_planner/launch/planner_server.launch.py\n'}
+[7.092743] (navigator_planner) StdoutLine: {'line': b'-- Symlinking: /home/tolasing/ros2_ws/install/navigator_planner/share/navigator_planner/config/behavior.xml\n'}
+[7.105107] (navigator_planner) StdoutLine: {'line': b'-- Symlinking: /home/tolasing/ros2_ws/install/navigator_planner/share/navigator_planner/config/behavior.yaml\n'}
+[7.117580] (navigator_planner) StdoutLine: {'line': b'-- Symlinking: /home/tolasing/ros2_ws/install/navigator_planner/share/navigator_planner/config/bt_navigator.yaml\n'}
+[7.129899] (-) TimerEvent: {}
+[7.130400] (navigator_planner) StdoutLine: {'line': b'-- Symlinking: /home/tolasing/ros2_ws/install/navigator_planner/share/navigator_planner/config/controller_server.yaml\n'}
+[7.150628] (navigator_planner) StdoutLine: {'line': b'-- Symlinking: /home/tolasing/ros2_ws/install/navigator_planner/share/navigator_planner/config/global_costmap.yaml\n'}
+[7.165999] (navigator_planner) StdoutLine: {'line': b'-- Symlinking: /home/tolasing/ros2_ws/install/navigator_planner/share/navigator_planner/config/nav_params.yaml\n'}
+[7.180492] (navigator_planner) StdoutLine: {'line': b'-- Symlinking: /home/tolasing/ros2_ws/install/navigator_planner/share/navigator_planner/config/navigate_to_pose_w_replanning_and_recovery.xml\n'}
+[7.193367] (navigator_planner) StdoutLine: {'line': b'-- Symlinking: /home/tolasing/ros2_ws/install/navigator_planner/share/navigator_planner/config/planner_server.yaml\n'}
+[7.205841] (navigator_planner) StdoutLine: {'line': b'-- Symlinking: /home/tolasing/ros2_ws/install/navigator_planner/share/navigator_planner/config/recovery_server.yaml\n'}
+[7.218671] (navigator_planner) StdoutLine: {'line': b'-- Symlinking: /home/tolasing/ros2_ws/install/navigator_planner/share/ament_index/resource_index/package_run_dependencies/navigator_planner\n'}
+[7.230069] (-) TimerEvent: {}
+[7.232376] (navigator_planner) StdoutLine: {'line': b'-- Symlinking: /home/tolasing/ros2_ws/install/navigator_planner/share/ament_index/resource_index/parent_prefix_path/navigator_planner\n'}
+[7.248860] (navigator_planner) StdoutLine: {'line': b'-- Symlinking: /home/tolasing/ros2_ws/install/navigator_planner/share/navigator_planner/environment/ament_prefix_path.sh\n'}
+[7.263956] (navigator_planner) StdoutLine: {'line': b'-- Symlinking: /home/tolasing/ros2_ws/install/navigator_planner/share/navigator_planner/environment/ament_prefix_path.dsv\n'}
+[7.278641] (navigator_planner) StdoutLine: {'line': b'-- Symlinking: /home/tolasing/ros2_ws/install/navigator_planner/share/navigator_planner/environment/path.sh\n'}
+[7.292640] (navigator_planner) StdoutLine: {'line': b'-- Symlinking: /home/tolasing/ros2_ws/install/navigator_planner/share/navigator_planner/environment/path.dsv\n'}
+[7.311104] (navigator_planner) StdoutLine: {'line': b'-- Symlinking: /home/tolasing/ros2_ws/install/navigator_planner/share/navigator_planner/local_setup.bash\n'}
+[7.324473] (navigator_planner) StdoutLine: {'line': b'-- Symlinking: /home/tolasing/ros2_ws/install/navigator_planner/share/navigator_planner/local_setup.sh\n'}
+[7.330284] (-) TimerEvent: {}
+[7.339306] (navigator_planner) StdoutLine: {'line': b'-- Symlinking: /home/tolasing/ros2_ws/install/navigator_planner/share/navigator_planner/local_setup.zsh\n'}
+[7.354930] (navigator_planner) StdoutLine: {'line': b'-- Symlinking: /home/tolasing/ros2_ws/install/navigator_planner/share/navigator_planner/local_setup.dsv\n'}
+[7.369672] (navigator_planner) StdoutLine: {'line': b'-- Symlinking: /home/tolasing/ros2_ws/install/navigator_planner/share/navigator_planner/package.dsv\n'}
+[7.384317] (navigator_planner) StdoutLine: {'line': b'-- Symlinking: /home/tolasing/ros2_ws/install/navigator_planner/share/ament_index/resource_index/packages/navigator_planner\n'}
+[7.398125] (navigator_planner) StdoutLine: {'line': b'-- Symlinking: /home/tolasing/ros2_ws/install/navigator_planner/share/navigator_planner/cmake/navigator_plannerConfig.cmake\n'}
+[7.411687] (navigator_planner) StdoutLine: {'line': b'-- Symlinking: /home/tolasing/ros2_ws/install/navigator_planner/share/navigator_planner/cmake/navigator_plannerConfig-version.cmake\n'}
+[7.425543] (navigator_planner) StdoutLine: {'line': b'-- Symlinking: /home/tolasing/ros2_ws/install/navigator_planner/share/navigator_planner/package.xml\n'}
+[7.430458] (-) TimerEvent: {}
+[7.444300] (navigator_planner) CommandEnded: {'returncode': 0}
+[7.530570] (-) TimerEvent: {}
+[7.574857] (navigator_planner) JobEnded: {'identifier': 'navigator_planner', 'rc': 0}
+[7.576331] (-) EventReactorShutdown: {}

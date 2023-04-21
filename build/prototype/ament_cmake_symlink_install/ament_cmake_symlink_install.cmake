@@ -310,8 +310,8 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(DIRECTORY "launch" "worlds" "models" "urdf" "meshes" "config" "scripts" "DESTINATION" "share/prototype/")
-ament_cmake_symlink_install_directory("/home/tolasing/ros2_ws/src/prototype" DIRECTORY "launch" "worlds" "models" "urdf" "meshes" "config" "scripts" "DESTINATION" "share/prototype/")
+# install(DIRECTORY "launch" "worlds" "models" "urdf" "meshes" "scripts" "rviz" "DESTINATION" "share/prototype/")
+ament_cmake_symlink_install_directory("/home/tolasing/ros2_ws/src/prototype" DIRECTORY "launch" "worlds" "models" "urdf" "meshes" "scripts" "rviz" "DESTINATION" "share/prototype/")
 
 # install(PROGRAMS "scripts/move_laser.py" "scripts/move_shaft.py" "DESTINATION" "lib/prototype")
 ament_cmake_symlink_install_programs("/home/tolasing/ros2_ws/src/prototype" PROGRAMS "scripts/move_laser.py" "scripts/move_shaft.py" "DESTINATION" "lib/prototype")

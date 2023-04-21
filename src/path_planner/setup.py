@@ -15,7 +15,7 @@ setup(
         (os.path.join('share',package_name,'launch'),glob('launch/*.launch.py')),
          (os.path.join('share',package_name,'config'),glob('config/*.yaml'))
     ],
-    install_requires=['setuptools','slam_toolbox','navigation2','nav2_lifecycle_manager'],
+    install_requires=['setuptools','slam_toolbox','navigation2','nav2_lifecycle_manager','nav2_bt_navigator'],
     zip_safe=True,
     maintainer='tolasing',
     maintainer_email='tolasingganesh@gmail.com',

@@ -51,10 +51,6 @@
 /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/tire_rubber_2K_NRM.png
 /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/tires/obj.mtl
 /home/tolasing/ros2_ws/install/prototype/share/prototype//meshes/tires/tinker.obj
-/home/tolasing/ros2_ws/install/prototype/share/prototype//config/controller_config.yaml
-/home/tolasing/ros2_ws/install/prototype/share/prototype//config/controller_shaft.yaml
-/home/tolasing/ros2_ws/install/prototype/share/prototype//config/controller_velocity.yaml
-/home/tolasing/ros2_ws/install/prototype/share/prototype//config/velocity.yaml
 /home/tolasing/ros2_ws/install/prototype/share/prototype//scripts/move_laser.py
 /home/tolasing/ros2_ws/install/prototype/share/prototype//scripts/move_shaft.py
 /home/tolasing/ros2_ws/install/prototype/share/prototype//scripts/publisher.py
@@ -62,6 +58,7 @@
 /home/tolasing/ros2_ws/install/prototype/share/prototype//scripts/service_velocity.py
 /home/tolasing/ros2_ws/install/prototype/share/prototype//scripts/test.py
 /home/tolasing/ros2_ws/install/prototype/share/prototype//scripts/velocity.py
+/home/tolasing/ros2_ws/install/prototype/share/prototype//rviz/localizer_rviz_config.rviz
 /home/tolasing/ros2_ws/install/prototype/lib/prototype/move_laser.py
 /home/tolasing/ros2_ws/install/prototype/lib/prototype/move_shaft.py
 /home/tolasing/ros2_ws/install/prototype/share/ament_index/resource_index/package_run_dependencies/prototype

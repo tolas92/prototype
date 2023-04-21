@@ -1,0 +1,37 @@
+[1.708s] Invoking command in '/home/tolasing/ros2_ws/build/path_planner': PYTHONPATH=/home/tolasing/ros2_ws/build/path_planner/prefix_override:/home/tolasing/ros2_ws/install/path_planner/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/tolasing/ros2_ws/build/path_planner/build
+[3.460s] running develop
+[3.460s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[3.460s]   warnings.warn(
+[3.461s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[3.461s]   warnings.warn(
+[3.461s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.16.0-unknown is an invalid version and will not be supported in a future release
+[3.461s]   warnings.warn(
+[3.461s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 0.1.43ubuntu1 is an invalid version and will not be supported in a future release
+[3.461s]   warnings.warn(
+[3.461s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+[3.461s]   warnings.warn(
+[3.468s] Invoked command in '/home/tolasing/ros2_ws/build/path_planner' returned '0': PYTHONPATH=/home/tolasing/ros2_ws/build/path_planner/prefix_override:/home/tolasing/ros2_ws/install/path_planner/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/tolasing/ros2_ws/build/path_planner/build
+[3.478s] Invoking command in '/home/tolasing/ros2_ws/src/path_planner': PYTHONPATH=/home/tolasing/ros2_ws/build/path_planner/prefix_override:/home/tolasing/ros2_ws/install/path_planner/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/path_planner build --build-base /home/tolasing/ros2_ws/build/path_planner/build install --record /home/tolasing/ros2_ws/build/path_planner/install.log --single-version-externally-managed
+[4.086s] running egg_info
+[4.086s] writing ../../build/path_planner/path_planner.egg-info/PKG-INFO
+[4.088s] writing dependency_links to ../../build/path_planner/path_planner.egg-info/dependency_links.txt
+[4.091s] writing entry points to ../../build/path_planner/path_planner.egg-info/entry_points.txt
+[4.094s] writing requirements to ../../build/path_planner/path_planner.egg-info/requires.txt
+[4.094s] writing top-level names to ../../build/path_planner/path_planner.egg-info/top_level.txt
+[4.101s] reading manifest file '../../build/path_planner/path_planner.egg-info/SOURCES.txt'
+[4.104s] writing manifest file '../../build/path_planner/path_planner.egg-info/SOURCES.txt'
+[4.106s] running build
+[4.107s] running build_py
+[4.109s] running install
+[4.114s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[4.114s]   warnings.warn(
+[4.115s] running install_lib
+[4.120s] running install_data
+[4.123s] copying config/bt_navigator.yaml -> /home/tolasing/ros2_ws/install/path_planner/share/path_planner/config
+[4.132s] running install_egg_info
+[4.135s] removing '/home/tolasing/ros2_ws/install/path_planner/lib/python3.10/site-packages/path_planner-0.0.0-py3.10.egg-info' (and everything under it)
+[4.141s] Copying ../../build/path_planner/path_planner.egg-info to /home/tolasing/ros2_ws/install/path_planner/lib/python3.10/site-packages/path_planner-0.0.0-py3.10.egg-info
+[4.149s] running install_scripts
+[4.236s] Installing navigation_node script to /home/tolasing/ros2_ws/install/path_planner/lib/path_planner
+[4.239s] writing list of installed files to '/home/tolasing/ros2_ws/build/path_planner/install.log'
+[4.307s] Invoked command in '/home/tolasing/ros2_ws/src/path_planner' returned '0': PYTHONPATH=/home/tolasing/ros2_ws/build/path_planner/prefix_override:/home/tolasing/ros2_ws/install/path_planner/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/path_planner build --build-base /home/tolasing/ros2_ws/build/path_planner/build install --record /home/tolasing/ros2_ws/build/path_planner/install.log --single-version-externally-managed
