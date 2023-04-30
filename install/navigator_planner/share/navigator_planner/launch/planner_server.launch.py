@@ -1,1 +1,0 @@
-/home/tolasing/ros2_ws/src/navigator_planner/launch/planner_server.launch.py

@@ -1,1 +1,0 @@
-/home/tolasing/ros2_ws/src/ros2_mapping/launch/nav2_map_server.launch.py

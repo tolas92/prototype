@@ -1,1 +1,0 @@
-/home/tolasing/ros2_ws/build/navigator_planner/ament_cmake_environment_hooks/local_setup.sh
