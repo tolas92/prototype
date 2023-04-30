@@ -9,7 +9,7 @@
    <!-- ======================ROS2_CONTROL=======================-->
 
 
-    <!--<ros2_control name="PrototypeMotor" type="system">
+    <ros2_control name="PrototypeMotor" type="system">
         <hardware>
           <plugin>motor_control/MotorControl</plugin>
           <param name="left_wheel_name">front_left_wheel_joint</param>
@@ -39,5 +39,5 @@
           <state_interface name="velocity" />
         </joint>
     
-      </ros2_control>-->
+      </ros2_control>
 </robot>
