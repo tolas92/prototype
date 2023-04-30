@@ -122,7 +122,7 @@ namespace motor_control
        r_wheel_.cmd / r_wheel_.rads_per_count / cfg_.loop_rate);
        //if(write_count %200==0)
        //{
-       RCLCPP_INFO(rclcpp::get_logger("write command"),"%f %f %f",l_wheel_.cmd,l_wheel_.rads_per_count,cfg_.loop_rate);
+      // RCLCPP_INFO(rclcpp::get_logger("write command"),"%f %f %f",l_wheel_.cmd,l_wheel_.rads_per_count,cfg_.loop_rate);
        //}
        //write_count++; 
       return hardware_interface::return_type::OK;

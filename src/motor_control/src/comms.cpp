@@ -50,10 +50,10 @@ void Comms::setMotorValues(double val_1,double val_2)
 
     //if(counter %200==0)
     //{
-    RCLCPP_INFO(rclcpp::get_logger("set motor values"),"%f,%f",val_1,val_2);
+   // RCLCPP_INFO(rclcpp::get_logger("set motor values"),"%f,%f",val_1,val_2);
     //}
     std::string line=serialDriver.readline();
-    RCLCPP_INFO(rclcpp::get_logger("response"),"%s",line.c_str());
+   // RCLCPP_INFO(rclcpp::get_logger("response"),"%s",line.c_str());
     //counter++;
 }
 
@@ -66,7 +66,7 @@ void Comms::setPidValues(float k_p,float k_d,float k_i,float k_o)
 
 std::string Comms::sendMsg(const std::string &msg_to_send,bool print_output)
 {
-     RCLCPP_INFO(rclcpp::get_logger("send message"), "msg_to_send=%s", msg_to_send.c_str());
+     //RCLCPP_INFO(rclcpp::get_logger("send message"), "msg_to_send=%s", msg_to_send.c_str());
     serialDriver.write(msg_to_send);
     std::string response=serialDriver.readline();
 
