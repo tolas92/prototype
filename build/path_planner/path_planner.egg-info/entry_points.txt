@@ -1,3 +1,0 @@
-[console_scripts]
-navigation_node = path_planner.test:main
-

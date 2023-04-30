@@ -1,9 +1,0 @@
-/home/tolasing/ros2_ws/build/prototype/CMakeFiles/uninstall.dir
-/home/tolasing/ros2_ws/build/prototype/CMakeFiles/prototype_uninstall.dir
-/home/tolasing/ros2_ws/build/prototype/CMakeFiles/test.dir
-/home/tolasing/ros2_ws/build/prototype/CMakeFiles/edit_cache.dir
-/home/tolasing/ros2_ws/build/prototype/CMakeFiles/rebuild_cache.dir
-/home/tolasing/ros2_ws/build/prototype/CMakeFiles/list_install_components.dir
-/home/tolasing/ros2_ws/build/prototype/CMakeFiles/install.dir
-/home/tolasing/ros2_ws/build/prototype/CMakeFiles/install/local.dir
-/home/tolasing/ros2_ws/build/prototype/CMakeFiles/install/strip.dir
