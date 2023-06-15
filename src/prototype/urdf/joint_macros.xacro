@@ -2,7 +2,7 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="prototype">
 
 
-    <xacro:property name="wheel_radius" value="0.0325"/>
+    <xacro:property name="wheel_radius" value="0.032"/>
     <xacro:property name="wheel_length" value="0.026"/>
    
    <!--===============xacro for continuous joints=========================-->

@@ -2,7 +2,6 @@
 
 <!--=========================starting xacros================================-->
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="prototype">
-<xacro:include filename="$(find gazebo_sim)/urdf/prototype.gazebo.xacro"/>
 <xacro:include filename="$(find prototype)/urdf/wheel.xacro"/>
 <xacro:include filename="$(find prototype)/urdf/lidar.xacro"/>
 <xacro:include filename="$(find prototype)/urdf/joint_macros.xacro"/>
@@ -51,4 +50,13 @@
  <xacro:box_link name="base_link" mass="1.21" ixx="0.0010803" iyy="0.00010259"
  izz="0.00129793" box="0.155 0.3 0.01"/>-->
 
+ <joint name="imu_joint" type="fixed">
+  <parent link="chassis"/>
+  <child link="imu_link"/>
+  <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+ </joint>
+ 
+ <link name="imu_link">
+  
+ </link>
 </robot>

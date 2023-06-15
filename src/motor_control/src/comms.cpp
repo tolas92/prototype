@@ -27,15 +27,23 @@ void Comms::sendEmpytMsg()
     std::string response=sendMsg("\r");
 }
 
-void Comms::readEncoderValues(int & /*val_1*/,int & /*val_2*/ )
+void Comms::readEncoderValues(int &val_1,int &val_2 )
 {
-   /* std::string response=sendMsg("e\r");
+    static int write_count=0;
+    std::string response=sendMsg("e\r");
     std::string delimiter=" ";
     size_t del_pos=response.find(delimiter);
     std::string token_1=response.substr(0,del_pos);
     std::string token_2=response.substr(del_pos+delimiter.length());
-     val_1=std::atoi(token_1.c_str());
-     val_2=std::atoi(token_2.c_str());*/
+    val_1=std::atoi(token_1.c_str());
+    val_2=std::atoi(token_2.c_str());
+     if(write_count %10==0)
+       {
+       RCLCPP_INFO(rclcpp::get_logger("encoder values command"),"%d %d",val_1,val_2);
+       }
+       write_count++; 
+
+
 
 }
 
@@ -43,16 +51,16 @@ void Comms::setMotorValues(double val_1,double val_2)
 {
     //static int counter=0;
     std::stringstream ss;
-    int v1=static_cast<int>(val_1);
-    int v2=static_cast<int>(val_2);
-    ss<<"o "<<v1<<" "<<v2<<"\r";
+   // int v1=static_cast<int>(val_1);
+    //int v2=static_cast<int>(val_2);
+    ss<<"m "<<val_1<<" "<<val_2<<"\r";
     sendMsg(ss.str(),false);
 
     //if(counter %200==0)
     //{
    // RCLCPP_INFO(rclcpp::get_logger("set motor values"),"%f,%f",val_1,val_2);
     //}
-    std::string line=serialDriver.readline();
+   // std::string line=serialDriver.readline();
    // RCLCPP_INFO(rclcpp::get_logger("response"),"%s",line.c_str());
     //counter++;
 }

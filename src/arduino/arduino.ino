@@ -113,7 +113,7 @@
 
   /* Stop the robot if it hasn't received a movement command
    in this number of milliseconds */
-  #define AUTO_STOP_INTERVAL 2000
+  #define AUTO_STOP_INTERVAL 500
   long lastMotorCommand = AUTO_STOP_INTERVAL;
 #endif
 
@@ -158,6 +158,7 @@ int runCommand() {
   arg2 = atoi(argv2);
   
   switch(cmd) {
+    /*
   case GET_BAUDRATE:
     Serial.println(BAUDRATE);
     break;
@@ -192,7 +193,7 @@ int runCommand() {
   case SERVO_READ:
     Serial.println(servos[arg1].getServo().read());
     break;
-#endif
+#endif*/
     
 #ifdef USE_BASE
   case READ_ENCODERS:
@@ -205,8 +206,9 @@ int runCommand() {
     resetPID();
     Serial.println("OK");
     break;
+/*
   case MOTOR_SPEEDS:
-    /* Reset the auto stop timer */
+    //Reset the auto stop timer
     lastMotorCommand = millis();
     if (arg1 == 0 && arg2 == 0) {
       setMotorSpeeds(0, 0);
@@ -217,7 +219,7 @@ int runCommand() {
     leftPID.TargetTicksPerFrame = arg1;
     rightPID.TargetTicksPerFrame = arg2;
     Serial.println("OK"); 
-    break;
+    break;*/
   case MOTOR_RAW_PWM:
     /* Reset the auto stop timer */
     lastMotorCommand = millis();
@@ -225,7 +227,7 @@ int runCommand() {
     moving = 0; // Sneaky way to temporarily disable the PID
     setMotorSpeeds(arg1,arg2);
     Serial.println("OK"); 
-    break;
+    break;                                                                                              
   case UPDATE_PID:
     while ((str = strtok_r(p, ":", &p)) != '\0') {
        pid_args[i] = atoi(str);
@@ -247,16 +249,19 @@ int runCommand() {
 /* Setup function--runs once at startup. */
 void setup() {
   Serial.begin(BAUDRATE);
-
+  
 // Initialize the motor controller if used */
 #ifdef USE_BASE
   #ifdef ARDUINO_ENC_COUNTER
+  pinMode(LEFT_ENC_PIN_A,INPUT_PULLUP);
+
+  /*
     //set as inputs
     DDRD &= ~(1<<LEFT_ENC_PIN_A);
     DDRD &= ~(1<<LEFT_ENC_PIN_B);
     DDRC &= ~(1<<RIGHT_ENC_PIN_A);
     DDRC &= ~(1<<RIGHT_ENC_PIN_B);
-    
+     
     //enable pull up resistors
     PORTD |= (1<<LEFT_ENC_PIN_A);
     PORTD |= (1<<LEFT_ENC_PIN_B);
@@ -270,6 +275,9 @@ void setup() {
     
     // enable PCINT1 and PCINT2 interrupt in the general interrupt mask
     PCICR |= (1 << PCIE1) | (1 << PCIE2);
+    */
+   attachInterrupt(digitalPinToInterrupt(LEFT_ENC_PIN_A),pulse_count,RISING);
+   
   #endif
   initMotorController();
   resetPID();
@@ -282,8 +290,7 @@ void setup() {
       servos[i].initServo(
           servoPins[i],
           stepDelay[i],
-          servoInitPosition[i]);
-    }
+          servoInitPosition[i]);    }
   #endif
 }
 

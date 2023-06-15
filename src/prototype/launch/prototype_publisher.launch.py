@@ -25,7 +25,7 @@ def generate_launch_description():
         executable='robot_state_publisher',
         name='my_robot_state_publisher_node',
         emulate_tty=True,
-        parameters=[{'use_sim_time':True,
+        parameters=[{'use_sim_time':False,
         'robot_description':Command(['xacro ',xacro_file_path])}],
         output="screen"
     )
@@ -38,7 +38,7 @@ def generate_launch_description():
         executable='rviz2',
         output='screen',
         name='rivz_node',
-        parameters=[{'use_sim_time':True}],
+        parameters=[{'use_sim_time':False}],
         arguments=['-d',rviz_config])
     
     #create and return launch description object

@@ -9,7 +9,7 @@ from launch.actions import IncludeLaunchDescription,TimerAction
 import xacro
 
 def generate_launch_description():
-    robot_name="cleaner"
+    robot_name="proto"
     #robot_model_file="prototype.xacro"
   #  package_name="prototype"
 

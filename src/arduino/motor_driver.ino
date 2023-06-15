@@ -85,9 +85,9 @@
   void setMotorSpeeds(int leftSpeed, int rightSpeed) {
     setMotorSpeed(LEFT, leftSpeed);
     setMotorSpeed(RIGHT, rightSpeed);
-    Serial.print(leftSpeed);
-    Serial.print(",");
-    Serial.println(rightSpeed);
+    //Serial.print(leftSpeed);
+    //Serial.print(",");
+    //Serial.println(rightSpeed);
   }
 #else
   #error A motor driver must be selected!
