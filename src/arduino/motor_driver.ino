@@ -22,13 +22,13 @@
   }
 
   /* Wrap the drive motor set speed function */
-  void setMotorSpeed(int i, int spd) {
+  void setMotorSpeed(double i, double spd) {
     if (i == LEFT) drive.setM1Speed(spd);
     else drive.setM2Speed(spd);
   }
 
   // A convenience function for setting both motor speeds
-  void setMotorSpeeds(int leftSpeed, int rightSpeed) {
+  void setMotorSpeeds(double leftSpeed, double rightSpeed) {
     setMotorSpeed(LEFT, leftSpeed);
     setMotorSpeed(RIGHT, rightSpeed);
   }
@@ -61,9 +61,11 @@
     digitalWrite(LEFT_MOTOR_ENABLE, HIGH);
   }
   
-  void setMotorSpeed(int i, int spd) {
+  void setMotorSpeed(int i, double spd) {
     unsigned char reverse = 0;
-  
+    
+    //if(spd>0&&spd<90){spd=90;}
+
     if (spd < 0)
     {
       spd = -spd;
@@ -82,10 +84,15 @@
     }
   }
   
-  void setMotorSpeeds(int leftSpeed, int rightSpeed) {
+  void setMotorSpeeds(double leftSpeed, double rightSpeed) {
+    if(leftSpeed ==0&&rightSpeed==0)
+    {
+      detachInterrupt(digitalPinToInterrupt(LEFT_ENC_PIN_A));
+    detachInterrupt(digitalPinToInterrupt(RIGHT_ENC_PIN_A));
+    }
+     setMotorSpeed(RIGHT, rightSpeed);
     setMotorSpeed(LEFT, leftSpeed);
-    setMotorSpeed(RIGHT, rightSpeed);
-    //Serial.print(leftSpeed);
+       //Serial.print(leftSpeed);
     //Serial.print(",");
     //Serial.println(rightSpeed);
   }

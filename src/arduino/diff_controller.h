@@ -1,7 +1,4 @@
-/* Functions and type-defs for PID control.
-
-   Taken mostly from Mike Ferguson's ArbotiX code which lives at:
-   
+/* Functions and type-defs for PID control.Taken mostly from Mike Ferguson's ArbotiX code which lives at:
    http://vanadium-ros-pkg.googlecode.com/svn/trunk/arbotix/
 */
 
@@ -33,10 +30,10 @@ SetPointInfo;
 SetPointInfo leftPID, rightPID;
 
 /* PID Parameters */
-int Kp = 20;
-int Kd = 12;
+int Kp = 40;
+int Kd = 60;
 int Ki = 0;
-int Ko = 50;
+int Ko = 100;
 
 unsigned char moving = 0; // is the base in motion?
 
@@ -44,6 +41,7 @@ unsigned char moving = 0; // is the base in motion?
 * Initialize PID variables to zero to prevent startup spikes
 * when turning PID on to start moving
 * In particular, assign both Encoder and PrevEnc the current encoder value
+
 * See http://brettbeauregard.com/blog/2011/04/improving-the-beginner%E2%80%99s-pid-initialization/
 * Note that the assumption here is that PID is only turned on
 * when going from stop to moving, that's why we can init everything on zero.
@@ -100,12 +98,14 @@ void doPID(SetPointInfo * p) {
 
   p->output = output;
   p->PrevInput = input;
+  //Serial.Println("pid called");
 }
 
 /* Read the encoder values and call the PID routine */
 void updatePID() {
   /* Read the encoders */
   leftPID.Encoder = readEncoder(LEFT);
+  
   rightPID.Encoder = readEncoder(RIGHT);
   
   /* If we're not moving there is nothing more to do */

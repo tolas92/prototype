@@ -28,8 +28,12 @@
     else return encoders.XAxisReset();
   }
 #elif defined(ARDUINO_ENC_COUNTER)
-  volatile long left_enc_pos = 0L;
-  volatile long right_enc_pos = 0L;
+  volatile long left_enc_pos=0L;
+  volatile long right_enc_pos=0L;
+  volatile long left_for_enc_pos = 0L;
+  volatile long left_back_enc_pos=0L;
+  volatile long right_for_enc_pos = 0L;
+  volatile long right_back_enc_pos=0L;
   /*
   static const int8_t ENC_STATES [] = {0,1,-1,0,-1,0,0,1,1,0,0,-1,0,-1,1,0};  //encoder lookup table
     
@@ -52,31 +56,49 @@
   
   	right_enc_pos += ENC_STATES[(enc_last & 0x0f)];
   }*/
- void pulse_count(){
-  /*left_enc_pos++;
- distance=3.14*62.22*(left_wheel_count*1.0/80);
- Serial.print("the distance in mm : ");
- Serial.println(distance);*/
- left_enc_pos++;
+/*
+void pulse_count_left_wrapper_forward() {
+  pulse_count_left(LEFT_FORWARD);
+}
+
+void pulse_count_left_wrapper_backward() {
+  pulse_count_left(LEFT_BACKWARD);
+}  */
+
+void pulse_count_left(int i) {
+  if(i==LEFT_FORWARD){left_for_enc_pos++;}
+  else left_back_enc_pos++;
+  }
+
+ void pulse_count_right(int i){
+  if(i==RIGHT_FORWARD){right_for_enc_pos++;}
+  else right_back_enc_pos++;
+       
  }
-  
-  
+
   //Wrap the encoder reading function 
   long readEncoder(int i) {
-    if (i == LEFT)
-    {
-       return left_enc_pos;                     
-    } 
-    else return left_enc_pos;
+    if (i == LEFT) {
+      left_enc_pos=(left_for_enc_pos-left_back_enc_pos);
+      return left_enc_pos;
+  }else{
+    right_enc_pos=(right_for_enc_pos-right_back_enc_pos);
+    return right_enc_pos;
+  }
+     
   }
 
   /* Wrap the encoder reset function */
   void resetEncoder(int i) {
     if (i == LEFT){
+      left_for_enc_pos=0L;
+      left_back_enc_pos=0L;
       left_enc_pos=0L;
       return;
     } else { 
-      left_enc_pos=0L;
+      right_for_enc_pos=0L;
+      right_back_enc_pos=0L;
+      right_enc_pos=0L;
       return;
     }
   }

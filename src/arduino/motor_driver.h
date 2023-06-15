@@ -12,5 +12,5 @@
 #endif
 
 void initMotorController();
-void setMotorSpeed(int i, int spd);
-void setMotorSpeeds(int leftSpeed, int rightSpeed);
+void setMotorSpeed(int i, double spd);
+void setMotorSpeeds(double leftSpeed, double rightSpeed);

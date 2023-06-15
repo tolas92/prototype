@@ -77,6 +77,7 @@
 
 #if defined(ARDUINO) && ARDUINO >= 100
 #include "Arduino.h"
+#include  "string.h"
 #else
 #include "Arduino.h"
 #endif
@@ -96,7 +97,7 @@
 #ifdef USE_BASE
   /* Motor driver function definitions */
   #include "motor_driver.h"
-
+  
   /* Encoder driver function definitions */
   #include "encoder_driver.h"
 
@@ -113,7 +114,7 @@
 
   /* Stop the robot if it hasn't received a movement command
    in this number of milliseconds */
-  #define AUTO_STOP_INTERVAL 500
+  #define AUTO_STOP_INTERVAL 1000
   long lastMotorCommand = AUTO_STOP_INTERVAL;
 #endif
 
@@ -134,8 +135,8 @@ char argv1[16];
 char argv2[16];
 
 // The arguments converted to integers
-int arg1;
-int arg2;
+double arg1;
+double arg2;
 
 /* Clear the current command parameters */
 void resetCommand() {
@@ -154,11 +155,11 @@ int runCommand() {
   char *p = argv1;
   char *str;
   int pid_args[4];
-  arg1 = atoi(argv1);
-  arg2 = atoi(argv2);
+  arg1 = atof(argv1);
+  arg2 = atof(argv2);
   
   switch(cmd) {
-    /*
+  
   case GET_BAUDRATE:
     Serial.println(BAUDRATE);
     break;
@@ -193,7 +194,7 @@ int runCommand() {
   case SERVO_READ:
     Serial.println(servos[arg1].getServo().read());
     break;
-#endif*/
+#endif
     
 #ifdef USE_BASE
   case READ_ENCODERS:
@@ -206,10 +207,38 @@ int runCommand() {
     resetPID();
     Serial.println("OK");
     break;
-/*
+
   case MOTOR_SPEEDS:
     //Reset the auto stop timer
     lastMotorCommand = millis();
+
+    // if-else statement for LEFT_ENCODER count.
+  if (arg1<0)
+  {attachInterrupt(digitalPinToInterrupt(LEFT_ENC_PIN_A),[](){pulse_count_left(LEFT_BACKWARD);},RISING);}
+  else if(arg1>0)
+  {attachInterrupt(digitalPinToInterrupt(LEFT_ENC_PIN_A),[](){pulse_count_left(LEFT_FORWARD);},RISING);}
+
+  //if-else statement for RIGHT_ENCODER count.
+  if (arg2<0)
+  {attachInterrupt(digitalPinToInterrupt(RIGHT_ENC_PIN_A),[](){pulse_count_right(RIGHT_BACKWARD);},RISING);}
+  else if(arg2>0)
+  {attachInterrupt(digitalPinToInterrupt(RIGHT_ENC_PIN_A),[](){pulse_count_right(RIGHT_FORWARD);},RISING);}
+
+  if (arg1 > 0 && arg1 < 5) {
+  arg1 = 5;
+}  /*
+else if (arg1 < 0 && arg1 > -5) {
+  arg1 = -5;
+}*/
+
+if (arg2 > 0 && arg2 < 5) {
+  arg2 = 5;
+}  /*
+else if (arg2 < 0 && arg2 > -5) {
+  arg2 = -5;
+}*/
+
+
     if (arg1 == 0 && arg2 == 0) {
       setMotorSpeeds(0, 0);
       resetPID();
@@ -219,7 +248,7 @@ int runCommand() {
     leftPID.TargetTicksPerFrame = arg1;
     rightPID.TargetTicksPerFrame = arg2;
     Serial.println("OK"); 
-    break;*/
+    break;
   case MOTOR_RAW_PWM:
     /* Reset the auto stop timer */
     lastMotorCommand = millis();
@@ -249,12 +278,13 @@ int runCommand() {
 /* Setup function--runs once at startup. */
 void setup() {
   Serial.begin(BAUDRATE);
-  
+  Serial.println("Invalid Command");
 // Initialize the motor controller if used */
 #ifdef USE_BASE
   #ifdef ARDUINO_ENC_COUNTER
   pinMode(LEFT_ENC_PIN_A,INPUT_PULLUP);
-
+  pinMode(RIGHT_ENC_PIN_A,INPUT_PULLUP);
+  
   /*
     //set as inputs
     DDRD &= ~(1<<LEFT_ENC_PIN_A);
@@ -276,7 +306,7 @@ void setup() {
     // enable PCINT1 and PCINT2 interrupt in the general interrupt mask
     PCICR |= (1 << PCIE1) | (1 << PCIE2);
     */
-   attachInterrupt(digitalPinToInterrupt(LEFT_ENC_PIN_A),pulse_count,RISING);
+  
    
   #endif
   initMotorController();
@@ -299,6 +329,8 @@ void setup() {
    interval and check for auto-stop conditions.
 */
 void loop() {
+  // detachInterrupt(digitalPinToInterrupt(LEFT_ENC_PIN_A));
+   //detachInterrupt(digitalPinToInterrupt(RIGHT_ENC_PIN_A));
   while (Serial.available() > 0) {
     
     // Read the next character
@@ -336,9 +368,8 @@ void loop() {
         argv2[index] = chr;
         index++;
       }
-    }
-  }
-  
+    }}
+
 // If we are using base control, run a PID calculation at the appropriate intervals
 #ifdef USE_BASE
   if (millis() > nextPID) {
@@ -348,6 +379,8 @@ void loop() {
   
   // Check to see if we have exceeded the auto-stop interval
   if ((millis() - lastMotorCommand) > AUTO_STOP_INTERVAL) {;
+   // detachInterrupt(digitalPinToInterrupt(LEFT_ENC_PIN_A));
+    //detachInterrupt(digitalPinToInterrupt(RIGHT_ENC_PIN_A));
     setMotorSpeeds(0, 0);
     moving = 0;
   }
