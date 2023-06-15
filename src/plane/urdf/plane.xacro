@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="prototype">
+
+<xacro:include filename="$(find plane)/urdf/hardware_interface.xacro"/>
+
+ 
+    <material name="white">
+	    <color rgba="1 1 1 1"/>
+    </material>
+
+
+    <link name="world">
+        
+    </link>
+
+    <joint name="world_joint" type="fixed">
+        <origin xyz="0 0 0.5" rpy="0 0 0" />
+        <parent link="world" />
+        <child link="plane" />
+    </joint>
+
+    <link name="plane">
+    
+    </link>   
+    
+    
+    <joint name="imu_joint" type="continuous">
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <parent link="plane" />
+        <child link="imu_link" />
+        <axis xyz="1 0 0"/>
+        <limit effort="100" velocity="1" lower="-1.5708" upper="1.5708" />
+    </joint>
+
+    <link name="imu_link">
+    <visual>
+      <origin rpy="0 0 1.5708" xyz="0 0 0"/>
+      <geometry>
+        <box size="0.5 0.5 0.5"/>
+      </geometry>
+      <material name="white"/>
+    </visual>
+    </link>   
+
+    
+</robot>

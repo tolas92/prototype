@@ -22,7 +22,7 @@ def generate_launch_description():
     robot_description=Command(['ros2 param get --hide-type /my_robot_state_publisher_node robot_description'])
     controller_config=os.path.join(
         get_package_share_directory
-        ("motor_control"),"config","controller_config.yaml"
+        ("motor_control"),"config","my_controllers.yaml"
     )
 
     controller_ros2_control= Node(
@@ -40,7 +40,7 @@ def generate_launch_description():
     diff_drive_spawner=Node(
         package="controller_manager",
         executable="spawner",
-        arguments=["diff_controller"]
+        arguments=["diff_cont"]
     )
 
     delayed_diff_drive_spawner=RegisterEventHandler(
@@ -53,7 +53,7 @@ def generate_launch_description():
     Joint_state_spawner=Node(
         package="controller_manager",
         executable="spawner",
-        arguments=["joint_state_broadcaster"]
+        arguments=["joint_broad"]
     )
 
     delayed_Joint_state_spawner=RegisterEventHandler(

@@ -29,16 +29,19 @@ namespace motor_control
         //setup the wheels
         l_wheel_.setup(cfg_.left_wheel_name,cfg_.enc_counts_per_rev);
         r_wheel_.setup(cfg_.right_wheel_name,cfg_.enc_counts_per_rev);
+
+
+        
         
         //setup the arduino
         arduino_.setup(cfg_.device,cfg_.baud_rate,cfg_.timeout);
-        RCLCPP_INFO(rclcpp::get_logger("arduino"),"%s,%d",cfg_.device.c_str(),cfg_.baud_rate);
+        //RCLCPP_INFO(rclcpp::get_logger("arduino"),"%s,%d",cfg_.device.c_str(),cfg_.baud_rate);
         return CallbackReturn::SUCCESS;
     }
 
     CallbackReturn MotorControl::on_configure(const rclcpp_lifecycle::State & /*previous_state*/)
     {
-        RCLCPP_INFO(rclcpp::get_logger("motor_control"),"configuring....");
+        //RCLCPP_INFO(rclcpp::get_logger("motor_control"),"configuring....");
         return CallbackReturn::SUCCESS;}
      
     std::vector<hardware_interface::StateInterface> MotorControl::export_state_interfaces()
@@ -57,22 +60,22 @@ namespace motor_control
 
     std::vector<hardware_interface::CommandInterface> MotorControl::export_command_interfaces()
     {
-        static int command_count=0;
+        //static int command_count=0;
         std::vector<hardware_interface::CommandInterface> command_interfaces;
         command_interfaces.emplace_back(hardware_interface::CommandInterface(l_wheel_.name,hardware_interface::HW_IF_VELOCITY,&l_wheel_.cmd));
         command_interfaces.emplace_back(hardware_interface::CommandInterface(r_wheel_.name,hardware_interface::HW_IF_VELOCITY,&r_wheel_.cmd));
-        if(command_count%200==0)
+        /*if(command_count%200==0)
         {
         RCLCPP_INFO(rclcpp::get_logger("command interface"),"%f",l_wheel_.cmd);
         }
-        command_count++;
+        command_count++;*/
         return command_interfaces;
 
     }
 
     CallbackReturn MotorControl::on_activate(const rclcpp_lifecycle::State &/*previous_state*/)
     {
-      RCLCPP_INFO(rclcpp::get_logger("motor_control"),"activating this now ...");
+      //RCLCPP_INFO(rclcpp::get_logger("motor_control"),"activating this now ...");
        arduino_.sendEmpytMsg();
       //arduino.setPidValues(9,7,0,100);
       //arduino.setPidValues(14,7,0,100);
@@ -89,17 +92,18 @@ namespace motor_control
 
     }
 
-    hardware_interface::return_type MotorControl::read(const rclcpp::Time &/*time*/,const rclcpp::Duration &/*period*/)
+    hardware_interface::return_type MotorControl::read(const rclcpp::Time &/*time*/,const rclcpp::Duration & period)
     {
+        /*
         auto new_time=std::chrono::system_clock::now();
         std::chrono::duration<double> diff=new_time-time_;
         double deltaSeconds=diff.count();
-        time_=new_time;
-
+        time_=new_time;*/
         if(!arduino_.connected())
         {return hardware_interface::return_type::ERROR;}
 
         arduino_.readEncoderValues(l_wheel_.enc,r_wheel_.enc);
+        double deltaSeconds=period.seconds();
 
         double prev_pos=l_wheel_.pos;
         l_wheel_.pos=l_wheel_.calcEncAngle();
@@ -114,17 +118,15 @@ namespace motor_control
     
     hardware_interface::return_type MotorControl::write(const rclcpp::Time & /*time*/,const rclcpp::Duration &/*period*/)
     {
-      //static int write_count=0;
       if(!arduino_.connected())
       {return hardware_interface::return_type::ERROR;}
         
-       arduino_.setMotorValues(l_wheel_.cmd / l_wheel_.rads_per_count / cfg_.loop_rate,
-       r_wheel_.cmd / r_wheel_.rads_per_count / cfg_.loop_rate);
-       //if(write_count %200==0)
-       //{
-      // RCLCPP_INFO(rclcpp::get_logger("write command"),"%f %f %f",l_wheel_.cmd,l_wheel_.rads_per_count,cfg_.loop_rate);
-       //}
-       //write_count++; 
+       //arduino_.setMotorValues(l_wheel_.cmd / l_wheel_.rads_per_count / cfg_.loop_rate,
+       //r_wheel_.cmd / r_wheel_.rads_per_count / cfg_.loop_rate);
+       arduino_.setMotorValues(l_wheel_.cmd,
+       r_wheel_.cmd);
+     // RCLCPP_INFO(rclcpp::get_logger("write command"),"%f %f %f",l_wheel_.cmd,l_wheel_.rads_per_count,cfg_.loop_rate);
+       
       return hardware_interface::return_type::OK;
 
     }

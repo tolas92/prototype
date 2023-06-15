@@ -6,62 +6,64 @@
   </gazebo>
 
   <gazebo reference="front_right_wheel">
-    <!--
     <kp>100000.0</kp>
     <kd>50.0</kd>
     <gravity> 1 </gravity>
     <mu1>100</mu1>
-    <mu2>100</mu2>-->
+    <mu2>100</mu2>
+    <!--
     <kp>2000.0</kp>
     <kd>100.0</kd>
     <gravity> 1 </gravity>
     <mu1>100</mu1>
-    <mu2>100</mu2>
+    <mu2>100</mu2>-->
     <material>Gazebo/Black</material>
   </gazebo>
 
   <gazebo reference="front_left_wheel">
-   <!-- <kp>100000.0</kp>
+    <kp>100000.0</kp>
     <kd>50.0</kd>
     <gravity> 1 </gravity>
     <mu1>100</mu1>
-    <mu2>100</mu2>-->
+    <mu2>100</mu2>
+    <!--
     <kp>2000.0</kp>
     <kd>100.0</kd>
     <gravity> 1 </gravity>
     <mu1>100</mu1>
-    <mu2>100</mu2>
+    <mu2>100</mu2>-->
     <material>Gazebo/Black</material>
     <!--<material>Gazebo/Green</material>-->
   </gazebo>
 
   <gazebo reference="back_right_wheel">
-    <!--
-    <kp>100000.0</kp>
+  <kp>100000.0</kp>
     <kd>50.0</kd>
     <gravity> 1 </gravity>
     <mu1>100</mu1>
-    <mu2>100</mu2>-->
+    <mu2>100</mu2>
+    <!--
     <kp>2000.0</kp>
     <kd>100.0</kd>
     <gravity> 1 </gravity>
     <mu1>100</mu1>
-    <mu2>100</mu2>
+    <mu2>100</mu2>-->
     <material>Gazebo/Black</material>
     <!--<material>Gazebo/Green</material>-->
   </gazebo>
 
   <gazebo reference="back_left_wheel">
-   <!--<kp>100000.0</kp>
+  <kp>100000.0</kp>
     <kd>50.0</kd>
     <gravity> 1 </gravity>
     <mu1>100</mu1>
-    <mu2>100</mu2>|-->
+    <mu2>100</mu2>
+    <!--
     <kp>2000.0</kp>
     <kd>100.0</kd>
     <gravity> 1 </gravity>
     <mu1>100</mu1>
-    <mu2>100</mu2>
+    <mu2>100</mu2>-->
     <material>Gazebo/Black</material>
     <!--<material>Gazebo/Green</material>-->
   </gazebo>
@@ -157,7 +159,7 @@
       <publish_odom_tf>true</publish_odom_tf>
       <odometry_topic>odom</odometry_topic>
       <odometry_frame>odom</odometry_frame>
-      <robot_base_frame>base_footprint</robot_base_frame>
+      <robot_base_frame>base_link</robot_base_frame>
     </plugin>
   </gazebo>
 

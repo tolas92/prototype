@@ -25,20 +25,20 @@ def generate_launch_description():
         executable='robot_state_publisher',
         name='my_robot_state_publisher_node',
         emulate_tty=True,
-        parameters=[{'use_sim_time':True,
+        parameters=[{'use_sim_time':False,
         'robot_description':Command(['xacro ',xacro_file_path])}],
         output="screen"
     )
 
     #specifying the configuration for RVIZ
-    rviz_config=os.path.join(get_package_share_directory(package_name),'rviz','localizer_rviz_config.rviz')
+    rviz_config=os.path.join(get_package_share_directory(package_name),'rviz','test_encoder.rviz')
 
     rviz_node=Node(
         package='rviz2',
         executable='rviz2',
         output='screen',
         name='rivz_node',
-        parameters=[{'use_sim_time':True}],
+        parameters=[{'use_sim_time':False}],
         arguments=['-d',rviz_config])
     
     #create and return launch description object
@@ -46,6 +46,6 @@ def generate_launch_description():
     return LaunchDescription(
         [
             robot_state_publisher_node,
-            #rviz_node,
+            rviz_node,
         ]
     )
