@@ -9,7 +9,7 @@ from launch.actions import IncludeLaunchDescription,TimerAction
 import xacro
 
 def generate_launch_description():
-    robot_name="proto"
+    robot_name="cleaner"
     #robot_model_file="prototype.xacro"
   #  package_name="prototype"
 
@@ -22,7 +22,7 @@ def generate_launch_description():
     robot_description=Command(['ros2 param get --hide-type /my_robot_state_publisher_node robot_description'])
     controller_config=os.path.join(
         get_package_share_directory
-        ("motor_control"),"config","controller_config.yaml"
+        ("prototype"),"config","controller_config.yaml"
     )
 
     controller_ros2_control= Node(

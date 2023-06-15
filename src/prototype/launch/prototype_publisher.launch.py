@@ -31,7 +31,7 @@ def generate_launch_description():
     )
 
     #specifying the configuration for RVIZ
-    rviz_config=os.path.join(get_package_share_directory(package_name),'rviz','test_encoder.rviz')
+    rviz_config=os.path.join(get_package_share_directory(package_name),'rviz','localizer_rviz_config.rviz')
 
     rviz_node=Node(
         package='rviz2',
@@ -46,6 +46,6 @@ def generate_launch_description():
     return LaunchDescription(
         [
             robot_state_publisher_node,
-            rviz_node,
+            #rviz_node,
         ]
     )

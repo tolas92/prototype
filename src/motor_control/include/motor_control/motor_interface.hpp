@@ -37,8 +37,10 @@ class MotorControl: public hardware_interface::SystemInterface
     private:
     Config cfg_;
     Comms arduino_;
-    Wheel l_wheel_;
-    Wheel r_wheel_;
+    Wheel l_wheel_front;
+    Wheel l_wheel_back;
+    Wheel r_wheel_front;
+    Wheel r_wheel_back;
     rclcpp::Logger log_;
     //Parameters for the robot
     double hw_start_sec_;

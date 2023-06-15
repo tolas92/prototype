@@ -8,18 +8,16 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclpy REQUIRED)
-find_package(gazebo_ros REQUIRED)
 find_package(urdf REQUIRED)
 find_package(xacro REQUIRED)
 
 find_package(ros2_control REQUIRED)
-find_package(gazebo_ros2_control REQUIRED)
 find_package(joint_state_broadcaster REQUIRED)
 find_package(joint_trajectory_controller REQUIRED)
 find_package(velocity_controllers REQUIRED)
 find_package(std_srvs REQUIRED)
 find_package(motor_control REQUIRED)
-find_package(tf2_ros REQUIRED)
+find_package(diffdrive_arduino REQUIRED)
 
 install(
   DIRECTORY

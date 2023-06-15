@@ -29,7 +29,6 @@ class Comms
 
         serial::Serial serialDriver;
 
-      
 };
 
 #endif
