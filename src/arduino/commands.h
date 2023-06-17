@@ -21,6 +21,10 @@
 #define ANALOG_WRITE   'x'
 #define LEFT            0
 #define RIGHT           1
+#define LEFT_FORWARD    0
+#define LEFT_BACKWARD   1
+#define RIGHT_FORWARD   0 
+#define RIGHT_BACKWARD  1
 
 #endif
 
