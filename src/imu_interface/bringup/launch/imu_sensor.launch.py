@@ -25,7 +25,7 @@ from launch.actions import IncludeLaunchDescription,TimerAction
 import xacro
 
 def generate_launch_description():
-    robot_description=Command(['ros2 param get --hide-type /robot_state_publisher_node robot_description'])
+    robot_description=Command(['ros2 param get --hide-type /my_robot_state_publisher_node robot_description'])
     controller_config=os.path.join(
         get_package_share_directory
         ("imu_interface"),"config","imu_sensor_config.yaml"
@@ -77,7 +77,8 @@ def generate_launch_description():
         )
 
     return LaunchDescription([
-        delayed_controller_ros2_control,
-        delayed_imu_spawner,
-        delayed_Joint_state_spawner
+       # delayed_controller_ros2_control,
+        #delayed_imu_spawner,
+        #delayed_Joint_state_spawner,
+        imu_spawner
     ])

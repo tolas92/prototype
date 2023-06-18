@@ -46,12 +46,12 @@ void Comms::setup(const std::string &serial_device,int32_t baud_rate,int32_t tim
 }
 
 
-void Comms::readYPRValues(int& ax, int& ay, int& az, double& yaw, double& pitch, double& roll)
+void Comms::read_imu_values(double& accel_x, double& gyro_z)
 {
     serialDriver.FlushIOBuffers();
     
     // Requesting the acceleration data from the Arduino
-    serialDriver.Write("a\r");
+    serialDriver.Write("e\r");
     std::string response = "";
     serialDriver.ReadLine(response, '\n', timeout_ms);
     
@@ -59,42 +59,13 @@ void Comms::readYPRValues(int& ax, int& ay, int& az, double& yaw, double& pitch,
     size_t delimiterPos = response.find(" ");
     std::string axtoken = response.substr(0, delimiterPos);
     response.erase(0, delimiterPos + 1);
-    
-    delimiterPos = response.find(" ");
-    std::string ayToken = response.substr(0, delimiterPos);
-    response.erase(0, delimiterPos + 1);
-    
-    std::string azToken = response;
+    std::string gzToken = response;
     
     // Convert the tokens to integer values
-    ax = std::atoi(axtoken.c_str());
-    ay = std::atoi(ayToken.c_str());
-    az = std::atoi(azToken.c_str());
-    
-    // Requesting the gyro data from the Arduino
-    serialDriver.Write("g\r");
-    response = "";
-    serialDriver.ReadLine(response, '\n', timeout_ms);
-    
-    // Parse the YPR values from the response
-    delimiterPos = response.find(" ");
-    std::string yawToken = response.substr(0, delimiterPos);
-    response.erase(0, delimiterPos + 1);
-    
-    delimiterPos = response.find(" ");
-    std::string pitchToken = response.substr(0, delimiterPos);
-    response.erase(0, delimiterPos + 1);
-    
-    std::string rollToken = response;
-    
-    // Convert the tokens to double values
-    yaw = std::atof(yawToken.c_str());
-    pitch = std::atof(pitchToken.c_str());
-    roll = std::atof(rollToken.c_str());
-    
-    RCLCPP_INFO(rclcpp::get_logger("iu_node"), "Yaw: %.2f, Pitch: %.2f, Roll: %.2f", yaw, pitch, roll);
-    RCLCPP_INFO(rclcpp::get_logger("imu_node"), "accelx: %d, accely: %d, accelz: %d", ax, ay, az);
-}
+    accel_x = std::atof(axtoken.c_str());
+    gyro_z= std::atof(gzToken.c_str());
+    RCLCPP_INFO(rclcpp::get_logger("imu_data"),"%f %f",accel_x,gyro_z);
+    }
 /*
 int main()
 {

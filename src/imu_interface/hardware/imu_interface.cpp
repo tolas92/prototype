@@ -94,10 +94,10 @@ hardware_interface::return_type Imu_Sensor::read(const rclcpp::Time & /*time*/, 
   RCLCPP_INFO(rclcpp::get_logger("Imu_Sensor"), "Reading...");
 
   comms_.read_imu_values(imu_.linear_acceleration_x,
-  imu_.linear_acceleration_y,imu_.linear_acceleration_z);
+  imu_.angular_velocity_z);
    RCLCPP_INFO(
-    rclcpp::get_logger("Imu_Sensor"), "%f %f %f",imu_.linear_acceleration_x,
-  imu_.linear_acceleration_y,imu_.linear_acceleration_z);
+    rclcpp::get_logger("Imu_Sensor"), "%f %f",imu_.linear_acceleration_x,
+  imu_.angular_velocity_z);
 
 
 

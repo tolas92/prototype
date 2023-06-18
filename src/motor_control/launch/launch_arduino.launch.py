@@ -49,12 +49,30 @@ def generate_launch_description():
         on_start=[diff_drive_spawner]
         )
     )
+    
+    imu_spawner=Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["imu_broadcaster"]
+    )
+    
+    delayed_imu_spawner=RegisterEventHandler(
+        event_handler=OnProcessStart(
+        target_action=controller_ros2_control,
+        on_start=[imu_spawner]
+        )
+    )
+    
+    
+    
 
     Joint_state_spawner=Node(
         package="controller_manager",
         executable="spawner",
         arguments=["joint_state_broadcaster"]
     )
+    
+    
 
     delayed_Joint_state_spawner=RegisterEventHandler(
         event_handler=OnProcessStart(target_action=
@@ -65,5 +83,6 @@ def generate_launch_description():
     return LaunchDescription([
         delayed_controller_ros2_control,
         delayed_diff_drive_spawner,
+        delayed_imu_spawner,
         delayed_Joint_state_spawner
     ])

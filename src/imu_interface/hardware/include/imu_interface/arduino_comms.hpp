@@ -84,21 +84,18 @@ public:
     std::string response = send_msg("\r");
   }
 
-  void read_imu_values(double &accel_x,double &accel_y,double &accel_z)
+  void read_imu_values(double &accel_x,double &gyro_z)
   {
-  std::string response = send_msg("e\r");
+    std::string response = send_msg("e\r");
 
   std::string delimiter = " ";
   size_t del_pos = response.find(delimiter);
   std::string token_1 = response.substr(0, del_pos);
   response.erase(0, del_pos + delimiter.length());
-  del_pos = response.find(delimiter);
-  std::string token_2 = response.substr(0, del_pos);
-  std::string token_3 = response.substr(del_pos + delimiter.length());
+  std::string token_2 = response.substr(0);  // Extract the remaining part of the string
 
   accel_x = std::atof(token_1.c_str());
-  accel_y = std::atof(token_2.c_str());
-  accel_z = std::atof(token_3.c_str());
+  gyro_z = std::atof(token_2.c_str());
   }
 
 private:
