@@ -85,16 +85,14 @@
   }
   
   void setMotorSpeeds(double leftSpeed, double rightSpeed) {
+    /*
     if(leftSpeed ==0&&rightSpeed==0)
     {
-      detachInterrupt(digitalPinToInterrupt(LEFT_ENC_PIN_A));
-    detachInterrupt(digitalPinToInterrupt(RIGHT_ENC_PIN_A));
-    }
-     setMotorSpeed(RIGHT, rightSpeed);
+      //detachInterrupt(digitalPinToInterrupt(LEFT_ENC_PIN_A));
+    //detachInterrupt(digitalPinToInterrupt(RIGHT_ENC_PIN_A));
+    }*/
+    setMotorSpeed(RIGHT, rightSpeed);
     setMotorSpeed(LEFT, leftSpeed);
-       //Serial.print(leftSpeed);
-    //Serial.print(",");
-    //Serial.println(rightSpeed);
   }
 #else
   #error A motor driver must be selected!

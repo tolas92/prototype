@@ -13,35 +13,14 @@
         <hardware>
           <!--<plugin>diffdrive_arduino/DiffDriveArduinoHardware</plugin>-->
           <plugin>motor_control/MotorControl</plugin>
-          <param name="front_left_wheel_name">front_left_wheel_joint</param>
-          <param name="front_right_wheel_name">front_right_wheel_joint</param>
           <param name="back_left_wheel_name">back_left_wheel_joint</param>
           <param name="back_right_wheel_name">back_right_wheel_joint</param>
           <param name="loop_rate">30</param>
-          <param name="device">/dev/serial/by-path/pci-0000:03:00.3-usb-0:2.2:1.0</param> 
+          <param name="device">/dev/serial/by-path/pci-0000:03:00.3-usb-0:2:1.0</param> 
           <param name="baud_rate">115200</param>
           <param name="timeout">1000</param>
-          <param name="enc_counts_per_rev">120</param>
+          <param name="enc_counts_per_rev">5606</param>
         </hardware>
-    
-        <joint name="front_right_wheel_joint">
-          <command_interface name="velocity">
-            <param name="min">0.0</param>
-            <param name="max">2.0</param>
-          </command_interface>
-          <state_interface name="position" />
-          <state_interface name="velocity" />
-        </joint>
-    
-        <joint name="front_left_wheel_joint">
-          <command_interface name="velocity">
-            <param name="min">0.0</param>
-            <param name="max">2.0</param>
-          </command_interface>
-          <state_interface name="position" />
-          <state_interface name="velocity" />
-        </joint>
-
         <joint name="back_right_wheel_joint">
           <command_interface name="velocity">
             <param name="min">0.0</param>

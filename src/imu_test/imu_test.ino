@@ -15,7 +15,7 @@
 
     Inspired and modeled after the ArbotiX driver by Michael Ferguson
     
-    Software License Agreement (BSD License)
+    Software License Agreement (BSD License),,
 
     Copyright (c) 2012, Patrick Goebel.
     All rights reserved.
@@ -278,7 +278,7 @@ else if (arg2 < 0 && arg2 > -5) {
 void setup() {
   Serial.begin(BAUDRATE);
   mpu.begin();
-  mpu.setAccelerometerRange(MPU6050_RANGE_8_G);
+  mpu.setAccelerometerRange(MPU6050_RANGE_2_G);
   mpu.setGyroRange(MPU6050_RANGE_500_DEG);
   mpu.setFilterBandwidth(MPU6050_BAND_21_HZ);
 

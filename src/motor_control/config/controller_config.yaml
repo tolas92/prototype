@@ -14,11 +14,11 @@ controller_manager:
 
 diff_controller:
   ros__parameters:
-    left_wheel_names: ['front_left_wheel_joint','back_left_wheel_joint']
-    right_wheel_names: ['front_right_wheel_joint','back_right_wheel_joint']
+    left_wheel_names: ['back_left_wheel_joint']
+    right_wheel_names: ['back_right_wheel_joint']
     wheel_separation: 0.20
-    wheels_per_side: 2  # actually 2, but both are controlled by 1 signal
-    wheel_radius: 0.032
+    wheels_per_side: 1  # actually 2, but both are controlled by 1 signal
+    wheel_radius: 0.035
 
     wheel_separation_multiplier: 1.0
     left_wheel_radius_multiplier: 1.0
@@ -27,11 +27,12 @@ diff_controller:
     publish_rate: 50.0
     odom_frame_id: odom
     base_frame_id: base_link
-    pose_covariance_diagonal : [1.00, 1.00, 1.00, 2.00, 2.00, 2.00]
-    twist_covariance_diagonal: [1.00, 1.00, 1.00, 2.00, 2.00, 2.00]
+    pose_covariance_diagonal : [0.001, 0.001, 0.001,0.001,0.001,0.001]
+    twist_covariance_diagonal: [0.001,0.001,0.001,0.001,0.001,0.001]
 
     open_loop: false
-    enable_odom_tf: false
+    
+    enable_odom_tf: true
 
     cmd_vel_timeout: 0.5
     #publish_limited_velocity: true

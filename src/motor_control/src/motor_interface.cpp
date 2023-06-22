@@ -19,8 +19,6 @@ namespace motor_control
 
 
         //configure the wheels and arduino.
-        cfg_.front_left_wheel_name=info_.hardware_parameters["front_left_wheel_name"];
-        cfg_.front_right_wheel_name=info_.hardware_parameters["front_right_wheel_name"];
         cfg_.back_left_wheel_name=info_.hardware_parameters["back_left_wheel_name"];
         cfg_.back_right_wheel_name=info_.hardware_parameters["back_right_wheel_name"];
         cfg_.loop_rate=stof(info_.hardware_parameters["loop_rate"]);
@@ -29,9 +27,7 @@ namespace motor_control
         cfg_.timeout=stoi(info_.hardware_parameters["timeout"]);
         cfg_.enc_counts_per_rev=stoi(info_.hardware_parameters["enc_counts_per_rev"]);
         //setup the wheels
-        l_wheel_front.setup(cfg_.front_left_wheel_name,cfg_.enc_counts_per_rev);
         l_wheel_back.setup(cfg_.back_left_wheel_name,cfg_.enc_counts_per_rev);
-        r_wheel_front.setup(cfg_.front_right_wheel_name,cfg_.enc_counts_per_rev);
         r_wheel_back.setup(cfg_.back_right_wheel_name,cfg_.enc_counts_per_rev);
        
         //setup the arduino
@@ -49,17 +45,13 @@ namespace motor_control
     {
         std::vector<hardware_interface::StateInterface> state_interfaces;
         //state interface for the left wheel;
-        state_interfaces.emplace_back(hardware_interface::StateInterface(l_wheel_front.name,hardware_interface::HW_IF_VELOCITY,&l_wheel_front.vel));
         state_interfaces.emplace_back(hardware_interface::StateInterface(l_wheel_back.name,hardware_interface::HW_IF_VELOCITY,&l_wheel_back.vel));
 
-        state_interfaces.emplace_back(hardware_interface::StateInterface(l_wheel_front.name,hardware_interface::HW_IF_POSITION,&l_wheel_front.pos));
         state_interfaces.emplace_back(hardware_interface::StateInterface(l_wheel_back.name,hardware_interface::HW_IF_POSITION,&l_wheel_back.pos));
 
         //state interface for the right wheel
-        state_interfaces.emplace_back(hardware_interface::StateInterface(r_wheel_front.name,hardware_interface::HW_IF_VELOCITY,&r_wheel_front.vel));
         state_interfaces.emplace_back(hardware_interface::StateInterface(r_wheel_back.name,hardware_interface::HW_IF_VELOCITY,&r_wheel_back.vel));
 
-        state_interfaces.emplace_back(hardware_interface::StateInterface(r_wheel_front.name,hardware_interface::HW_IF_POSITION,&r_wheel_front.pos));
         state_interfaces.emplace_back(hardware_interface::StateInterface(r_wheel_back.name,hardware_interface::HW_IF_POSITION,&r_wheel_back.pos));
 
          return state_interfaces;
@@ -69,10 +61,7 @@ namespace motor_control
     {
         //static int command_count=0;
         std::vector<hardware_interface::CommandInterface> command_interfaces;
-        command_interfaces.emplace_back(hardware_interface::CommandInterface(l_wheel_front.name,hardware_interface::HW_IF_VELOCITY,&l_wheel_front.cmd));
         command_interfaces.emplace_back(hardware_interface::CommandInterface(l_wheel_back.name,hardware_interface::HW_IF_VELOCITY,&l_wheel_back.cmd));
-
-        command_interfaces.emplace_back(hardware_interface::CommandInterface(r_wheel_front.name,hardware_interface::HW_IF_VELOCITY,&r_wheel_front.cmd));
         command_interfaces.emplace_back(hardware_interface::CommandInterface(r_wheel_back.name,hardware_interface::HW_IF_VELOCITY,&r_wheel_back.cmd));
         /*
         if(command_count%200==0)
@@ -121,15 +110,9 @@ namespace motor_control
         l_wheel_back.pos=l_wheel_back.calcEncAngle();
         l_wheel_back.vel=(l_wheel_back.pos-prev_pos)/deltaSeconds;
 
-        l_wheel_front.pos=l_wheel_back.pos;
-        l_wheel_front.vel=l_wheel_back.vel;
-
         prev_pos=r_wheel_back.pos;
         r_wheel_back.pos=r_wheel_back.calcEncAngle();
         r_wheel_back.vel=(r_wheel_back.pos-prev_pos)/deltaSeconds;
-
-        r_wheel_front.pos=r_wheel_back.pos;
-        r_wheel_front.vel=r_wheel_back.vel;
 
         return hardware_interface::return_type::OK;
     }
@@ -140,11 +123,11 @@ namespace motor_control
       if(!arduino_.connected())
       {return hardware_interface::return_type::ERROR;}
         
-       arduino_.setMotorValues(l_wheel_front.cmd / l_wheel_front.rads_per_count / cfg_.loop_rate,
-       r_wheel_front.cmd / r_wheel_front.rads_per_count / cfg_.loop_rate);
+       arduino_.setMotorValues(l_wheel_back.cmd / l_wheel_back.rads_per_count / cfg_.loop_rate,
+       r_wheel_back.cmd / r_wheel_back.rads_per_count / cfg_.loop_rate);
           if(write_count %10==0)
        {
-       RCLCPP_INFO(rclcpp::get_logger("motor values"),"%f %f",l_wheel_front.cmd / l_wheel_front.rads_per_count / cfg_.loop_rate,r_wheel_front.cmd / r_wheel_front.rads_per_count / cfg_.loop_rate);
+       RCLCPP_INFO(rclcpp::get_logger("motor values"),"%f %f",l_wheel_back.cmd / l_wheel_back.rads_per_count / cfg_.loop_rate,r_wheel_back.cmd / r_wheel_back.rads_per_count / cfg_.loop_rate);
        }
        write_count++; 
 
