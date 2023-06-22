@@ -1,3 +1,6 @@
+
+
+
 /*********************************************************************
  *  ROSArduinoBridge
  
@@ -78,6 +81,9 @@
 #if defined(ARDUINO) && ARDUINO >= 100
 #include "Arduino.h"
 #include  "string.h"
+#include <Adafruit_MPU6050.h>
+#include <Adafruit_Sensor.h>
+#include <Wire.h>
 #else
 #include "Arduino.h"
 #endif
@@ -97,6 +103,7 @@
 #ifdef USE_BASE
   /* Motor driver function definitions */
   #include "motor_driver.h"
+
   
   /* Encoder driver function definitions */
   #include "encoder_driver.h"
@@ -114,16 +121,16 @@
 
   /* Stop the robot if it hasn't received a movement command
    in this number of milliseconds */
-  #define AUTO_STOP_INTERVAL 2000
+  #define AUTO_STOP_INTERVAL 1000
   long lastMotorCommand = AUTO_STOP_INTERVAL;
 #endif
 
 /* Variable initialization */
 
+Adafruit_MPU6050 mpu;
 // A pair of varibles to help parse serial commands (thanks Fergs)
 int arg = 0;
 int index = 0;
-volatile long pulse=0L;
 
 // Variable to hold an input character
 char chr;
@@ -139,10 +146,12 @@ char argv2[16];
 double arg1;
 double arg2;
 
-void pulse_count(){
-  pulse++;
-  Serial.println(pulse);
-}
+void read_imu(sensors_event_t a,sensors_event_t g)
+{
+  Serial.print(a.acceleration.x);
+  Serial.print(" ");
+  Serial.println(g.gyro.z);
+  }
 /* Clear the current command parameters */
 void resetCommand() {
   cmd = NULL;
@@ -155,7 +164,7 @@ void resetCommand() {
 }
 
 /* Run a command.  Commands are defined in commands.h */
-int runCommand() {
+int runCommand(sensors_event_t a,sensors_event_t g) {
   int i = 0;
   char *p = argv1;
   char *str;
@@ -202,10 +211,8 @@ int runCommand() {
 #endif
     
 #ifdef USE_BASE
-  case READ_ENCODERS:
-    Serial.print(readEncoder(LEFT));
-    Serial.print(" ");
-    Serial.println(readEncoder(RIGHT));
+  case READ_IMU:
+   read_imu(a,g);
     break;
    case RESET_ENCODERS:
     resetEncoders();
@@ -216,17 +223,19 @@ int runCommand() {
   case MOTOR_SPEEDS:
     //Reset the auto stop timer
     lastMotorCommand = millis();
-  /*
+
+    // if-else statement for LEFT_ENCODER count
+
   if (arg1 > 0 && arg1 < 5) {
   arg1 = 5;
-}
+}  /*
 else if (arg1 < 0 && arg1 > -5) {
   arg1 = -5;
-}
+}*/
 
 if (arg2 > 0 && arg2 < 5) {
   arg2 = 5;
-} 
+}  /*
 else if (arg2 < 0 && arg2 > -5) {
   arg2 = -5;
 }*/
@@ -271,20 +280,25 @@ else if (arg2 < 0 && arg2 > -5) {
 /* Setup function--runs once at startup. */
 void setup() {
   Serial.begin(BAUDRATE);
- // Serial.println("Invalid Command");
+  mpu.begin();
+  mpu.setAccelerometerRange(MPU6050_RANGE_2_G);
+  mpu.setGyroRange(MPU6050_RANGE_250_DEG);
+  mpu.setFilterBandwidth(MPU6050_BAND_5_HZ);
+
+  Serial.println("Invalid Command");
 // Initialize the motor controller if used */
 #ifdef USE_BASE
   #ifdef ARDUINO_ENC_COUNTER
- // pinMode(LEFT_ENC_PIN_A,INPUT_PULLUP);
-  //pinMode(LEFT_ENC_PIN_B,INPUT_PULLUP);
-  //pinMode(RIGHT_ENC_PIN_A,INPUT_PULLUP);
-  //attachInterrupt(digitalPinToInterrupt(LEFT_ENC_PIN_A),pulse_count,RISING);
- //set as inputs
+  pinMode(LEFT_ENC_PIN_A,INPUT_PULLUP);
+  pinMode(RIGHT_ENC_PIN_A,INPUT_PULLUP);
+  
+  /*
+    //set as inputs
     DDRD &= ~(1<<LEFT_ENC_PIN_A);
     DDRD &= ~(1<<LEFT_ENC_PIN_B);
     DDRC &= ~(1<<RIGHT_ENC_PIN_A);
     DDRC &= ~(1<<RIGHT_ENC_PIN_B);
-    
+     
     //enable pull up resistors
     PORTD |= (1<<LEFT_ENC_PIN_A);
     PORTD |= (1<<LEFT_ENC_PIN_B);
@@ -298,8 +312,9 @@ void setup() {
     
     // enable PCINT1 and PCINT2 interrupt in the general interrupt mask
     PCICR |= (1 << PCIE1) | (1 << PCIE2);
-
+    */
   
+   
   #endif
   initMotorController();
   resetPID();
@@ -321,6 +336,8 @@ void setup() {
    interval and check for auto-stop conditions.
 */
 void loop() {
+    sensors_event_t a, g, temp;
+  mpu.getEvent(&a, &g, &temp);
   // detachInterrupt(digitalPinToInterrupt(LEFT_ENC_PIN_A));
    //detachInterrupt(digitalPinToInterrupt(RIGHT_ENC_PIN_A));
   while (Serial.available() > 0) {
@@ -332,7 +349,7 @@ void loop() {
     if (chr == 13) {
       if (arg == 1) argv1[index] = NULL;
       else if (arg == 2) argv2[index] = NULL;
-      runCommand();
+      runCommand(a,g);
       resetCommand();
     }
     // Use spaces to delimit parts of the command
