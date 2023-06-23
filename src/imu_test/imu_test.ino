@@ -1,73 +1,10 @@
-/*********************************************************************
- *  ROSArduinoBridge
- 
-    A set of simple serial commands to control a differential drive
-    robot and receive back sensor and odometry data. Default 
-    configuration assumes use of an Arduino Mega + Pololu motor
-    controller shield + Robogaia Mega Encoder shield.  Edit the
-    readEncoder() and setMotorSpeed() wrapper functions if using 
-    different motor controller or encoder method.
+#define USE_BASE
 
-    Created for the Pi Robot Project: http://www.pirobot.org
-    and the Home Brew Robotics Club (HBRC): http://hbrobotics.org
-    
-    Authors: Patrick Goebel, James Nugen
-
-    Inspired and modeled after the ArbotiX driver by Michael Ferguson
-    
-    Software License Agreement (BSD License),,
-
-    Copyright (c) 2012, Patrick Goebel.
-    All rights reserved.
-
-    Redistribution and use in source and binary forms, with or without
-    modification, are permitted provided that the following conditions
-    are met:
-
-     * Redistributions of source code must retain the above copyright
-       notice, this list of conditions and the following disclaimer.
-     * Redistributions in binary form must reproduce the above
-       copyright notice, this list of conditions and the following
-       disclaimer in the documentation and/or other materials provided
-       with the distribution.
-
-    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-    "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-    LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
-    FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
-    COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
-    INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
-    BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
-    LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-    CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
-    LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
-    ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- *  POSSIBILITY OF SUCH DAMAGE.
- *********************************************************************/
-
-#define USE_BASE      // Enable the base controller code
-//#undef USE_BASE     // Disable the base controller code
-
-/* Define the motor controller and encoder library you are using */
 #ifdef USE_BASE
-   /* The Pololu VNH5019 dual motor driver shield */
-   //#define POLOLU_VNH5019
-
-   /* The Pololu MC33926 dual motor driver shield */
-   //#define POLOLU_MC33926
-
-   /* The RoboGaia encoder shield */
-   //#define ROBOGAIA
-   
-   /* Encoders directly attached to Arduino board */
-   #define ARDUINO_ENC_COUNTER
-
-   /* L298 Motor driver*/
-   #define L298_MOTOR_DRIVER
+  #define ARDUINO_ENC_COUNTER
+  /* L298 Motor driver */
+  #define L298_MOTOR_DRIVER
 #endif
-
-//#define USE_SERVOS  // Enable use of PWM servos as defined in servos.h
-#undef USE_SERVOS     // Disable use of PWM servos
 
 /* Serial port baud rate */
 #define BAUDRATE     115200
@@ -76,56 +13,34 @@
 #define MAX_PWM        255
 
 #if defined(ARDUINO) && ARDUINO >= 100
-#include "Arduino.h"
-#include  "string.h"
-#include <Adafruit_MPU6050.h>
-#include <Adafruit_Sensor.h>
-#include <Wire.h>
+  #include "Arduino.h"
+  #include "string.h"
+  #include <Wire.h>
+  #include "I2Cdev.h"
+  #include "MPU6050_6Axis_MotionApps20.h"
 #else
-#include "Arduino.h"
 #endif
 
 /* Include definition of serial commands */
 #include "commands.h"
 
-/* Sensor functions */
-#include "sensors.h"
-
-/* Include servo support if required */
-#ifdef USE_SERVOS
-   #include <Servo.h>
-   #include "servos.h"
-#endif
-
 #ifdef USE_BASE
   /* Motor driver function definitions */
   #include "motor_driver.h"
 
-  
   /* Encoder driver function definitions */
   #include "encoder_driver.h"
-
-  /* PID parameters and functions */
-  #include "diff_controller.h"
-  /* Run the PID loop at 30 times per second */
-  #define PID_RATE           30     // Hz
-
-  /* Convert the rate into an interval */
-  const int PID_INTERVAL = 1000 / PID_RATE;
-  
-  /* Track the next time we make a PID calculation */
-  unsigned long nextPID = PID_INTERVAL;
-
-  /* Stop the robot if it hasn't received a movement command
-   in this number of milliseconds */
-  #define AUTO_STOP_INTERVAL 1000
-  long lastMotorCommand = AUTO_STOP_INTERVAL;
 #endif
 
 /* Variable initialization */
+MPU6050 mpu;
+volatile bool mpuInterrupt = false;     // indicates whether MPU interrupt pin has gone high
 
-Adafruit_MPU6050 mpu;
-// A pair of varibles to help parse serial commands (thanks Fergs)
+void dmpDataReady() {
+  mpuInterrupt = true;
+}
+
+// A pair of variables to help parse serial commands (thanks Fergs)
 int arg = 0;
 int index = 0;
 
@@ -143,12 +58,38 @@ char argv2[16];
 double arg1;
 double arg2;
 
-void read_imu(sensors_event_t a,sensors_event_t g)
-{
-  Serial.print(a.acceleration.x);
+#define INTERRUPT_PIN 2  // use pin 2 on Arduino Uno & most boards
+#define LED_PIN 13 // (Arduino is 13, Teensy is 11, Teensy++ is 6)
+bool blinkState = false;
+
+// MPU control/status vars
+bool dmpReady = false;  // set true if DMP init was successful
+uint8_t mpuIntStatus;   // holds actual interrupt status byte from MPU
+uint8_t devStatus;      // return status after each device operation (0 = success, !0 = error)
+uint16_t packetSize;    // expected DMP packet size (default is 42 bytes)
+uint16_t fifoCount;     // count of all bytes currently in FIFO
+uint8_t fifoBuffer[64]; // FIFO storage buffer
+
+// orientation/motion vars
+Quaternion q;           // [w, x, y, z]         quaternion container
+VectorInt16 aa;         // [x, y, z]            accel sensor measurements
+VectorInt16 aaReal;     // [x, y, z]            gravity-free accel sensor measurements
+VectorInt16 aaWorld;    // [x, y, z]            world-frame accel sensor measurements
+VectorFloat gravity;    // [x, y, z]            gravity vector
+float euler[3];         // [psi, theta, phi]    Euler angle container
+float ypr[3];           // [yaw, pitch, roll]   yaw/pitch/roll container and gravity vector
+
+void read_imu(int16_t ax, int16_t gyroZ,float yaw) {
+  float accelX = ax / 16384.0 * 9.8;
+  float velZ = gyroZ * (PI / 180);
+
+  Serial.print(accelX);
   Serial.print(" ");
-  Serial.println(g.gyro.z);
-  }
+  Serial.print(velZ);
+  Serial.print(" ");
+  Serial.println(yaw);
+}
+
 /* Clear the current command parameters */
 void resetCommand() {
   cmd = NULL;
@@ -161,184 +102,103 @@ void resetCommand() {
 }
 
 /* Run a command.  Commands are defined in commands.h */
-int runCommand(sensors_event_t a,sensors_event_t g) {
+int runCommand(int16_t ax, int16_t gz,float yaw) {
   int i = 0;
   char *p = argv1;
   char *str;
   int pid_args[4];
   arg1 = atof(argv1);
   arg2 = atof(argv2);
-  
-  switch(cmd) {
-  
-  case GET_BAUDRATE:
-    Serial.println(BAUDRATE);
-    break;
-  case ANALOG_READ:
-    Serial.println(analogRead(arg1));
-    break;
-  case DIGITAL_READ:
-    Serial.println(digitalRead(arg1));
-    break;
-  case ANALOG_WRITE:
-    analogWrite(arg1, arg2);
-    Serial.println("OK"); 
-    break;
-  case DIGITAL_WRITE:
-    if (arg2 == 0) digitalWrite(arg1, LOW);
-    else if (arg2 == 1) digitalWrite(arg1, HIGH);
-    Serial.println("OK"); 
-    break;
-  case PIN_MODE:
-    if (arg2 == 0) pinMode(arg1, INPUT);
-    else if (arg2 == 1) pinMode(arg1, OUTPUT);
-    Serial.println("OK");
-    break;
-  case PING:
-    Serial.println(Ping(arg1));
-    break;
-#ifdef USE_SERVOS
-  case SERVO_WRITE:
-    servos[arg1].setTargetPosition(arg2);
-    Serial.println("OK");
-    break;
-  case SERVO_READ:
-    Serial.println(servos[arg1].getServo().read());
-    break;
-#endif
-    
+
+  switch (cmd) {
 #ifdef USE_BASE
-  case READ_IMU:
-   read_imu(a,g);
-    break;
-   case RESET_ENCODERS:
-    resetEncoders();
-    resetPID();
-    Serial.println("OK");
-    break;
-
-  case MOTOR_SPEEDS:
-    //Reset the auto stop timer
-    lastMotorCommand = millis();
-
-    // if-else statement for LEFT_ENCODER count
-
-  if (arg1 > 0 && arg1 < 5) {
-  arg1 = 5;
-}  /*
-else if (arg1 < 0 && arg1 > -5) {
-  arg1 = -5;
-}*/
-
-if (arg2 > 0 && arg2 < 5) {
-  arg2 = 5;
-}  /*
-else if (arg2 < 0 && arg2 > -5) {
-  arg2 = -5;
-}*/
-
-
-    if (arg1 == 0 && arg2 == 0) {
-      setMotorSpeeds(0, 0);
-      resetPID();
-      moving = 0;
-    }
-    else moving = 1;
-    leftPID.TargetTicksPerFrame = arg1;
-    rightPID.TargetTicksPerFrame = arg2;
-    Serial.println("OK"); 
-    break;
-  case MOTOR_RAW_PWM:
-    /* Reset the auto stop timer */
-    lastMotorCommand = millis();
-    resetPID();
-    moving = 0; // Sneaky way to temporarily disable the PID
-    setMotorSpeeds(arg1,arg2);
-    Serial.println("OK"); 
-    break;                                                                                              
-  case UPDATE_PID:
-    while ((str = strtok_r(p, ":", &p)) != '\0') {
-       pid_args[i] = atoi(str);
-       i++;
-    }
-    Kp = pid_args[0];
-    Kd = pid_args[1];
-    Ki = pid_args[2];
-    Ko = pid_args[3];
-    Serial.println("OK");
-    break;
+    case READ_IMU:
+      read_imu(ax, gz,yaw);
+      break;
+    case RESET_ENCODERS:
+      resetEncoders();
+      Serial.println("OK");
+      break;
 #endif
-  default:
-    Serial.println("Invalid Command");
-    break;
+    default:
+      Serial.println("Invalid Command");
+      break;
   }
 }
 
 /* Setup function--runs once at startup. */
 void setup() {
-  Serial.begin(BAUDRATE);
-  mpu.begin();
-  mpu.setAccelerometerRange(MPU6050_RANGE_2_G);
-  mpu.setGyroRange(MPU6050_RANGE_500_DEG);
-  mpu.setFilterBandwidth(MPU6050_BAND_21_HZ);
-
-  Serial.println("Invalid Command");
-// Initialize the motor controller if used */
-#ifdef USE_BASE
-  #ifdef ARDUINO_ENC_COUNTER
-  pinMode(LEFT_ENC_PIN_A,INPUT_PULLUP);
-  pinMode(RIGHT_ENC_PIN_A,INPUT_PULLUP);
-  
-  /*
-    //set as inputs
-    DDRD &= ~(1<<LEFT_ENC_PIN_A);
-    DDRD &= ~(1<<LEFT_ENC_PIN_B);
-    DDRC &= ~(1<<RIGHT_ENC_PIN_A);
-    DDRC &= ~(1<<RIGHT_ENC_PIN_B);
-     
-    //enable pull up resistors
-    PORTD |= (1<<LEFT_ENC_PIN_A);
-    PORTD |= (1<<LEFT_ENC_PIN_B);
-    PORTC |= (1<<RIGHT_ENC_PIN_A);
-    PORTC |= (1<<RIGHT_ENC_PIN_B);
-    
-    // tell pin change mask to listen to left encoder pins
-    PCMSK2 |= (1 << LEFT_ENC_PIN_A)|(1 << LEFT_ENC_PIN_B);
-    // tell pin change mask to listen to right encoder pins
-    PCMSK1 |= (1 << RIGHT_ENC_PIN_A)|(1 << RIGHT_ENC_PIN_B);
-    
-    // enable PCINT1 and PCINT2 interrupt in the general interrupt mask
-    PCICR |= (1 << PCIE1) | (1 << PCIE2);
-    */
-  
-   
-  #endif
-  initMotorController();
-  resetPID();
+  // join I2C bus (I2Cdev library doesn't do this automatically)
+#if I2CDEV_IMPLEMENTATION == I2CDEV_ARDUINO_WIRE
+  Wire.begin();
+  Wire.setClock(400000); // 400kHz I2C clock. Comment this line if having compilation difficulties
+#elif I2CDEV_IMPLEMENTATION == I2CDEV_BUILTIN_FASTWIRE
+  Fastwire::setup(400, true);
 #endif
 
-/* Attach servos if used */
-  #ifdef USE_SERVOS
-    int i;
-    for (i = 0; i < N_SERVOS; i++) {
-      servos[i].initServo(
-          servoPins[i],
-          stepDelay[i],
-          servoInitPosition[i]);    }
-  #endif
+  Serial.begin(BAUDRATE);
+  pinMode(INTERRUPT_PIN, INPUT);
+  mpu.initialize();
+  devStatus = mpu.dmpInitialize();
+
+  mpu.CalibrateGyro();
+  mpu.setXAccelOffset(-4613);
+  mpu.setYAccelOffset(-72);
+  mpu.setZAccelOffset(1435);
+  // make sure it worked (returns 0 if so)
+  if (devStatus == 0) {
+    // Calibration Time: generate offsets and calibrate our MPU6050
+    mpu.CalibrateAccel(6);
+    mpu.CalibrateGyro(6);
+    mpu.PrintActiveOffsets();
+    mpu.setDMPEnabled(true);
+    attachInterrupt(digitalPinToInterrupt(INTERRUPT_PIN), dmpDataReady, RISING);
+    mpuIntStatus = mpu.getIntStatus();
+
+    // set our DMP Ready flag so the main loop() function knows it's okay to use it
+    dmpReady = true;
+    // get expected DMP packet size for later comparison
+    packetSize = mpu.dmpGetFIFOPacketSize();
+  } else {
+    // ERROR!
+    // 1 = initial memory load failed
+    // 2 = DMP configuration updates failed
+    // (if it's going to break, usually, the code will be 1)
+    Serial.print(F("DMP Initialization failed (code "));
+    Serial.print(devStatus);
+    Serial.println(F(")"));
+  }
+
+  // configure LED for output
+  pinMode(LED_PIN, OUTPUT);
+
+  Serial.println("Invalid Command");
 }
 
-/* Enter the main loop.  Read and parse input from the serial port
-   and run any valid commands. Run a PID calculation at the target
-   interval and check for auto-stop conditions.
-*/
 void loop() {
-    sensors_event_t a, g, temp;
-  mpu.getEvent(&a, &g, &temp);
-  // detachInterrupt(digitalPinToInterrupt(LEFT_ENC_PIN_A));
-   //detachInterrupt(digitalPinToInterrupt(RIGHT_ENC_PIN_A));
+  int16_t ax, ay, az;
+  int16_t gx, gy, gz;
+  int16_t gyroX, gyroY, gyroZ;
+  mpu.getRotation(&gyroX, &gyroY, &gyroZ);
+  mpu.getMotion6(&ax, &ay, &az, &gx, &gy, &gz);
+  if (!dmpReady) return;
+  // read a packet from FIFO
+  if (mpu.dmpGetCurrentFIFOPacket(fifoBuffer)) { // Get the Latest packet
+    mpu.dmpGetQuaternion(&q, fifoBuffer);
+    mpu.dmpGetGravity(&gravity, &q);
+    mpu.dmpGetYawPitchRoll(ypr, &q, &gravity);
+   // Serial.print("ypr\t");
+    //Serial.print(ypr[0] * 180 / M_PI);
+    //Serial.print("\t");
+    //Serial.print(ypr[1] * 180 / M_PI);
+    //Serial.print("\t");
+    //Serial.println(ypr[2] * 180 / M_PI);
+
+    blinkState = !blinkState;
+    digitalWrite(LED_PIN, blinkState);
+  }
   while (Serial.available() > 0) {
-    
+
     // Read the next character
     chr = Serial.read();
 
@@ -346,14 +206,14 @@ void loop() {
     if (chr == 13) {
       if (arg == 1) argv1[index] = NULL;
       else if (arg == 2) argv2[index] = NULL;
-      runCommand(a,g);
+      runCommand(ax, gyroZ,ypr[0]);
       resetCommand();
     }
     // Use spaces to delimit parts of the command
     else if (chr == ' ') {
       // Step through the arguments
       if (arg == 0) arg = 1;
-      else if (arg == 1)  {
+      else if (arg == 1) {
         argv1[index] = NULL;
         arg = 2;
         index = 0;
@@ -374,29 +234,6 @@ void loop() {
         argv2[index] = chr;
         index++;
       }
-    }}
-
-// If we are using base control, run a PID calculation at the appropriate intervals
-#ifdef USE_BASE
-  if (millis() > nextPID) {
-    updatePID();
-    nextPID += PID_INTERVAL;
+    }
   }
-  
-  // Check to see if we have exceeded the auto-stop interval
-  if ((millis() - lastMotorCommand) > AUTO_STOP_INTERVAL) {;
-   // detachInterrupt(digitalPinToInterrupt(LEFT_ENC_PIN_A));
-    //detachInterrupt(digitalPinToInterrupt(RIGHT_ENC_PIN_A));
-    setMotorSpeeds(0, 0);
-    moving = 0;
-  }
-#endif
-
-// Sweep servos
-#ifdef USE_SERVOS
-  int i;
-  for (i = 0; i < N_SERVOS; i++) {
-    servos[i].doSweep();
-  }
-#endif
 }

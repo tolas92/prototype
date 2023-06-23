@@ -9,6 +9,8 @@
 #include <cstring>
 #include <iostream>
 #include "rclcpp/rclcpp.hpp"
+#include <chrono>
+#include <thread>
 
 using namespace std;
 LibSerial::BaudRate convert_baud_rate(int baud_rate)
@@ -41,30 +43,36 @@ void Comms::setup(const std::string &serial_device,int32_t baud_rate,int32_t tim
     //serialDriver.open();
     if(serialDriver.IsOpen())
     {
+        std::this_thread::sleep_for(std::chrono::seconds(5));
         RCLCPP_INFO(rclcpp::get_logger("imu_node"), "Serial driver is open!");
     }
 }
 
 
-void Comms::read_imu_values(double& accel_x, double& gyro_z)
+void Comms::read_imu_values(double& accel_x, double& gyro_z,double& yaw)
 {
     serialDriver.FlushIOBuffers();
-    
-    // Requesting the acceleration data from the Arduino
-    serialDriver.Write("e\r");
-    std::string response = "";
-    serialDriver.ReadLine(response, '\n', timeout_ms);
-    
-    // Parse the YPR values from the response
-    size_t delimiterPos = response.find(" ");
-    std::string axtoken = response.substr(0, delimiterPos);
-    response.erase(0, delimiterPos + 1);
-    std::string gzToken = response;
-    
-    // Convert the tokens to integer values
-    accel_x = std::atof(axtoken.c_str());
-    gyro_z= std::atof(gzToken.c_str());
-    RCLCPP_INFO(rclcpp::get_logger("imu_data"),"%f %f",accel_x,gyro_z);
+ // Requesting the IMU data from the Arduino
+serialDriver.Write("e\r");
+std::string response = "";
+serialDriver.ReadLine(response, '\n', timeout_ms);
+
+// Parse the YPR values from the response
+size_t delimiterPos = response.find(" ");
+std::string axtoken = response.substr(0, delimiterPos);
+response.erase(0, delimiterPos + 1);
+delimiterPos = response.find(" ");
+std::string gzToken = response.substr(0, delimiterPos);
+response.erase(0, delimiterPos + 1);
+std::string yawToken = response;
+
+// Convert the tokens to double values
+accel_x = std::atof(axtoken.c_str());
+gyro_z = std::atof(gzToken.c_str());
+yaw = std::atof(yawToken.c_str());
+
+RCLCPP_INFO(rclcpp::get_logger("imu_data"), "%f %f %f", accel_x, gyro_z, yaw);
+
     }
 /*
 int main()
