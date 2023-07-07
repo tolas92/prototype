@@ -22,14 +22,39 @@ from launch.substitutions import EnvironmentVariable
 import pathlib
 import launch.actions
 from launch.actions import DeclareLaunchArgument
+from launch_ros.actions import Node
+from launch.actions import RegisterEventHandler
+from launch.event_handlers import OnProcessStart
+
 
 def generate_launch_description():
+    
+    ekf_odom=Node(
+        package='robot_localization',
+        executable='ekf_node',
+        name='ekf_filter_node',
+        output='screen',
+        parameters=[os.path.join(get_package_share_directory("imu_interface"), 'config', 'ekf.yaml')],
+    )
+    
+    ekf_map=Node(
+        package='robot_localization',
+        executable='ekf_node',
+        name='ekf_filter_node_map',
+        output='screen',
+        parameters=[os.path.join(get_package_share_directory("imu_interface"), 'config', 'ekf_map.yaml')],
+    )
+    
+    delayed_ekf_map=RegisterEventHandler(
+        event_handler=OnProcessStart(
+        target_action=ekf_odom,
+        on_start=[ekf_map]    
+        )
+    )
+    
     return LaunchDescription([
-        launch_ros.actions.Node(
-            package='robot_localization',
-            executable='ekf_node',
-            name='ekf_filter_node',
-            output='screen',
-            parameters=[os.path.join(get_package_share_directory("imu_interface"), 'config', 'ekf.yaml')],
-           ),
-])
+        ekf_odom,
+        delayed_ekf_map,
+                
+    ])
+        

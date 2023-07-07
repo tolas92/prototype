@@ -125,12 +125,13 @@ namespace motor_control
         
        arduino_.setMotorValues(l_wheel_back.cmd / l_wheel_back.rads_per_count / cfg_.loop_rate,
        r_wheel_back.cmd / r_wheel_back.rads_per_count / cfg_.loop_rate);
+    /*
           if(write_count %10==0)
        {
        RCLCPP_INFO(rclcpp::get_logger("motor values"),"%f %f",l_wheel_back.cmd / l_wheel_back.rads_per_count / cfg_.loop_rate,r_wheel_back.cmd / r_wheel_back.rads_per_count / cfg_.loop_rate);
        }
        write_count++; 
-
+    */
        // arduino_.setMotorValues(l_wheel_front.cmd,r_wheel_front.cmd);
       return hardware_interface::return_type::OK;
 

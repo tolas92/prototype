@@ -21,7 +21,9 @@ find_package(diffdrive_arduino REQUIRED)
 
 install(
   DIRECTORY
+    config
     launch
+    maps
     worlds
     models
     urdf

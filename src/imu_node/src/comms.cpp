@@ -1,4 +1,4 @@
-#include "imutest/comms.h"
+#include "imu_node/comms.h"
 //#include <rclcpp/rclcpp.hpp>  
 #include <sstream>
 #include <cstdlib>
@@ -71,7 +71,7 @@ accel_x = std::atof(axtoken.c_str());
 gyro_z = std::atof(gzToken.c_str());
 yaw = std::atof(yawToken.c_str());
 
-RCLCPP_INFO(rclcpp::get_logger("imu_data"), "%f %f %f", accel_x, gyro_z, yaw);
+//RCLCPP_INFO(rclcpp::get_logger("imu_data"), "%f %f %f", accel_x, gyro_z, yaw);
 
     }
 /*
