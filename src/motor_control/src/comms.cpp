@@ -37,12 +37,13 @@ void Comms::readEncoderValues(int &val_1,int &val_2 )
     std::string token_2=response.substr(del_pos+delimiter.length());
     val_1=std::atoi(token_1.c_str());
     val_2=std::atoi(token_2.c_str());
+    /*
      if(write_count %10==0)
        {
        RCLCPP_INFO(rclcpp::get_logger("encoder values command"),"%d %d",val_1,val_2);
        }
        write_count++; 
-
+    */
 
 
 }

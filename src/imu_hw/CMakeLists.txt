@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(imu_interface LANGUAGES CXX)
+project(imu_hw LANGUAGES CXX)
 
 if(CMAKE_CXX_COMPILER_ID MATCHES "(GNU|Clang)")
   add_compile_options(-Wall -Wextra)

@@ -16,7 +16,7 @@
           <param name="back_left_wheel_name">back_left_wheel_joint</param>
           <param name="back_right_wheel_name">back_right_wheel_joint</param>
           <param name="loop_rate">30</param>
-          <param name="device">/dev/serial/by-path/pci-0000:03:00.3-usb-0:2:1.0</param> 
+          <param name="device">/dev/serial/by-path/platform-xhci-hcd.3.auto-usb-0:1:1.0</param> 
           <param name="baud_rate">115200</param>
           <param name="timeout">1000</param>
           <param name="enc_counts_per_rev">5606</param>

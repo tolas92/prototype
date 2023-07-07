@@ -7,10 +7,10 @@ controller_manager:
 
 
     diff_controller:
-      type: diff_drive_controller/DiffDriveController
+       type: diff_drive_controller/DiffDriveController
     
     joint_state_broadcaster:
-      type: joint_state_broadcaster/JointStateBroadcaster
+       type: joint_state_broadcaster/JointStateBroadcaster
 
 diff_controller:
   ros__parameters:
