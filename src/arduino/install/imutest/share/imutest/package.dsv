@@ -1,0 +1,8 @@
+source;share/imutest/hook/cmake_prefix_path.ps1
+source;share/imutest/hook/cmake_prefix_path.dsv
+source;share/imutest/hook/cmake_prefix_path.sh
+source;share/imutest/local_setup.bash
+source;share/imutest/local_setup.dsv
+source;share/imutest/local_setup.ps1
+source;share/imutest/local_setup.sh
+source;share/imutest/local_setup.zsh

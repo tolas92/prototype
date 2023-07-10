@@ -1,8 +1,8 @@
 <?xml version='1.0' ?>
 <launch>
-<include file ="$(find-pkg-share prototype)/launch/prototype_publisher.launch.py"/>
-<!--=============================delay_timer=====================================-->
-<include file ="$(find-pkg-share prototype)/launch/spawn_pos.launch.py"/>
-<!--<include file="$(find-pkg-share prototype)/launch/rr_controller.launch.py"/>-->
-<!--<include file="$(find-pkg-share prototype)/launch/control_velocity.launch.py"/>-->
+<include file ="$(find-pkg-share prototype)/launch/robotmodel_launch.py"/>
+
+<include file ="$(find-pkg-share prototype)/launch/sensors_launch.py"/>
+
+<!--<include file ="$(find-pkg-share prototype)/launch/navigation_launch.py"/>-->
 </launch>

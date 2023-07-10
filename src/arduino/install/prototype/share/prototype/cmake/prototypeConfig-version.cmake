@@ -1,0 +1,1 @@
+/home/tolasing/ros2_ws/build/prototype/ament_cmake_core/prototypeConfig-version.cmake
