@@ -1,1 +1,0 @@
-/home/tolasing/ros2_ws/src/prototype/launch/laser.launch.py

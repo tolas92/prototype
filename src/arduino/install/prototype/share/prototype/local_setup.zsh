@@ -1,1 +1,0 @@
-/home/tolasing/ros2_ws/build/prototype/ament_cmake_environment_hooks/local_setup.zsh

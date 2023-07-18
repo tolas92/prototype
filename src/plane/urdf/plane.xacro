@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="prototype">
 
-<xacro:include filename="$(find plane)/urdf/hardware_interface.xacro"/>
+<!--<xacro:include filename="$(find plane)/urdf/hardware_interface.xacro"/>-->
 
  
     <material name="white">

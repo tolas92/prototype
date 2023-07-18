@@ -17,7 +17,6 @@ find_package(joint_trajectory_controller REQUIRED)
 find_package(velocity_controllers REQUIRED)
 find_package(std_srvs REQUIRED)
 find_package(motor_control REQUIRED)
-find_package(diffdrive_arduino REQUIRED)
 
 install(
   DIRECTORY

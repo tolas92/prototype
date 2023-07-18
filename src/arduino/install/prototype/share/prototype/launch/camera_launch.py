@@ -1,1 +1,0 @@
-/home/tolasing/ros2_ws/src/prototype/launch/camera_launch.py
