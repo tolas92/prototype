@@ -79,15 +79,32 @@ VectorFloat gravity;    // [x, y, z]            gravity vector
 float euler[3];         // [psi, theta, phi]    Euler angle container
 float ypr[3];           // [yaw, pitch, roll]   yaw/pitch/roll container and gravity vector
 
-void read_imu(int16_t ax, int16_t gyroZ,float yaw) {
-  float accelX = ax / 16384.0 * 9.8;
-  float velZ = gyroZ * (PI / 180);
+void read_imu(int16_t ax,int16_t ay,int16_t az,int16_t gx,int16_t gy,int16_t gz,float yaw,float pitch,float roll) {
+  float accelX = ax/16384.0 * 9.8;
+  float accelY = ay / 16384.0 * 9.8;
+  float accelz = az / 16384.0 * 9.8;
+
+  float velX = gx * (PI/180);
+  float velY = gy * (PI/180);
+  float velZ = gz * (PI/180);
 
   Serial.print(accelX);
   Serial.print(" ");
+  Serial.print(accelY);
+  Serial.print(" ");
+  Serial.print(accelz);
+  Serial.print(" ");
+  Serial.print(velX);
+  Serial.print(" ");
+  Serial.print(velY);
+  Serial.print(" ");
   Serial.print(velZ);
   Serial.print(" ");
-  Serial.println(yaw);
+  Serial.print(yaw);
+  Serial.print(" ");
+  Serial.print(pitch);
+  Serial.print(" ");
+  Serial.println(roll);
 }
 
 /* Clear the current command parameters */
@@ -102,7 +119,7 @@ void resetCommand() {
 }
 
 /* Run a command.  Commands are defined in commands.h */
-int runCommand(int16_t ax, int16_t gz,float yaw) {
+int runCommand(int16_t ax,int16_t ay,int16_t az,int16_t gx,int16_t gy,int16_t gz,float yaw,float pitch,float roll) {
   int i = 0;
   char *p = argv1;
   char *str;
@@ -113,7 +130,7 @@ int runCommand(int16_t ax, int16_t gz,float yaw) {
   switch (cmd) {
 #ifdef USE_BASE
     case READ_IMU:
-      read_imu(ax, gz,yaw);
+      read_imu(ax,ay,az,gx,gy,gz,yaw,pitch,roll);
       break;
     case RESET_ENCODERS:
       resetEncoders();
@@ -142,9 +159,9 @@ void setup() {
   devStatus = mpu.dmpInitialize();
 
   mpu.CalibrateGyro();
-  mpu.setXAccelOffset(-4613);
-  mpu.setYAccelOffset(-72);
-  mpu.setZAccelOffset(1435);
+  mpu.setXAccelOffset(-4633);
+  mpu.setYAccelOffset(9);
+  mpu.setZAccelOffset(1447);
   // make sure it worked (returns 0 if so)
   if (devStatus == 0) {
     // Calibration Time: generate offsets and calibrate our MPU6050
@@ -206,7 +223,7 @@ void loop() {
     if (chr == 13) {
       if (arg == 1) argv1[index] = NULL;
       else if (arg == 2) argv2[index] = NULL;
-      runCommand(ax, gyroZ,ypr[0]);
+      runCommand(ax,ay,az,gx,gy,gz,ypr[0],ypr[1],ypr[2]);
       resetCommand();
     }
     // Use spaces to delimit parts of the command

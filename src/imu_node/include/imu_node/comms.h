@@ -21,13 +21,20 @@ class Comms
         void setup(const string &serial_device,int32_t baud_rate,int32_t timeout_ms);
         //void sendEmpytMsg();
         //void readEncoderValues(int &val_1,int &val_2);
-        void read_imu_values(double& accel_x, double& gyro_z,double& yaw);
+        void read_imu_values(double& accel_x,double& accel_y,double& accel_z, double& gyro_x,double& gyro_y,double& gyro_z,
+                            double& yaw,double& pitch,double& roll);
         bool connected()const{ return serialDriver.IsOpen();}
 
         //std::string sendMsg(const std::string &msg_to_send,bool print_output=false);
         double accelX=0.0;
+        double accelY=0.0;
+        double accelZ=0.0;
+        double gyroX=0.0;
+        double gyroY=0.0;
         double gyroZ=0.0;
         double yaw=0.0;
+        double pitch=0.0;
+        double roll=0.0;
         private:
 
         LibSerial::SerialPort serialDriver;

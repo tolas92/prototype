@@ -18,7 +18,7 @@ def generate_launch_description():
             arguments=['compressed','raw'],
             remappings=[
                 ('in/compressed','/camera_raw/out/compressed'),
-                ('out','camera_uncompressed/uncompressed')
+                ('out','/camera_uncompressed/uncompressed')
                 ],)
 
     # GSCam uses image_transport and advertises on these topics:

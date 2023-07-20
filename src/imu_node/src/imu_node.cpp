@@ -17,19 +17,23 @@ public:
 private:
   void publishImuData()
   {
-    comms_.read_imu_values(comms_.accelX,comms_.gyroZ,comms_.yaw);
+    comms_.read_imu_values(comms_.accelX,comms_.accelY,comms_.accelZ,
+    comms_.gyroX,comms_.gyroY,comms_.gyroZ,comms_.yaw
+    comms_.pitch,comms_.roll);
      //RCLCPP_INFO(rclcpp::get_logger("imu_node"), "Serial driver is open!");
     sensor_msgs::msg::Imu imu_msg;
-    imu_msg.header.frame_id = "imu_link";
+    imu_msg.header.frame_id = "imu4";
+    imu_msg.header.stamp = rclcpp::Clock().now();
     imu_msg.linear_acceleration.x = comms_.accelX;//0.1*9.8;//val_1 * 9.8 / 16384.0;
-    imu_msg.linear_acceleration.y = 0.0;//0.2*9.8;//val_2 * 9.8 / 16384.0;
-    imu_msg.linear_acceleration.z = 0.0; //0.1*9.8;
-    imu_msg.angular_velocity.x = 0.0;
-    imu_msg.angular_velocity.y = 0.0;
+    imu_msg.linear_acceleration.y = comms_.accelY;//0.2*9.8;//val_2 * 9.8 / 16384.0;
+    imu_msg.linear_acceleration.z = comms_.accelZ; //0.1*9.8;
+    imu_msg.angular_velocity.x =comms_.gyroX;
+    imu_msg.angular_velocity.y =comms_.gyroY;
     imu_msg.angular_velocity.z =comms_.gyroZ;
-    imu_msg.orientation.x=0.0;
-    imu_msg.orientation.y=0.0;
+    imu_msg.orientation.x=comms_.roll;
+    imu_msg.orientation.y=comms_.pitch;
     imu_msg.orientation.z=comms_.yaw;
+    imu_mdh.orientaion.w=1.0;
     
     publisher_->publish(imu_msg);
   }
