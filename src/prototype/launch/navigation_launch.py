@@ -48,6 +48,6 @@ def generate_launch_description():
     # Add the launch actions to the LaunchDescription
     #ld.add_action(laser_launch)
     ld.add_action(launch_file)
-    ld.add_action(TimerAction(period=30.0,actions=[nav_launch]))
+    ld.add_action(TimerAction(period=90.0,actions=[nav_launch]))
 
     return ld

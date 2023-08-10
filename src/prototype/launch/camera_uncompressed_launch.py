@@ -14,11 +14,11 @@ def generate_launch_description():
             package='image_transport',
             executable='republish',
             output='screen',
-            namespace='camera2',
+            namespace='cam0',
             arguments=['compressed','raw'],
             remappings=[
-                ('in/compressed','/camera1/out/compressed'),
-                ('out','/camera2/uncompressed')
+                ('in/compressed','/camera_raw/out/compressed'),
+                ('out','/image_raw')
                 ],)
 
     # GSCam uses image_transport and advertises on these topics:

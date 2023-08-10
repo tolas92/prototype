@@ -49,7 +49,8 @@ void Comms::setup(const std::string &serial_device,int32_t baud_rate,int32_t tim
 }
 
 
-void Comms::read_imu_values(double& accel_x, double& gyro_z,double& yaw)
+void Comms::read_imu_values(double& accel_x,double& accel_y,double& accel_z, double& gyro_x,double& gyro_y,double& gyro_z,
+double& yaw,double& pitch,double& roll)
 {
     serialDriver.FlushIOBuffers();
  // Requesting the IMU data from the Arduino
@@ -57,23 +58,66 @@ serialDriver.Write("e\r");
 std::string response = "";
 serialDriver.ReadLine(response, '\n', timeout_ms);
 
-// Parse the YPR values from the response
-size_t delimiterPos = response.find(" ");
-std::string axtoken = response.substr(0, delimiterPos);
-response.erase(0, delimiterPos + 1);
-delimiterPos = response.find(" ");
-std::string gzToken = response.substr(0, delimiterPos);
-response.erase(0, delimiterPos + 1);
-std::string yawToken = response;
 
-// Convert the tokens to double values
-accel_x = std::atof(axtoken.c_str());
-gyro_z = std::atof(gzToken.c_str());
-yaw = std::atof(yawToken.c_str());
+    size_t delimiterPos = response.find(" ");
+    std::string axtoken = response.substr(0, delimiterPos);
+    response.erase(0, delimiterPos + 1);
 
-//RCLCPP_INFO(rclcpp::get_logger("imu_data"), "%f %f %f", accel_x, gyro_z, yaw);
+    delimiterPos = response.find(" ");
+    std::string aytoken = response.substr(0, delimiterPos);
+    response.erase(0, delimiterPos + 1);
+
+    delimiterPos = response.find(" ");
+    std::string aztoken = response.substr(0, delimiterPos);
+    response.erase(0, delimiterPos + 1);
+
+    delimiterPos = response.find(" ");
+    std::string gxtoken = response.substr(0, delimiterPos);
+    response.erase(0, delimiterPos + 1);
+
+    delimiterPos = response.find(" ");
+    std::string gytoken = response.substr(0, delimiterPos);
+    response.erase(0, delimiterPos + 1);
+
+    delimiterPos = response.find(" ");
+    std::string gztoken = response.substr(0, delimiterPos);
+    response.erase(0, delimiterPos + 1);
+
+    delimiterPos = response.find(" ");
+    std::string yawtoken = response.substr(0, delimiterPos);
+    response.erase(0, delimiterPos + 1);
+
+    delimiterPos = response.find(" ");
+    std::string pitchtoken = response.substr(0, delimiterPos);
+    response.erase(0, delimiterPos + 1);
+
+    std::string rolltoken = response;
+
+    // Convert the tokens to double values
+    accel_x = std::atof(axtoken.c_str());
+    accel_y = std::atof(aytoken.c_str());
+    accel_z = std::atof(aztoken.c_str());
+    gyro_x = std::atof(gxtoken.c_str());
+    gyro_y = std::atof(gytoken.c_str());
+    gyro_z = std::atof(gztoken.c_str());
+    yaw = std::atof(yawtoken.c_str());
+    pitch = std::atof(pitchtoken.c_str());
+    roll = std::atof(rolltoken.c_str());
+
 
     }
+
+double Comms::customRound(double value, int decimalPlaces) {
+    double factor = pow(10, decimalPlaces);
+    double decimalPart = value - floor(value);
+    
+    // Check if the decimal part is close to 0 (within a tolerance, e.g., 0.0001)
+    if (fabs(decimalPart) < 0.0001) {
+        return floor(value);
+    } else {
+        return floor(value * factor + 0.5) / factor;
+    }
+}
 /*
 int main()
 {
