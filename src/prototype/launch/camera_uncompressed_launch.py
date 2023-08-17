@@ -17,7 +17,7 @@ def generate_launch_description():
             namespace='cam0',
             arguments=['compressed','raw'],
             remappings=[
-                ('in/compressed','/camera_raw/out/compressed'),
+                ('in/compressed','/camera/image_raw/compressed'),
                 ('out','/image_raw')
                 ],)
 
