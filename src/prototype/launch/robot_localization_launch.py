@@ -34,7 +34,7 @@ def generate_launch_description():
         executable='ekf_node',
         name='ekf_filter_node',
         output='screen',
-        parameters=[os.path.join(get_package_share_directory("imu_interface"), 'config', 'ekf.yaml')],
+        parameters=[os.path.join(get_package_share_directory("prototype"), 'config', 'ekf_map.yaml')],
     )
     
     ekf_map=Node(
@@ -42,7 +42,7 @@ def generate_launch_description():
         executable='ekf_node',
         name='ekf_filter_node_map',
         output='screen',
-        parameters=[os.path.join(get_package_share_directory("imu_interface"), 'config', 'ekf_map.yaml')],
+        parameters=[os.path.join(get_package_share_directory("prototype"), 'config', 'ekf_map.yaml')],
     )
     
     delayed_ekf_map=RegisterEventHandler(

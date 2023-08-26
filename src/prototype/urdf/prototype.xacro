@@ -6,8 +6,6 @@
 <xacro:include filename="$(find prototype)/urdf/lidar.xacro"/>
 <xacro:include filename="$(find prototype)/urdf/joint_macros.xacro"/>
 <xacro:include filename="$(find prototype)/urdf/link_macros.xacro"/>
-<xacro:include filename="$(find prototype)/urdf/Battery_Control.xacro"/>
-<xacro:include filename="$(find prototype)/urdf/crane.xacro"/>
 <xacro:include filename="$(find prototype)/urdf/hardware_interface.xacro"/>
 <xacro:include filename="$(find prototype)/urdf/camera.xacro"/>
 
@@ -36,58 +34,39 @@
 
 
  <joint name="chassis_joint" type="fixed">
-  <origin rpy="0 0 1.57" xyz="0 0 0"/>
+  <origin rpy="0 0 0.0" xyz="0 0 0.062"/>
   <parent link="base_link"/>
   <child link="chassis"/>
   <axis xyz="0 0 0"/>
   <joint_proprties damping ="0.0" friction="0.1"/>
  </joint>
 
- <xacro:box_link_meshes name="chassis" mass="1.21" ixx="0.0010803" iyy="0.00010259"
- izz="0.00129793" box="0.155 0.3 0.01" FilePath="package://prototype/meshes/blender_mesh.stl"
- collision="0.0 -0.1 0.0"/>
+<link name="chassis">
+    <visual>
+        <origin xyz="0 0 0.075" rpy="0.0 0.0 0.0"/>
+        <geometry>
+        <box size="0.3 0.155 0.15"/>
+        </geometry>   
+       </visual>
+</link>
 
-<!--
- <xacro:box_link name="base_link" mass="1.21" ixx="0.0010803" iyy="0.00010259"
- izz="0.00129793" box="0.155 0.3 0.01"/>-->
-
- <joint name="imu_joint" type="fixed">
-  <parent link="chassis"/>
-  <child link="imu_link"/>
-  <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
- </joint>
- 
- <link name="imu_link"></link>
 
  <joint name="caster_wheel_joint" type="fixed">
   <parent link="chassis"/>
   <child link="caster_wheel"/>
   <axis xyz="0 0 0"/>
-  <origin xyz="0.0 -0.10 -0.020" rpy="0 0 0"/>
+  <origin xyz="0.125 0.0 -0.038" rpy="0 0 0"/>
  </joint>
 
         <link name="caster_wheel">
             <visual>
                 <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
                 <geometry>
-                 <sphere radius="0.021"/>
+                 <sphere radius="0.025"/>
                 </geometry>
                 <material name="blue">
                     <color rgba="0.0 0.0 1.0 1.0"/>
                 </material>
-            </visual>
-            <collision>
-                <origin xyz="0.0 0.0 0.0" rpy="0.0 1.5707 0.0"/>
-                <geometry>
-                    <sphere radius="0.021"/>/>
-                </geometry>
-            </collision>
-            <inertial>
-                <origin rpy="0 0 0" xyz="0 0 0"/>
-                <mass value="0.034"/>
-              <inertia ixx="1.37e-5" ixy="0" ixz="0" iyy="1.37e-5" iyz="0" izz="3.41e-6"/>             
-              </inertial>
-              <dynamics damping="0.5" friction="0.1"/>
-  
+            </visual>  
  </link>
 </robot>
