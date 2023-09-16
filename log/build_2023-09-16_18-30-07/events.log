@@ -1,0 +1,164 @@
+[0.000000] (-) TimerEvent: {}
+[0.000779] (-) JobUnselected: {'identifier': 'imu_hw'}
+[0.000993] (-) JobUnselected: {'identifier': 'imu_node'}
+[0.001165] (-) JobUnselected: {'identifier': 'prototype'}
+[0.001257] (-) JobUnselected: {'identifier': 'serial'}
+[0.001356] (motor_control) JobQueued: {'identifier': 'motor_control', 'dependencies': OrderedDict([('serial', '/home/rock/robot_ws/install/serial')])}
+[0.004486] (motor_control) JobStarted: {'identifier': 'motor_control'}
+[0.057621] (motor_control) JobProgress: {'identifier': 'motor_control', 'progress': 'cmake'}
+[0.058902] (motor_control) Command: {'cmd': ['/usr/bin/cmake', '/home/rock/robot_ws/src/motor_control', '-DCMAKE_INSTALL_PREFIX=/home/rock/robot_ws/install/motor_control'], 'cwd': '/home/rock/robot_ws/build/motor_control', 'env': OrderedDict([('USER', 'rock'), ('SSH_CLIENT', '192.168.29.105 51450 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/rock/robot_ws/install/serial/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/rock'), ('OLDPWD', '/home/rock/robot_ws/src'), ('TERM_PROGRAM_VERSION', '1.82.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-de38a85a-e1ea-495d-860b-b108ccd919ae.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/rock/robot_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', 'c1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9cf3c58726.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/rock/robot_ws/install/imu_node:/home/rock/robot_ws/install/serial:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/rock/robot_ws/build/motor_control'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.29.105 51450 192.168.29.237 22'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/rock/robot_ws/install/serial:/home/rock/robot_ws/install/imu_node:/opt/ros/foxy')]), 'shell': False}
+[0.098979] (-) TimerEvent: {}
+[0.199829] (-) TimerEvent: {}
+[0.268645] (motor_control) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.300026] (-) TimerEvent: {}
+[0.401293] (-) TimerEvent: {}
+[0.465857] (motor_control) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.481362] (motor_control) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.501761] (-) TimerEvent: {}
+[0.604011] (-) TimerEvent: {}
+[0.705617] (-) TimerEvent: {}
+[0.738027] (motor_control) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.748821] (motor_control) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.807769] (-) TimerEvent: {}
+[0.909260] (-) TimerEvent: {}
+[1.012952] (-) TimerEvent: {}
+[1.034869] (motor_control) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.078870] (motor_control) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.080314] (motor_control) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.088876] (motor_control) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[1.113231] (-) TimerEvent: {}
+[1.214818] (-) TimerEvent: {}
+[1.316424] (-) TimerEvent: {}
+[1.355101] (motor_control) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[1.358767] (motor_control) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.416835] (-) TimerEvent: {}
+[1.518376] (-) TimerEvent: {}
+[1.620024] (-) TimerEvent: {}
+[1.666076] (motor_control) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.720267] (-) TimerEvent: {}
+[1.780081] (motor_control) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.785852] (motor_control) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.793631] (motor_control) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[1.820666] (-) TimerEvent: {}
+[1.862733] (motor_control) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[1.865244] (motor_control) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.921014] (-) TimerEvent: {}
+[2.022467] (-) TimerEvent: {}
+[2.124824] (-) TimerEvent: {}
+[2.226949] (-) TimerEvent: {}
+[2.329190] (-) TimerEvent: {}
+[2.431827] (-) TimerEvent: {}
+[2.522934] (motor_control) StdoutLine: {'line': b'-- Found hardware_interface: 0.11.0 (/opt/ros/foxy/share/hardware_interface/cmake)\n'}
+[2.532003] (-) TimerEvent: {}
+[2.609396] (motor_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.628994] (motor_control) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[2.632138] (-) TimerEvent: {}
+[2.733641] (-) TimerEvent: {}
+[2.817020] (motor_control) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[2.833878] (-) TimerEvent: {}
+[2.878253] (motor_control) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[2.934085] (-) TimerEvent: {}
+[3.034982] (-) TimerEvent: {}
+[3.093758] (motor_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.135235] (-) TimerEvent: {}
+[3.236000] (-) TimerEvent: {}
+[3.336872] (-) TimerEvent: {}
+[3.437660] (-) TimerEvent: {}
+[3.538417] (-) TimerEvent: {}
+[3.639223] (-) TimerEvent: {}
+[3.740038] (-) TimerEvent: {}
+[3.841192] (-) TimerEvent: {}
+[3.943878] (-) TimerEvent: {}
+[4.045809] (-) TimerEvent: {}
+[4.146637] (-) TimerEvent: {}
+[4.247353] (-) TimerEvent: {}
+[4.348336] (-) TimerEvent: {}
+[4.450056] (-) TimerEvent: {}
+[4.552288] (-) TimerEvent: {}
+[4.654729] (-) TimerEvent: {}
+[4.756766] (-) TimerEvent: {}
+[4.858070] (-) TimerEvent: {}
+[4.959647] (-) TimerEvent: {}
+[5.047647] (motor_control) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[5.059807] (-) TimerEvent: {}
+[5.160636] (-) TimerEvent: {}
+[5.197698] (motor_control) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[5.203429] (motor_control) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[5.206497] (motor_control) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[5.260846] (-) TimerEvent: {}
+[5.361635] (-) TimerEvent: {}
+[5.462391] (-) TimerEvent: {}
+[5.468435] (motor_control) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[5.470798] (motor_control) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[5.562743] (-) TimerEvent: {}
+[5.664116] (-) TimerEvent: {}
+[5.765481] (-) TimerEvent: {}
+[5.796433] (motor_control) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[5.799416] (motor_control) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[5.865882] (-) TimerEvent: {}
+[5.967412] (-) TimerEvent: {}
+[6.032952] (motor_control) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[6.035625] (motor_control) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[6.067756] (-) TimerEvent: {}
+[6.169154] (-) TimerEvent: {}
+[6.270764] (-) TimerEvent: {}
+[6.312426] (motor_control) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[6.317263] (motor_control) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[6.371002] (-) TimerEvent: {}
+[6.473326] (-) TimerEvent: {}
+[6.575576] (-) TimerEvent: {}
+[6.677054] (-) TimerEvent: {}
+[6.779191] (-) TimerEvent: {}
+[6.881414] (-) TimerEvent: {}
+[6.973765] (motor_control) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 2.4.3 (/opt/ros/foxy/share/rclcpp_lifecycle/cmake)\n'}
+[6.981832] (-) TimerEvent: {}
+[7.084339] (-) TimerEvent: {}
+[7.088241] (motor_control) StdoutLine: {'line': b'-- Found serial: 1.2.1 (/home/rock/robot_ws/install/serial/share/serial/cmake)\n'}
+[7.141846] (motor_control) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 0.9.12 (/opt/ros/foxy/share/ament_cmake_gtest/cmake)\n'}
+[7.184464] (-) TimerEvent: {}
+[7.285641] (-) TimerEvent: {}
+[7.386761] (-) TimerEvent: {}
+[7.395066] (motor_control) StdoutLine: {'line': b'-- Configuring done\n'}
+[7.459088] (motor_control) StdoutLine: {'line': b'-- Generating done\n'}
+[7.464888] (motor_control) StdoutLine: {'line': b'-- Build files have been written to: /home/rock/robot_ws/build/motor_control\n'}
+[7.487087] (-) TimerEvent: {}
+[7.500134] (motor_control) CommandEnded: {'returncode': 0}
+[7.522307] (motor_control) JobProgress: {'identifier': 'motor_control', 'progress': 'build'}
+[7.523389] (motor_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rock/robot_ws/build/motor_control', '--', '-j6', '-l6'], 'cwd': '/home/rock/robot_ws/build/motor_control', 'env': OrderedDict([('USER', 'rock'), ('SSH_CLIENT', '192.168.29.105 51450 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/rock/robot_ws/install/serial/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/rock'), ('OLDPWD', '/home/rock/robot_ws/src'), ('TERM_PROGRAM_VERSION', '1.82.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-de38a85a-e1ea-495d-860b-b108ccd919ae.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/rock/robot_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', 'c1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9cf3c58726.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/rock/robot_ws/install/imu_node:/home/rock/robot_ws/install/serial:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/rock/robot_ws/build/motor_control'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.29.105 51450 192.168.29.237 22'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/rock/robot_ws/install/serial:/home/rock/robot_ws/install/imu_node:/opt/ros/foxy')]), 'shell': False}
+[7.587670] (-) TimerEvent: {}
+[7.689503] (-) TimerEvent: {}
+[7.703701] (motor_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target motor_control\x1b[0m\n'}
+[7.789955] (-) TimerEvent: {}
+[7.855024] (motor_control) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/motor_control.dir/src/motor_interface.cpp.o\x1b[0m\n'}
+[7.862557] (motor_control) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/motor_control.dir/src/comms.cpp.o\x1b[0m\n'}
+[7.883001] (motor_control) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/motor_control.dir/src/wheel.cpp.o\x1b[0m\n'}
+[7.890264] (-) TimerEvent: {}
+[7.896282] (motor_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/rock/robot_ws/src/motor_control/src/comms.cpp:1\x1b[m\x1b[K:\n'}
+[7.901962] (motor_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rock/robot_ws/src/motor_control/include/motor_control/comms.h:4:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kserial/serial.h: No such file or directory\n'}
+[7.903856] (motor_control) StderrLine: {'line': b'    4 | #include \x1b[01;31m\x1b[K<serial/serial.h>\x1b[m\x1b[K\n'}
+[7.905815] (motor_control) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.906779] (motor_control) StderrLine: {'line': b'compilation terminated.\n'}
+[7.907711] (motor_control) StderrLine: {'line': b'make[2]: *** [CMakeFiles/motor_control.dir/build.make:76: CMakeFiles/motor_control.dir/src/comms.cpp.o] Error 1\n'}
+[7.908796] (motor_control) StderrLine: {'line': b'make[2]: *** Waiting for unfinished jobs....\n'}
+[7.990632] (-) TimerEvent: {}
+[8.033718] (motor_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/rock/robot_ws/src/motor_control/include/motor_control/motor_interface.hpp:18\x1b[m\x1b[K,\n'}
+[8.035236] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rock/robot_ws/src/motor_control/src/motor_interface.cpp:1\x1b[m\x1b[K:\n'}
+[8.036700] (motor_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rock/robot_ws/src/motor_control/include/motor_control/comms.h:4:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kserial/serial.h: No such file or directory\n'}
+[8.037808] (motor_control) StderrLine: {'line': b'    4 | #include \x1b[01;31m\x1b[K<serial/serial.h>\x1b[m\x1b[K\n'}
+[8.038731] (motor_control) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.039640] (motor_control) StderrLine: {'line': b'compilation terminated.\n'}
+[8.041697] (motor_control) StderrLine: {'line': b'make[2]: *** [CMakeFiles/motor_control.dir/build.make:63: CMakeFiles/motor_control.dir/src/motor_interface.cpp.o] Error 1\n'}
+[8.090823] (-) TimerEvent: {}
+[8.192825] (-) TimerEvent: {}
+[8.295184] (-) TimerEvent: {}
+[8.397397] (-) TimerEvent: {}
+[8.498276] (-) TimerEvent: {}
+[8.599113] (-) TimerEvent: {}
+[8.700049] (-) TimerEvent: {}
+[8.741601] (motor_control) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/motor_control.dir/all] Error 2\n'}
+[8.748001] (motor_control) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[8.769804] (motor_control) CommandEnded: {'returncode': 2}
+[8.800679] (-) TimerEvent: {}
+[8.902635] (-) TimerEvent: {}
+[8.962061] (motor_control) JobEnded: {'identifier': 'motor_control', 'rc': 2}
+[8.974011] (-) EventReactorShutdown: {}

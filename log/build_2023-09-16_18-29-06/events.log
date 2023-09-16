@@ -1,0 +1,130 @@
+[0.000000] (-) TimerEvent: {}
+[0.000486] (-) JobUnselected: {'identifier': 'imu_hw'}
+[0.000632] (-) JobUnselected: {'identifier': 'imu_node'}
+[0.000760] (-) JobUnselected: {'identifier': 'motor_control'}
+[0.000935] (-) JobUnselected: {'identifier': 'prototype'}
+[0.001056] (serial) JobQueued: {'identifier': 'serial', 'dependencies': OrderedDict()}
+[0.002867] (serial) JobStarted: {'identifier': 'serial'}
+[0.053737] (serial) JobProgress: {'identifier': 'serial', 'progress': 'cmake'}
+[0.055020] (serial) Command: {'cmd': ['/usr/bin/cmake', '/home/rock/robot_ws/src/serial-ros2', '-DCMAKE_INSTALL_PREFIX=/home/rock/robot_ws/install/serial'], 'cwd': '/home/rock/robot_ws/build/serial', 'env': OrderedDict([('USER', 'rock'), ('SSH_CLIENT', '192.168.29.105 51450 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/rock/robot_ws/install/serial/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/rock'), ('OLDPWD', '/home/rock/robot_ws/src'), ('TERM_PROGRAM_VERSION', '1.82.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-de38a85a-e1ea-495d-860b-b108ccd919ae.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/rock/robot_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', 'c1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9cf3c58726.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/rock/robot_ws/install/imu_node:/home/rock/robot_ws/install/serial:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/rock/robot_ws/build/serial'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.29.105 51450 192.168.29.237 22'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/rock/robot_ws/install/imu_node:/home/rock/robot_ws/install/serial:/opt/ros/foxy')]), 'shell': False}
+[0.097199] (-) TimerEvent: {}
+[0.198168] (-) TimerEvent: {}
+[0.258537] (serial) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.298361] (-) TimerEvent: {}
+[0.399331] (-) TimerEvent: {}
+[0.459498] (serial) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.474150] (serial) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.499612] (-) TimerEvent: {}
+[0.601087] (-) TimerEvent: {}
+[0.702712] (-) TimerEvent: {}
+[0.705495] (serial) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.708467] (serial) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.803263] (-) TimerEvent: {}
+[0.905693] (-) TimerEvent: {}
+[0.959077] (serial) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.005943] (-) TimerEvent: {}
+[1.077850] (serial) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.089140] (serial) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.095304] (serial) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[1.106275] (-) TimerEvent: {}
+[1.207880] (-) TimerEvent: {}
+[1.310014] (-) TimerEvent: {}
+[1.392368] (serial) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[1.396032] (serial) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.410542] (-) TimerEvent: {}
+[1.512618] (-) TimerEvent: {}
+[1.614047] (-) TimerEvent: {}
+[1.671739] (serial) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.713989] (serial) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.716121] (-) TimerEvent: {}
+[1.717318] (serial) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.721398] (serial) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[1.781129] (serial) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[1.784048] (serial) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.816754] (-) TimerEvent: {}
+[1.919139] (-) TimerEvent: {}
+[2.021020] (-) TimerEvent: {}
+[2.121802] (-) TimerEvent: {}
+[2.222511] (-) TimerEvent: {}
+[2.323300] (-) TimerEvent: {}
+[2.424517] (-) TimerEvent: {}
+[2.527001] (-) TimerEvent: {}
+[2.629101] (-) TimerEvent: {}
+[2.669641] (serial) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.699436] (serial) StdoutLine: {'line': b'-- Generating done\n'}
+[2.707663] (serial) StdoutLine: {'line': b'-- Build files have been written to: /home/rock/robot_ws/build/serial\n'}
+[2.724842] (serial) CommandEnded: {'returncode': 0}
+[2.738605] (-) TimerEvent: {}
+[2.757965] (serial) JobProgress: {'identifier': 'serial', 'progress': 'build'}
+[2.762521] (serial) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rock/robot_ws/build/serial', '--', '-j6', '-l6'], 'cwd': '/home/rock/robot_ws/build/serial', 'env': OrderedDict([('USER', 'rock'), ('SSH_CLIENT', '192.168.29.105 51450 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/rock/robot_ws/install/serial/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/rock'), ('OLDPWD', '/home/rock/robot_ws/src'), ('TERM_PROGRAM_VERSION', '1.82.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-de38a85a-e1ea-495d-860b-b108ccd919ae.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/rock/robot_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', 'c1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9cf3c58726.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/rock/robot_ws/install/imu_node:/home/rock/robot_ws/install/serial:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/rock/robot_ws/build/serial'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.29.105 51450 192.168.29.237 22'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/rock/robot_ws/install/imu_node:/home/rock/robot_ws/install/serial:/opt/ros/foxy')]), 'shell': False}
+[2.838959] (-) TimerEvent: {}
+[2.891152] (serial) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target serial\x1b[0m\n'}
+[2.931551] (serial) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/serial.dir/src/serial.cc.o\x1b[0m\n'}
+[2.935941] (serial) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/serial.dir/src/impl/unix.cc.o\x1b[0m\n'}
+[2.939287] (-) TimerEvent: {}
+[2.964926] (serial) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/serial.dir/src/impl/list_ports/list_ports_linux.cc.o\x1b[0m\n'}
+[3.039625] (-) TimerEvent: {}
+[3.141068] (-) TimerEvent: {}
+[3.242541] (-) TimerEvent: {}
+[3.344281] (-) TimerEvent: {}
+[3.445895] (-) TimerEvent: {}
+[3.547512] (-) TimerEvent: {}
+[3.649144] (-) TimerEvent: {}
+[3.751098] (-) TimerEvent: {}
+[3.852663] (-) TimerEvent: {}
+[3.954293] (-) TimerEvent: {}
+[4.055883] (-) TimerEvent: {}
+[4.157732] (-) TimerEvent: {}
+[4.259339] (-) TimerEvent: {}
+[4.361027] (-) TimerEvent: {}
+[4.462586] (-) TimerEvent: {}
+[4.564124] (-) TimerEvent: {}
+[4.665615] (-) TimerEvent: {}
+[4.767226] (-) TimerEvent: {}
+[4.868880] (-) TimerEvent: {}
+[4.970269] (-) TimerEvent: {}
+[5.071838] (-) TimerEvent: {}
+[5.173338] (-) TimerEvent: {}
+[5.275622] (-) TimerEvent: {}
+[5.378033] (-) TimerEvent: {}
+[5.480191] (-) TimerEvent: {}
+[5.582472] (-) TimerEvent: {}
+[5.684980] (-) TimerEvent: {}
+[5.787177] (-) TimerEvent: {}
+[5.823458] (serial) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX static library libserial.a\x1b[0m\n'}
+[5.887613] (-) TimerEvent: {}
+[5.944243] (serial) StdoutLine: {'line': b'[100%] Built target serial\n'}
+[5.985261] (serial) CommandEnded: {'returncode': 0}
+[5.991337] (-) TimerEvent: {}
+[6.071907] (serial) JobProgress: {'identifier': 'serial', 'progress': 'install'}
+[6.091847] (-) TimerEvent: {}
+[6.119698] (serial) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rock/robot_ws/build/serial'], 'cwd': '/home/rock/robot_ws/build/serial', 'env': OrderedDict([('USER', 'rock'), ('SSH_CLIENT', '192.168.29.105 51450 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/rock/robot_ws/install/serial/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/rock'), ('OLDPWD', '/home/rock/robot_ws/src'), ('TERM_PROGRAM_VERSION', '1.82.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-de38a85a-e1ea-495d-860b-b108ccd919ae.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/rock/robot_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', 'c1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9cf3c58726.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/rock/robot_ws/install/imu_node:/home/rock/robot_ws/install/serial:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/rock/robot_ws/build/serial'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.29.105 51450 192.168.29.237 22'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/rock/robot_ws/install/imu_node:/home/rock/robot_ws/install/serial:/opt/ros/foxy')]), 'shell': False}
+[6.149168] (serial) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.150190] (serial) StdoutLine: {'line': b'-- Installing: /home/rock/robot_ws/install/serial/share/serial/environment/library_path.sh\n'}
+[6.151182] (serial) StdoutLine: {'line': b'-- Installing: /home/rock/robot_ws/install/serial/share/serial/environment/library_path.dsv\n'}
+[6.156098] (serial) StdoutLine: {'line': b'-- Installing: /home/rock/robot_ws/install/serial/lib/libserial.a\n'}
+[6.157982] (serial) StdoutLine: {'line': b'-- Installing: /home/rock/robot_ws/install/serial/include/serial/serial.h\n'}
+[6.159408] (serial) StdoutLine: {'line': b'-- Installing: /home/rock/robot_ws/install/serial/include/serial/v8stdint.h\n'}
+[6.161028] (serial) StdoutLine: {'line': b'-- Installing: /home/rock/robot_ws/install/serial/share/ament_index/resource_index/package_run_dependencies/serial\n'}
+[6.162567] (serial) StdoutLine: {'line': b'-- Installing: /home/rock/robot_ws/install/serial/share/ament_index/resource_index/parent_prefix_path/serial\n'}
+[6.163993] (serial) StdoutLine: {'line': b'-- Installing: /home/rock/robot_ws/install/serial/share/serial/environment/ament_prefix_path.sh\n'}
+[6.167393] (serial) StdoutLine: {'line': b'-- Installing: /home/rock/robot_ws/install/serial/share/serial/environment/ament_prefix_path.dsv\n'}
+[6.172523] (serial) StdoutLine: {'line': b'-- Installing: /home/rock/robot_ws/install/serial/share/serial/environment/path.sh\n'}
+[6.179133] (serial) StdoutLine: {'line': b'-- Installing: /home/rock/robot_ws/install/serial/share/serial/environment/path.dsv\n'}
+[6.180710] (serial) StdoutLine: {'line': b'-- Installing: /home/rock/robot_ws/install/serial/share/serial/local_setup.bash\n'}
+[6.182274] (serial) StdoutLine: {'line': b'-- Installing: /home/rock/robot_ws/install/serial/share/serial/local_setup.sh\n'}
+[6.192650] (-) TimerEvent: {}
+[6.194342] (serial) StdoutLine: {'line': b'-- Installing: /home/rock/robot_ws/install/serial/share/serial/local_setup.zsh\n'}
+[6.196734] (serial) StdoutLine: {'line': b'-- Installing: /home/rock/robot_ws/install/serial/share/serial/local_setup.dsv\n'}
+[6.199148] (serial) StdoutLine: {'line': b'-- Installing: /home/rock/robot_ws/install/serial/share/serial/package.dsv\n'}
+[6.201134] (serial) StdoutLine: {'line': b'-- Installing: /home/rock/robot_ws/install/serial/share/ament_index/resource_index/packages/serial\n'}
+[6.203593] (serial) StdoutLine: {'line': b'-- Installing: /home/rock/robot_ws/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[6.205981] (serial) StdoutLine: {'line': b'-- Installing: /home/rock/robot_ws/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[6.208713] (serial) StdoutLine: {'line': b'-- Installing: /home/rock/robot_ws/install/serial/share/serial/cmake/serialConfig.cmake\n'}
+[6.211585] (serial) StdoutLine: {'line': b'-- Installing: /home/rock/robot_ws/install/serial/share/serial/cmake/serialConfig-version.cmake\n'}
+[6.214556] (serial) StdoutLine: {'line': b'-- Installing: /home/rock/robot_ws/install/serial/share/serial/package.xml\n'}
+[6.221990] (serial) CommandEnded: {'returncode': 0}
+[6.303119] (-) TimerEvent: {}
+[6.405570] (-) TimerEvent: {}
+[6.500253] (serial) JobEnded: {'identifier': 'serial', 'rc': 0}
+[6.503895] (-) EventReactorShutdown: {}

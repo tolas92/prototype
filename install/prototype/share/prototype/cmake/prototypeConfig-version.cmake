@@ -1,0 +1,1 @@
+/home/rock/robot_ws/build/prototype/ament_cmake_core/prototypeConfig-version.cmake

@@ -1,0 +1,2 @@
+Invoking command in '/home/rock/robot_ws/build/motor_control': CMAKE_PREFIX_PATH=/home/rock/robot_ws/install/serial:/home/rock/robot_ws/install/imu_node:/opt/ros/foxy /usr/bin/cmake --build /home/rock/robot_ws/build/motor_control -- -j6 -l6
+Invoked command in '/home/rock/robot_ws/build/motor_control' returned '2': CMAKE_PREFIX_PATH=/home/rock/robot_ws/install/serial:/home/rock/robot_ws/install/imu_node:/opt/ros/foxy /usr/bin/cmake --build /home/rock/robot_ws/build/motor_control -- -j6 -l6

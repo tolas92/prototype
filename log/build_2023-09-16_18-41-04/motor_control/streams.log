@@ -1,0 +1,72 @@
+[0.071s] Invoking command in '/home/rock/robot_ws/build/motor_control': CMAKE_PREFIX_PATH=/opt/ros/foxy:/home/rock/robot_ws/install/serial:/home/rock/robot_ws/install/imu_node /usr/bin/cmake --build /home/rock/robot_ws/build/motor_control -- -j6 -l6
+[0.159s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.219s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.821s] -- Found hardware_interface: 0.11.0 (/opt/ros/foxy/share/hardware_interface/cmake)
+[0.887s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.900s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.204s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.084s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[3.215s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[3.222s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.753s] -- Found rclcpp_lifecycle: 2.4.3 (/opt/ros/foxy/share/rclcpp_lifecycle/cmake)
+[3.859s] -- Found serial: 1.2.1 (/home/rock/robot_ws/install/serial/share/serial/cmake)
+[3.920s] -- Found ament_cmake_gtest: 0.9.12 (/opt/ros/foxy/share/ament_cmake_gtest/cmake)
+[4.176s] -- Configuring done
+[4.253s] -- Generating done
+[4.260s] -- Build files have been written to: /home/rock/robot_ws/build/motor_control
+[4.354s] [35m[1mScanning dependencies of target motor_control[0m
+[4.424s] [ 25%] [32mBuilding CXX object CMakeFiles/motor_control.dir/src/comms.cpp.o[0m
+[4.447s] [ 50%] [32mBuilding CXX object CMakeFiles/motor_control.dir/src/motor_interface.cpp.o[0m
+[4.449s] [ 75%] [32mBuilding CXX object CMakeFiles/motor_control.dir/src/wheel.cpp.o[0m
+[10.554s] [01m[K/home/rock/robot_ws/src/motor_control/src/comms.cpp:[m[K In member function ‘[01m[Kvoid Comms::readEncoderValues(int&, int&)[m[K’:
+[10.556s] [01m[K/home/rock/robot_ws/src/motor_control/src/comms.cpp:32:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kwrite_count[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[10.558s]    32 |     static int [01;35m[Kwrite_count[m[K=0;
+[10.561s]       |                [01;35m[K^~~~~~~~~~~[m[K
+[11.029s] [01m[K/home/rock/robot_ws/src/motor_control/src/motor_interface.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type motor_control::MotorControl::write()[m[K’:
+[11.031s] [01m[K/home/rock/robot_ws/src/motor_control/src/motor_interface.cpp:124:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kwrite_count[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[11.033s]   124 |         static int [01;35m[Kwrite_count[m[K=0;
+[11.036s]       |                    [01;35m[K^~~~~~~~~~~[m[K
+[12.176s] [01m[K/home/rock/robot_ws/src/motor_control/src/comms.cpp:[m[K At global scope:
+[12.178s] [01m[K/home/rock/robot_ws/src/motor_control/src/comms.cpp:32:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kwrite_count[m[K’ defined but not used [[01;35m[K-Wunused-variable[m[K]
+[13.984s] [01m[K/home/rock/robot_ws/src/motor_control/src/motor_interface.cpp:[m[K At global scope:
+[13.986s] [01m[K/home/rock/robot_ws/src/motor_control/src/motor_interface.cpp:124:20:[m[K [01;35m[Kwarning: [m[K‘[01m[Kwrite_count[m[K’ defined but not used [[01;35m[K-Wunused-variable[m[K]
+[16.221s] [100%] [32m[1mLinking CXX shared library libmotor_control.so[0m
+[17.010s] [100%] Built target motor_control
+[17.067s] Invoked command in '/home/rock/robot_ws/build/motor_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:/home/rock/robot_ws/install/serial:/home/rock/robot_ws/install/imu_node /usr/bin/cmake --build /home/rock/robot_ws/build/motor_control -- -j6 -l6
+[17.187s] Invoking command in '/home/rock/robot_ws/build/motor_control': CMAKE_PREFIX_PATH=/opt/ros/foxy:/home/rock/robot_ws/install/serial:/home/rock/robot_ws/install/imu_node /usr/bin/cmake --install /home/rock/robot_ws/build/motor_control
+[17.219s] -- Install configuration: ""
+[17.226s] -- Installing: /home/rock/robot_ws/install/motor_control/share/motor_control/motor_interface.xml
+[17.228s] -- Installing: /home/rock/robot_ws/install/motor_control/lib/libmotor_control.so
+[17.229s] -- Set runtime path of "/home/rock/robot_ws/install/motor_control/lib/libmotor_control.so" to ""
+[17.230s] -- Installing: /home/rock/robot_ws/install/motor_control/include
+[17.230s] -- Installing: /home/rock/robot_ws/install/motor_control/include/motor_control
+[17.231s] -- Installing: /home/rock/robot_ws/install/motor_control/include/motor_control/comms.h
+[17.232s] -- Installing: /home/rock/robot_ws/install/motor_control/include/motor_control/wheel.h
+[17.232s] -- Installing: /home/rock/robot_ws/install/motor_control/include/motor_control/motor_interface.hpp
+[17.234s] -- Installing: /home/rock/robot_ws/install/motor_control/include/motor_control/config.h
+[17.235s] -- Installing: /home/rock/robot_ws/install/motor_control/share/motor_control//launch
+[17.238s] -- Installing: /home/rock/robot_ws/install/motor_control/share/motor_control//launch/motor_launch.py
+[17.241s] -- Installing: /home/rock/robot_ws/install/motor_control/share/motor_control//config
+[17.247s] -- Installing: /home/rock/robot_ws/install/motor_control/share/motor_control//config/controller_config.yaml
+[17.248s] -- Installing: /home/rock/robot_ws/install/motor_control/share/motor_control/environment/library_path.sh
+[17.250s] -- Installing: /home/rock/robot_ws/install/motor_control/share/motor_control/environment/library_path.dsv
+[17.259s] -- Installing: /home/rock/robot_ws/install/motor_control/share/ament_index/resource_index/package_run_dependencies/motor_control
+[17.261s] -- Installing: /home/rock/robot_ws/install/motor_control/share/ament_index/resource_index/parent_prefix_path/motor_control
+[17.264s] -- Installing: /home/rock/robot_ws/install/motor_control/share/motor_control/environment/ament_prefix_path.sh
+[17.265s] -- Installing: /home/rock/robot_ws/install/motor_control/share/motor_control/environment/ament_prefix_path.dsv
+[17.267s] -- Installing: /home/rock/robot_ws/install/motor_control/share/motor_control/environment/path.sh
+[17.269s] -- Installing: /home/rock/robot_ws/install/motor_control/share/motor_control/environment/path.dsv
+[17.271s] -- Installing: /home/rock/robot_ws/install/motor_control/share/motor_control/local_setup.bash
+[17.277s] -- Installing: /home/rock/robot_ws/install/motor_control/share/motor_control/local_setup.sh
+[17.279s] -- Installing: /home/rock/robot_ws/install/motor_control/share/motor_control/local_setup.zsh
+[17.281s] -- Installing: /home/rock/robot_ws/install/motor_control/share/motor_control/local_setup.dsv
+[17.283s] -- Installing: /home/rock/robot_ws/install/motor_control/share/motor_control/package.dsv
+[17.285s] -- Installing: /home/rock/robot_ws/install/motor_control/share/ament_index/resource_index/packages/motor_control
+[17.286s] -- Installing: /home/rock/robot_ws/install/motor_control/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/motor_control
+[17.288s] -- Installing: /home/rock/robot_ws/install/motor_control/share/motor_control/cmake/ament_cmake_export_include_directories-extras.cmake
+[17.290s] -- Installing: /home/rock/robot_ws/install/motor_control/share/motor_control/cmake/ament_cmake_export_libraries-extras.cmake
+[17.292s] -- Installing: /home/rock/robot_ws/install/motor_control/share/motor_control/cmake/ament_cmake_export_dependencies-extras.cmake
+[17.294s] -- Installing: /home/rock/robot_ws/install/motor_control/share/motor_control/cmake/motor_controlConfig.cmake
+[17.299s] -- Installing: /home/rock/robot_ws/install/motor_control/share/motor_control/cmake/motor_controlConfig-version.cmake
+[17.302s] -- Installing: /home/rock/robot_ws/install/motor_control/share/motor_control/package.xml
+[17.307s] Invoked command in '/home/rock/robot_ws/build/motor_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:/home/rock/robot_ws/install/serial:/home/rock/robot_ws/install/imu_node /usr/bin/cmake --install /home/rock/robot_ws/build/motor_control

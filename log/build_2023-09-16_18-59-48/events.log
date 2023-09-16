@@ -1,0 +1,310 @@
+[0.000000] (-) TimerEvent: {}
+[0.000729] (-) JobUnselected: {'identifier': 'imu_hw'}
+[0.000987] (-) JobUnselected: {'identifier': 'motor_control'}
+[0.001165] (-) JobUnselected: {'identifier': 'prototype'}
+[0.001259] (-) JobUnselected: {'identifier': 'serial'}
+[0.001357] (imu_node) JobQueued: {'identifier': 'imu_node', 'dependencies': OrderedDict([('serial', '/home/rock/robot_ws/install/serial')])}
+[0.003306] (imu_node) JobStarted: {'identifier': 'imu_node'}
+[0.059158] (imu_node) JobProgress: {'identifier': 'imu_node', 'progress': 'cmake'}
+[0.060193] (imu_node) Command: {'cmd': ['/usr/bin/cmake', '/home/rock/robot_ws/src/imu_node', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/rock/robot_ws/install/imu_node'], 'cwd': '/home/rock/robot_ws/build/imu_node', 'env': OrderedDict([('USER', 'rock'), ('SSH_CLIENT', '192.168.29.105 51450 22'), ('ROS_PACKAGE_PATH', '/home/rock/robot_ws/install/serial/share'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/rock/robot_ws/install/motor_control/lib:/home/rock/robot_ws/install/serial/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/rock'), ('OLDPWD', '/home/rock/robot_ws/src'), ('TERM_PROGRAM_VERSION', '1.82.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-de38a85a-e1ea-495d-860b-b108ccd919ae.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/rock/robot_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/rock/robot_ws/install/serial/lib/aarch64-linux-gnu/pkgconfig:/home/rock/robot_ws/install/serial/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', 'c1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9cf3c58726.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/rock/robot_ws/install/prototype:/home/rock/robot_ws/install/motor_control:/home/rock/robot_ws/install/imu_node:/home/rock/robot_ws/install/serial:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/rock/robot_ws/build/imu_node'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.29.105 51450 192.168.29.237 22'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy:/home/rock/robot_ws/install/serial:/home/rock/robot_ws/install/prototype:/home/rock/robot_ws/install/motor_control:/home/rock/robot_ws/install/imu_node')]), 'shell': False}
+[0.099108] (-) TimerEvent: {}
+[0.200657] (-) TimerEvent: {}
+[0.296784] (imu_node) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.300912] (-) TimerEvent: {}
+[0.402405] (-) TimerEvent: {}
+[0.504103] (-) TimerEvent: {}
+[0.551395] (imu_node) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.566227] (imu_node) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.604288] (-) TimerEvent: {}
+[0.706100] (-) TimerEvent: {}
+[0.808317] (-) TimerEvent: {}
+[0.818665] (imu_node) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.829466] (imu_node) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.908584] (-) TimerEvent: {}
+[1.010111] (-) TimerEvent: {}
+[1.111849] (-) TimerEvent: {}
+[1.120790] (imu_node) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.164393] (imu_node) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.166360] (imu_node) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.174708] (imu_node) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[1.212171] (-) TimerEvent: {}
+[1.313753] (-) TimerEvent: {}
+[1.415618] (-) TimerEvent: {}
+[1.452324] (imu_node) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[1.477602] (imu_node) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.515924] (-) TimerEvent: {}
+[1.617413] (-) TimerEvent: {}
+[1.719037] (-) TimerEvent: {}
+[1.821597] (-) TimerEvent: {}
+[1.826719] (imu_node) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.869508] (imu_node) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.871430] (imu_node) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.877322] (imu_node) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[1.921836] (-) TimerEvent: {}
+[1.936778] (imu_node) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[1.939280] (imu_node) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.022267] (-) TimerEvent: {}
+[2.124562] (-) TimerEvent: {}
+[2.226880] (-) TimerEvent: {}
+[2.328582] (-) TimerEvent: {}
+[2.430753] (-) TimerEvent: {}
+[2.520443] (imu_node) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.531288] (-) TimerEvent: {}
+[2.578310] (imu_node) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[2.631736] (-) TimerEvent: {}
+[2.703443] (imu_node) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.721898] (imu_node) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[2.731861] (-) TimerEvent: {}
+[2.833364] (-) TimerEvent: {}
+[2.912410] (imu_node) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[2.933602] (-) TimerEvent: {}
+[2.974589] (imu_node) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[3.033796] (-) TimerEvent: {}
+[3.135353] (-) TimerEvent: {}
+[3.192783] (imu_node) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.235585] (-) TimerEvent: {}
+[3.337142] (-) TimerEvent: {}
+[3.399264] (imu_node) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[3.404701] (imu_node) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.407708] (imu_node) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[3.437336] (-) TimerEvent: {}
+[3.538080] (-) TimerEvent: {}
+[3.638864] (-) TimerEvent: {}
+[3.682034] (imu_node) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[3.684139] (imu_node) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[3.739122] (-) TimerEvent: {}
+[3.840093] (-) TimerEvent: {}
+[3.941777] (-) TimerEvent: {}
+[4.008577] (imu_node) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[4.010261] (imu_node) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[4.042133] (-) TimerEvent: {}
+[4.143673] (-) TimerEvent: {}
+[4.229544] (imu_node) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[4.232442] (imu_node) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[4.244590] (-) TimerEvent: {}
+[4.346912] (-) TimerEvent: {}
+[4.448709] (-) TimerEvent: {}
+[4.469167] (imu_node) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[4.472684] (imu_node) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[4.549221] (-) TimerEvent: {}
+[4.651331] (-) TimerEvent: {}
+[4.754361] (-) TimerEvent: {}
+[4.856611] (-) TimerEvent: {}
+[4.958763] (-) TimerEvent: {}
+[5.061108] (-) TimerEvent: {}
+[5.076827] (imu_node) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[5.161284] (-) TimerEvent: {}
+[5.262088] (-) TimerEvent: {}
+[5.362874] (-) TimerEvent: {}
+[5.463689] (-) TimerEvent: {}
+[5.543981] (imu_node) StdoutLine: {'line': b'-- Found serial: 1.2.1 (/home/rock/robot_ws/install/serial/share/serial/cmake)\n'}
+[5.562073] (imu_node) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[5.563854] (-) TimerEvent: {}
+[5.664726] (-) TimerEvent: {}
+[5.766101] (-) TimerEvent: {}
+[5.853218] (imu_node) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[5.855409] (imu_node) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/rock/robot_ws/src/imu_node/include\n'}
+[5.858450] (imu_node) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[5.861344] (imu_node) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.863774] (imu_node) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[5.870856] (-) TimerEvent: {}
+[5.871748] (imu_node) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[5.876383] (imu_node) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.882014] (imu_node) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.905225] (imu_node) StdoutLine: {'line': b'-- Generating done\n'}
+[5.910529] (imu_node) StdoutLine: {'line': b'-- Build files have been written to: /home/rock/robot_ws/build/imu_node\n'}
+[5.956347] (imu_node) CommandEnded: {'returncode': 0}
+[5.961626] (imu_node) JobProgress: {'identifier': 'imu_node', 'progress': 'build'}
+[5.962217] (imu_node) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rock/robot_ws/build/imu_node', '--', '-j6', '-l6'], 'cwd': '/home/rock/robot_ws/build/imu_node', 'env': OrderedDict([('USER', 'rock'), ('SSH_CLIENT', '192.168.29.105 51450 22'), ('ROS_PACKAGE_PATH', '/home/rock/robot_ws/install/serial/share'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/rock/robot_ws/install/motor_control/lib:/home/rock/robot_ws/install/serial/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/rock'), ('OLDPWD', '/home/rock/robot_ws/src'), ('TERM_PROGRAM_VERSION', '1.82.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-de38a85a-e1ea-495d-860b-b108ccd919ae.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/rock/robot_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/rock/robot_ws/install/serial/lib/aarch64-linux-gnu/pkgconfig:/home/rock/robot_ws/install/serial/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', 'c1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9cf3c58726.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/rock/robot_ws/install/prototype:/home/rock/robot_ws/install/motor_control:/home/rock/robot_ws/install/imu_node:/home/rock/robot_ws/install/serial:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/rock/robot_ws/build/imu_node'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.29.105 51450 192.168.29.237 22'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy:/home/rock/robot_ws/install/serial:/home/rock/robot_ws/install/prototype:/home/rock/robot_ws/install/motor_control:/home/rock/robot_ws/install/imu_node')]), 'shell': False}
+[5.971120] (-) TimerEvent: {}
+[6.072680] (-) TimerEvent: {}
+[6.102250] (imu_node) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target imu_node\x1b[0m\n'}
+[6.173081] (-) TimerEvent: {}
+[6.244271] (imu_node) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/imu_node.dir/src/imu_node.cpp.o\x1b[0m\n'}
+[6.273487] (imu_node) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/imu_node.dir/src/comms.cpp.o\x1b[0m\n'}
+[6.274982] (-) TimerEvent: {}
+[6.376165] (-) TimerEvent: {}
+[6.477692] (-) TimerEvent: {}
+[6.579750] (-) TimerEvent: {}
+[6.681334] (-) TimerEvent: {}
+[6.783886] (-) TimerEvent: {}
+[6.886435] (-) TimerEvent: {}
+[6.989292] (-) TimerEvent: {}
+[7.091743] (-) TimerEvent: {}
+[7.194353] (-) TimerEvent: {}
+[7.296914] (-) TimerEvent: {}
+[7.399411] (-) TimerEvent: {}
+[7.502257] (-) TimerEvent: {}
+[7.604700] (-) TimerEvent: {}
+[7.708429] (-) TimerEvent: {}
+[7.810832] (-) TimerEvent: {}
+[7.913447] (-) TimerEvent: {}
+[8.016080] (-) TimerEvent: {}
+[8.118269] (-) TimerEvent: {}
+[8.219895] (-) TimerEvent: {}
+[8.322196] (-) TimerEvent: {}
+[8.423719] (-) TimerEvent: {}
+[8.525427] (-) TimerEvent: {}
+[8.627812] (-) TimerEvent: {}
+[8.731463] (-) TimerEvent: {}
+[8.833753] (-) TimerEvent: {}
+[8.936133] (-) TimerEvent: {}
+[9.037669] (-) TimerEvent: {}
+[9.139359] (-) TimerEvent: {}
+[9.241638] (-) TimerEvent: {}
+[9.343561] (-) TimerEvent: {}
+[9.446159] (-) TimerEvent: {}
+[9.548403] (-) TimerEvent: {}
+[9.650814] (-) TimerEvent: {}
+[9.753367] (-) TimerEvent: {}
+[9.855712] (-) TimerEvent: {}
+[9.957842] (-) TimerEvent: {}
+[10.060259] (-) TimerEvent: {}
+[10.163290] (-) TimerEvent: {}
+[10.265543] (-) TimerEvent: {}
+[10.367721] (-) TimerEvent: {}
+[10.469835] (-) TimerEvent: {}
+[10.572126] (-) TimerEvent: {}
+[10.674370] (-) TimerEvent: {}
+[10.776609] (-) TimerEvent: {}
+[10.878891] (-) TimerEvent: {}
+[10.981207] (-) TimerEvent: {}
+[11.083378] (-) TimerEvent: {}
+[11.185656] (-) TimerEvent: {}
+[11.287814] (-) TimerEvent: {}
+[11.390108] (-) TimerEvent: {}
+[11.492587] (-) TimerEvent: {}
+[11.594794] (-) TimerEvent: {}
+[11.697124] (-) TimerEvent: {}
+[11.799569] (-) TimerEvent: {}
+[11.902110] (-) TimerEvent: {}
+[12.004338] (-) TimerEvent: {}
+[12.106544] (-) TimerEvent: {}
+[12.208848] (-) TimerEvent: {}
+[12.311151] (-) TimerEvent: {}
+[12.413355] (-) TimerEvent: {}
+[12.515599] (-) TimerEvent: {}
+[12.531279] (imu_node) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rock/robot_ws/src/imu_node/src/comms.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Comms::setup(const string&, int32_t, int32_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.534067] (imu_node) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rock/robot_ws/src/imu_node/src/comms.cpp:37:78:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout_ms\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[12.536279] (imu_node) StderrLine: {'line': b'   37 | void Comms::setup(const std::string &serial_device,int32_t baud_rate,\x1b[01;35m\x1b[Kint32_t timeout_ms\x1b[m\x1b[K)\n'}
+[12.538484] (imu_node) StderrLine: {'line': b'      |                                                                      \x1b[01;35m\x1b[K~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.616046] (-) TimerEvent: {}
+[12.623595] (imu_node) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rock/robot_ws/src/imu_node/src/imu_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ImuPublisherNode::publishImuData()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.626560] (imu_node) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rock/robot_ws/src/imu_node/src/imu_node.cpp:27:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kaccel_x\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[12.629220] (imu_node) StderrLine: {'line': b'   27 |     double \x1b[01;35m\x1b[Kaccel_x\x1b[m\x1b[K=comms_.customRound(comms_.accelX,1);\n'}
+[12.631754] (imu_node) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[12.716517] (-) TimerEvent: {}
+[12.818834] (-) TimerEvent: {}
+[12.921482] (-) TimerEvent: {}
+[13.024227] (-) TimerEvent: {}
+[13.126591] (-) TimerEvent: {}
+[13.229069] (-) TimerEvent: {}
+[13.331393] (-) TimerEvent: {}
+[13.433823] (-) TimerEvent: {}
+[13.536280] (-) TimerEvent: {}
+[13.638688] (-) TimerEvent: {}
+[13.741351] (-) TimerEvent: {}
+[13.843444] (-) TimerEvent: {}
+[13.945259] (-) TimerEvent: {}
+[14.046798] (-) TimerEvent: {}
+[14.149254] (-) TimerEvent: {}
+[14.251707] (-) TimerEvent: {}
+[14.354148] (-) TimerEvent: {}
+[14.456574] (-) TimerEvent: {}
+[14.558901] (-) TimerEvent: {}
+[14.661079] (-) TimerEvent: {}
+[14.763329] (-) TimerEvent: {}
+[14.865533] (-) TimerEvent: {}
+[14.967915] (-) TimerEvent: {}
+[15.070405] (-) TimerEvent: {}
+[15.172712] (-) TimerEvent: {}
+[15.275242] (-) TimerEvent: {}
+[15.377483] (-) TimerEvent: {}
+[15.480218] (-) TimerEvent: {}
+[15.582520] (-) TimerEvent: {}
+[15.684793] (-) TimerEvent: {}
+[15.787177] (-) TimerEvent: {}
+[15.889503] (-) TimerEvent: {}
+[15.991901] (-) TimerEvent: {}
+[16.094224] (-) TimerEvent: {}
+[16.196457] (-) TimerEvent: {}
+[16.298803] (-) TimerEvent: {}
+[16.401254] (-) TimerEvent: {}
+[16.503621] (-) TimerEvent: {}
+[16.605889] (-) TimerEvent: {}
+[16.708240] (-) TimerEvent: {}
+[16.810741] (-) TimerEvent: {}
+[16.913092] (-) TimerEvent: {}
+[17.015417] (-) TimerEvent: {}
+[17.117618] (-) TimerEvent: {}
+[17.220030] (-) TimerEvent: {}
+[17.322305] (-) TimerEvent: {}
+[17.424550] (-) TimerEvent: {}
+[17.527111] (-) TimerEvent: {}
+[17.629358] (-) TimerEvent: {}
+[17.731706] (-) TimerEvent: {}
+[17.834176] (-) TimerEvent: {}
+[17.936448] (-) TimerEvent: {}
+[18.038820] (-) TimerEvent: {}
+[18.141202] (-) TimerEvent: {}
+[18.243487] (-) TimerEvent: {}
+[18.345789] (-) TimerEvent: {}
+[18.448266] (-) TimerEvent: {}
+[18.550577] (-) TimerEvent: {}
+[18.653193] (-) TimerEvent: {}
+[18.755489] (-) TimerEvent: {}
+[18.857592] (-) TimerEvent: {}
+[18.959368] (-) TimerEvent: {}
+[19.061512] (-) TimerEvent: {}
+[19.163774] (-) TimerEvent: {}
+[19.266226] (-) TimerEvent: {}
+[19.368436] (-) TimerEvent: {}
+[19.470692] (-) TimerEvent: {}
+[19.573157] (-) TimerEvent: {}
+[19.675357] (-) TimerEvent: {}
+[19.777711] (-) TimerEvent: {}
+[19.880033] (-) TimerEvent: {}
+[19.894617] (imu_node) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable imu_node\x1b[0m\n'}
+[19.980491] (-) TimerEvent: {}
+[20.082427] (-) TimerEvent: {}
+[20.184861] (-) TimerEvent: {}
+[20.287485] (-) TimerEvent: {}
+[20.389609] (-) TimerEvent: {}
+[20.492034] (-) TimerEvent: {}
+[20.594121] (-) TimerEvent: {}
+[20.685749] (imu_node) StdoutLine: {'line': b'[100%] Built target imu_node\n'}
+[20.695403] (-) TimerEvent: {}
+[20.729338] (imu_node) CommandEnded: {'returncode': 0}
+[20.795662] (-) TimerEvent: {}
+[20.815824] (imu_node) JobProgress: {'identifier': 'imu_node', 'progress': 'install'}
+[20.861692] (imu_node) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rock/robot_ws/build/imu_node'], 'cwd': '/home/rock/robot_ws/build/imu_node', 'env': OrderedDict([('USER', 'rock'), ('SSH_CLIENT', '192.168.29.105 51450 22'), ('ROS_PACKAGE_PATH', '/home/rock/robot_ws/install/serial/share'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/rock/robot_ws/install/motor_control/lib:/home/rock/robot_ws/install/serial/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/rock'), ('OLDPWD', '/home/rock/robot_ws/src'), ('TERM_PROGRAM_VERSION', '1.82.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-de38a85a-e1ea-495d-860b-b108ccd919ae.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/rock/robot_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/rock/robot_ws/install/serial/lib/aarch64-linux-gnu/pkgconfig:/home/rock/robot_ws/install/serial/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', 'c1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9cf3c58726.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/rock/robot_ws/install/prototype:/home/rock/robot_ws/install/motor_control:/home/rock/robot_ws/install/imu_node:/home/rock/robot_ws/install/serial:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/rock/robot_ws/build/imu_node'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.29.105 51450 192.168.29.237 22'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy:/home/rock/robot_ws/install/serial:/home/rock/robot_ws/install/prototype:/home/rock/robot_ws/install/motor_control:/home/rock/robot_ws/install/imu_node')]), 'shell': False}
+[20.890923] (imu_node) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[20.893043] (imu_node) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[20.894826] (imu_node) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/imu_node/lib/imu_node/imu_node\n'}
+[20.896073] (-) TimerEvent: {}
+[20.924748] (imu_node) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/imu_node/share/ament_index/resource_index/package_run_dependencies/imu_node\n'}
+[20.956117] (imu_node) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/imu_node/share/ament_index/resource_index/parent_prefix_path/imu_node\n'}
+[20.987634] (imu_node) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/imu_node/share/imu_node/environment/ament_prefix_path.sh\n'}
+[20.996416] (-) TimerEvent: {}
+[21.020662] (imu_node) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/imu_node/share/imu_node/environment/ament_prefix_path.dsv\n'}
+[21.057743] (imu_node) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/imu_node/share/imu_node/environment/path.sh\n'}
+[21.091082] (imu_node) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/imu_node/share/imu_node/environment/path.dsv\n'}
+[21.097211] (-) TimerEvent: {}
+[21.122624] (imu_node) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/imu_node/share/imu_node/local_setup.bash\n'}
+[21.162758] (imu_node) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/imu_node/share/imu_node/local_setup.sh\n'}
+[21.194723] (imu_node) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/imu_node/share/imu_node/local_setup.zsh\n'}
+[21.197355] (-) TimerEvent: {}
+[21.226125] (imu_node) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/imu_node/share/imu_node/local_setup.dsv\n'}
+[21.255555] (imu_node) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/imu_node/share/imu_node/package.dsv\n'}
+[21.285817] (imu_node) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/imu_node/share/ament_index/resource_index/packages/imu_node\n'}
+[21.297874] (-) TimerEvent: {}
+[21.316912] (imu_node) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/imu_node/share/imu_node/cmake/imu_nodeConfig.cmake\n'}
+[21.347150] (imu_node) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/imu_node/share/imu_node/cmake/imu_nodeConfig-version.cmake\n'}
+[21.380777] (imu_node) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/imu_node/share/imu_node/package.xml\n'}
+[21.398328] (-) TimerEvent: {}
+[21.424905] (imu_node) CommandEnded: {'returncode': 0}
+[21.502784] (-) TimerEvent: {}
+[21.609139] (-) TimerEvent: {}
+[21.715853] (-) TimerEvent: {}
+[21.743913] (imu_node) JobEnded: {'identifier': 'imu_node', 'rc': 0}
+[21.753753] (-) EventReactorShutdown: {}

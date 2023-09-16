@@ -1,0 +1,86 @@
+[0.062s] Invoking command in '/home/rock/robot_ws/build/prototype': CMAKE_PREFIX_PATH=/home/rock/robot_ws/install/motor_control:/home/rock/robot_ws/install/imu_node:/opt/ros/foxy:/home/rock/robot_ws/install/serial /usr/bin/cmake /home/rock/robot_ws/src/prototype -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rock/robot_ws/install/prototype
+[0.260s] -- The C compiler identification is GNU 9.4.0
+[0.470s] -- The CXX compiler identification is GNU 9.4.0
+[0.478s] -- Check for working C compiler: /usr/bin/cc
+[0.713s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.716s] -- Detecting C compiler ABI info
+[0.967s] -- Detecting C compiler ABI info - done
+[1.096s] -- Detecting C compile features
+[1.099s] -- Detecting C compile features - done
+[1.109s] -- Check for working CXX compiler: /usr/bin/c++
+[1.390s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.393s] -- Detecting CXX compiler ABI info
+[1.675s] -- Detecting CXX compiler ABI info - done
+[1.717s] -- Detecting CXX compile features
+[1.720s] -- Detecting CXX compile features - done
+[1.725s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.785s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.787s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.373s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.440s] -- Found rclpy: 1.0.13 (/opt/ros/foxy/share/rclpy/cmake)
+[2.444s] -- Found urdf: 2.4.0 (/opt/ros/foxy/share/urdf/cmake)
+[2.502s] -- Found xacro: 2.0.7 (/opt/ros/foxy/share/xacro/cmake)
+[2.506s] -- Found ros2_control: 0.11.0 (/opt/ros/foxy/share/ros2_control/cmake)
+[2.509s] -- Found joint_state_broadcaster: 0.9.0 (/opt/ros/foxy/share/joint_state_broadcaster/cmake)
+[2.585s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.605s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.795s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[2.856s] -- Found FastRTPS: /opt/ros/foxy/include  
+[3.076s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.295s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[5.301s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.304s] -- Looking for pthread.h
+[5.553s] -- Looking for pthread.h - found
+[5.553s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[5.810s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[5.812s] -- Looking for pthread_create in pthreads
+[6.009s] -- Looking for pthread_create in pthreads - not found
+[6.011s] -- Looking for pthread_create in pthread
+[6.276s] -- Looking for pthread_create in pthread - found
+[6.290s] -- Found Threads: TRUE  
+[7.799s] -- Found joint_trajectory_controller: 0.9.0 (/opt/ros/foxy/share/joint_trajectory_controller/cmake)
+[8.255s] -- Found velocity_controllers: 0.9.0 (/opt/ros/foxy/share/velocity_controllers/cmake)
+[9.363s] -- Found std_srvs: 2.0.5 (/opt/ros/foxy/share/std_srvs/cmake)
+[9.398s] -- Found motor_control: 0.0.0 (/home/rock/robot_ws/install/motor_control/share/motor_control/cmake)
+[9.498s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[9.868s] -- Added test 'copyright' to check source files copyright and LICENSE
+[9.898s] -- Added test 'flake8' to check Python code syntax and style conventions
+[9.903s] -- Added test 'lint_cmake' to check CMake code style
+[9.907s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[9.919s] -- Added test 'xmllint' to check XML markup files
+[9.933s] -- Configuring done
+[9.940s] -- Generating done
+[9.948s] -- Build files have been written to: /home/rock/robot_ws/build/prototype
+[9.993s] Invoked command in '/home/rock/robot_ws/build/prototype' returned '0': CMAKE_PREFIX_PATH=/home/rock/robot_ws/install/motor_control:/home/rock/robot_ws/install/imu_node:/opt/ros/foxy:/home/rock/robot_ws/install/serial /usr/bin/cmake /home/rock/robot_ws/src/prototype -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rock/robot_ws/install/prototype
+[10.006s] Invoking command in '/home/rock/robot_ws/build/prototype': CMAKE_PREFIX_PATH=/home/rock/robot_ws/install/motor_control:/home/rock/robot_ws/install/imu_node:/opt/ros/foxy:/home/rock/robot_ws/install/serial /usr/bin/cmake --build /home/rock/robot_ws/build/prototype -- -j6 -l6
+[10.170s] Invoked command in '/home/rock/robot_ws/build/prototype' returned '0': CMAKE_PREFIX_PATH=/home/rock/robot_ws/install/motor_control:/home/rock/robot_ws/install/imu_node:/opt/ros/foxy:/home/rock/robot_ws/install/serial /usr/bin/cmake --build /home/rock/robot_ws/build/prototype -- -j6 -l6
+[10.281s] Invoking command in '/home/rock/robot_ws/build/prototype': CMAKE_PREFIX_PATH=/home/rock/robot_ws/install/motor_control:/home/rock/robot_ws/install/imu_node:/opt/ros/foxy:/home/rock/robot_ws/install/serial /usr/bin/cmake --install /home/rock/robot_ws/build/prototype
+[10.314s] -- Install configuration: ""
+[10.318s] -- Execute custom install script
+[10.320s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//config/ekf.yaml
+[10.349s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//config/ekf_map.yaml
+[10.378s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//config/motor_control.yaml
+[10.408s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//config/twist_mux.yaml
+[10.439s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//launch/camera_raw_launch.py
+[10.469s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//launch/camera_uncompressed_launch.py
+[10.499s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//launch/imu_launch.py
+[10.529s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//launch/laser_pose_launch.py
+[10.558s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//launch/main_launch.py
+[10.588s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//launch/motor_launch.py
+[10.619s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//launch/navigation_launch.py
+[10.648s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//launch/robot_localization_launch.py
+[10.678s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//launch/robotmodel_launch.py
+[10.707s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//launch/rplidar_launch.py
+[10.736s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//launch/sensors_launch.py
+[10.766s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//launch/spawn.launch.xml
+[10.802s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//launch/spawn_pos.launch.py
+[10.830s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//launch/twist_mux.launch.py
+[10.860s] CMake Error at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:100 (message):
+[10.866s]   ament_cmake_symlink_install_directory() can't find
+[10.876s]   '/home/rock/robot_ws/src/prototype/maps'
+[10.892s] Call Stack (most recent call first):
+[10.912s]   ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:314 (ament_cmake_symlink_install_directory)
+[10.915s]   cmake_install.cmake:41 (include)
+[10.917s] 
+[10.919s] 
+[10.922s] Invoked command in '/home/rock/robot_ws/build/prototype' returned '1': CMAKE_PREFIX_PATH=/home/rock/robot_ws/install/motor_control:/home/rock/robot_ws/install/imu_node:/opt/ros/foxy:/home/rock/robot_ws/install/serial /usr/bin/cmake --install /home/rock/robot_ws/build/prototype

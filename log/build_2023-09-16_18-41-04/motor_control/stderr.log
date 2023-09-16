@@ -1,0 +1,12 @@
+[01m[K/home/rock/robot_ws/src/motor_control/src/comms.cpp:[m[K In member function ‘[01m[Kvoid Comms::readEncoderValues(int&, int&)[m[K’:
+[01m[K/home/rock/robot_ws/src/motor_control/src/comms.cpp:32:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kwrite_count[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   32 |     static int [01;35m[Kwrite_count[m[K=0;
+      |                [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/rock/robot_ws/src/motor_control/src/motor_interface.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type motor_control::MotorControl::write()[m[K’:
+[01m[K/home/rock/robot_ws/src/motor_control/src/motor_interface.cpp:124:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kwrite_count[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  124 |         static int [01;35m[Kwrite_count[m[K=0;
+      |                    [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/rock/robot_ws/src/motor_control/src/comms.cpp:[m[K At global scope:
+[01m[K/home/rock/robot_ws/src/motor_control/src/comms.cpp:32:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kwrite_count[m[K’ defined but not used [[01;35m[K-Wunused-variable[m[K]
+[01m[K/home/rock/robot_ws/src/motor_control/src/motor_interface.cpp:[m[K At global scope:
+[01m[K/home/rock/robot_ws/src/motor_control/src/motor_interface.cpp:124:20:[m[K [01;35m[Kwarning: [m[K‘[01m[Kwrite_count[m[K’ defined but not used [[01;35m[K-Wunused-variable[m[K]

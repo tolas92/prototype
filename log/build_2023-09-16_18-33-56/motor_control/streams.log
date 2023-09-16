@@ -1,0 +1,20 @@
+[0.075s] Invoking command in '/home/rock/robot_ws/build/motor_control': CMAKE_PREFIX_PATH=/home/rock/robot_ws/install/serial:/home/rock/robot_ws/install/imu_node:/opt/ros/foxy /usr/bin/cmake --build /home/rock/robot_ws/build/motor_control -- -j6 -l6
+[0.282s] [ 25%] [32mBuilding CXX object CMakeFiles/motor_control.dir/src/motor_interface.cpp.o[0m
+[0.298s] [ 50%] [32mBuilding CXX object CMakeFiles/motor_control.dir/src/comms.cpp.o[0m
+[0.350s] In file included from [01m[K/home/rock/robot_ws/src/motor_control/src/comms.cpp:1[m[K:
+[0.352s] [01m[K/home/rock/robot_ws/src/motor_control/include/motor_control/comms.h:4:10:[m[K [01;31m[Kfatal error: [m[Kserial/serial.h: No such file or directory
+[0.352s]     4 | #include [01;31m[K<serial/serial.h>[m[K
+[0.353s]       |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[0.355s] compilation terminated.
+[0.364s] make[2]: *** [CMakeFiles/motor_control.dir/build.make:76: CMakeFiles/motor_control.dir/src/comms.cpp.o] Error 1
+[0.366s] make[2]: *** Waiting for unfinished jobs....
+[0.488s] In file included from [01m[K/home/rock/robot_ws/src/motor_control/include/motor_control/motor_interface.hpp:18[m[K,
+[0.491s]                  from [01m[K/home/rock/robot_ws/src/motor_control/src/motor_interface.cpp:1[m[K:
+[0.492s] [01m[K/home/rock/robot_ws/src/motor_control/include/motor_control/comms.h:4:10:[m[K [01;31m[Kfatal error: [m[Kserial/serial.h: No such file or directory
+[0.495s]     4 | #include [01;31m[K<serial/serial.h>[m[K
+[0.497s]       |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[0.498s] compilation terminated.
+[0.500s] make[2]: *** [CMakeFiles/motor_control.dir/build.make:63: CMakeFiles/motor_control.dir/src/motor_interface.cpp.o] Error 1
+[0.502s] make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/motor_control.dir/all] Error 2
+[0.503s] make: *** [Makefile:141: all] Error 2
+[0.519s] Invoked command in '/home/rock/robot_ws/build/motor_control' returned '2': CMAKE_PREFIX_PATH=/home/rock/robot_ws/install/serial:/home/rock/robot_ws/install/imu_node:/opt/ros/foxy /usr/bin/cmake --build /home/rock/robot_ws/build/motor_control -- -j6 -l6

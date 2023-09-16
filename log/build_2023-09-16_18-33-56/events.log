@@ -1,0 +1,38 @@
+[0.000000] (-) TimerEvent: {}
+[0.002401] (-) JobUnselected: {'identifier': 'imu_hw'}
+[0.004015] (-) JobUnselected: {'identifier': 'imu_node'}
+[0.011323] (-) JobUnselected: {'identifier': 'prototype'}
+[0.011917] (-) JobUnselected: {'identifier': 'serial'}
+[0.012480] (motor_control) JobQueued: {'identifier': 'motor_control', 'dependencies': OrderedDict([('serial', '/home/rock/robot_ws/install/serial')])}
+[0.016592] (motor_control) JobStarted: {'identifier': 'motor_control'}
+[0.079918] (motor_control) JobProgress: {'identifier': 'motor_control', 'progress': 'cmake'}
+[0.085532] (motor_control) JobProgress: {'identifier': 'motor_control', 'progress': 'build'}
+[0.088980] (motor_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rock/robot_ws/build/motor_control', '--', '-j6', '-l6'], 'cwd': '/home/rock/robot_ws/build/motor_control', 'env': OrderedDict([('USER', 'rock'), ('SSH_CLIENT', '192.168.29.105 51450 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/rock/robot_ws/install/serial/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/rock'), ('OLDPWD', '/home/rock/robot_ws/src'), ('TERM_PROGRAM_VERSION', '1.82.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-de38a85a-e1ea-495d-860b-b108ccd919ae.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/rock/robot_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', 'c1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9cf3c58726.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/rock/robot_ws/install/imu_node:/home/rock/robot_ws/install/serial:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/rock/robot_ws/build/motor_control'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.29.105 51450 192.168.29.237 22'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/rock/robot_ws/install/serial:/home/rock/robot_ws/install/imu_node:/opt/ros/foxy')]), 'shell': False}
+[0.100141] (-) TimerEvent: {}
+[0.201547] (-) TimerEvent: {}
+[0.298216] (motor_control) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/motor_control.dir/src/motor_interface.cpp.o\x1b[0m\n'}
+[0.301931] (-) TimerEvent: {}
+[0.313477] (motor_control) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/motor_control.dir/src/comms.cpp.o\x1b[0m\n'}
+[0.366751] (motor_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/rock/robot_ws/src/motor_control/src/comms.cpp:1\x1b[m\x1b[K:\n'}
+[0.367931] (motor_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rock/robot_ws/src/motor_control/include/motor_control/comms.h:4:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kserial/serial.h: No such file or directory\n'}
+[0.368959] (motor_control) StderrLine: {'line': b'    4 | #include \x1b[01;31m\x1b[K<serial/serial.h>\x1b[m\x1b[K\n'}
+[0.369753] (motor_control) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.371215] (motor_control) StderrLine: {'line': b'compilation terminated.\n'}
+[0.380231] (motor_control) StderrLine: {'line': b'make[2]: *** [CMakeFiles/motor_control.dir/build.make:76: CMakeFiles/motor_control.dir/src/comms.cpp.o] Error 1\n'}
+[0.381849] (motor_control) StderrLine: {'line': b'make[2]: *** Waiting for unfinished jobs....\n'}
+[0.402332] (-) TimerEvent: {}
+[0.503809] (motor_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/rock/robot_ws/src/motor_control/include/motor_control/motor_interface.hpp:18\x1b[m\x1b[K,\n'}
+[0.505869] (-) TimerEvent: {}
+[0.507477] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rock/robot_ws/src/motor_control/src/motor_interface.cpp:1\x1b[m\x1b[K:\n'}
+[0.508773] (motor_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rock/robot_ws/src/motor_control/include/motor_control/comms.h:4:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kserial/serial.h: No such file or directory\n'}
+[0.509900] (motor_control) StderrLine: {'line': b'    4 | #include \x1b[01;31m\x1b[K<serial/serial.h>\x1b[m\x1b[K\n'}
+[0.512077] (motor_control) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.514049] (motor_control) StderrLine: {'line': b'compilation terminated.\n'}
+[0.515575] (motor_control) StderrLine: {'line': b'make[2]: *** [CMakeFiles/motor_control.dir/build.make:63: CMakeFiles/motor_control.dir/src/motor_interface.cpp.o] Error 1\n'}
+[0.517481] (motor_control) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/motor_control.dir/all] Error 2\n'}
+[0.519069] (motor_control) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[0.526413] (motor_control) CommandEnded: {'returncode': 2}
+[0.606518] (-) TimerEvent: {}
+[0.711297] (-) TimerEvent: {}
+[0.725002] (motor_control) JobEnded: {'identifier': 'motor_control', 'rc': 2}
+[0.738520] (-) EventReactorShutdown: {}

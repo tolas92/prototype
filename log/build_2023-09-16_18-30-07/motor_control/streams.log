@@ -1,0 +1,65 @@
+[0.062s] Invoking command in '/home/rock/robot_ws/build/motor_control': CMAKE_PREFIX_PATH=/home/rock/robot_ws/install/serial:/home/rock/robot_ws/install/imu_node:/opt/ros/foxy /usr/bin/cmake /home/rock/robot_ws/src/motor_control -DCMAKE_INSTALL_PREFIX=/home/rock/robot_ws/install/motor_control
+[0.261s] -- The C compiler identification is GNU 9.4.0
+[0.458s] -- The CXX compiler identification is GNU 9.4.0
+[0.474s] -- Check for working C compiler: /usr/bin/cc
+[0.731s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.742s] -- Detecting C compiler ABI info
+[1.028s] -- Detecting C compiler ABI info - done
+[1.071s] -- Detecting C compile features
+[1.073s] -- Detecting C compile features - done
+[1.081s] -- Check for working CXX compiler: /usr/bin/c++
+[1.348s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.352s] -- Detecting CXX compiler ABI info
+[1.659s] -- Detecting CXX compiler ABI info - done
+[1.773s] -- Detecting CXX compile features
+[1.779s] -- Detecting CXX compile features - done
+[1.787s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.856s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.858s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.516s] -- Found hardware_interface: 0.11.0 (/opt/ros/foxy/share/hardware_interface/cmake)
+[2.603s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.622s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.810s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[2.872s] -- Found FastRTPS: /opt/ros/foxy/include  
+[3.086s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.040s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[5.190s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[5.196s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.199s] -- Looking for pthread.h
+[5.461s] -- Looking for pthread.h - found
+[5.463s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[5.789s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[5.792s] -- Looking for pthread_create in pthreads
+[6.027s] -- Looking for pthread_create in pthreads - not found
+[6.029s] -- Looking for pthread_create in pthread
+[6.305s] -- Looking for pthread_create in pthread - found
+[6.310s] -- Found Threads: TRUE  
+[6.967s] -- Found rclcpp_lifecycle: 2.4.3 (/opt/ros/foxy/share/rclcpp_lifecycle/cmake)
+[7.080s] -- Found serial: 1.2.1 (/home/rock/robot_ws/install/serial/share/serial/cmake)
+[7.134s] -- Found ament_cmake_gtest: 0.9.12 (/opt/ros/foxy/share/ament_cmake_gtest/cmake)
+[7.388s] -- Configuring done
+[7.451s] -- Generating done
+[7.457s] -- Build files have been written to: /home/rock/robot_ws/build/motor_control
+[7.493s] Invoked command in '/home/rock/robot_ws/build/motor_control' returned '0': CMAKE_PREFIX_PATH=/home/rock/robot_ws/install/serial:/home/rock/robot_ws/install/imu_node:/opt/ros/foxy /usr/bin/cmake /home/rock/robot_ws/src/motor_control -DCMAKE_INSTALL_PREFIX=/home/rock/robot_ws/install/motor_control
+[7.519s] Invoking command in '/home/rock/robot_ws/build/motor_control': CMAKE_PREFIX_PATH=/home/rock/robot_ws/install/serial:/home/rock/robot_ws/install/imu_node:/opt/ros/foxy /usr/bin/cmake --build /home/rock/robot_ws/build/motor_control -- -j6 -l6
+[7.696s] [35m[1mScanning dependencies of target motor_control[0m
+[7.848s] [ 25%] [32mBuilding CXX object CMakeFiles/motor_control.dir/src/motor_interface.cpp.o[0m
+[7.855s] [ 50%] [32mBuilding CXX object CMakeFiles/motor_control.dir/src/comms.cpp.o[0m
+[7.876s] [ 75%] [32mBuilding CXX object CMakeFiles/motor_control.dir/src/wheel.cpp.o[0m
+[7.891s] In file included from [01m[K/home/rock/robot_ws/src/motor_control/src/comms.cpp:1[m[K:
+[7.895s] [01m[K/home/rock/robot_ws/src/motor_control/include/motor_control/comms.h:4:10:[m[K [01;31m[Kfatal error: [m[Kserial/serial.h: No such file or directory
+[7.897s]     4 | #include [01;31m[K<serial/serial.h>[m[K
+[7.898s]       |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[7.899s] compilation terminated.
+[7.900s] make[2]: *** [CMakeFiles/motor_control.dir/build.make:76: CMakeFiles/motor_control.dir/src/comms.cpp.o] Error 1
+[7.901s] make[2]: *** Waiting for unfinished jobs....
+[8.026s] In file included from [01m[K/home/rock/robot_ws/src/motor_control/include/motor_control/motor_interface.hpp:18[m[K,
+[8.028s]                  from [01m[K/home/rock/robot_ws/src/motor_control/src/motor_interface.cpp:1[m[K:
+[8.029s] [01m[K/home/rock/robot_ws/src/motor_control/include/motor_control/comms.h:4:10:[m[K [01;31m[Kfatal error: [m[Kserial/serial.h: No such file or directory
+[8.030s]     4 | #include [01;31m[K<serial/serial.h>[m[K
+[8.031s]       |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[8.032s] compilation terminated.
+[8.034s] make[2]: *** [CMakeFiles/motor_control.dir/build.make:63: CMakeFiles/motor_control.dir/src/motor_interface.cpp.o] Error 1
+[8.735s] make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/motor_control.dir/all] Error 2
+[8.741s] make: *** [Makefile:141: all] Error 2
+[8.764s] Invoked command in '/home/rock/robot_ws/build/motor_control' returned '2': CMAKE_PREFIX_PATH=/home/rock/robot_ws/install/serial:/home/rock/robot_ws/install/imu_node:/opt/ros/foxy /usr/bin/cmake --build /home/rock/robot_ws/build/motor_control -- -j6 -l6

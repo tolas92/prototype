@@ -1,0 +1,135 @@
+[0.000000] (-) TimerEvent: {}
+[0.000564] (-) JobUnselected: {'identifier': 'imu_hw'}
+[0.002426] (-) JobUnselected: {'identifier': 'imu_node'}
+[0.004302] (-) JobUnselected: {'identifier': 'motor_control'}
+[0.006346] (-) JobUnselected: {'identifier': 'serial'}
+[0.008820] (prototype) JobQueued: {'identifier': 'prototype', 'dependencies': OrderedDict()}
+[0.009083] (prototype) JobStarted: {'identifier': 'prototype'}
+[0.055297] (prototype) JobProgress: {'identifier': 'prototype', 'progress': 'cmake'}
+[0.058246] (prototype) JobProgress: {'identifier': 'prototype', 'progress': 'build'}
+[0.061195] (prototype) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rock/robot_ws/build/prototype', '--', '-j6', '-l6'], 'cwd': '/home/rock/robot_ws/build/prototype', 'env': OrderedDict([('USER', 'rock'), ('SSH_CLIENT', '192.168.29.105 51450 22'), ('ROS_PACKAGE_PATH', '/home/rock/robot_ws/install/serial/share'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/rock/robot_ws/install/motor_control/lib:/home/rock/robot_ws/install/serial/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/rock'), ('OLDPWD', '/home/rock/robot_ws/src'), ('TERM_PROGRAM_VERSION', '1.82.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-de38a85a-e1ea-495d-860b-b108ccd919ae.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/rock/robot_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/rock/robot_ws/install/serial/lib/aarch64-linux-gnu/pkgconfig:/home/rock/robot_ws/install/serial/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', 'c1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9cf3c58726.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/rock/robot_ws/install/motor_control:/home/rock/robot_ws/install/imu_node:/home/rock/robot_ws/install/serial:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/rock/robot_ws/build/prototype'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.29.105 51450 192.168.29.237 22'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/rock/robot_ws/install/motor_control:/home/rock/robot_ws/install/imu_node:/opt/ros/foxy:/home/rock/robot_ws/install/serial')]), 'shell': False}
+[0.098308] (-) TimerEvent: {}
+[0.199187] (-) TimerEvent: {}
+[0.219650] (prototype) CommandEnded: {'returncode': 0}
+[0.286484] (prototype) JobProgress: {'identifier': 'prototype', 'progress': 'install'}
+[0.299937] (-) TimerEvent: {}
+[0.331146] (prototype) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rock/robot_ws/build/prototype'], 'cwd': '/home/rock/robot_ws/build/prototype', 'env': OrderedDict([('USER', 'rock'), ('SSH_CLIENT', '192.168.29.105 51450 22'), ('ROS_PACKAGE_PATH', '/home/rock/robot_ws/install/serial/share'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/rock/robot_ws/install/motor_control/lib:/home/rock/robot_ws/install/serial/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/rock'), ('OLDPWD', '/home/rock/robot_ws/src'), ('TERM_PROGRAM_VERSION', '1.82.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-de38a85a-e1ea-495d-860b-b108ccd919ae.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/rock/robot_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/rock/robot_ws/install/serial/lib/aarch64-linux-gnu/pkgconfig:/home/rock/robot_ws/install/serial/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', 'c1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/home/rock/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9cf3c58726.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/rock/robot_ws/install/motor_control:/home/rock/robot_ws/install/imu_node:/home/rock/robot_ws/install/serial:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/rock/robot_ws/build/prototype'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.29.105 51450 192.168.29.237 22'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/rock/robot_ws/install/motor_control:/home/rock/robot_ws/install/imu_node:/opt/ros/foxy:/home/rock/robot_ws/install/serial')]), 'shell': False}
+[0.362619] (prototype) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.368058] (prototype) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.373085] (prototype) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rock/robot_ws/install/prototype/share/prototype//config/ekf.yaml\n'}
+[0.376436] (prototype) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rock/robot_ws/install/prototype/share/prototype//config/ekf_map.yaml\n'}
+[0.379063] (prototype) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rock/robot_ws/install/prototype/share/prototype//config/motor_control.yaml\n'}
+[0.381327] (prototype) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rock/robot_ws/install/prototype/share/prototype//config/twist_mux.yaml\n'}
+[0.383449] (prototype) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rock/robot_ws/install/prototype/share/prototype//launch/camera_raw_launch.py\n'}
+[0.385634] (prototype) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rock/robot_ws/install/prototype/share/prototype//launch/camera_uncompressed_launch.py\n'}
+[0.387863] (prototype) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rock/robot_ws/install/prototype/share/prototype//launch/imu_launch.py\n'}
+[0.390121] (prototype) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rock/robot_ws/install/prototype/share/prototype//launch/laser_pose_launch.py\n'}
+[0.392074] (prototype) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rock/robot_ws/install/prototype/share/prototype//launch/main_launch.py\n'}
+[0.393696] (prototype) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rock/robot_ws/install/prototype/share/prototype//launch/motor_launch.py\n'}
+[0.395280] (prototype) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rock/robot_ws/install/prototype/share/prototype//launch/navigation_launch.py\n'}
+[0.396935] (prototype) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rock/robot_ws/install/prototype/share/prototype//launch/robot_localization_launch.py\n'}
+[0.398556] (prototype) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rock/robot_ws/install/prototype/share/prototype//launch/robotmodel_launch.py\n'}
+[0.400022] (-) TimerEvent: {}
+[0.401453] (prototype) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rock/robot_ws/install/prototype/share/prototype//launch/rplidar_launch.py\n'}
+[0.403301] (prototype) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rock/robot_ws/install/prototype/share/prototype//launch/sensors_launch.py\n'}
+[0.404780] (prototype) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rock/robot_ws/install/prototype/share/prototype//launch/spawn.launch.xml\n'}
+[0.406330] (prototype) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rock/robot_ws/install/prototype/share/prototype//launch/spawn_pos.launch.py\n'}
+[0.408052] (prototype) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rock/robot_ws/install/prototype/share/prototype//launch/twist_mux.launch.py\n'}
+[0.411058] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//worlds/empty_world.world\n'}
+[0.412364] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//models/box_room/meshes/box_room.dae\n'}
+[0.439265] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//models/box_room/meshes/chambre.png\n'}
+[0.469388] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//models/model.config\n'}
+[0.499012] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//models/model.sdf\n'}
+[0.504282] (-) TimerEvent: {}
+[0.531372] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//urdf/camera.xacro\n'}
+[0.561626] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//urdf/hardware_interface.xacro\n'}
+[0.591064] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//urdf/joint_macros.xacro\n'}
+[0.604782] (-) TimerEvent: {}
+[0.620698] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//urdf/lidar.xacro\n'}
+[0.652012] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//urdf/link_macros.xacro\n'}
+[0.680857] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//urdf/prototype.xacro\n'}
+[0.705388] (-) TimerEvent: {}
+[0.710813] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//urdf/wheel.xacro\n'}
+[0.741984] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/Dazzling.stl\n'}
+[0.776832] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/Dbrakes2K.png\n'}
+[0.805797] (-) TimerEvent: {}
+[0.813943] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/Dreaotherothertex2K.png\n'}
+[0.847509] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/Dtire_rim_detail2Ktex.png\n'}
+[0.874971] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/Material Base Color.png\n'}
+[0.904820] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/Material.005 Base Color.png\n'}
+[0.907310] (-) TimerEvent: {}
+[0.934401] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/Prototype_mesh(1).stl\n'}
+[0.963425] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/Prototype_mesh(3).stl\n'}
+[0.992848] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/Prototype_mesh.stl\n'}
+[1.007775] (-) TimerEvent: {}
+[1.023410] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/Wheels.dae\n'}
+[1.051980] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/blender_mesh.stl\n'}
+[1.080822] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/crane base.png\n'}
+[1.108454] (-) TimerEvent: {}
+[1.112050] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/crane stand.001.png\n'}
+[1.139553] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/crane.blend\n'}
+[1.174842] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/crane.blend1\n'}
+[1.205110] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/crane.dae\n'}
+[1.214336] (-) TimerEvent: {}
+[1.236612] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/crane_base.png\n'}
+[1.283323] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/crane_stand.png\n'}
+[1.314907] (-) TimerEvent: {}
+[1.327508] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/cute_cube.blend\n'}
+[1.359473] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/cute_cube.dae\n'}
+[1.391509] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/first wheel.blend\n'}
+[1.415549] (-) TimerEvent: {}
+[1.429753] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/gear color.png\n'}
+[1.458654] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/lambert3_baseColor.png\n'}
+[1.488571] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/motor .png\n'}
+[1.522621] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/prototype.blend\n'}
+[1.530623] (-) TimerEvent: {}
+[1.552269] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/prototype.dae\n'}
+[1.581566] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/sensors/realsense.dae\n'}
+[1.613788] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/sensors/rplidar.dae\n'}
+[1.631111] (-) TimerEvent: {}
+[1.645662] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/sensors/rplidartexture.png\n'}
+[1.675731] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/textures/lambert3_baseColor.png\n'}
+[1.705656] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/tinker.stl\n'}
+[1.731693] (-) TimerEvent: {}
+[1.745858] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/tire_rubber_2K_NRM.png\n'}
+[1.774908] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/tires/obj.mtl\n'}
+[1.803839] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/tires/tinker.obj\n'}
+[1.832119] (-) TimerEvent: {}
+[1.835883] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//scripts/move_laser.py\n'}
+[1.863971] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//scripts/move_shaft.py\n'}
+[1.898903] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//scripts/publisher.py\n'}
+[1.928072] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//scripts/service_sample.py\n'}
+[1.932406] (-) TimerEvent: {}
+[1.957401] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//scripts/service_velocity.py\n'}
+[1.986899] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//scripts/test.py\n'}
+[2.016405] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//scripts/velocity.py\n'}
+[2.032849] (-) TimerEvent: {}
+[2.057587] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//rviz/localizer_rviz_config.rviz\n'}
+[2.097379] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/lib/prototype/move_laser.py\n'}
+[2.131284] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/lib/prototype/move_shaft.py\n'}
+[2.140438] (-) TimerEvent: {}
+[2.162896] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/ament_index/resource_index/package_run_dependencies/prototype\n'}
+[2.192968] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/ament_index/resource_index/parent_prefix_path/prototype\n'}
+[2.222962] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype/environment/ament_prefix_path.sh\n'}
+[2.240929] (-) TimerEvent: {}
+[2.260255] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype/environment/ament_prefix_path.dsv\n'}
+[2.296096] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype/environment/path.sh\n'}
+[2.328567] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype/environment/path.dsv\n'}
+[2.341329] (-) TimerEvent: {}
+[2.365016] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype/local_setup.bash\n'}
+[2.397095] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype/local_setup.sh\n'}
+[2.427456] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype/local_setup.zsh\n'}
+[2.441764] (-) TimerEvent: {}
+[2.456958] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype/local_setup.dsv\n'}
+[2.491667] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype/package.dsv\n'}
+[2.523488] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/ament_index/resource_index/packages/prototype\n'}
+[2.542515] (-) TimerEvent: {}
+[2.571637] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype/cmake/prototypeConfig.cmake\n'}
+[2.608629] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype/cmake/prototypeConfig-version.cmake\n'}
+[2.642693] (prototype) StdoutLine: {'line': b'-- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype/package.xml\n'}
+[2.643424] (-) TimerEvent: {}
+[2.687299] (prototype) CommandEnded: {'returncode': 0}
+[2.744032] (-) TimerEvent: {}
+[2.851310] (-) TimerEvent: {}
+[2.865006] (prototype) JobEnded: {'identifier': 'prototype', 'rc': 0}
+[2.872134] (-) EventReactorShutdown: {}

@@ -1,0 +1,6 @@
+Invoking command in '/home/rock/robot_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/rock/robot_ws/src/serial-ros2 -DCMAKE_INSTALL_PREFIX=/home/rock/robot_ws/install/serial
+Invoked command in '/home/rock/robot_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/rock/robot_ws/src/serial-ros2 -DCMAKE_INSTALL_PREFIX=/home/rock/robot_ws/install/serial
+Invoking command in '/home/rock/robot_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/rock/robot_ws/build/serial -- -j6 -l6
+Invoked command in '/home/rock/robot_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/rock/robot_ws/build/serial -- -j6 -l6
+Invoking command in '/home/rock/robot_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/rock/robot_ws/build/serial
+Invoked command in '/home/rock/robot_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/rock/robot_ws/build/serial

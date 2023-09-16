@@ -1,0 +1,95 @@
+[0.065s] Invoking command in '/home/rock/robot_ws/build/prototype': CMAKE_PREFIX_PATH=/home/rock/robot_ws/install/motor_control:/home/rock/robot_ws/install/imu_node:/opt/ros/foxy:/home/rock/robot_ws/install/serial /usr/bin/cmake --build /home/rock/robot_ws/build/prototype -- -j6 -l6
+[0.213s] Invoked command in '/home/rock/robot_ws/build/prototype' returned '0': CMAKE_PREFIX_PATH=/home/rock/robot_ws/install/motor_control:/home/rock/robot_ws/install/imu_node:/opt/ros/foxy:/home/rock/robot_ws/install/serial /usr/bin/cmake --build /home/rock/robot_ws/build/prototype -- -j6 -l6
+[0.325s] Invoking command in '/home/rock/robot_ws/build/prototype': CMAKE_PREFIX_PATH=/home/rock/robot_ws/install/motor_control:/home/rock/robot_ws/install/imu_node:/opt/ros/foxy:/home/rock/robot_ws/install/serial /usr/bin/cmake --install /home/rock/robot_ws/build/prototype
+[0.357s] -- Install configuration: ""
+[0.363s] -- Execute custom install script
+[0.366s] -- Up-to-date symlink: /home/rock/robot_ws/install/prototype/share/prototype//config/ekf.yaml
+[0.369s] -- Up-to-date symlink: /home/rock/robot_ws/install/prototype/share/prototype//config/ekf_map.yaml
+[0.371s] -- Up-to-date symlink: /home/rock/robot_ws/install/prototype/share/prototype//config/motor_control.yaml
+[0.374s] -- Up-to-date symlink: /home/rock/robot_ws/install/prototype/share/prototype//config/twist_mux.yaml
+[0.376s] -- Up-to-date symlink: /home/rock/robot_ws/install/prototype/share/prototype//launch/camera_raw_launch.py
+[0.378s] -- Up-to-date symlink: /home/rock/robot_ws/install/prototype/share/prototype//launch/camera_uncompressed_launch.py
+[0.380s] -- Up-to-date symlink: /home/rock/robot_ws/install/prototype/share/prototype//launch/imu_launch.py
+[0.382s] -- Up-to-date symlink: /home/rock/robot_ws/install/prototype/share/prototype//launch/laser_pose_launch.py
+[0.384s] -- Up-to-date symlink: /home/rock/robot_ws/install/prototype/share/prototype//launch/main_launch.py
+[0.386s] -- Up-to-date symlink: /home/rock/robot_ws/install/prototype/share/prototype//launch/motor_launch.py
+[0.387s] -- Up-to-date symlink: /home/rock/robot_ws/install/prototype/share/prototype//launch/navigation_launch.py
+[0.389s] -- Up-to-date symlink: /home/rock/robot_ws/install/prototype/share/prototype//launch/robot_localization_launch.py
+[0.390s] -- Up-to-date symlink: /home/rock/robot_ws/install/prototype/share/prototype//launch/robotmodel_launch.py
+[0.393s] -- Up-to-date symlink: /home/rock/robot_ws/install/prototype/share/prototype//launch/rplidar_launch.py
+[0.395s] -- Up-to-date symlink: /home/rock/robot_ws/install/prototype/share/prototype//launch/sensors_launch.py
+[0.397s] -- Up-to-date symlink: /home/rock/robot_ws/install/prototype/share/prototype//launch/spawn.launch.xml
+[0.398s] -- Up-to-date symlink: /home/rock/robot_ws/install/prototype/share/prototype//launch/spawn_pos.launch.py
+[0.401s] -- Up-to-date symlink: /home/rock/robot_ws/install/prototype/share/prototype//launch/twist_mux.launch.py
+[0.403s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//worlds/empty_world.world
+[0.404s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//models/box_room/meshes/box_room.dae
+[0.431s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//models/box_room/meshes/chambre.png
+[0.462s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//models/model.config
+[0.493s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//models/model.sdf
+[0.529s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//urdf/camera.xacro
+[0.554s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//urdf/hardware_interface.xacro
+[0.584s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//urdf/joint_macros.xacro
+[0.616s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//urdf/lidar.xacro
+[0.645s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//urdf/link_macros.xacro
+[0.673s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//urdf/prototype.xacro
+[0.703s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//urdf/wheel.xacro
+[0.735s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/Dazzling.stl
+[0.769s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/Dbrakes2K.png
+[0.810s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/Dreaotherothertex2K.png
+[0.840s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/Dtire_rim_detail2Ktex.png
+[0.868s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/Material Base Color.png
+[0.897s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/Material.005 Base Color.png
+[0.927s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/Prototype_mesh(1).stl
+[0.956s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/Prototype_mesh(3).stl
+[0.985s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/Prototype_mesh.stl
+[1.016s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/Wheels.dae
+[1.045s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/blender_mesh.stl
+[1.073s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/crane base.png
+[1.105s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/crane stand.001.png
+[1.132s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/crane.blend
+[1.173s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/crane.blend1
+[1.203s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/crane.dae
+[1.229s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/crane_base.png
+[1.282s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/crane_stand.png
+[1.329s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/cute_cube.blend
+[1.355s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/cute_cube.dae
+[1.384s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/first wheel.blend
+[1.422s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/gear color.png
+[1.451s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/lambert3_baseColor.png
+[1.481s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/motor .png
+[1.521s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/prototype.blend
+[1.544s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/prototype.dae
+[1.574s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/sensors/realsense.dae
+[1.606s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/sensors/rplidar.dae
+[1.638s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/sensors/rplidartexture.png
+[1.668s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/textures/lambert3_baseColor.png
+[1.698s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/tinker.stl
+[1.738s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/tire_rubber_2K_NRM.png
+[1.767s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/tires/obj.mtl
+[1.798s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//meshes/tires/tinker.obj
+[1.829s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//scripts/move_laser.py
+[1.856s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//scripts/move_shaft.py
+[1.892s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//scripts/publisher.py
+[1.921s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//scripts/service_sample.py
+[1.950s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//scripts/service_velocity.py
+[1.985s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//scripts/test.py
+[2.014s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//scripts/velocity.py
+[2.055s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype//rviz/localizer_rviz_config.rviz
+[2.095s] -- Symlinking: /home/rock/robot_ws/install/prototype/lib/prototype/move_laser.py
+[2.129s] -- Symlinking: /home/rock/robot_ws/install/prototype/lib/prototype/move_shaft.py
+[2.158s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/ament_index/resource_index/package_run_dependencies/prototype
+[2.186s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/ament_index/resource_index/parent_prefix_path/prototype
+[2.216s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype/environment/ament_prefix_path.sh
+[2.253s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype/environment/ament_prefix_path.dsv
+[2.288s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype/environment/path.sh
+[2.321s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype/environment/path.dsv
+[2.358s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype/local_setup.bash
+[2.390s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype/local_setup.sh
+[2.420s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype/local_setup.zsh
+[2.449s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype/local_setup.dsv
+[2.484s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype/package.dsv
+[2.516s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/ament_index/resource_index/packages/prototype
+[2.564s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype/cmake/prototypeConfig.cmake
+[2.600s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype/cmake/prototypeConfig-version.cmake
+[2.634s] -- Symlinking: /home/rock/robot_ws/install/prototype/share/prototype/package.xml
+[2.679s] Invoked command in '/home/rock/robot_ws/build/prototype' returned '0': CMAKE_PREFIX_PATH=/home/rock/robot_ws/install/motor_control:/home/rock/robot_ws/install/imu_node:/opt/ros/foxy:/home/rock/robot_ws/install/serial /usr/bin/cmake --install /home/rock/robot_ws/build/prototype

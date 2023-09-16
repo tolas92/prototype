@@ -1,0 +1,8 @@
+[01m[K/home/rock/robot_ws/src/imu_node/src/comms.cpp:[m[K In member function ‘[01m[Kvoid Comms::setup(const string&, int32_t, int32_t)[m[K’:
+[01m[K/home/rock/robot_ws/src/imu_node/src/comms.cpp:37:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout_ms[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   37 | void Comms::setup(const std::string &serial_device,int32_t baud_rate,[01;35m[Kint32_t timeout_ms[m[K)
+      |                                                                      [01;35m[K~~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/rock/robot_ws/src/imu_node/src/imu_node.cpp:[m[K In member function ‘[01m[Kvoid ImuPublisherNode::publishImuData()[m[K’:
+[01m[K/home/rock/robot_ws/src/imu_node/src/imu_node.cpp:27:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kaccel_x[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   27 |     double [01;35m[Kaccel_x[m[K=comms_.customRound(comms_.accelX,1);
+      |            [01;35m[K^~~~~~~[m[K
