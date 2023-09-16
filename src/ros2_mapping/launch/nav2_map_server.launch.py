@@ -5,7 +5,7 @@ from launch_ros.actions import Node
 from ament_index_python import get_package_share_directory
 
 def generate_launch_description():
-    map_file=os.path.join(get_package_share_directory("ros2_mapping"),"config","workshop.yaml")
+    map_file=os.path.join(get_package_share_directory("ros2_mapping"),"config","map_1691589404.yaml")
     nav2_yaml=os.path.join(get_package_share_directory("ros2_mapping"),"config","amcl_config.yaml")
 
     map_server_node=Node(

@@ -8,25 +8,15 @@
   <!-- =======================xacro for box_links========================-->
   <xacro:macro name="box_link" params="name mass ixx iyy izz box">
     <link name="${name}">
-     <inertial>
-        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
-        <mass value="${mass}"/>
-        <inertia ixx="${ixx}" ixy="0.0" ixz="0.0" iyy="${iyy}" iyz="0.0" izz="${izz}"/>
-     </inertial>
      <visual>
+     <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
             <box size="${box}"/>
         </geometry>
-        <material name="">
+        <material name="red">
             <color rgba="1.0 0.0 0.0 1.0"/>
         </material>
      </visual>
-     <collision>
-        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
-        <geometry>
-            <box size="${box}"/>
-        </geometry>
-     </collision>
      </link>
  </xacro:macro>
 

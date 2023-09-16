@@ -9,7 +9,7 @@
     <xacro:macro name="wheel" params="wheel_name">
         <link name="${wheel_name}">
             <visual>
-                <origin xyz="0.0 0.0 0.0" rpy="0.0 1.5707 0.0"/>
+                <origin xyz="0.0 0.0 0.0" rpy="1.57 0.0 0.0"/>
                 <geometry>
                  <cylinder radius="${wheel_radius}" length="${wheel_length}"/>
                 </geometry>
@@ -35,12 +35,12 @@
 
    <!-- *********************wheel links and joints***************************************-->
 
-<xacro:joint name="back_right_wheel_joint" origin="-0.0900 0.12 -0.025" 
+<xacro:joint_wheel name="back_right_wheel_joint" origin="-0.0900 -0.088 -0.025" 
 parent="chassis" child="back_right_wheel"/>
 
 <xacro:wheel  wheel_name="back_right_wheel"/>
 
-<xacro:joint name="back_left_wheel_joint" origin="0.0900 0.12 -0.025" 
+<xacro:joint_wheel name="back_left_wheel_joint" origin="-0.0900 0.088 -0.025" 
 parent="chassis" child="back_left_wheel"/>
 
 <xacro:wheel  wheel_name="back_left_wheel"/>
