@@ -9,7 +9,7 @@ from launch.actions import IncludeLaunchDescription,TimerAction
 
 def generate_launch_description():
     #Data Input
-    xacro_file='prototype.xacro'
+    xacro_file='sam_bot_description.xacro'
     package_name="prototype"
 
     print("fetching the xacro")
@@ -26,6 +26,7 @@ def generate_launch_description():
         name='my_robot_state_publisher_node',
         emulate_tty=True,
         parameters=[{'use_sim_time':False,
+                     'publish_frequency':50.0,
         'robot_description':Command(['xacro ',xacro_file_path])}],
         output="screen"
     )

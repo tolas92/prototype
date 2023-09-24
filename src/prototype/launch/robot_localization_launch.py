@@ -54,7 +54,7 @@ def generate_launch_description():
     
     return LaunchDescription([
         ekf_odom,
-        #delayed_ekf_map,
+        delayed_ekf_map,
                 
     ])
         

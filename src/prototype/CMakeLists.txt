@@ -28,15 +28,18 @@ find_package(depthai_examples REQUIRED)
 find_package(depthai_ros_driver REQUIRED)
 find_package(depthai_ros_msgs REQUIRED)
 find_package(demo_nodes_cpp REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
 
 install(
   DIRECTORY
     config
     launch
     maps
+    action
     worlds
     models
     urdf
+    sambot
     meshes
     scripts
     rviz
@@ -48,8 +51,15 @@ install(
   PROGRAMS
   scripts/move_laser.py 
   scripts/move_shaft.py
+  scripts/action_client.py
   DESTINATION lib/${PROJECT_NAME}
 )
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+  "action/SendCoordinates.action"
+)
+
+
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

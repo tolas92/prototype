@@ -21,8 +21,7 @@ class Comms
         void setup(const string &serial_device,int32_t baud_rate,int32_t timeout_ms);
         //void sendEmpytMsg();
         //void readEncoderValues(int &val_1,int &val_2);
-        void read_imu_values(double& accel_x,double& accel_y,double& accel_z, double& gyro_x,double& gyro_y,double& gyro_z,
-                            double& yaw,double& pitch,double& roll);
+        void read_imu_values(double& accel_x,double& accel_y,double& accel_z, double& gyro_x);
         bool connected()const{ return serialDriver.IsOpen();}
 
         //std::string sendMsg(const std::string &msg_to_send,bool print_output=false);

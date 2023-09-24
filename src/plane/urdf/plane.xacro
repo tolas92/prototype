@@ -16,27 +16,21 @@
     <joint name="world_joint" type="fixed">
         <origin xyz="0 0 0.5" rpy="0 0 0" />
         <parent link="world" />
-        <child link="plane" />
+        <child link="imu_link" />
     </joint>
-
-    <link name="plane">
-    
-    </link>   
-    
     
     <joint name="imu_joint" type="continuous">
-        <origin xyz="0 0 0" rpy="0 0 0" />
-        <parent link="plane" />
+        <origin xyz="0 0 1.0" rpy="0 0 0" />
+        <parent link="world" />
         <child link="imu_link" />
-        <axis xyz="1 0 0"/>
-        <limit effort="100" velocity="1" lower="-1.5708" upper="1.5708" />
+        <axis xyz="0.0 0.0 1.0"/>
     </joint>
 
     <link name="imu_link">
     <visual>
-      <origin rpy="0 0 1.5708" xyz="0 0 0"/>
+      <origin rpy="0 0 0.0" xyz="0 0 0"/>
       <geometry>
-        <box size="0.5 0.5 0.5"/>
+        <box size="0.05 0.05 0.05"/>
       </geometry>
       <material name="white"/>
     </visual>

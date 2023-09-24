@@ -49,8 +49,7 @@ void Comms::setup(const std::string &serial_device,int32_t baud_rate,int32_t tim
 }
 
 
-void Comms::read_imu_values(double& accel_x,double& accel_y,double& accel_z, double& gyro_x,double& gyro_y,double& gyro_z,
-double& yaw,double& pitch,double& roll)
+void Comms::read_imu_values(double& accel_x,double& accel_y,double& accel_z, double& gyro_x)
 {
     serialDriver.FlushIOBuffers();
  // Requesting the IMU data from the Arduino
@@ -86,39 +85,15 @@ yaw = std::atof(yawToken.c_str());*/
     response.erase(0, delimiterPos + 1);
 
     delimiterPos = response.find(" ");
-    std::string gxtoken = response.substr(0, delimiterPos);
-    response.erase(0, delimiterPos + 1);
+    std::string gxtoken = response;
 
-    delimiterPos = response.find(" ");
-    std::string gytoken = response.substr(0, delimiterPos);
-    response.erase(0, delimiterPos + 1);
-
-    delimiterPos = response.find(" ");
-    std::string gztoken = response.substr(0, delimiterPos);
-    response.erase(0, delimiterPos + 1);
-
-    delimiterPos = response.find(" ");
-    std::string yawtoken = response.substr(0, delimiterPos);
-    response.erase(0, delimiterPos + 1);
-
-    delimiterPos = response.find(" ");
-    std::string pitchtoken = response.substr(0, delimiterPos);
-    response.erase(0, delimiterPos + 1);
-
-    std::string rolltoken = response;
 
     // Convert the tokens to double values
     accel_x = std::atof(axtoken.c_str());
     accel_y = std::atof(aytoken.c_str());
     accel_z = std::atof(aztoken.c_str());
     gyro_x = std::atof(gxtoken.c_str());
-    gyro_y = std::atof(gytoken.c_str());
-    gyro_z = std::atof(gztoken.c_str());
-    yaw = std::atof(yawtoken.c_str());
-    pitch = std::atof(pitchtoken.c_str());
-    roll = std::atof(rolltoken.c_str());
-
-
+    
     }
 /*
 int main()

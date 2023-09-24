@@ -7,14 +7,26 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(ament_cmake_python REQUIRED)
 find_package(navigation2 REQUIRED)
 find_package(slam_toolbox REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rclpy REQUIRED)
 
-install(DIRECTORY launch config
+install(DIRECTORY 
+launch
+config
+scripts
+navigator_planner
 DESTINATION share/${PROJECT_NAME})
 
+# Install Python modules
+ament_python_install_package(${PROJECT_NAME})
+
+install(PROGRAMS
+  scripts/table_navigation.py
+  DESTINATION lib/${PROJECT_NAME}
+)
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
