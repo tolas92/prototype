@@ -1,7 +1,7 @@
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import PoseStamped, TransformStamped
-from sensor_msgs.msg import Imu
+from sensor_msgs.msg import Imu, LaserScan
 from nav_msgs.msg import Odometry
 from tf2_ros import TransformBroadcaster
 import math
@@ -11,24 +11,15 @@ class TFPublisherNode(Node):
         super().__init__('Imu_tf_publisher')
         self.tf_broadcaster = TransformBroadcaster(self)
         self.subscription = self.create_subscription(
-            Imu,
-            '/imu/data',
-            self.pose_callback,
+            Odometry,
+            '/odometry/filtered',
+            self.odom_callback,
             10
         )
+        self.subscription=self.create_subscription(LaserScan,'/scan',self.laser_callback,10)
 
-    def pose_callback(self, msg):
-        # Process the pose data from the /camera_pose topic
-        # Assuming the pose data contains position (x, y, z) and orientation (quaternion)
-        # Assuming the data is available in the variables: x, y, z, qx, qy, qz, qw
-        x = msg.angular_velocity.x
-        y = msg.angular_velocity.y
-        z = msg.angular_velocity.z
-        qx = msg.orientation.x
-        qy = msg.orientation.y
-        qz = msg.orientation.z
-        qw = msg.orientation.w
-
+    def laser_callback(self,msg):
+        scan_time=msg.
         # Create a TransformStamped message for the TF
         tf_msg = TransformStamped()
         tf_msg.header.stamp = self.get_clock().now().to_msg()
@@ -48,7 +39,11 @@ class TFPublisherNode(Node):
         # Publish the TF
         self.tf_broadcaster.sendTransform(tf_msg)
 
+    def odom_callback(self, msg):
+        qz = msg.orientation.z
+        qw = msg.orientation.w
 
+    
 def main(args=None):
     rclpy.init(args=args)
     node = TFPublisherNode()

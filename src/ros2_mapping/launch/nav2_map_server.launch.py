@@ -37,6 +37,6 @@ def generate_launch_description():
 
     return LaunchDescription(
       [map_server_node,
-       amcl_node,
+      amcl_node,
        map_lifecycle_node]
     )
