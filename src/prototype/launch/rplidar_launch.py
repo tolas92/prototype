@@ -15,7 +15,9 @@ def generate_launch_description():
                 'frame_id': 'base_laser',
                 'angle_compensate': True,
                 'serial_baudrate':115200,
-                'scan_mode': 'Standard'
+                'scan_mode': 'Sensitivity',
+                'scan_frequency':10.0
+                
             }]
         )
     ])

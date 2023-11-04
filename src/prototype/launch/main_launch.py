@@ -35,8 +35,8 @@ def generate_launch_description():
     )
     # Add the launch actions to the LaunchDescription
     ld.add_action(robotmodel_launch)
-    ld.add_action(TimerAction(period=15.0,actions=[sensors_launch]))
-    ld.add_action(TimerAction(period=30.0,actions=[robot_locate]))
+    ld.add_action(sensors_launch)
+    ld.add_action(TimerAction(period=25.0,actions=[robot_locate]))
    # ld.add_action(TimerAction(period=40.0,actions=[twist_launch]))
 
 

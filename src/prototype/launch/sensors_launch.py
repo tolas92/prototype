@@ -38,8 +38,8 @@ def generate_launch_description():
 
     # Add the launch actions to the LaunchDescription
     #ld.add_action(laser_launch)
-    ld.add_action(TimerAction(period=3.0,actions=[motor_launch]))
-    ld.add_action(TimerAction(period=10.0,actions=[imu_launch]))
+    ld.add_action(motor_launch)
+    ld.add_action(TimerAction(period=5.0,actions=[imu_launch]))
     #ld.add_action(TimerAction(period=40.0,actions=[camera_raw_launch]))
 
     return ld

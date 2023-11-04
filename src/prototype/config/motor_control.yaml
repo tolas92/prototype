@@ -1,6 +1,6 @@
 controller_manager:
   ros__parameters:
-    update_rate: 30  # Hz
+    update_rate: 100  # Hz
 
     #imu_broadcaster:
      # type: imu_sensor_broadcaster/IMUSensorBroadcaster
@@ -16,15 +16,15 @@ diff_controller:
   ros__parameters:
     left_wheel_names: ['back_left_wheel_joint']
     right_wheel_names: ['back_right_wheel_joint']
-    wheel_separation: 0.20
+    wheel_separation: 0.495
     wheels_per_side: 1  # actually 2, but both are controlled by 1 signal
-    wheel_radius: 0.035
+    wheel_radius: 0.05
 
     wheel_separation_multiplier: 1.0
     left_wheel_radius_multiplier: 1.0
     right_wheel_radius_multiplier: 1.0
 
-    publish_rate: 50.0
+    publish_rate: 100.0
     odom_frame_id: odom
     base_frame_id: base_link
     pose_covariance_diagonal : [0.001, 0.001, 0.001,0.001,0.001,0.001]
@@ -50,13 +50,13 @@ diff_controller:
     #linear.x.max_jerk: 0.0
     #linear.x.min_jerk: 0.0
 
-    angular.z.has_velocity_limits: false
-    angular.z.has_acceleration_limits: false
+    angular.z.has_velocity_limits: true
+    angular.z.has_acceleration_limits: true
     angular.z.has_jerk_limits: false
-    angular.z.max_velocity: 1.0
-    angular.z.min_velocity: -1.0
-    angular.z.max_acceleration: 1.0
-    angular.z.min_acceleration: -1.0
+    angular.z.max_velocity: 0.4
+    angular.z.min_velocity: -0.4
+    angular.z.max_acceleration: 0.5
+    angular.z.min_acceleration: -0.5
     angular.z.max_jerk: 0.0
     angular.z.min_jerk: 0.0
     

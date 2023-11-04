@@ -10,7 +10,7 @@ public:
   {
     publisher_ = this->create_publisher<sensor_msgs::msg::Imu>("imu/data", 10);
     timer_ = this->create_wall_timer(std::chrono::milliseconds(1), std::bind(&ImuPublisherNode::publishImuData, this));
-    comms_.setup("/dev/serial/by-path/platform-fd500000.pcie-pci-0000:01:00.0-usb-0:1.4:1.0", 115200, 10000);
+    comms_.setup("/dev/serial/by-path/platform-fd500000.pcie-pci-0000:01:00.0-usb-0:1.3.2:1.0", 115200, 10000);
     
   }
 

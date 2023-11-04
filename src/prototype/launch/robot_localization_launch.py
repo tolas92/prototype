@@ -35,6 +35,7 @@ def generate_launch_description():
         name='ekf_filter_node',
         output='screen',
         parameters=[os.path.join(get_package_share_directory("prototype"), 'config', 'ekf.yaml')],
+        remappings=[('/cmd_vel','/diff_controller/cmd_vel_unstamped')]
     )
 
 
