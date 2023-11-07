@@ -2,47 +2,46 @@ import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import PoseStamped, TransformStamped
 from sensor_msgs.msg import Imu, LaserScan
-from nav_msgs.msg import Odometry
+from nav_msgs.msg import Odometry,OccupancyGrid
 from tf2_ros import TransformBroadcaster
 import math
+from rclpy.qos import QoSProfile
 
 class TFPublisherNode(Node):
     def __init__(self):
         super().__init__('Imu_tf_publisher')
         self.tf_broadcaster = TransformBroadcaster(self)
-        self.subscription = self.create_subscription(
-            Odometry,
-            '/odometry/filtered',
+        self.odom_timestamp = None
+        self.laser_timestamp = None
+        
+     
+        self.subscription_odom = self.create_subscription(
+            OccupancyGrid,
+            '/map',
             self.odom_callback,
             10
         )
-        self.subscription=self.create_subscription(LaserScan,'/scan',self.laser_callback,10)
-
-    def laser_callback(self,msg):
-        scan_time=msg.
-        # Create a TransformStamped message for the TF
-        tf_msg = TransformStamped()
-        tf_msg.header.stamp = self.get_clock().now().to_msg()
-        tf_msg.header.frame_id = 'base_link'  # Assuming the pose is in the "world" frame
-        tf_msg.child_frame_id = 'imu_link'  # Assuming the pose is in the "imu_link" frame
-
-        # Set the translation
-        tf_msg.transform.translation.x = 0.0
-        tf_msg.transform.translation.y = 0.0
-        tf_msg.transform.translation.z = 0.0
-
-        # Set the rotation (quaternion)
-        tf_msg.transform.rotation.x = 0.0
-        tf_msg.transform.rotation.y = 0.0
-        tf_msg.transform.rotation.z = qz
-        tf_msg.transform.rotation.w = qw
-        # Publish the TF
-        self.tf_broadcaster.sendTransform(tf_msg)
-
+        
+        self.subscription_laser = self.create_subscription(
+            LaserScan,
+            '/scan',
+            self.laser_callback,
+            10
+        )
+        
     def odom_callback(self, msg):
-        qz = msg.orientation.z
-        qw = msg.orientation.w
+        self.odom_timestamp = msg.header.stamp
+        self.print_timestamps()
 
+    def laser_callback(self, msg):
+        self.laser_timestamp = msg.header.stamp
+        self.print_timestamps()
+
+    def print_timestamps(self):
+        if self.laser_timestamp is not None:
+            print("Odometry Timestamp:", self.odom_timestamp)
+            print("Laser Timestamp:", self.laser_timestamp)
+            print("-----------------------------")  # Separator for clarity
     
 def main(args=None):
     rclpy.init(args=args)

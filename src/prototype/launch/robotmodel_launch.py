@@ -9,7 +9,7 @@ from launch.actions import IncludeLaunchDescription,TimerAction
 
 def generate_launch_description():
     #Data Input
-    xacro_file='sam_bot_description.xacro'
+    xacro_file='prototype.xacro'
     package_name="prototype"
 
     print("fetching the xacro")

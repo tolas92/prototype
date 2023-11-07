@@ -11,6 +11,7 @@ find_package(rclpy REQUIRED)
 find_package(urdf REQUIRED)
 find_package(xacro REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
 find_package(ros2_control REQUIRED)
 find_package(joint_state_broadcaster REQUIRED)
 find_package(joint_trajectory_controller REQUIRED)
@@ -43,6 +44,7 @@ install(
     meshes
     scripts
     rviz
+    msg
   DESTINATION
     share/${PROJECT_NAME}/
 )
@@ -57,6 +59,10 @@ install(
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "action/SendCoordinates.action"
+  "action/GoTo.action"
+  "action/FoodMenu.action"
+  "msg/Food.msg"
+  DEPENDENCIES std_msgs
 )
 
 

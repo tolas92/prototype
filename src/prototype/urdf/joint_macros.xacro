@@ -2,12 +2,12 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="prototype">
 
 
-    <xacro:property name="wheel_radius" value="0.032"/>
+    <xacro:property name="wheel_radius" value="0.05"/>
     <xacro:property name="wheel_length" value="0.026"/>
    
    <!--===============xacro for continuous joints=========================-->
     <xacro:macro name="joint_wheel" params="name origin parent child">
-        <joint name="${name}" type="fixed">
+        <joint name="${name}" type="continuous">
             <origin xyz="${origin}" rpy="0.0 0.0 0.0"/>
             <parent link="${parent}"/>
             <child link="${child}"/>
