@@ -20,6 +20,11 @@ from geometry_msgs.msg import TransformStamped, PoseStamped, Quaternion,Point,Po
 from tf2_ros import TransformBroadcaster
 import math
 from visualization_msgs.msg import MarkerArray
+from nav2_simple_commander.robot_navigator import BasicNavigator, TaskResult
+import time
+
+
+
 
 class TFBroadcasterNode(Node):
     def __init__(self):
@@ -27,6 +32,7 @@ class TFBroadcasterNode(Node):
         self.tf_broadcaster = TransformBroadcaster(self)
         #self.pose_subscriber=self.create_subscription(Pose,"/person_pose",self.callback,1)
         #self.timer = self.create_timer(0.1, self.tf_callback)
+        self.publisher=self.create_publisher(PoseStamped,'/spatial_pose',10)
         self.subscription = self.create_subscription(
             MarkerArray,
             '/spatial_bb',
@@ -47,20 +53,30 @@ class TFBroadcasterNode(Node):
                 transform_stamped.header.stamp = self.get_clock().now().to_msg()
                 transform_stamped.header.frame_id = self.camera_frame
                 transform_stamped.child_frame_id = self.camera_optical_frame
-                if self.position_x and self.position_y is not None:
-                # Set the translation and rotation from the constant pose
-                    transform_stamped.transform.translation.x = self.position_x
-                    transform_stamped.transform.translation.y = -self.position_y
-                    transform_stamped.transform.translation.z = 0.0
+            
+            # Set the translation and rotation from the constant pose
+                transform_stamped.transform.translation.x = self.position_x
+                transform_stamped.transform.translation.y = -self.position_y
+                transform_stamped.transform.translation.z = 0.0
 
-                    # Set the rotation (quaternion)
-                    transform_stamped.transform.rotation.x = 0.0
-                    transform_stamped.transform.rotation.y = 0.0
-                    transform_stamped.transform.rotation.z = 0.0
-                    transform_stamped.transform.rotation.w = 1.0
+                # Set the rotation (quaternion)
+                transform_stamped.transform.rotation.x = 0.0
+                transform_stamped.transform.rotation.y = 0.0
+                transform_stamped.transform.rotation.z = 0.0
+                transform_stamped.transform.rotation.w = 1.0
 
-                    # Publish the transformation
-                    self.tf_broadcaster.sendTransform(transform_stamped)
+                # Publish the transformation
+                #self.tf_broadcaster.sendTransform(transform_stamped)
+                pose_=PoseStamped()
+                pose_.pose.position.x=self.position_x
+                pose_.pose.position.y=-self.position_y
+                pose_.header.frame_id="camera_link"
+                pose_.header.stamp=self.get_clock().now().to_msg()
+                self.publisher.publish(pose_)
+
+
+
+    
 
             
     def tf_callback(self):

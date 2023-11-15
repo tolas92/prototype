@@ -10,9 +10,39 @@ find_package(ament_cmake REQUIRED)
 find_package(ament_cmake_python REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rclpy REQUIRED)
+find_package(message_filters REQUIRED)
+find_package(tf2_geometry_msgs REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
+
+if(TARGET tf2_geometry_msgs::tf2_geometry_msgs)
+  get_target_property(_include_dirs tf2_geometry_msgs::tf2_geometry_msgs INTERFACE_INCLUDE_DIRECTORIES)
+else()
+  set(_include_dirs ${tf2_geometry_msgs_INCLUDE_DIRS})
+endif()
+
+find_file(TF2_CPP_HEADERS
+  NAMES tf2_geometry_msgs.hpp
+  PATHS ${_include_dirs}
+  NO_CACHE
+  PATH_SUFFIXES tf2_geometry_msgs
+)
+
+add_executable(obj_map src/obj_map.cpp)
+ament_target_dependencies(
+  obj_map
+  geometry_msgs
+  message_filters
+  rclcpp
+  tf2
+  tf2_geometry_msgs
+  tf2_ros
+)
+
+if(EXISTS ${TF2_CPP_HEADERS})
+  target_compile_definitions(obj_map PUBLIC -DTF2_CPP_HEADERS)
+endif()
 
 install(
   DIRECTORY
@@ -29,6 +59,10 @@ install(PROGRAMS
   scripts/person_broadcast.py
   DESTINATION lib/${PROJECT_NAME}
 )
+
+install(TARGETS
+  obj_map
+  DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

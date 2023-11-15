@@ -2,12 +2,17 @@ import rclpy
 from rclpy.node import Node
 import tf2_ros
 from geometry_msgs.msg import TransformStamped,PoseStamped
+from nav2_simple_commander.robot_navigator import BasicNavigator, TaskResult
+from rclpy.duration import Duration
+import time
+
+
 
 
 class TFListenerNode(Node):
     def __init__(self):
         super().__init__('tf_listener_node')
-        self.tf_buffer = tf2_ros.Buffer(cache_time=rclpy.duration.Duration(seconds=10))
+        self.tf_buffer = tf2_ros.Buffer(cache_time=rclpy.duration.Duration(seconds=1))
         self.tf_listener = tf2_ros.TransformListener(self.tf_buffer, self)
         self.publisher = self.create_publisher(PoseStamped, '/goal_pose', 10)
 
@@ -16,6 +21,9 @@ class TFListenerNode(Node):
         self.base_link_frame = 'object_link'
 
         self.timer = self.create_timer(0.1, self.timer_callback)
+        self.navigator = BasicNavigator()
+        self.previous_x=None
+        self.previous_y=None
 
     def timer_callback(self):
         try:
@@ -45,12 +53,13 @@ class TFListenerNode(Node):
         pose_msg.pose.position.y = transform_stamped.transform.translation.y
         pose_msg.pose.position.z = 0.0
         pose_msg.pose.orientation.w = 1.0
-
         self.publisher.publish(pose_msg)
-
         self.get_logger().info(f"Transform between {transform_stamped.header.frame_id} and {transform_stamped.child_frame_id}:")
         self.get_logger().info(f"Translation: {transform_stamped.transform.translation}")
-        self.get_logger().info(f"Rotation: {transform_stamped.transform.rotation}")
+        self.previous_x=pose_msg.pose.position.x
+        self.previous_y=pose_msg.pose.position.y
+
+       
 
 def main(args=None):
     rclpy.init(args=args)

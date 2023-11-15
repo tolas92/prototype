@@ -14,7 +14,11 @@ def launch_setup(context, *args, **kwargs):
     depthai_prefix = get_package_share_directory("depthai")
     name = LaunchConfiguration('name').perform(context)
     
-    return [
+    return [Node(
+        package='depthai',
+        executable='person_broadcast.py',
+        output='screen'
+    ),
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
                 os.path.join(depthai_prefix, 'launch', 'rgbd_pcl.launch.py')),
