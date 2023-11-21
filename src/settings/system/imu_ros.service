@@ -1,0 +1,24 @@
+[Unit]
+After=network-online.target
+Description=imu_ros
+
+[Service]
+Environment="RMW_IMPLEMENTATION=rmw_cyclonedds_cpp"
+Environment="ROS_DOMAIN_ID=1"
+ExecStart=/bin/bash -c 'source /opt/ros/humble/setup.bash; source /home/tolasing/robot_ws/install/setup.bash; ros2 launch prototype imu_launch.py'
+RemainAfterExit=no
+User=tolasing
+Restart=always
+RestartSec=2s
+
+[Install]
+WantedBy=multi-user.target
+
+
+
+
+
+
+
+
+

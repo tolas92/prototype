@@ -1,0 +1,15 @@
+[Unit]
+Description=Mount unit for software-boutique, revision 59
+After=snapd.mounts-pre.target
+Before=snapd.mounts.target
+
+[Mount]
+What=/var/lib/snapd/snaps/software-boutique_59.snap
+Where=/snap/software-boutique/59
+Type=squashfs
+Options=nodev,ro,x-gdu.hide,x-gvfs-hide
+LazyUnmount=yes
+
+[Install]
+WantedBy=snapd.mounts.target
+WantedBy=multi-user.target
