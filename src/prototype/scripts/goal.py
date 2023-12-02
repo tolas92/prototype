@@ -13,8 +13,8 @@ class GoalPosePublisher(Node):
         pose_msg.header.frame_id = "map"
         pose_msg.header.stamp.sec = 0
         pose_msg.header.stamp.nanosec = 0
-        pose_msg.pose.position.x = 2.0
-        pose_msg.pose.position.y = 0.0
+        pose_msg.pose.position.x = 0.02
+        pose_msg.pose.position.y = -0.06
         pose_msg.pose.position.z = 0.0
         pose_msg.pose.orientation.w = 1.0
 

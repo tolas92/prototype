@@ -53,10 +53,10 @@ diff_controller:
     angular.z.has_velocity_limits: false
     angular.z.has_acceleration_limits: false
     angular.z.has_jerk_limits: false
-    angular.z.max_velocity: 1.0
-    angular.z.min_velocity: -1.0
-    angular.z.max_acceleration: 1.0
-    angular.z.min_acceleration: -1.0
+    angular.z.max_velocity: 0.1
+    angular.z.min_velocity: -0.1
+    angular.z.max_acceleration: 0.3
+    angular.z.min_acceleration: -0.3
     angular.z.max_jerk: 0.0
     angular.z.min_jerk: 0.0
     
