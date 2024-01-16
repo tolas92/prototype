@@ -62,6 +62,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "action/GoTo.action"
   "action/FoodMenu.action"
   "msg/Food.msg"
+  "msg/DistanceAngle.msg"
   DEPENDENCIES std_msgs
 )
 

@@ -102,9 +102,40 @@ class Battery(object):
         """
         Timer callback that processes the battery state update and publishes.
         """
+        # parameters
+        charging = self.node.get_parameter("charging").value
+        charging_increment = self.node.get_parameter("charging_increment").value
+        charging_percentage = self.node.get_parameter("charging_percentage").value
+
+        # update state
+        if charging:
+            charging_percentage = min(100.0, charging_percentage + charging_increment)
+            if charging_percentage % 5.0 < 0.1:
+                self.node.get_logger().debug("Charging...{:.1f}%%".format(charging_percentage))
+        else:
+            charging_percentage = max(0.0, charging_percentage - charging_increment)
+            if charging_percentage % 2.5 < 0.1:
+                self.node.get_logger().debug("Discharging...{:.1f}%%".format(charging_percentage))
+
+        # update parameters (TODO: need a guard?)
+        self.node.set_parameters([
+            rclpy.parameter.Parameter(
+                'charging_percentage',
+                rclpy.parameter.Parameter.Type.DOUBLE,
+                float(charging_percentage)
+            )
+        ])
+
         # publish
         self.battery.header.stamp = rclpy.clock.Clock().now().to_msg()
-        self.battery.percentage = 100.0
+        charging_percentage = min(100.0, charging_percentage)
+        self.battery.percentage = charging_percentage
+        if charging_percentage == 100.0:
+            self.battery.power_supply_status = sensor_msgs.BatteryState.POWER_SUPPLY_STATUS_FULL
+        elif charging:
+            self.battery.power_supply_status = sensor_msgs.BatteryState.POWER_SUPPLY_STATUS_CHARGING
+        else:
+            self.battery.power_supply_status = sensor_msgs.BatteryState.POWER_SUPPLY_STATUS_DISCHARGING
         self.publishers.state.publish(msg=self.battery)
 
     def shutdown(self):

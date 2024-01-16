@@ -33,35 +33,6 @@ class AiCommand(Node):
         self.navigator = BasicNavigator()
 
     def callback(self, goal_handle): 
-        
-        """
-        # Set our demo's initial pose
-        initial_pose = PoseStamped()
-        initial_pose.header.frame_id = 'map'
-        initial_pose.header.stamp = self.navigator.get_clock().now().to_msg()
-        initial_pose.pose.position.x = 3.45
-        initial_pose.pose.position.y = 2.15
-        initial_pose.pose.orientation.z = 1.0
-        initial_pose.pose.orientation.w = 0.0
-        self.navigator.setInitialPose(initial_pose)
-
-        """
-        # Activate navigation, if not autostarted. This should be called after setInitialPose()
-        # or this will initialize at the origin of the map and update the costmap with bogus readings.
-        # If autostart, you should `waitUntilNav2Active()` instead.
-        # self.navigator.lifecycleStartup()
-
-        # Wait for navigation to fully activate, since autostarting nav2
-        #self.navigator.waitUntilNav2Active()
-
-        # If desired, you can change or load the map as well
-        # self.navigator.changeMap('/path/to/map.yaml')
-
-        # You may use the self.navigator to clear or obtain costmaps
-        # self.navigator.clearAllCostmaps()  # also have clearLocalCostmap() and clearGlobalCostmap()
-        # global_costmap = self.navigator.getGlobalCostmap()
-        # local_costmap = self.navigator.getLocalCostmap()
-            # Go to our demos first goal pose
         goal=goal_handle.request
         goal_pose = PoseStamped()
         goal_pose.header.frame_id = 'map'
@@ -73,8 +44,8 @@ class AiCommand(Node):
 
     
         self.navigator.goToPose(goal_pose)
-
-
+        
+        
         while not self.navigator.isTaskComplete():
         
             feedback = self.navigator.getFeedback()
@@ -112,7 +83,7 @@ class AiCommand(Node):
         result_.done=True
         return result_
         #self.navigator.lifecycleShutdown()
-
+        
         #exit(0)
 
 def main(args=None):

@@ -1,7 +1,7 @@
 /oak:
   ros__parameters:
     camera:
-      i_enable_imu: true
+      i_enable_imu: false
       i_enable_ir: true
       i_floodlight_brightness: 0
       i_ip: ''
@@ -33,22 +33,22 @@
       i_board_socket_id: 1
       i_calibration_file: ''
       i_get_base_device_timestamp: false
-      i_fps: 30.0
-      i_height: 720
-      i_low_bandwidth: false
+      i_fps: 15.0
+      i_height: 480
+      i_low_bandwidth: true
       i_low_bandwidth_quality: 50
       i_max_q_size: 30
-      i_publish_topic: true
+      i_publish_topic: false
       i_simulate_from_topic: false
       i_disable_node: false
       i_resolution: '720'
-      i_width: 1280
+      i_width: 640
       r_exposure: 1000
       r_iso: 800
       r_set_man_exposure: false
     nn:
       i_nn_config_path: depthai_ros_driver/mobilenet
-      i_disable_resize: false
+      i_disable_resize: true
       i_enable_passthrough: true
       i_enable_passthrough_depth: false
     rgb:
@@ -57,17 +57,17 @@
       i_get_base_device_timestamp: false
       i_disable_node: false
       i_calibration_file: ''
-      i_enable_preview: true
-      i_fps: 30.0
-      i_height: 720
+      i_enable_preview: false
+      i_fps: 15.0
+      i_height: 480
       i_interleaved: false
-      i_keep_preview_aspect_ratio: true
-      i_low_bandwidth: false
+      i_keep_preview_aspect_ratio: false
+      i_low_bandwidth: true
       i_low_bandwidth_quality: 50
       i_max_q_size: 30
       i_preview_size: 300
       i_publish_topic: true
-      i_resolution: '1080'
+      i_resolution: ''
       i_set_isp_scale: true
       i_isp_num: 2
       i_isp_den: 3
@@ -84,16 +84,16 @@
       i_board_socket_id: 2
       i_calibration_file: ''
       i_get_base_device_timestamp: false
-      i_fps: 30.0
-      i_height: 720
-      i_low_bandwidth: false
+      i_fps: 15.0
+      i_height: 480
+      i_low_bandwidth: true
       i_low_bandwidth_quality: 50
       i_max_q_size: 30
-      i_publish_topic: true
+      i_publish_topic: false
       i_simulate_from_topic: false
       i_disable_node: false
       i_resolution: '720'
-      i_width: 1280
+      i_width: 640
       r_exposure: 1000
       r_iso: 800
       r_set_man_exposure: false
@@ -117,8 +117,8 @@
       i_brightness_filter_min_brightness: 1
       i_brightness_filter_max_brightness: 256
       i_extended_disp: false
-      i_height: 720
-      i_low_bandwidth: false
+      i_height: 480
+      i_low_bandwidth: true
       i_low_bandwidth_quality: 50
       i_lr_check: true
       i_lrc_threshold: 10
@@ -126,7 +126,12 @@
       i_rectify_edge_fill_color: 0
       i_stereo_conf_threshold: 255
       i_set_input_size: false
-      i_input_width: 1280
-      i_input_height: 720
-      i_width: 1280
-    use_sim_time: false
+      i_input_width: 640
+      i_input_height: 480
+      i_width: 640
+      i_subpixel: false
+    use_sim_time: false  
+/spatial_bb_node:
+  ros__parameters:
+    desqueeze: true
+    

@@ -20,10 +20,11 @@ class FibonacciActionClient(Node):
         print('hi')
         
         self._action_client.send_goal_async(goal_msg,feedback_callback=self.feedback_callback)
+        print("sent goal ")
     
     def feedback_callback(self,feedback_msg):
         feedback=feedback_msg.feedback
-        self.get_logger().info(f'Feedback: x={feedback.waiting}')
+        self.get_logger().info(f'Feedback: x={feedback}')
 
 
 def main(args=None):
