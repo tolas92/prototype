@@ -30,10 +30,10 @@ SetPointInfo;
 SetPointInfo leftPID, rightPID;
 
 /* PID Parameters */
-int Kp = 20;
-int Kd = 12;
+int Kp = 5;
+int Kd = 0;
 int Ki = 0;
-int Ko = 50;
+int Ko = 1;
 
 unsigned char moving = 0; // is the base in motion?
 
@@ -63,7 +63,7 @@ void resetPID(){
 }
 
 /* PID routine to compute the next motor commands */
-void doPID(SetPointInfo * p) {
+void doPIDL(SetPointInfo * p) {
   long Perror;
   long output;
   int input;
@@ -80,7 +80,45 @@ void doPID(SetPointInfo * p) {
   */
   //output = (Kp * Perror + Kd * (Perror - p->PrevErr) + Ki * p->Ierror) / Ko;
   // p->PrevErr = Perror;
-  output = (Kp * Perror - Kd * (input - p->PrevInput) + p->ITerm) / Ko;
+  output = (1* Perror - Kd * (input - p->PrevInput) + p->ITerm) /1;
+  p->PrevEnc = p->Encoder;
+
+  output += p->output;
+  // Accumulate Integral error *or* Limit output.
+  // Stop accumulating when output saturates
+  if (output >= MAX_PWM)
+    output = MAX_PWM;
+  else if (output <= -MAX_PWM)
+    output = -MAX_PWM;
+  else
+  /*
+  * allow turning changes, see http://brettbeauregard.com/blog/2011/04/improving-the-beginner%E2%80%99s-pid-tuning-changes/
+  */
+    p->ITerm += Ki * Perror;
+
+  p->output = output;
+  p->PrevInput = input;
+ // Serial.Println("pid called");
+}
+
+void doPIDR(SetPointInfo * p) {
+  long Perror;
+  long output;
+  int input;
+
+  //Perror = p->TargetTicksPerFrame - (p->Encoder - p->PrevEnc);
+  input = p->Encoder - p->PrevEnc;
+  Perror = p->TargetTicksPerFrame - input;
+
+
+  /*
+  * Avoid derivative kick and allow tuning changes,
+  * see http://brettbeauregard.com/blog/2011/04/improving-the-beginner%E2%80%99s-pid-derivative-kick/
+  * see http://brettbeauregard.com/blog/2011/04/improving-the-beginner%E2%80%99s-pid-tuning-changes/
+  */
+  //output = (Kp * Perror + Kd * (Perror - p->PrevErr) + Ki * p->Ierror) / Ko;
+  // p->PrevErr = Perror;
+  output = (50 * Perror - Kd * (input - p->PrevInput) + p->ITerm) / Ko;
   p->PrevEnc = p->Encoder;
 
   output += p->output;
@@ -99,6 +137,43 @@ void doPID(SetPointInfo * p) {
   p->output = output;
   p->PrevInput = input;
   //Serial.Println("pid called");
+}
+void doPID(SetPointInfo * p) {
+  long Perror;
+  long output;
+  int input;
+
+  //Perror = p->TargetTicksPerFrame - (p->Encoder - p->PrevEnc);
+  input = p->Encoder - p->PrevEnc;
+  Perror = p->TargetTicksPerFrame - input;
+
+
+  /*
+  * Avoid derivative kick and allow tuning changes,
+  * see http://brettbeauregard.com/blog/2011/04/improving-the-beginner%E2%80%99s-pid-derivative-kick/
+  * see http://brettbeauregard.com/blog/2011/04/improving-the-beginner%E2%80%99s-pid-tuning-changes/
+  */
+  //output = (Kp * Perror + Kd * (Perror - p->PrevErr) + Ki * p->Ierror) / Ko;
+  // p->PrevErr = Perror;
+  output = (10 * Perror - Kd * (input - p->PrevInput) + p->ITerm) /1;
+  p->PrevEnc = p->Encoder;
+
+  output += p->output;
+  // Accumulate Integral error *or* Limit output.
+  // Stop accumulating when output saturates
+  if (output >= MAX_PWM)
+    output = MAX_PWM;
+  else if (output <= -MAX_PWM)
+    output = -MAX_PWM;
+  else
+  /*
+  * allow turning changes, see http://brettbeauregard.com/blog/2011/04/improving-the-beginner%E2%80%99s-pid-tuning-changes/
+  */
+    p->ITerm += Ki * Perror;
+
+  p->output = output;
+  p->PrevInput = input;
+ // Serial.Println("pid called");
 }
 
 /* Read the encoder values and call the PID routine */
@@ -121,10 +196,12 @@ void updatePID() {
   }
 
   /* Compute PID update for each motor */
-  doPID(&rightPID);
-  doPID(&leftPID);
+  doPIDR(&rightPID);
+  doPIDL(&leftPID);
+  //doPID(&leftPID);
+  //doPID(&rightPID);
 
   /* Set the motor speeds accordingly */
-  setMotorSpeeds(leftPID.output, rightPID.output);
+  setMotorSpeeds(leftPID.output*0.938, rightPID.output*1.03);
 }
 

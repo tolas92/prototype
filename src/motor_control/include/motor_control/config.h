@@ -14,7 +14,7 @@ struct Config
  std::string device="/dev/ttyACM0";
  int baud_rate=115200;
  int timeout= 1000;
- int enc_counts_per_rev=1920;
+ int enc_counts_per_rev=1625;
 
  
 };

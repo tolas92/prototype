@@ -10,12 +10,12 @@ from prototype.msg import Food
 class GoalSub(Node):
     def __init__(self):
         super().__init__('table_node')
-        self.publisher = self.create_publisher(String, "/table_number", 10)
-        self.timer = self.create_timer(1, self.on_timer)
+        self.publisher = self.create_publisher(String, "/eye_expression", 10)
+        self.timer = self.create_timer(3, self.on_timer)
 
     def on_timer(self):
         msg = String()
-        msg.data ="one"
+        msg.data ="robber"
         self.publisher.publish(msg)
         
         # Stop the node immediately after publishing the message
