@@ -130,7 +130,7 @@ controller_server:
     general_goal_checker:
       stateful: true
       plugin: "nav2_controller::SimpleGoalChecker"
-      xy_goal_tolerance: 0.29
+      xy_goal_tolerance: 0.27
       yaw_goal_tolerance: 0.25
     # DWB parameters
     FollowPath:
