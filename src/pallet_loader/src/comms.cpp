@@ -48,14 +48,24 @@ void Comms::setup(const std::string &serial_device,int32_t baud_rate,int32_t tim
     }
 }
 
-void Comms::move_pallet(double &val_1)
+void Comms::move_pallet(double val_1)
 {
     serialDriver.FlushIOBuffers();
-    if(val_1==1){
-    serialDriver.Write("u\r");
+       switch (static_cast<int>(val_1))
+    {
+        case 1:
+            serialDriver.Write("u\r");
+            break;
+        case 0:
+            serialDriver.Write("d\r");
+            break;
+        case 3:
+            serialDriver.Write("c\r");
+            break;
+        default:
+            // Handle any other unexpected values if necessary
+            break;
     }
-    else
-        serialDriver.Write("d\r");
 }
 
 void Comms::read_actuator(double& hw_joint)
@@ -64,7 +74,7 @@ void Comms::read_actuator(double& hw_joint)
   serialDriver.Write("s\r");
   serialDriver.SetRTS(true);
   std::string response = "";
-  serialDriver.ReadLine(response,'\n',1000);
+  serialDriver.ReadLine(response,'\n',10000);
   //serialDriver.Read(response,5,1000);
   hw_joint=std::atof(response.c_str());
     

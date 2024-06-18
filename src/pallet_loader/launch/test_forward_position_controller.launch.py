@@ -22,7 +22,7 @@ def generate_launch_description():
 
     position_goals = PathJoinSubstitution(
         [
-            FindPackageShare("ros2_control_demo_example_6"),
+            FindPackageShare("pallet_loader"),
             "config",
             "pallet_forward_position_publisher.yaml",
         ]

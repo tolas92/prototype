@@ -19,7 +19,7 @@ class Comms
 
     Comms()=default;
         void setup(const string &serial_device,int32_t baud_rate,int32_t timeout_ms);
-        void move_pallet(double& hw_command);
+        void move_pallet(double hw_command);
         void read_actuator(double& hw_joint);
 
         bool connected()const{ return serialDriver.IsOpen();}

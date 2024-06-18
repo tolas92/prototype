@@ -64,7 +64,7 @@ private:
   Config cfg_;
   Comms arduino_;
 
-  double hw_joint_command_=0.0;
+  double hw_joint_command_=10.0;
   double hw_joint_state_=0.0;
 };
 

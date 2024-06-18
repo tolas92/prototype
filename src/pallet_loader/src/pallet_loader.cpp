@@ -73,7 +73,7 @@ std::vector<hardware_interface::CommandInterface> PalletLoader::export_command_i
   std::vector<hardware_interface::CommandInterface> command_interfaces;
 
   command_interfaces.emplace_back(hardware_interface::CommandInterface(
-    info_.joints[0].name, hardware_interface::HW_IF_POSITION, &hw_joint_command_));
+    cfg_.pallet_joint, hardware_interface::HW_IF_POSITION, &hw_joint_command_));
 
   return command_interfaces;
 }
@@ -113,6 +113,7 @@ hardware_interface::return_type pallet_loader::PalletLoader::write(
   const rclcpp::Time & /*time*/, const rclcpp::Duration & /*period*/)
 {
   arduino_.move_pallet(hw_joint_command_);
+  //hw_joint_command_=3.0; //reseting the hw_joint_command so that it doesnt continuously send command to the arduino to rotate the motor.
 
   return hardware_interface::return_type::OK;
 }
