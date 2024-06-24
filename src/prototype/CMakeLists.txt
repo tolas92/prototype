@@ -58,12 +58,15 @@ install(
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
+  "action/Actuator.action"
   "action/SendCoordinates.action"
+  "action/Lift.action"
   "action/GoTo.action"
   "action/FoodMenu.action"
   "action/AiCamera.action"
   "msg/Food.msg"
   "msg/DistanceAngle.msg"
+  
   DEPENDENCIES std_msgs
 )
 

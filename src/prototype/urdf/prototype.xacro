@@ -8,6 +8,7 @@
 <xacro:include filename="$(find prototype)/urdf/link_macros.xacro"/>
 <xacro:include filename="$(find prototype)/urdf/hardware_interface.xacro"/>
 <xacro:include filename="$(find prototype)/urdf/camera.xacro"/>
+<xacro:include filename="$(find prototype)/urdf/pallet_loader.xacro"/>
 
 
 <!--=========================xacro:properties=============================-->

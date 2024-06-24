@@ -7,7 +7,7 @@
    
    <!--===============xacro for continuous joints=========================-->
     <xacro:macro name="joint_wheel" params="name origin parent child">
-        <joint name="${name}" type="continuous">
+        <joint name="${name}" type="fixed">
             <origin xyz="${origin}" rpy="0.0 0.0 0.0"/>
             <parent link="${parent}"/>
             <child link="${child}"/>
